@@ -1,13 +1,13 @@
 
 @font-face {
   font-family: Raleway;
-  src:local('Raleway'), url('./fonts//Raleway/Raleway-VariableFont_wght.ttf');
+  src:local('Raleway'), url('./fonts/raleway/Raleway-VariableFont_wght.ttf');
   font-display: swap;
 }
 
 @font-face {
   font-family: Raleway;
   font-weight: 100 300;
-  src:local('Raleway'), url('./fonts/Raleway/static/Raleway-ExtraLight.ttf');
+  src:local('Raleway'), url('./fonts/raleway/static/Raleway-ExtraLight.ttf');
   font-display: swap;
 }

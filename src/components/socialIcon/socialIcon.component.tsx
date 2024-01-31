@@ -1,6 +1,6 @@
 import './socialIcon.css';
 import { FC } from 'react';
-import Icons from '../../SocialIcons/social-icons.svg';
+import Icons from '../../socialIcons/social-icons.svg';
 
 interface SocialIconProps {
   name: string,
