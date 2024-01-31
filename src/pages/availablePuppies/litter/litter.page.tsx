@@ -26,7 +26,7 @@ const Litter:FC<LitterProps> = () => {
   }, [id, hyphenatedDate]);
 
   return (
-    <div className="litter-container">
+    <div className="litter-container site-container">
       <h2>Parents</h2>
       {!isNil(litter) && <div className="parent-container">
         <Parent dog={litter.dam} />

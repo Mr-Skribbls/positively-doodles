@@ -30,7 +30,7 @@ const Dog:FC<DogProps> = () => {
   }
 
   return (
-    <div className="dog-page">
+    <div className="dog-page site-container">
       {dog && <div>
         <h1>{dog.name}</h1>
 

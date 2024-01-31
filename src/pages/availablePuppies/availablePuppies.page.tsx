@@ -22,7 +22,7 @@ const AvailablePuppies:FC<AvailablePuppiesProps> = () => {
     litter.state === LitterState.HomeBound;
 
   return (
-    <div className='available-puppies'>
+    <div className='available-puppies site-container'>
       <PageTitle title={`${constants.companyName} Puppies`} />
       {availableLitters.map((litter, key) => <LitterCard key={key} litter={litter} />)}
     </div>

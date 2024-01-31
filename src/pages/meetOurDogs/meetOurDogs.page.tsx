@@ -11,7 +11,7 @@ interface MeetOurDogsProps {
 
 const MeetOurDogs:FC<MeetOurDogsProps> = () => {
   return (
-    <div className="meet-our-dogs-page ">
+    <div className="meet-our-dogs-page site-container">
       <PageTitle title={`${constants.companyName} Parents`} />
       {dogs.filter((dog) => dog.isInternal).map((dog, key) => <ItemCardList key={key} dog={dog} />)}
     </div>

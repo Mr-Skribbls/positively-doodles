@@ -18,7 +18,7 @@ const Home:FC<HomeProps> = () => {
   const whyChooseUsSection: Section | undefined = findSection(content.articles['about positively doodles'], 'Why Choose Positively Doodles?');
 
   return (
-    <div className="home-page">
+    <div className="home-page site-container">
       <Parallax
         className='parallax'
         bgImage={images.liberty001.path}

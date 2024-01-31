@@ -55,25 +55,27 @@ const Gallery:FC<GalleryProps> = () => {
   };
 
   return (
-    <div className="gallery-wrapper">
-      {displayImages.map((fi, key) => <div 
-        className={fi.size + ' gallery-image'}
-        onClick={() => setModalImages(getModalImages(fi.image))}
-        key={key}>
-        <ReactFocusPointImage
-          src={fi.image.path}
-          alt={fi.image.alt}
-          focusPoint={[
-            fi.image.centerOfFocus.x,
-            fi.image.centerOfFocus.y,
-          ]}
-          animate />
-        {/* <Picture
-          image={fi.image}></Picture> */}
-      </div>)}
-      <Modal isOpen={!isNil(modalImages)} close={() => setModalImages(null)}>
-        {modalImages && <ModalGallery images={modalImages}></ModalGallery>}
-      </Modal>
+    <div className='site-container'>
+      <div className="gallery-wrapper">
+        {displayImages.map((fi, key) => <div 
+          className={fi.size + ' gallery-image'}
+          onClick={() => setModalImages(getModalImages(fi.image))}
+          key={key}>
+          <ReactFocusPointImage
+            src={fi.image.path}
+            alt={fi.image.alt}
+            focusPoint={[
+              fi.image.centerOfFocus.x,
+              fi.image.centerOfFocus.y,
+            ]}
+            animate />
+          {/* <Picture
+            image={fi.image}></Picture> */}
+        </div>)}
+        <Modal isOpen={!isNil(modalImages)} close={() => setModalImages(null)}>
+          {modalImages && <ModalGallery images={modalImages}></ModalGallery>}
+        </Modal>
+      </div>
     </div>
   )
 };

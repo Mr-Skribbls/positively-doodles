@@ -12,7 +12,7 @@ interface DadsProps {
 const Dads:FC<DadsProps> = () => {
   const dads = dogs.filter((dog) => dog.gender === 'M');
   return (
-    <div className="dads-page">
+    <div className="dads-page site-container">
       <PageTitle title={`${constants.companyName} Dads`} />
       {dads.map((dog, key) => <ItemCardList key={key} dog={dog} />)}
       {/* {dads.map((dog, key) => <ParallaxItem key={key} image={dog.images.main} dog={dog} />)} */}
