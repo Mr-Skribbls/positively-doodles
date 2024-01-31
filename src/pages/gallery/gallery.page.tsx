@@ -8,7 +8,7 @@ import useImageFilterer from '../../hooks/useImageFilterer';
 
 import './gallery.css';
 import images, { filter as imageFilter, ImageDetails } from '../../services/image.service';
-import Picture from '../../components/picture/picture.component';
+// import Picture from '../../components/picture/picture.component';
 import Modal from '../../components/modal/modal.component';
 import ModalGallery from '../../components/modal/templates/modalGallery/modalGallery.component';
 import { useParams } from 'react-router-dom';
@@ -32,7 +32,7 @@ const imageSizes = [
   'medium',
 ]
 
-const Gallery:FC<GalleryProps> = (props) => {
+const Gallery:FC<GalleryProps> = () => {
   const [modalImages, setModalImages] = useState<ImageDetails[]|null>();
   const [displayImages, setDisplayImages] = useState<DisplayImage[]>([]);
   const imageFilterer = useImageFilterer(images, imageFilter);
