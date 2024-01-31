@@ -1,0 +1,13 @@
+.navbar {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  border-top: 1px solid var(--color-borders);
+  border-bottom: 1px solid var(--color-borders);
+  background-color: var(--color-menu-bg);
+  position: sticky;
+  top: -1px;
+  z-index: 1000;
+}

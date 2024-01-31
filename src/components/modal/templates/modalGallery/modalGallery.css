@@ -1,0 +1,20 @@
+/* @import '~react-image-gallery/styles/css/image-gallery.css'; */
+
+.modal-gallery-container {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+/*
+.modal-gallery-container, 
+.modal-gallery-container .modal-gallery-image-container,
+.modal-gallery-container .modal-gallery-image-container .image {
+  height: 100%;
+}
+
+.modal-gallery-container .modal-gallery-image-container .image {
+  padding: 5px;
+} */
+

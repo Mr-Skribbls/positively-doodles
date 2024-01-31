@@ -1,0 +1,407 @@
+import * as Genetics from './genetics';
+import images, { ImageDetails } from './services/image.service';
+
+enum BreedType {
+  Poodle = 'Poodle',
+  Bernese = 'Bernese',
+  Bernedoodle = 'Bernedoodle',
+}
+
+enum BreedClass {
+  AKC = 'AKC',
+  Multigeneration = 'Multigeneration',
+  F1 = 'F1',
+  F2 = 'F2',
+  F1B = 'F1B',
+  F2B = 'F2B',
+}
+
+enum BreedSize {
+  Standard = 'Standard',
+  MediumStandard = 'Medium Standard',
+  SmallStandard = 'Small Standard',
+  Medium = 'Medium',
+  Mini = 'Mini',
+}
+
+enum CoatType {
+  Straight = 'Straight',
+  Wavy = 'Wavy',
+  Curly = 'Curly',
+}
+
+enum CoatColorPatterns {
+  ApricotSable = 'Apricot Sable',
+  TraditionalTriColor = 'Traditional Tri-color',
+  TriColorWithSable = 'Tri-color with Sable',
+}
+
+export enum DogState {
+  Puppy = 'Puppy',
+  Breeder = 'Breeder',
+  Retired = 'Retired',
+  Sold = 'Sold',
+}
+
+export enum LitterState {
+  Expected = 'Expected',
+  Puppy = 'Puppy',
+  HomeBound = 'Home Bound',
+  Complete = 'Complete',
+}
+
+export interface Breed {
+  class: BreedClass,
+  size: BreedSize,
+  type: BreedType,
+}
+
+export interface LitterBreed {
+  class: BreedClass,
+  expectedSizes: BreedSize[],
+  type: BreedType,
+}
+
+export interface DogImages {
+  main: ImageDetails,
+  gallery: ImageDetails[],
+}
+
+export interface StudService {
+  price: number,
+  pickOfLitter?: 'or' | 'and',
+}
+
+export interface OFATesting {
+  elbows: 'Incomplete' | 'Normal' | 'Clear',
+  eyes: 'Incomplete' | 'Normal' | 'Clear',
+  hips: 'Incomplete' | 'Normal' | 'Clear' | 'Mild Dysplasia',
+  patellas: 'Incomplete' | 'Normal' | 'Clear',
+  heart: 'Incomplete' | 'Normal' | 'Clear' | 'Mild Murmur',
+  thyroid: 'Incomplete' | 'Normal' | 'Clear',
+}
+
+export interface DogTesting {
+  OFA: OFATesting,
+  genetics?: Genetics.GeneticTesting,
+}
+
+export interface Dog {
+  name: string,
+  gender: 'M' | 'F',
+  description: string,
+  isInternal: boolean,
+  state: DogState,
+  weight: number,
+  breed: Breed,
+  images: DogImages,
+  testing: DogTesting,
+
+  additionalInformation?: string[],
+  studService?: StudService, // [future use] for internal studs
+  link?: string,
+}
+
+export interface LitterInfo {
+  dam: Dog, // composite key
+  sire: Dog, // composite key
+  dueDate: Date, // composite key
+  birthDate?: Date,
+  size: number, // number of puppies
+  state: LitterState,
+  puppyBreed: LitterBreed,
+  expectedCoatTypes: CoatType[],
+  expectedColors: CoatColorPatterns[],
+  startingPrice: number,
+  reservationFee: number,
+}
+
+const findDog = (name: string, dictionary: Dog[]): Dog => {
+  const dog = dictionary.find((dog: Dog) => dog.name === name) || {
+    name: '',
+    gender: 'F',
+    description: '',
+    isInternal: false,
+    state: DogState.Sold,
+    weight: 0,
+    breed: {
+      class: BreedClass.AKC,
+      size: BreedSize.Mini,
+      type: BreedType.Poodle,
+    },
+    images: {
+      main: images.liberty001,
+      gallery: [],
+    },
+    testing: {
+      OFA: {
+        elbows: 'Incomplete',
+        eyes: 'Incomplete',
+        hips: 'Incomplete',
+        patellas: 'Incomplete',
+        heart: 'Incomplete',
+        thyroid: 'Incomplete',
+      }
+    },
+  };
+  return dog;
+}
+
+export const dogs:Dog[] = [
+  { // Libby
+    name: 'Liberty',
+    gender: 'F',
+    description: 'Liberty is apricot sable, tall and slender. She Loves to give kisses and is independent, smart, and sassy.',
+    isInternal: true,
+    state: DogState.Breeder,
+    link: '/dog/Liberty',
+    weight: 40,
+    breed: {
+      type: BreedType.Poodle,
+      size: BreedSize.SmallStandard,
+      class: BreedClass.AKC,
+    },
+    images: {
+      main: images.liberty003,
+      gallery: [
+        images.liberty_baby001,
+        images.liberty_baby002,
+        images.liberty_baby003,
+        images.liberty_baby004,
+        images.liberty_baby005,
+        images.liberty001,
+        images.liberty002,
+        images.liberty003,
+        images.liberty004,
+      ],
+    },
+    testing: {
+      OFA: {
+        elbows: 'Normal',
+        eyes: 'Normal',
+        hips: 'Normal',
+        patellas: 'Normal',
+        heart: 'Normal',
+        thyroid: 'Normal',
+      },
+      genetics: {
+        healthTesting: {
+          SOD1: {
+            disease: 'Degenerative Myelopathy, DM',
+            gene: 'SOD1',
+            genotype: 'GG',
+            result: 'Clear',
+          },
+          ATF2: {
+            disease: 'Neonatal Encephalopathy with Seizures, NEWS',
+            gene: 'ATF2',
+            genotype: 'TT',
+            result: 'Clear',
+          },
+          SLC13A1: {
+            disease: 'Osteochondrodysplasia, Skeletal Dwarfism',
+            gene: 'SLC13A1',
+            genotype: 'NN',
+            result: 'Clear',
+          },
+          PRCD_Exon_1: {
+            disease: 'Progressive Retinal Atrophy, prcd',
+            gene: 'PRCD Exon 1',
+            genotype: 'GG',
+            result: 'Clear',
+          },
+          VWF: {
+            disease: 'Von Willebrand Disease Type 1',
+            gene: 'VWF',
+            genotype: 'GG',
+            result: 'Clear',
+          },
+          FGF4_chr12: {
+            disease: 'Chondrodystrophy and Intervertebral Disc Disease',
+            gene: 'FGF4 - chr12',
+            genotype: 'N/N',
+            result: 'Clear',
+          },
+          HEXB_Exon3: {
+            disease: 'GM2 Gangliosidosis',
+            gene: 'HEXB (Exon 3)',
+            genotype: 'NN',
+            result: 'Clear',
+          },
+        },
+        traitTesting: {
+          A_Locus: {
+            result: Genetics.TraitTesting.Results.A_Locus.ayat,
+            desc: Genetics.TraitTesting.Descriptions.A_Locus.ayat,
+          },
+          D_Locus: {
+            result: Genetics.TraitTesting.Results.D_Locus.DD,
+            desc: Genetics.TraitTesting.Descriptions.D_Locus.DD,
+          },
+          E_Locus: {
+            result: Genetics.TraitTesting.Results.E_Locus.Eme,
+            desc: Genetics.TraitTesting.Descriptions.E_Locus.Eme,
+          },
+          K_Locus: {
+            result: Genetics.TraitTesting.Results.K_Locus.kyky,
+            desc: Genetics.TraitTesting.Descriptions.K_Locus.kyky,
+          },
+          Furnishings: {
+            result: Genetics.TraitTesting.Results.Furnishings.FF,
+            desc: Genetics.TraitTesting.Descriptions.Furnishings.FF,
+          },
+          CoatLength: {
+            result: Genetics.TraitTesting.Results.Coat_Length.TT,
+            desc: Genetics.TraitTesting.Descriptions.Coat_Length.TT,
+          },
+          Shedding: {
+            result: Genetics.TraitTesting.Results.Shedding.CT,
+            desc: Genetics.TraitTesting.Descriptions.Shedding.CT,
+          },
+        },
+      },
+    },
+  }, { // King Kong
+    name: 'King Kong',
+    gender: 'M',
+    description: 'King Kong is an outside stud from Sun Valley Doodles',
+    isInternal: false,
+    state: DogState.Breeder,
+    weight: 30,
+    breed: {
+      type: BreedType.Bernedoodle,
+      size: BreedSize.Mini,
+      class: BreedClass.F2,
+    },
+    images: {
+      main: images.king_kong,
+      gallery: [],
+    },
+    testing: {
+      OFA: {
+        elbows: 'Normal',
+        eyes: 'Normal',
+        hips: 'Normal',
+        patellas: 'Normal',
+        heart: 'Normal',
+        thyroid: 'Normal',
+      },
+      genetics: {
+        healthTesting: {
+          SOD1: {
+            disease: 'Degenerative Myelopathy, DM',
+            gene: 'SOD1',
+            genotype: 'GG',
+            result: 'Clear',
+          },
+          ATF2: {
+            disease: 'Neonatal Encephalopathy with Seizures, NEWS',
+            gene: 'ATF2',
+            genotype: 'TT',
+            result: 'Clear',
+          },
+          SLC13A1: {
+            disease: 'Osteochondrodysplasia, Skeletal Dwarfism',
+            gene: 'SLC13A1',
+            genotype: 'NN',
+            result: 'Clear',
+          },
+          PRCD_Exon_1: {
+            disease: 'Progressive Retinal Atrophy, prcd',
+            gene: 'PRCD Exon 1',
+            genotype: 'GG',
+            result: 'Clear',
+          },
+          VWF: {
+            disease: 'Von Willebrand Disease Type 1',
+            gene: 'VWF',
+            genotype: 'GG',
+            result: 'Clear',
+          },
+          FGF4_chr12: {
+            disease: 'Chondrodystrophy and Intervertebral Disc Disease',
+            gene: 'FGF4 - chr12',
+            genotype: 'N/N',
+            result: 'Clear',
+          },
+          HEXB_Exon3: {
+            disease: 'GM2 Gangliosidosis',
+            gene: 'HEXB (Exon 3)',
+            genotype: 'NN',
+            result: 'Clear',
+          },
+        },
+        traitTesting: {
+          K_Locus: {
+            result: Genetics.TraitTesting.Results.K_Locus.kyky,
+            desc: Genetics.TraitTesting.Descriptions.K_Locus.kyky,
+          },
+          A_Locus: {
+            result: Genetics.TraitTesting.Results.A_Locus.atat,
+            desc: Genetics.TraitTesting.Descriptions.A_Locus.atat,
+          },
+          D_Locus: {
+            result: Genetics.TraitTesting.Results.D_Locus.DD,
+            desc: Genetics.TraitTesting.Descriptions.D_Locus.DD,
+          },
+          E_Locus: {
+            result: Genetics.TraitTesting.Results.E_Locus.EE,
+            desc: Genetics.TraitTesting.Descriptions.E_Locus.EE,
+          },
+          Furnishings: {
+            result: Genetics.TraitTesting.Results.Furnishings.FF,
+            desc: Genetics.TraitTesting.Descriptions.Furnishings.FF,
+          },
+          CoatLength: {
+            result: Genetics.TraitTesting.Results.Coat_Length.I1I1,
+            desc: Genetics.TraitTesting.Descriptions.Coat_Length.I1I1,
+          },
+          Shedding: {
+            result: Genetics.TraitTesting.Results.Shedding.nSD,
+            desc: Genetics.TraitTesting.Descriptions.Shedding.nSD,
+          },
+          Curl: {
+            result: Genetics.TraitTesting.Results.Curl.nn,
+            desc: Genetics.TraitTesting.Descriptions.Curl.nn,
+          },
+        },
+      }
+    },
+    additionalInformation: [
+      'King Kong is an outside stud from Sun Valley Doodles',
+      'King Kong is fully furnished with no curl',
+      'He is 100% clear of all genetic diseases with Animal Genetics and Embark.',
+      'His OFA\'s are completed and normal.'
+    ],
+  },
+];
+
+export const litters:LitterInfo[] = [
+  {
+    dam: findDog('Liberty', dogs),
+    sire: findDog('King Kong', dogs),
+    dueDate: new Date(2023, 11, 26),
+    // birthDate: new Date(2023, 11, 26),
+    size: 7,
+    state: LitterState.Expected,
+    puppyBreed: {
+      type: BreedType.Bernedoodle,
+      expectedSizes: [
+        BreedSize.Mini,
+      ],
+      class: BreedClass.F2B,
+    },
+    expectedCoatTypes: [
+      CoatType.Straight,
+      CoatType.Wavy,
+      CoatType.Curly,
+    ],
+    expectedColors: [
+      CoatColorPatterns.ApricotSable,
+      CoatColorPatterns.TraditionalTriColor,
+      CoatColorPatterns.TriColorWithSable,
+    ],
+    startingPrice: 2000,
+    reservationFee: 500,
+  },
+]

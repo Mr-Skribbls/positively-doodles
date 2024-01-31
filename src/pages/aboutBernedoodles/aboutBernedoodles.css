@@ -1,0 +1,23 @@
+.about-bernedoodles article {
+  padding: 15px;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.about-bernedoodles article section {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.about-bernedoodles article h1 {
+  font-size: 26px;
+  padding: 0 0 1rem 0;
+}
+
+.about-bernedoodles article section h2 {
+  font-size: 20px;
+}
+
+.about-bernedoodles article section p {
+  padding: 5px 0;
+}

@@ -1,0 +1,6 @@
+.dads-page {
+  background-color: var(--color-canvas);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}

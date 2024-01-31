@@ -1,0 +1,10 @@
+.meet-our-dogs-page {
+  background-color: var(--color-canvas);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.meet-our-dogs-page > * {
+  flex-grow: 1;
+}

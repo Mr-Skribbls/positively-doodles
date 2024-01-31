@@ -1,0 +1,11 @@
+.header-logo-container {
+  width: auto;
+  height: 100%;
+  text-align: center;
+
+  --header-logo-height: 100%;
+}
+
+.logo-image {
+  height: var(--header-logo-height)
+}

@@ -1,0 +1,12 @@
+.contact-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25%;
+}
+
+.contact-page p {
+  text-align: center;
+}

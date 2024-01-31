@@ -1,0 +1,13 @@
+<div className='modal-content-container'>
+  <div className='modal-content-image'>
+    {/* {modalImage && <Picture image={modalImage} className="picture"></Picture>} */}
+    {modalImage && <ReactFocusPointImage
+      src={modalImage.path}
+      alt={modalImage.alt}
+      focusPoint={[modalImage.centerOfFocus.x, modalImage.centerOfFocus.y]}
+      animate />}
+  </div>
+  <div className='model-content-def'>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam minus iure, nulla sit fugit perferendis explicabo at a repudiandae veritatis, voluptate, veniam repellendus consectetur deserunt nostrum corrupti. Animi, dolorem sapiente!
+  </div>
+</div>

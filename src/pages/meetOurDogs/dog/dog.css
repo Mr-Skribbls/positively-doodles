@@ -1,0 +1,29 @@
+.dog-page {
+  margin: 0 5%;
+}
+
+.dog-page .images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 100px));
+  grid-template-rows: repeat(auto-fit, minmax(80px, 100px));
+  grid-gap: 1em;
+}
+
+.dog-page .images > div {
+  cursor: pointer;
+}
+
+.dog-page .testing h2 {
+  margin: 5px 0;
+}
+.dog-page .testing h3, .dog-page .testing h4 {
+  margin: 10px 0;
+}
+
+.dog-page .testing ul {
+  list-style: none;
+}
+
+.dog-page .testing ul span {
+  font-weight: bold;
+}

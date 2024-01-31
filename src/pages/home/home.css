@@ -1,0 +1,49 @@
+.home-page {
+  
+}
+
+.home-page .parallax {
+
+}
+
+.home-page .parallax .parallax-content-container {
+  height: 70vw;
+  max-height: 85vh;
+  position: relative;
+}
+
+.home-page .parallax .parallax-content-container .parallax-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.home-page .parallax .parallax-content .center {
+}
+
+.home-page .content {
+  margin: 25px 5% 0;
+  line-height: 1.8rem;
+  font-size: 1.2rem;
+}
+
+.home-page .content article section {
+  margin: 15% 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  border: 1px solid var(--color-menu-bg);
+  border-radius: 5px;
+}
+
+.home-page .content article section h2 {
+  display: block;
+  padding: 15%;
+}
+
+.home-page .content article section p {
+  justify-content: center;
+  align-content: center;
+}

@@ -1,0 +1,16 @@
+.sub-menu {
+  display: block;
+  opacity: 0;
+  height: 0;
+  position: absolute;
+  margin-top: 35px;
+  list-style: none;
+  text-align: start;
+  transition: opacity 0.15s, margin-top 0.15s;
+}
+
+.sub-menu.active {
+  height: auto;
+  opacity: 1;
+  margin-top: 46px;
+}
