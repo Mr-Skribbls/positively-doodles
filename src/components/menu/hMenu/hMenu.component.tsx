@@ -5,7 +5,7 @@ import {
   MenuItem,
   sorter as sortMenuItems,
 } from '../menuItems';
-import HMenuItem from './hMenuItem/hMenuItem.component';
+import HMenuItem from './hMenuItem/hMenuItem.componentt';
 
 interface HMenuProps {
   menuItems: MenuItem[],

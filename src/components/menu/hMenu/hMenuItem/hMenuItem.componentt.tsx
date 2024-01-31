@@ -1,7 +1,7 @@
 import { FC, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { MenuItem, closeSubMenu, openSubMenu } from '../../menuItems';
-import HSubMenu from '../hSubMenu/hSubMenu.component';
+import HSubMenu from '../hSubMenu/hSubMenu.componentt';
 import './hMenuItem.css';
 
 interface HMenuItemProps {
