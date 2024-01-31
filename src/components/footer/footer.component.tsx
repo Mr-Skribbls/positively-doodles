@@ -14,7 +14,8 @@ interface FooterProps {
 const Footer:FC<FooterProps> = () => {
   const windowDimensions = useWindowDimensions();
 
-  const iconColor = '#2A1D14'
+  // const iconColor = '#2A1D14'
+  const iconColor = '#F2F2F2';
 
   return (
     <footer>

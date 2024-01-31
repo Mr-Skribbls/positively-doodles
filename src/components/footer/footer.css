@@ -20,6 +20,10 @@ footer .contact-info-container {
   flex-wrap: wrap;
 }
 
+footer .contact-info-container a {
+  color: var(--color-canvas);
+}
+
 footer .logo-container {
   width: 150px;
   height: 150px;
