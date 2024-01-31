@@ -26,7 +26,7 @@ interface ContentProps {
   content: Paragraph
 }
 
-const isNilOrEmpty = (thing?: unknown):Boolean => isNil(thing) || isEmpty(thing);
+const isNilOrEmpty = (thing?: unknown):boolean => isNil(thing) || isEmpty(thing);
 
 const ArticleTitle:FC<ArticleTitleProps> = ({articleTitle}) => {
   if(isNilOrEmpty(articleTitle)) {

@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 export interface WindowDimensions {
   width: number
   height: number
-};
+}
 
 const getWindowDimensions = () => {
   const {innerWidth: width, innerHeight: height} = window;

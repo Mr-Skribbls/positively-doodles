@@ -20,8 +20,7 @@ function Dropdown() {
               <Link
                 className={item.cName}
                 to={item.path}
-                onClick={() => setClick(false)}
-              >
+                onClick={() => setClick(false)}>
                 {item.title}
               </Link>
             </li>
