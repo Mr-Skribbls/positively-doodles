@@ -1,7 +1,7 @@
 import { FC, useEffect, useState } from 'react';
 import { LitterInfo, litters } from '../../../dogInfo';
 import isNil from 'lodash/isNil';
-import './Litter.css';
+import './litter.css';
 import useDateHelper from '../../../hooks/useDateHelper';
 import Parent from '../../../components/litter/parent/parent.component';
 import { useParams } from 'react-router-dom';

@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import './Moms.css';
+import './moms.css';
 import { dogs } from '../../../dogInfo';
 import constants from '../../../constants';
 import ItemCardList from '../../../components/itemCardList/itemCardList.component';

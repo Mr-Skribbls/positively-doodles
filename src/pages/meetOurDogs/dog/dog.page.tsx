@@ -5,7 +5,7 @@ import ReactFocusPointImage from 'react-focus-point-image/dist/ReactFocusPointIm
 import useImageFilterer from '../../../hooks/useImageFilterer';
 import toLower from 'lodash/toLower';
 
-import './Dog.css';
+import './dog.css';
 import isNil from 'lodash/isNil';
 import map from 'lodash/map';
 import images, { filter as imageFilter, ImageDetails } from '../../../services/image.service';

@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import './Dads.css';
+import './dads.css';
 import { dogs } from '../../../dogInfo';
 import constants from '../../../constants';
 import PageTitle from '../../../components/pageTitle/pageTitle.component';

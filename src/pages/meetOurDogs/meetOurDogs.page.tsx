@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import './MeetOurDogs.css';
+import './meetOurDogs.css';
 import { dogs } from '../../dogInfo';
 import constants from '../../constants';
 import PageTitle from '../../components/pageTitle/pageTitle.component';
