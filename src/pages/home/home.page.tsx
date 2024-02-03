@@ -4,7 +4,6 @@ import isNil from 'lodash/isNil';
 import ContentBarTitleLeft from '../../components/contentComponents/contentBarTitleLeft/contentBarTitleLeft.component';
 import content, { ArticleRecord, Section } from '../../services/content.service';
 import { Parallax } from 'react-parallax';
-import SourceSetImage from '../../components/sourceSetImage/sourceSetImage.component';
 import useImage, { ImageData } from '../../hooks/useImage';
 
 interface HomeProps {
