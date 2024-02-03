@@ -50,12 +50,6 @@ const Home:FC<HomeProps> = () => {
 
       </div>
 
-      <div className="content">
-        <div style={{width: '400px', height: '200px'}}>
-          <SourceSetImage imageName='liberty003' sizesRules={['400px']} />
-        </div>
-      </div>
-      
     </div>
   );
 };
