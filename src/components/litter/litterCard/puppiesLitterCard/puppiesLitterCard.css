@@ -1,0 +1,32 @@
+.puppies-litter-card {
+  border: 1px solid var(--color-menu-bg);
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.puppies-litter-card .puppy-card {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.puppies-litter-card .puppy-card img {
+  max-width: 250px;
+  border-radius: 15px;
+}
+
+.puppies-litter-card .puppy-card figcaption p {
+  padding: 4px;
+}
+
+.puppies-litter-card .puppy-card figcaption p.available {
+  color: green;
+}
+
+.puppies-litter-card .puppy-card figcaption p.reserved {
+  color: red;
+}

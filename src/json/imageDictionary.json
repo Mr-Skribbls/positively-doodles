@@ -590,5 +590,229 @@
         "height": 150
       }
     ]
+  },
+
+  {
+    "name": "Liberty_KingKong_Maple_4weeks",
+    "alt": "Liberty and King Kong puppy Maple",
+    "classes": [
+      "maple",
+      "puppy",
+      "liberty",
+      "king kong"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/liberty_king-kong/webp/150/Liberty_KingKong_Maple_4weeks.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/liberty_king-kong/webp/450/Liberty_KingKong_Maple_4weeks.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 338
+      }, {
+        "path": "/images/puppies/liberty_king-kong/webp/150/Liberty_KingKong_Maple_4weeks.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 112
+      }, {
+        "path": "/images/puppies/liberty_king-kong/webp/450/Liberty_KingKong_Maple_4weeks.png",
+        "type": "png",
+        "width": 450,
+        "height": 338
+      }, {
+        "path": "/images/puppies/liberty_king-kong/webp/150/Liberty_KingKong_Maple_4weeks.png",
+        "type": "png",
+        "width": 150,
+        "height": 112
+      }
+    ]
+  }, {
+    "name": "Liberty_KingKong_TinyTim_4weeks",
+    "alt": "Liberty and King Kong puppy Tiny Tim",
+    "classes": [
+      "tiny tim",
+      "puppy",
+      "liberty",
+      "king kong"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/liberty_king-kong/webp/150/Liberty_KingKong_TinyTim_4weeks.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/liberty_king-kong/webp/450/Liberty_KingKong_TinyTim_4weeks.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 338
+      }, {
+        "path": "/images/puppies/liberty_king-kong/webp/150/Liberty_KingKong_TinyTim_4weeks.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 112
+      }, {
+        "path": "/images/puppies/liberty_king-kong/webp/450/Liberty_KingKong_TinyTim_4weeks.png",
+        "type": "png",
+        "width": 450,
+        "height": 338
+      }, {
+        "path": "/images/puppies/liberty_king-kong/webp/150/Liberty_KingKong_TinyTim_4weeks.png",
+        "type": "png",
+        "width": 150,
+        "height": 112
+      }
+    ]
+  }, {
+    "name": "Liberty_KingKong_Licorice_4weeks",
+    "alt": "Liberty and King Kong puppy Licorice",
+    "classes": [
+      "licorice",
+      "puppy",
+      "liberty",
+      "king kong"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/liberty_king-kong/webp/150/Liberty_KingKong_Licorice_4weeks.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/liberty_king-kong/webp/450/Liberty_KingKong_Licorice_4weeks.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 338
+      }, {
+        "path": "/images/puppies/liberty_king-kong/webp/150/Liberty_KingKong_Licorice_4weeks.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 112
+      }, {
+        "path": "/images/puppies/liberty_king-kong/webp/450/Liberty_KingKong_Licorice_4weeks.png",
+        "type": "png",
+        "width": 450,
+        "height": 338
+      }, {
+        "path": "/images/puppies/liberty_king-kong/webp/150/Liberty_KingKong_Licorice_4weeks.png",
+        "type": "png",
+        "width": 150,
+        "height": 112
+      }
+    ]
+  }, {
+    "name": "Liberty_KingKong_Jingle_4weeks",
+    "alt": "Liberty and King Kong puppy Jingle",
+    "classes": [
+      "jingle",
+      "puppy",
+      "liberty",
+      "king kong"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/liberty_king-kong/webp/150/Liberty_KingKong_Jingle_4weeks.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/liberty_king-kong/webp/450/Liberty_KingKong_Jingle_4weeks.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 338
+      }, {
+        "path": "/images/puppies/liberty_king-kong/webp/150/Liberty_KingKong_Jingle_4weeks.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 112
+      }, {
+        "path": "/images/puppies/liberty_king-kong/webp/450/Liberty_KingKong_Jingle_4weeks.png",
+        "type": "png",
+        "width": 450,
+        "height": 338
+      }, {
+        "path": "/images/puppies/liberty_king-kong/webp/150/Liberty_KingKong_Jingle_4weeks.png",
+        "type": "png",
+        "width": 150,
+        "height": 112
+      }
+    ]
+  }, {
+    "name": "Liberty_KingKong_Gloria_4weeks",
+    "alt": "Liberty and King Kong puppy Gloria",
+    "classes": [
+      "gloria",
+      "puppy",
+      "liberty",
+      "king kong"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/liberty_king-kong/webp/150/Liberty_KingKong_Gloria_4weeks.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/liberty_king-kong/webp/450/Liberty_KingKong_Gloria_4weeks.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 338
+      }, {
+        "path": "/images/puppies/liberty_king-kong/webp/150/Liberty_KingKong_Gloria_4weeks.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 112
+      }, {
+        "path": "/images/puppies/liberty_king-kong/webp/450/Liberty_KingKong_Gloria_4weeks.png",
+        "type": "png",
+        "width": 450,
+        "height": 338
+      }, {
+        "path": "/images/puppies/liberty_king-kong/webp/150/Liberty_KingKong_Gloria_4weeks.png",
+        "type": "png",
+        "width": 150,
+        "height": 112
+      }
+    ]
+  }, {
+    "name": "Liberty_KingKong_Buddy_4weeks",
+    "alt": "Liberty and King Kong puppy Buddy",
+    "classes": [
+      "buddy",
+      "puppy",
+      "liberty",
+      "king kong"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/liberty_king-kong/webp/150/Liberty_KingKong_Buddy_4weeks.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/liberty_king-kong/webp/450/Liberty_KingKong_Buddy_4weeks.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 338
+      }, {
+        "path": "/images/puppies/liberty_king-kong/webp/150/Liberty_KingKong_Buddy_4weeks.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 112
+      }, {
+        "path": "/images/puppies/liberty_king-kong/webp/450/Liberty_KingKong_Buddy_4weeks.png",
+        "type": "png",
+        "width": 450,
+        "height": 338
+      }, {
+        "path": "/images/puppies/liberty_king-kong/webp/150/Liberty_KingKong_Buddy_4weeks.png",
+        "type": "png",
+        "width": 150,
+        "height": 112
+      }
+    ]
   }
 ]

@@ -101,11 +101,20 @@ export interface Dog {
   link?: string,
 }
 
+export interface Puppy {
+  name: string
+  available: boolean
+  gender: 'M' | 'F'
+  description: string
+  imageName: string
+}
+
 export interface LitterInfo {
   dam: Dog, // composite key
   sire: Dog, // composite key
   dueDate: Date, // composite key
   birthDate?: Date,
+  goHomeDate?: Date,
   size: number, // number of puppies
   state: LitterState,
   puppyBreed: LitterBreed,
@@ -113,6 +122,7 @@ export interface LitterInfo {
   expectedColors: CoatColorPatterns[],
   startingPrice: number,
   reservationFee: number,
+  puppies?: Puppy[]
 }
 
 const findDog = (name: string, dictionary: Dog[]): Dog => {
@@ -380,9 +390,10 @@ export const litters:LitterInfo[] = [
     dam: findDog('Liberty', dogs),
     sire: findDog('King Kong', dogs),
     dueDate: new Date(2023, 11, 26),
-    // birthDate: new Date(2023, 11, 26),
-    size: 7,
-    state: LitterState.Expected,
+    birthDate: new Date(2023, 11, 25),
+    goHomeDate: new Date(2024, 1, 14),
+    size: 6,
+    state: LitterState.Puppy,
     puppyBreed: {
       type: BreedType.Bernedoodle,
       expectedSizes: [
@@ -398,7 +409,46 @@ export const litters:LitterInfo[] = [
       CoatColorPatterns.TraditionalTriColor,
       CoatColorPatterns.TriColorWithSable,
     ],
-    startingPrice: 2000,
+    startingPrice: 1500,
     reservationFee: 500,
+    puppies: [
+      {
+        name: 'Jingle',
+        available: true,
+        gender: 'M',
+        description: "Jingle is the biggest of the litter.  He is one of the first to alert when someone walks in the room.  He loves to give puppy kisses and cuddles, but he also loves to romp around with his litter mates.",
+        imageName: 'Liberty_KingKong_Jingle_4weeks',
+      }, {
+        name: 'Gloria',
+        available: true,
+        gender: 'F',
+        description: "Gloria is spunky and loves to be around those she knows.  She will be perfect for someone who will be with her all day long.",
+        imageName: 'Liberty_KingKong_Gloria_4weeks',
+      }, {
+        name: 'Licorice',
+        available: true,
+        gender: 'M',
+        description: "Licorice is very quiet and very mellow.  He sometimes will just sit back and watch his siblings play and other times is the one trying to get another to wrestle with him.  He is very sweet and loves to give lots of kisses.  He is charting to be around 30 pounds.",
+        imageName: 'Liberty_KingKong_Licorice_4weeks',
+      }, {
+        name: 'Maple',
+        available: true,
+        gender: 'F',
+        description: "She is super smart.  Already, at only 4 weeks old, she is already going to the potty box to go to the bathroom.  She is very mellow and super sweet.",
+        imageName: 'Liberty_KingKong_Maple_4weeks',
+      }, {
+        name: 'Tiny Tim',
+        available: false,
+        gender: 'M',
+        description: "Tiny Tim is super sweet.  He loves to play and loves to cuddle.  He has a wavy coat and will be between 30-35 lbs. fully grown. ",
+        imageName: 'Liberty_KingKong_TinyTim_4weeks',
+      }, {
+        name: 'Buddy',
+        available: false,
+        gender: 'M',
+        description: "Buddy is a beautiful tri-color Sable.  He is almost always the first to go try and explore something new.  He is charting to be about 35 pounds.",
+        imageName: 'Liberty_KingKong_Buddy_4weeks',
+      }
+    ]
   },
 ]
