@@ -1,6 +1,6 @@
 import isNil from 'lodash/isNil';
 import imageData from '../json/imageDictionary.json';
-import { List, ListIterateeCustom, includes, some } from 'lodash';
+import { List, ListIterateeCustom, includes } from 'lodash';
 
 interface CenterOfFocus {
   x: number
