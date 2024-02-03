@@ -1,5 +1,4 @@
 import * as Genetics from './genetics';
-import images, { ImageDetails } from './services/image.service';
 
 enum BreedType {
   Poodle = 'Poodle',
@@ -63,8 +62,8 @@ export interface LitterBreed {
 }
 
 export interface DogImages {
-  main: ImageDetails,
-  gallery: ImageDetails[],
+  main: string,
+  gallery: string[],
 }
 
 export interface StudService {
@@ -130,7 +129,7 @@ const findDog = (name: string, dictionary: Dog[]): Dog => {
       type: BreedType.Poodle,
     },
     images: {
-      main: images.liberty001,
+      main: 'liberty001',
       gallery: [],
     },
     testing: {
@@ -162,17 +161,17 @@ export const dogs:Dog[] = [
       class: BreedClass.AKC,
     },
     images: {
-      main: images.liberty003,
+      main: 'liberty003',
       gallery: [
-        images.liberty_baby001,
-        images.liberty_baby002,
-        images.liberty_baby003,
-        images.liberty_baby004,
-        images.liberty_baby005,
-        images.liberty001,
-        images.liberty002,
-        images.liberty003,
-        images.liberty004,
+        'liberty_baby001',
+        'liberty_baby002',
+        'liberty_baby003',
+        'liberty_baby004',
+        'liberty_baby005',
+        'liberty001',
+        'liberty002',
+        'liberty003',
+        'liberty004',
       ],
     },
     testing: {
@@ -274,7 +273,7 @@ export const dogs:Dog[] = [
       class: BreedClass.F2,
     },
     images: {
-      main: images.king_kong,
+      main: 'king_kong',
       gallery: [],
     },
     testing: {
@@ -392,9 +391,7 @@ export const litters:LitterInfo[] = [
       class: BreedClass.F2B,
     },
     expectedCoatTypes: [
-      CoatType.Straight,
       CoatType.Wavy,
-      CoatType.Curly,
     ],
     expectedColors: [
       CoatColorPatterns.ApricotSable,

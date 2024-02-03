@@ -3,9 +3,8 @@ import { FC } from 'react';
 import constants from '../../constants';
 import isEmpty from 'lodash/isEmpty';
 import useWindowDimensions from '../../hooks/useWindowDimensions';
-import images from '../../services/image.service';
-import Picture from '../picture/picture.component';
 import SocialIcon from '../socialIcon/socialIcon.component';
+import SourceSetImage from '../sourceSetImage/sourceSetImage.component';
 
 interface FooterProps {
 
@@ -34,7 +33,7 @@ const Footer:FC<FooterProps> = () => {
         </a>}
       </div>
       {windowDimensions.width > 650 && <div className='logo-container'>
-        <Picture className='logo' image={images['smallLogo']} />
+        <SourceSetImage className='logo' imageName='smallLogo' sizesRules={['100px']} />
       </div>}
       <div className='contact-info-container'>
         <a href={`mailto:${constants.emailAddress}`}>{constants.emailAddress}</a>

@@ -3,8 +3,7 @@ import isNil from 'lodash/isNil';
 import isEmpty from 'lodash/isEmpty';
 import './article.css';
 import { ArticleRecord, Section, Paragraph } from '../../../services/content.service';
-import images from '../../../services/image.service';
-import Picture from '../../picture/picture.component';
+import SourceSetImage from '../../sourceSetImage/sourceSetImage.component';
 
 interface ArticleProps {
   articleRecord: ArticleRecord,
@@ -45,7 +44,7 @@ const SectionTitle:FC<SectionTitleProps> = ({sectionTitle}) => {
 const Content:FC<ContentProps> = ({content}) => {
   const pictures = content.images?.map((image, key) => {
     return (
-      <Picture key={key} className={image.className} image={images[image.imageName]}></Picture>
+      <SourceSetImage key={key} className={image.className} imageName={image.imageName} sizesRules={['450px']} />
     );
   });
 
@@ -57,6 +56,7 @@ const Content:FC<ContentProps> = ({content}) => {
       </p>
     )
   }
+  
   return (
     <p>{content.text}</p>
   );

@@ -1,11 +1,9 @@
-.header-logo-container {
-  width: auto;
+.header-logo .wrapper {
+  width: 100%;
   height: 100%;
-  text-align: center;
-
-  --header-logo-height: 100%;
 }
 
-.logo-image {
-  height: var(--header-logo-height)
+.header-logo .container {
+  width: 298px;
+  margin: 0 auto;
 }

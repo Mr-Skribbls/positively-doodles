@@ -1,10 +1,10 @@
 import { FC } from 'react';
 import { LitterInfo } from '../../../../dogInfo';
-import ReactFocusPointImage from 'react-focus-point-image/dist/ReactFocusPointImage';
 import isNil from 'lodash/isNil';
 import { Link } from 'react-router-dom';
 import useDateHelper from '../../../../hooks/useDateHelper';
 import './expectedLitterCard.css';
+import SourceSetImage from '../../../sourceSetImage/sourceSetImage.component';
 
 interface ExpectedLitterCardProps {
   litter: LitterInfo,
@@ -19,24 +19,10 @@ const ExpectedLitterCard:FC<ExpectedLitterCardProps> = ({
       <div className="card-container">
         <div className='parent-images'>
           <div className='dam-image'>
-            {!isNil(litter.dam) && <ReactFocusPointImage
-              src={litter.dam.images.main.path}
-              alt={litter.dam.images.main.alt}
-              focusPoint={[
-                litter.dam.images.main.centerOfFocus.x,
-                litter.dam.images.main.centerOfFocus.y,
-              ]}
-              animate />}
+            {!isNil(litter.dam) && <SourceSetImage imageName={litter.dam.images.main} sizesRules={['200px']} />}
           </div>
           <div className="sire-image">
-            {!isNil(litter.sire) && <ReactFocusPointImage
-              src={litter.sire.images.main.path}
-              alt={litter.sire.images.main.alt}
-              focusPoint={[
-                litter.sire.images.main.centerOfFocus.x,
-                litter.sire.images.main.centerOfFocus.y,
-              ]}
-              animate />}
+            {!isNil(litter.sire) && <SourceSetImage imageName={litter.sire.images.main} sizesRules={['200px']} />}
           </div>
         </div>
         <figcaption>

@@ -1,9 +1,9 @@
 import isNil from 'lodash/isNil';
 import { FC } from 'react';
-import ReactFocusPointImage from 'react-focus-point-image';
 import { Dog } from '../../../dogInfo';
 import { Link } from 'react-router-dom';
 import './parent.css';
+import SourceSetImage from '../../sourceSetImage/sourceSetImage.component';
 
 interface ParentProps {
   dog: Dog,
@@ -15,14 +15,7 @@ const Parent:FC<ParentProps> = ({
   return (
     <article className="parent">
       <figure className="image">
-        <ReactFocusPointImage
-          src={dog.images.main.path}
-          alt={dog.images.main.alt}
-          focusPoint={[
-            dog.images.main.centerOfFocus.x,
-            dog.images.main.centerOfFocus.y,
-          ]}
-          animate />
+          <SourceSetImage imageName={dog.images.main} sizesRules={['50%']} />
       </figure>
       <figcaption>
         <h3>{dog.name}</h3>

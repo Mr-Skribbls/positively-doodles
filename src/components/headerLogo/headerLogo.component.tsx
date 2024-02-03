@@ -1,16 +1,17 @@
 import { FC } from 'react';
 import './headerLogo.css';
-import { ImageDetails } from '../../services/image.service';
-import Picture from '../picture/picture.component';
+import SourceSetImage from '../sourceSetImage/sourceSetImage.component';
 
 interface HeaderLogoProps {
-  logo: ImageDetails,
+  
 }
 
-const HeaderLogo:FC<HeaderLogoProps> = ({logo}) => {
+const HeaderLogo:FC<HeaderLogoProps> = () => {
   return (
-    <div className="header-logo-container">
-      <Picture image={logo} className="logo-image"></Picture>
+    <div className="header-logo wrapper">
+      <div className='header-logo container'>
+        <SourceSetImage imageName='headerLogo' sizesRules={['298px']} />
+      </div>
     </div>
   );
 };

@@ -38,6 +38,7 @@ footer .logo-container .logo {
   display: block;
   width: 100px;
   position: relative;
-  top: 8px;
-  left: 14px;
+  top: 16px;
+  left: 28px;
+  height: 110px;
 }

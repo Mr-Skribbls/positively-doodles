@@ -1,16 +1,14 @@
 import { FC, useState } from 'react';
 import { useParams } from 'react-router';
 import { dogs } from '../../../dogInfo';
-import ReactFocusPointImage from 'react-focus-point-image/dist/ReactFocusPointImage';
-import useImageFilterer from '../../../hooks/useImageFilterer';
-import toLower from 'lodash/toLower';
 
 import './dog.css';
 import isNil from 'lodash/isNil';
 import map from 'lodash/map';
-import images, { filter as imageFilter, ImageDetails } from '../../../services/image.service';
 import Modal from '../../../components/modal/modal.component';
 import ModalGallery from '../../../components/modal/templates/modalGallery/modalGallery.component';
+import SourceSetImage from '../../../components/sourceSetImage/sourceSetImage.component';
+import useImage, { ImageData } from '../../../hooks/useImage';
 
 interface DogProps {
 
@@ -18,15 +16,23 @@ interface DogProps {
 
 const Dog:FC<DogProps> = () => {
   const { name } = useParams();
-  const imageFilterer = useImageFilterer(images, imageFilter);
-  const [modalImages, setModalImages] = useState<ImageDetails[]|null>();
+  const [modalImages, setModalImages] = useState<string[] | null>();
+  const {getImageDataByName} = useImage();
   
-  const dogImages = imageFilterer(toLower(name));
   const dog = dogs.find((d) => d.name === name);
 
-  const getModalImages = (baseImage: ImageDetails) => {
-    const otherImages = dogImages.filter((image) => image !== baseImage);
-    return [baseImage, ...otherImages];
+  const mainImageName = isNil(dog?.images.main) ? [] : [dog.images.main];
+  const galleryImageNames = dog?.images.gallery || [];
+  const imageNames = getImageDataByName([...mainImageName, ...galleryImageNames]).map((imageData: ImageData) => imageData.name);
+
+  // const getModalImages = (baseImage: ImageDetails) => {
+  //   const otherImages = dogImages.filter((image) => image !== baseImage);
+  //   return [baseImage, ...otherImages];
+  // }
+
+  const getModalImages = (imageName: string, imageNames: string[]) => {
+    const otherNames = imageNames.filter((name) => name !== imageName);
+    return [imageName, ...otherNames];
   }
 
   return (
@@ -35,16 +41,11 @@ const Dog:FC<DogProps> = () => {
         <h1>{dog.name}</h1>
 
         <section className='images'>
-          {dogImages.map((image, key) => <div onClick={() => setModalImages(getModalImages(image))}>
-            <ReactFocusPointImage
-            key={key}
-            src={image.path}
-            alt={image.alt}
-            focusPoint={[
-              image.centerOfFocus.x,
-              image.centerOfFocus.y,
-            ]}
-            animate />
+          {/* {dogImages.map((image, key) => <div key={key} onClick={() => setModalImages(getModalImages(image))}>
+            <SourceSetImage imageName='' sizesRules={['100%']} />
+          </div>)} */}
+          {imageNames.map((imageName, key) => <div key={key} onClick={() => setModalImages(getModalImages(imageName, imageNames))}>
+            <SourceSetImage imageName={imageName} sizesRules={['100px']} />
           </div>)}
         </section>
 

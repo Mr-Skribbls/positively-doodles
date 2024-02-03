@@ -1,24 +1,21 @@
 import { FC, useEffect, useState } from 'react';
 import random from 'lodash/random';
 import isNil from 'lodash/isNil';
-import uniqBy from 'lodash/uniqBy';
-import ReactFocusPointImage from 'react-focus-point-image';
-import useImageShuffle from '../../hooks/useImageShuffle';
-import useImageFilterer from '../../hooks/useImageFilterer';
 
 import './gallery.css';
-import images, { filter as imageFilter, ImageDetails } from '../../services/image.service';
-// import Picture from '../../components/picture/picture.component';
 import Modal from '../../components/modal/modal.component';
 import ModalGallery from '../../components/modal/templates/modalGallery/modalGallery.component';
 import { useParams } from 'react-router-dom';
+import SourceSetImage from '../../components/sourceSetImage/sourceSetImage.component';
+import useImage, { ImageData } from '../../hooks/useImage';
+import { every, shuffle, some } from 'lodash';
 
 interface GalleryProps {
   
 }
 
 interface DisplayImage {
-  image: ImageDetails,
+  image: ImageData,
   size: string,
 }
 
@@ -33,47 +30,48 @@ const imageSizes = [
 ]
 
 const Gallery:FC<GalleryProps> = () => {
-  const [modalImages, setModalImages] = useState<ImageDetails[]|null>();
+  const {getImageDataByClassName} = useImage();
   const [displayImages, setDisplayImages] = useState<DisplayImage[]>([]);
-  const imageFilterer = useImageFilterer(images, imageFilter);
+  const [modalImageNames, setModalImageNames] = useState<string[]|null>();
   const { imageFilters } = useParams<string>();
-  const shuffledImages = useImageShuffle(imageFilterer(...(imageFilters || '').split('|')));
 
   useEffect(() => {
-    const getRandomImageSize = () => imageSizes[random(0, imageSizes.length-1)];
-    
-    setDisplayImages(shuffledImages.map((i) => ({
-      image: i,
-      size: getRandomImageSize(),
-    })));
-  }, [shuffledImages]);
+    const filters = (imageFilters || '').split('|');
+    const imagesData = shuffle(getImageDataByClassName(filters, some));
+    const displayImages = imagesData.map((imageData) => {
+      return {
+        image: imageData,
+        size: imageSizes[random(0, imageSizes.length-1)],
+      };
+    });
+    setDisplayImages(displayImages);
+  }, [imageFilters]);
   
-  const getModalImages = (baseImage: ImageDetails) => {
-    const classes = baseImage.classes;
-    const relatedImages = imageFilterer(...classes);
-    return uniqBy([baseImage, ...relatedImages], 'path');
-  };
+  const getModalImages = (baseImageData: ImageData): string[] => {
+    const relatedImages = getImageDataByClassName(baseImageData.classes, every);
+    return [baseImageData.name, ...relatedImages.map((imageData) => imageData.name)];
+  }
+
+  const imageCard = (displayImage: DisplayImage, key: number) => {
+    const sizesRules = displayImage.size === 'small' ? ['240px'] :
+      displayImage.size === 'medium' ? ['480px'] :
+      ['720px']
+    return (
+      <div 
+        className={`${displayImage.size} gallery-image`}
+        onClick={() => setModalImageNames(getModalImages(displayImage.image))}
+        key={key}>
+        <SourceSetImage imageName={displayImage.image.name} sizesRules={sizesRules} />
+      </div>
+    );
+  }
 
   return (
     <div className='site-container'>
       <div className="gallery-wrapper">
-        {displayImages.map((fi, key) => <div 
-          className={fi.size + ' gallery-image'}
-          onClick={() => setModalImages(getModalImages(fi.image))}
-          key={key}>
-          <ReactFocusPointImage
-            src={fi.image.path}
-            alt={fi.image.alt}
-            focusPoint={[
-              fi.image.centerOfFocus.x,
-              fi.image.centerOfFocus.y,
-            ]}
-            animate />
-          {/* <Picture
-            image={fi.image}></Picture> */}
-        </div>)}
-        <Modal isOpen={!isNil(modalImages)} close={() => setModalImages(null)}>
-          {modalImages && <ModalGallery images={modalImages}></ModalGallery>}
+        {displayImages.map((displayImage, key) => imageCard(displayImage, key))}
+        <Modal isOpen={!isNil(modalImageNames)} close={() => setModalImageNames(null)}>
+          {modalImageNames && <ModalGallery images={modalImageNames}></ModalGallery>}
         </Modal>
       </div>
     </div>

@@ -1,78 +1,70 @@
 [
   {
     "name": "headerLogo",
-    "path": "/images/logos/positively_doodles_banner.png",
-    "picture": {
-      "sources": [
-        {
-          "condition": "(max-width:150px)",
-          "path": "/images/logos/webp/positively-doodles-banner-150x55.webp"
-        }, {
-          "condition": "(max-width:450px)",
-          "path": "/images/logos/webp/positively-doodles-banner-450x166.webp"
-        }, {
-          "condition": "(max-width:900px)",
-          "path": "/images/logos/webp/positively-doodles-banner-900x332.webp"
-        }, {
-          "condition": "(max-width:1800px)",
-          "path": "/images/logos/webp/positively-doodles-banner-1800x664.webp"
-        }, {
-          "condition": "",
-          "path": "/images/logos/webp/positively-doodles-banner-2500x923.webp"
-        }, {
-          "condition": "(max-width:150px)",
-          "path": "/images/logos/png/positively-doodles-banner-150x55.png"
-        }, {
-          "condition": "(min-width:450px)",
-          "path": "/images/logos/png/positively-doodles-banner-450x166.png"
-        }, {
-          "condition": "(min-width:900px)",
-          "path": "/images/logos/png/positively-doodles-banner-900x332.png"
-        }, {
-          "condition": "(min-width:1800px)",
-          "path": "/images/logos/png/positively-doodles-banner-1800x664.png"
-        }, {
-          "condition": "(min-width:2500px)",
-          "path": "/images/logos/png/positively-doodles-banner-2500x923.png"
-        }
-      ]
-    },
     "alt": "Logo",
     "classes": [
       "logo"
     ],
-    "width": 500,
-    "height": 238,
     "centerOfFocus": {
       "x": 50,
       "y": 50
-    }
+    },
+    "defaultPath": "/images/logos/png/positively-doodles-banner-150x55.png",
+    "imageSet": [
+      {
+        "path": "/images/logos/webp/positively-doodles-banner-2500x923.webp",
+        "type": "webp",
+        "width": 2500,
+        "height": 923
+      }, {
+        "path": "/images/logos/webp/positively-doodles-banner-1800x664.webp",
+        "type": "webp",
+        "width": 1800,
+        "height": 664
+      }, {
+        "path": "/images/logos/webp/positively-doodles-banner-900x332.webp",
+        "type": "webp",
+        "width": 900,
+        "height": 332
+      }, {
+        "path": "/images/logos/webp/positively-doodles-banner-450x166.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 166
+      }, {
+        "path": "/images/logos/webp/positively-doodles-banner-150x55.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 55
+      }, {
+        "path": "/images/logos/png/positively-doodles-banner-2500x923.png",
+        "type": "png",
+        "width": 2500,
+        "height": 923
+      }, {
+        "path": "/images/logos/png/positively-doodles-banner-1800x664.png",
+        "type": "png",
+        "width": 1800,
+        "height": 664
+      }, {
+        "path": "/images/logos/png/positively-doodles-banner-900x332.png",
+        "type": "png",
+        "width": 900,
+        "height": 332
+      }, {
+        "path": "/images/logos/png/positively-doodles-banner-450x166.png",
+        "type": "png",
+        "width": 450,
+        "height": 166
+      }, {
+        "path": "/images/logos/png/positively-doodles-banner-150x55.png",
+        "type": "png",
+        "width": 150,
+        "height": 55
+      }
+    ]
   }, {
     "name": "smallLogo",
-    "path": "/images/logos/png/positively-doodles-logo-766x855.png",
-    "picture": {
-      "sources": [
-        {
-          "condition": "(max-width: 134px)",
-          "path": "/images/logos/webp/positively-doodles-logo-134x150.webp"
-        }, {
-          "condition": "(max-width:403px)",
-          "path": "/images/logos/webp/positively-doodles-logo-403x450.webp"
-        }, {
-          "condition": "",
-          "path": "/images/logos/webp/positively-doodles-logo-766x855.webp"
-        }, {
-          "condition": "(max-width: 134px)",
-          "path": "/images/logos/png/positively-doodles-logo-134x150.png"
-        }, {
-          "condition": "(max-width:403px)",
-          "path": "/images/logos/png/positively-doodles-logo-403x450.png"
-        }, {
-          "condition": "",
-          "path": "/images/logos/png/positively-doodles-logo-766x855.png"
-        }
-      ]
-    },
     "alt": "Positively Doodles",
     "classes": [
       "logo",
@@ -82,217 +74,66 @@
     "centerOfFocus": {
       "x": 50,
       "y": 50
-    }
+    },
+    "defaultPath": "/images/logos/png/positively-doodles-logo-134x150.png",
+    "imageSet": [
+      {
+        "path": "/images/logos/webp/positively-doodles-logo-766x855.webp",
+        "type": "webp",
+        "width": 766,
+        "height": 855
+      }, {
+        "path": "/images/logos/webp/positively-doodles-logo-403x450.webp",
+        "type": "webp",
+        "width": 403,
+        "height": 450
+      }, {
+        "path": "/images/logos/webp/positively-doodles-logo-134x150.webp",
+        "type": "webp",
+        "width": 134,
+        "height": 150
+      }, {
+        "path": "/images/logos/png/positively-doodles-logo-766x855.png",
+        "type": "png",
+        "width": 766,
+        "height": 855
+      }, {
+        "path": "/images/logos/png/positively-doodles-logo-403x450.png",
+        "type": "png",
+        "width": 403,
+        "height": 450
+      }, {
+        "path": "/images/logos/png/positively-doodles-logo-134x150.png",
+        "type": "png",
+        "width": 134,
+        "height": 150
+      }
+    ]
   },
 
   {
     "name": "home",
-    "path": "/images/highLevel/home.jpg",
     "alt": "home",
-    "classes": [],
-    "width": 360,
-    "height": 270,
-    "dpi": 96,
+    "classes": [
+      "home"
+    ],
     "centerOfFocus": {
       "x": 50,
       "y": 50
-    }
+    },
+    "defaultPath": "/images/highLevel/home.jpg",
+    "imageSet": [
+      {
+        "path": "/images/highLevel/home.jpg",
+        "type": "jpg",
+        "width": 2500,
+        "height": 1406
+      }
+    ]
   },
 
   {
-    "name": "liberty_baby001",
-    "path": "/images/dogs/Liberty/jpg/liberty-puppy-001-584x1044.jpg",
-    "picture": {
-      "sources": [
-        {
-          "condition": "(max-width:83px)",
-          "path": "/images/dogs/Liberty/webp/liberty-puppy-001-83x150.webp"
-        }, {
-          "condition": "(max-width:251px)",
-          "path": "/images/dogs/Liberty/webp/liberty-puppy-001-251x450.webp"
-        }, {
-          "condition": "",
-          "path": "/images/dogs/Liberty/webp/liberty-puppy-001-503x900.webp"
-        }, {
-          "condition": "(max-width:83px)",
-          "path": "/images/dogs/Liberty/png/liberty-puppy-001-83x150.png"
-        }, {
-          "condition": "(max-width:251px)",
-          "path": "/images/dogs/Liberty/png/liberty-puppy-001-251x450.png"
-        }, {
-          "condition": "",
-          "path": "/images/dogs/Liberty/png/liberty-puppy-001-503x900.png"
-        }
-      ]
-    },
-    "alt": "Liberty",
-    "classes": [
-      "dog",
-      "female",
-      "parent",
-      "liberty"
-    ],
-    "width": 0,
-    "height": 0,
-    "centerOfFocus": {
-      "x": 50,
-      "y": 5
-    }
-  }, {
-    "name": "liberty_baby002",
-    "path": "/images/dogs/Liberty/jpg/liberty-puppy-002-470x908.jpg",
-    "picture": {
-      "sources": [
-        {
-          "condition": "(max-width:77px)",
-          "path": "/images/dogs/Liberty/webp/liberty-puppy-002-77x150.webp"
-        }, {
-          "condition": "(max-width:232px)",
-          "path": "/images/dogs/Liberty/webp/liberty-puppy-002-232x450.webp"
-        }, {
-          "condition": "",
-          "path": "/images/dogs/Liberty/webp/liberty-puppy-002-470x908.webp"
-        }, {
-          "condition": "(max-width:77px)",
-          "path": "/images/dogs/Liberty/png/liberty-puppy-002-77x150.png"
-        }, {
-          "condition": "(max-width:232px)",
-          "path": "/images/dogs/Liberty/png/liberty-puppy-002-232x450.png"
-        }, {
-          "condition": "",
-          "path": "/images/dogs/Liberty/png/liberty-puppy-002-470x908.png"
-        }
-      ]
-    },
-    "alt": "Liberty",
-    "classes": [
-      "dog",
-      "female",
-      "parent",
-      "liberty"
-    ],
-    "width": 0,
-    "height": 0,
-    "centerOfFocus": {
-      "x": 50,
-      "y": 5
-    }
-  }, {
-    "name": "liberty_baby004",
-    "path": "/images/dogs/Liberty/jpg/liberty-puppy-004-591x966.jpg",
-    "picture": {
-      "sources": [
-        {
-          "condition": "(max-width:91px)",
-          "path": "/images/dogs/Liberty/webp/liberty-puppy-004-91x150.webp"
-        }, {
-          "condition": "(max-width:275px)",
-          "path": "/images/dogs/Liberty/webp/liberty-puppy-004-275x450.webp"
-        }, {
-          "condition": "",
-          "path": "/images/dogs/Liberty/webp/liberty-puppy-004-591x966.webp"
-        }, {
-          "condition": "(max-width:91px)",
-          "path": "/images/dogs/Liberty/png/liberty-puppy-004-91x150.png"
-        }, {
-          "condition": "(max-width:275px)",
-          "path": "/images/dogs/Liberty/png/liberty-puppy-004-275x450.png"
-        }, {
-          "condition": "",
-          "path": "/images/dogs/Liberty/png/liberty-puppy-004-591x966.png"
-        }
-      ]
-    },
-    "alt": "Liberty",
-    "classes": [
-      "dog",
-      "female",
-      "parent",
-      "liberty"
-    ],
-    "width": 0,
-    "height": 0,
-    "centerOfFocus": {
-      "x": 50,
-      "y": 50
-    }
-  }, {
-    "name": "liberty_baby005",
-    "path": "/images/dogs/Liberty/jpg/liberty-puppy-005-956x790.jpg",
-    "picture": {
-      "sources": [
-        {
-          "condition": "(max-width:150px)",
-          "path": "/images/dogs/Liberty/webp/liberty-puppy-005-150x123.webp"
-        }, {
-          "condition": "(max-width:450px)",
-          "path": "/images/dogs/Liberty/webp/liberty-puppy-005-450x371.webp"
-        }, {
-          "condition": "",
-          "path": "/images/dogs/Liberty/webp/liberty-puppy-005-956x790.webp"
-        }, {
-          "condition": "(max-width:150px)",
-          "path": "/images/dogs/Liberty/png/liberty-puppy-005-150x123.png"
-        }, {
-          "condition": "(max-width:450px)",
-          "path": "/images/dogs/Liberty/png/liberty-puppy-005-450x371.png"
-        }, {
-          "condition": "",
-          "path": "/images/dogs/Liberty/png/liberty-puppy-005-956x790.png"
-        }
-      ]
-    },
-    "alt": "Liberty",
-    "classes": [
-      "dog",
-      "female",
-      "parent",
-      "liberty"
-    ],
-    "width": 0,
-    "height": 0,
-    "centerOfFocus": {
-      "x": 55,
-      "y": 15
-    }
-  }, {
     "name": "liberty001",
-    "path": "/images/dogs/Liberty/jpg/liberty-001-2500x1875.jpg",
-    "picture": {
-      "sources": [
-        {
-          "condition": "(max-width:150px)",
-          "path": "/images/dogs/Liberty/webp/liberty-001-150x112.webp"
-        }, {
-          "condition": "(max-width:450px)",
-          "path": "/images/dogs/Liberty/webp/liberty-001-450x337.webp"
-        }, {
-          "condition": "(max-width:900px)",
-          "path": "/images/dogs/Liberty/webp/liberty-001-900x675.webp"
-        }, {
-          "condition": "(max-width:1800px)",
-          "path": "/images/dogs/Liberty/webp/liberty-001-1800x1350.webp"
-        }, {
-          "condition": "",
-          "path": "/images/dogs/Liberty/webp/liberty-001-2500x1875.webp"
-        }, {
-          "condition": "(max-width:150px)",
-          "path": "/images/dogs/Liberty/png/liberty-001-150x112.png"
-        }, {
-          "condition": "(max-width:450px)",
-          "path": "/images/dogs/Liberty/png/liberty-001-450x337.png"
-        }, {
-          "condition": "(max-width:900px)",
-          "path": "/images/dogs/Liberty/png/liberty-001-900x675.png"
-        }, {
-          "condition": "(max-width:1800px)",
-          "path": "/images/dogs/Liberty/png/liberty-001-1800x1350.png"
-        }, {
-          "condition": "",
-          "path": "/images/dogs/Liberty/png/liberty-001-2500x1875.png"
-        }
-      ]
-    },
     "alt": "Liberty",
     "classes": [
       "dog",
@@ -300,103 +141,66 @@
       "parent",
       "liberty"
     ],
-    "width": 4160,
-    "height": 3120,
-    "dpi": 96,
     "centerOfFocus": {
       "x": 60,
       "y": 10
-    }
-  }, {
-    "name": "liberty002",
-    "path": "/images/dogs/Liberty/jpg/liberty-002-2500x1875.jpg",
-    "picture": {
-      "sources": [
-        {
-          "condition": "(max-width:150px)",
-          "path": "/images/dogs/Liberty/webp/liberty-002-150x112.webp"
-        }, {
-          "condition": "(max-width:450px)",
-          "path": "/images/dogs/Liberty/webp/liberty-002-450x337.webp"
-        }, {
-          "condition": "(max-width:900px)",
-          "path": "/images/dogs/Liberty/webp/liberty-002-900x675.webp"
-        }, {
-          "condition": "(max-width:1800px)",
-          "path": "/images/dogs/Liberty/webp/liberty-002-1800x1350.webp"
-        }, {
-          "condition": "",
-          "path": "/images/dogs/Liberty/webp/liberty-002-2500x1875.webp"
-        }, {
-          "condition": "(max-width:150px)",
-          "path": "/images/dogs/Liberty/png/liberty-002-150x112.png"
-        }, {
-          "condition": "(max-width:450px)",
-          "path": "/images/dogs/Liberty/png/liberty-002-450x337.png"
-        }, {
-          "condition": "(max-width:900px)",
-          "path": "/images/dogs/Liberty/png/liberty-002-900x675.png"
-        }, {
-          "condition": "(max-width:1800px)",
-          "path": "/images/dogs/Liberty/png/liberty-002-1800x1350.png"
-        }, {
-          "condition": "",
-          "path": "/images/dogs/Liberty/png/liberty-002-2500x1875.png"
-        }
-      ]
     },
-    "alt": "Liberty",
-    "classes": [
-      "dog",
-      "female",
-      "parent",
-      "liberty"
-    ],
-    "width": 4160,
-    "height": 3120,
-    "dpi": 96,
-    "centerOfFocus": {
-      "x": 50,
-      "y": 50
-    }
+    "defaultPath": "/images/dogs/Liberty/png/liberty-001-2500x1875.png",
+    "imageSet": [
+      {
+        "path": "/images/dogs/Liberty/webp/liberty-001-2500x1875.webp",
+        "type": "webp",
+        "width": 2500,
+        "height": 1875
+      }, {
+        "path": "/images/dogs/Liberty/webp/liberty-001-1800x1350.webp",
+        "type": "webp",
+        "width": 1800,
+        "height": 1350
+      }, {
+        "path": "/images/dogs/Liberty/webp/liberty-001-900x675.webp",
+        "type": "webp",
+        "width": 900,
+        "height": 675
+      }, {
+        "path": "/images/dogs/Liberty/webp/liberty-001-450x337.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 337
+      }, {
+        "path": "/images/dogs/Liberty/webp/liberty-001-150x112.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 112
+      }, {
+        "path": "/images/dogs/Liberty/png/liberty-001-2500x1875.png",
+        "type": "png",
+        "width": 2500,
+        "height": 1875
+      }, {
+        "path": "/images/dogs/Liberty/png/liberty-001-1800x1350.png",
+        "type": "png",
+        "width": 1800,
+        "height": 1350
+      }, {
+        "path": "/images/dogs/Liberty/png/liberty-001-900x675.png",
+        "type": "png",
+        "width": 900,
+        "height": 675
+      }, {
+        "path": "/images/dogs/Liberty/png/liberty-001-450x337.png",
+        "type": "png",
+        "width": 450,
+        "height": 337
+      }, {
+        "path": "/images/dogs/Liberty/png/liberty-001-150x112.png",
+        "type": "png",
+        "width": 150,
+        "height": 112
+      }
+    ]
   }, {
     "name": "liberty003",
-    "path": "/images/dogs/Liberty/jpg/liberty-003-2500x1875.jpg",
-    "picture": {
-      "sources": [
-        {
-          "condition": "(max-width:150px)",
-          "path": "/images/dogs/Liberty/webp/liberty-003-150x112.webp"
-        }, {
-          "condition": "(max-width:450px)",
-          "path": "/images/dogs/Liberty/webp/liberty-003-450x337.webp"
-        }, {
-          "condition": "(max-width:900px)",
-          "path": "/images/dogs/Liberty/webp/liberty-003-900x675.webp"
-        }, {
-          "condition": "(max-width:1800px)",
-          "path": "/images/dogs/Liberty/webp/liberty-003-1800x1350.webp"
-        }, {
-          "condition": "",
-          "path": "/images/dogs/Liberty/webp/liberty-003-2500x1875.webp"
-        }, {
-          "condition": "(max-width:150px)",
-          "path": "/images/dogs/Liberty/png/liberty-003-150x112.png"
-        }, {
-          "condition": "(max-width:450px)",
-          "path": "/images/dogs/Liberty/png/liberty-003-450x337.png"
-        }, {
-          "condition": "(max-width:900px)",
-          "path": "/images/dogs/Liberty/png/liberty-003-900x675.png"
-        }, {
-          "condition": "(max-width:1800px)",
-          "path": "/images/dogs/Liberty/png/liberty-003-1800x1350.png"
-        }, {
-          "condition": "",
-          "path": "/images/dogs/Liberty/png/liberty-003-2500x1875.png"
-        }
-      ]
-    },
     "alt": "Liberty",
     "classes": [
       "dog",
@@ -404,53 +208,323 @@
       "parent",
       "liberty"
     ],
-    "width": 4160,
-    "height": 3120,
-    "dpi": 96,
     "centerOfFocus": {
       "x": 50,
       "y": 15
-    }
+    },
+    "defaultPath": "/images/dogs/Liberty/png/liberty-003-150x112.png",
+    "imageSet": [
+      {
+        "path": "/images/dogs/Liberty/webp/liberty-003-2500x1875.webp",
+        "type": "webp",
+        "width": 2500,
+        "height": 1875
+      }, {
+        "path": "/images/dogs/Liberty/webp/liberty-003-1800x1350.webp",
+        "type": "webp",
+        "width": 1800,
+        "height": 1350
+      }, {
+        "path": "/images/dogs/Liberty/webp/liberty-003-900x675.webp",
+        "type": "webp",
+        "width": 900,
+        "height": 675
+      }, {
+        "path": "/images/dogs/Liberty/webp/liberty-003-450x337.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 337
+      }, {
+        "path": "/images/dogs/Liberty/webp/liberty-003-150x112.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 112
+      }, {
+        "path": "/images/dogs/Liberty/png/liberty-003-2500x1875.png",
+        "type": "png",
+        "width": 2500,
+        "height": 1875
+      }, {
+        "path": "/images/dogs/Liberty/png/liberty-003-1800x1350.png",
+        "type": "png",
+        "width": 1800,
+        "height": 1350
+      }, {
+        "path": "/images/dogs/Liberty/png/liberty-003-900x675.png",
+        "type": "png",
+        "width": 900,
+        "height": 675
+      }, {
+        "path": "/images/dogs/Liberty/png/liberty-003-450x337.png",
+        "type": "png",
+        "width": 450,
+        "height": 337
+      }, {
+        "path": "/images/dogs/Liberty/png/liberty-003-150x112.png",
+        "type": "png",
+        "width": 150,
+        "height": 112
+      }
+    ]
+  }, {
+    "name": "liberty002",
+    "alt": "Liberty",
+    "classes": [
+      "dog",
+      "female",
+      "parent",
+      "liberty"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/dogs/Liberty/png/liberty-002-150x112.png",
+    "imageSet": [
+      {
+        "path": "/images/dogs/Liberty/webp/liberty-002-2500x1875.webp",
+        "type": "webp",
+        "width": 2500,
+        "height": 1875
+      }, {
+        "path": "/images/dogs/Liberty/webp/liberty-002-1800x1350.webp",
+        "type": "webp",
+        "width": 1800,
+        "height": 1350
+      }, {
+        "path": "/images/dogs/Liberty/webp/liberty-002-900x675.webp",
+        "type": "webp",
+        "width": 900,
+        "height": 675
+      }, {
+        "path": "/images/dogs/Liberty/webp/liberty-002-450x337.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 337
+      }, {
+        "path": "/images/dogs/Liberty/webp/liberty-002-150x112.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 112
+      }, {
+        "path": "/images/dogs/Liberty/png/liberty-002-2500x1875.png",
+        "type": "png",
+        "width": 2500,
+        "height": 1875
+      }, {
+        "path": "/images/dogs/Liberty/png/liberty-002-1800x1350.png",
+        "type": "png",
+        "width": 1800,
+        "height": 1350
+      }, {
+        "path": "/images/dogs/Liberty/png/liberty-002-900x675.png",
+        "type": "png",
+        "width": 900,
+        "height": 675
+      }, {
+        "path": "/images/dogs/Liberty/png/liberty-002-450x337.png",
+        "type": "png",
+        "width": 450,
+        "height": 337
+      }, {
+        "path": "/images/dogs/Liberty/png/liberty-002-150x112.png",
+        "type": "png",
+        "width": 150,
+        "height": 112
+      }
+    ]
+  }, {
+    "name": "liberty_baby001",
+    "alt": "Liberty",
+    "classes": [
+      "dog",
+      "female",
+      "parent",
+      "liberty"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 5
+    },
+    "defaultPath": "/images/dogs/Liberty/png/liberty-puppy-001-83x150.png",
+    "imageSet": [
+      {
+        "path": "/images/dogs/Liberty/webp/liberty-puppy-001-503x900.webp",
+        "type": "webp",
+        "width": 503,
+        "height": 900
+      }, {
+        "path": "/images/dogs/Liberty/webp/liberty-puppy-001-251x450.webp",
+        "type": "webp",
+        "width": 251,
+        "height": 450
+      }, {
+        "path": "/images/dogs/Liberty/webp/liberty-puppy-001-83x150.webp",
+        "type": "webp",
+        "width": 83,
+        "height": 150
+      }, {
+        "path": "/images/dogs/Liberty/png/liberty-puppy-001-503x900.png",
+        "type": "png",
+        "width": 503,
+        "height": 900
+      }, {
+        "path": "/images/dogs/Liberty/png/liberty-puppy-001-251x450.png",
+        "type": "png",
+        "width": 251,
+        "height": 450
+      }, {
+        "path": "/images/dogs/Liberty/png/liberty-puppy-001-83x150.png",
+        "type": "png",
+        "width": 83,
+        "height": 150
+      }
+    ]
+  }, {
+    "name": "liberty_baby002",
+    "alt": "Liberty",
+    "classes": [
+      "dog",
+      "female",
+      "parent",
+      "liberty"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 5
+    },
+    "defaultPath": "/images/dogs/Liberty/png/liberty-puppy-002-77x150.png",
+    "imageSet": [
+      {
+        "path": "/images/dogs/Liberty/webp/liberty-puppy-002-470x908.webp",
+        "type": "webp",
+        "width": 470,
+        "height": 908
+      }, {
+        "path": "/images/dogs/Liberty/webp/liberty-puppy-002-232x450.webp",
+        "type": "webp",
+        "width": 232,
+        "height": 450
+      }, {
+        "path": "/images/dogs/Liberty/webp/liberty-puppy-002-77x150.webp",
+        "type": "webp",
+        "width": 77,
+        "height": 150
+      }, {
+        "path": "/images/dogs/Liberty/png/liberty-puppy-002-470x908.png",
+        "type": "png",
+        "width": 470,
+        "height": 908
+      }, {
+        "path": "/images/dogs/Liberty/png/liberty-puppy-002-232x450.png",
+        "type": "png",
+        "width": 232,
+        "height": 450
+      }, {
+        "path": "/images/dogs/Liberty/png/liberty-puppy-002-77x150.png",
+        "type": "png",
+        "width": 77,
+        "height": 150
+      }
+    ]
+  }, {
+    "name": "liberty_baby004",
+    "alt": "Liberty",
+    "classes": [
+      "dog",
+      "female",
+      "parent",
+      "liberty"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/dogs/Liberty/png/liberty-puppy-004-91x150.png",
+    "imageSet": [
+      {
+        "path": "/images/dogs/Liberty/webp/liberty-puppy-004-591x966.webp",
+        "type": "webp",
+        "width": 591,
+        "height": 966
+      }, {
+        "path": "/images/dogs/Liberty/webp/liberty-puppy-004-275x450.webp",
+        "type": "webp",
+        "width": 275,
+        "height": 450
+      }, {
+        "path": "/images/dogs/Liberty/webp/liberty-puppy-004-91x150.webp",
+        "type": "webp",
+        "width": 91,
+        "height": 150
+      }, {
+        "path": "/images/dogs/Liberty/png/liberty-puppy-004-591x966.png",
+        "type": "png",
+        "width": 591,
+        "height": 966
+      }, {
+        "path": "/images/dogs/Liberty/png/liberty-puppy-004-275x450.png",
+        "type": "png",
+        "width": 275,
+        "height": 450
+      }, {
+        "path": "/images/dogs/Liberty/png/liberty-puppy-004-91x150.png",
+        "type": "png",
+        "width": 91,
+        "height": 150
+      }
+    ]
+  }, {
+    "name": "liberty_baby005",
+    "alt": "Liberty",
+    "classes": [
+      "dog",
+      "female",
+      "parent",
+      "liberty"
+    ],
+    "centerOfFocus": {
+      "x": 55,
+      "y": 15
+    },
+    "defaultPath": "/images/dogs/Liberty/png/liberty-puppy-005-150x123.png",
+    "imageSet": [
+      {
+        "path": "/images/dogs/Liberty/webp/liberty-puppy-005-956x790.webp",
+        "type": "webp",
+        "width": 956,
+        "height": 790
+      }, {
+        "path": "/images/dogs/Liberty/webp/liberty-puppy-005-450x371.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 371
+      }, {
+        "path": "/images/dogs/Liberty/webp/liberty-puppy-005-150x123.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 123
+      }, {
+        "path": "/images/dogs/Liberty/png/liberty-puppy-005-956x790.png",
+        "type": "png",
+        "width": 956,
+        "height": 790
+      }, {
+        "path": "/images/dogs/Liberty/png/liberty-puppy-005-450x371.png",
+        "type": "png",
+        "width": 450,
+        "height": 371
+      }, {
+        "path": "/images/dogs/Liberty/png/liberty-puppy-005-150x123.png",
+        "type": "png",
+        "width": 150,
+        "height": 123
+      }
+    ]
   },
- 
+  
   {
     "name": "king_kong",
-    "path": "/images/dogs/External/King_Kong/jpg/King_Kong-2048x2048.jpeg",
-    "picture": {
-      "sources": [
-        {
-          "condition": "(max-width:150px)",
-          "path": "/images/dogs/External/King_Kong/webp/King_Kong-150x150.webp"
-        }, {
-          "condition": "(max-width:450px)",
-          "path": "/images/dogs/External/King_Kong/webp/King_Kong-450x450.webp"
-        }, {
-          "condition": "(max-width:900px)",
-          "path": "/images/dogs/External/King_Kong/webp/King_Kong-900x900.webp"
-        }, {
-          "condition": "(max-width:1800px)",
-          "path": "/images/dogs/External/King_Kong/webp/King_Kong-1800x1800.webp"
-        }, {
-          "condition": "",
-          "path": "/images/dogs/External/King_Kong/webp/King_Kong-2048x2048.webp"
-        }, {
-          "condition": "(max-width:150px)",
-          "path": "/images/dogs/External/King_Kong/png/King_Kong-150x150.png"
-        }, {
-          "condition": "(max-width:450px)",
-          "path": "/images/dogs/External/King_Kong/png/King_Kong-450x450.png"
-        }, {
-          "condition": "(max-width:900px)",
-          "path": "/images/dogs/External/King_Kong/png/King_Kong-900x900.png"
-        }, {
-          "condition": "(max-width:1800px)",
-          "path": "/images/dogs/External/King_Kong/png/King_Kong-1800x1800.png"
-        }, {
-          "condition": "",
-          "path": "/images/dogs/External/King_Kong/png/King_Kong-2048x2048.png"
-        }
-      ]
-    },
     "alt": "King Kong",
     "classes": [
       "external",
@@ -458,12 +532,63 @@
       "parent",
       "king kong"
     ],
-    "width": 0,
-    "height": 0,
     "centerOfFocus": {
       "x": 50,
-      "y": 1
-    }
+      "y": 25
+    },
+    "defaultPath": "/images/dogs/External/King_Kong/png/King_Kong-150x150.png",
+    "imageSet": [
+      {
+        "path": "/images/dogs/External/King_Kong/webp/King_Kong-2048x2048.webp",
+        "type": "webp",
+        "width": 2048,
+        "height": 2048
+      }, {
+        "path": "/images/dogs/External/King_Kong/webp/King_Kong-1800x1800.webp",
+        "type": "webp",
+        "width": 1800,
+        "height": 1800
+      }, {
+        "path": "/images/dogs/External/King_Kong/webp/King_Kong-900x900.webp",
+        "type": "webp",
+        "width": 900,
+        "height": 900
+      }, {
+        "path": "/images/dogs/External/King_Kong/webp/King_Kong-450x450.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 450
+      }, {
+        "path": "/images/dogs/External/King_Kong/webp/King_Kong-150x150.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 150
+      }, {
+        "path": "/images/dogs/External/King_Kong/png/King_Kong-2048x2048.png",
+        "type": "png",
+        "width": 2048,
+        "height": 2048
+      }, {
+        "path": "/images/dogs/External/King_Kong/png/King_Kong-1800x1800.png",
+        "type": "png",
+        "width": 1800,
+        "height": 1800
+      }, {
+        "path": "/images/dogs/External/King_Kong/png/King_Kong-900x900.png",
+        "type": "png",
+        "width": 900,
+        "height": 900
+      }, {
+        "path": "/images/dogs/External/King_Kong/png/King_Kong-450x450.png",
+        "type": "png",
+        "width": 450,
+        "height": 450
+      }, {
+        "path": "/images/dogs/External/King_Kong/png/King_Kong-150x150.png",
+        "type": "png",
+        "width": 150,
+        "height": 150
+      }
+    ]
   }
-
 ]

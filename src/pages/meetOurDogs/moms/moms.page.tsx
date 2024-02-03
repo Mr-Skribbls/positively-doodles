@@ -15,7 +15,6 @@ const Moms:FC<MomsProps> = () => {
     <div className="moms-page site-container">
       <PageTitle title={`${constants.companyName} Moms`} />
       {moms.map((dog, key) => <ItemCardList key={key} dog={dog} />)}
-      {/* {moms.map((dog, key) => <ParallaxItem key={key} image={dog.images.main} dog={dog} />)} */}
     </div>
   );
 };
