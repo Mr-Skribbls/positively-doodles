@@ -596,13 +596,14 @@
     "name": "Liberty_KingKong_Maple_4weeks",
     "alt": "Liberty and King Kong puppy Maple",
     "classes": [
+      "dog",
       "maple",
       "puppy",
       "liberty",
       "king kong"
     ],
     "centerOfFocus": {
-      "x": 50,
+      "x": 35,
       "y": 50
     },
     "defaultPath": "/images/puppies/liberty_king-kong/webp/150/Liberty_KingKong_Maple_4weeks.png",
@@ -633,13 +634,14 @@
     "name": "Liberty_KingKong_TinyTim_4weeks",
     "alt": "Liberty and King Kong puppy Tiny Tim",
     "classes": [
+      "dog",
       "tiny tim",
       "puppy",
       "liberty",
       "king kong"
     ],
     "centerOfFocus": {
-      "x": 50,
+      "x": 65,
       "y": 50
     },
     "defaultPath": "/images/puppies/liberty_king-kong/webp/150/Liberty_KingKong_TinyTim_4weeks.png",
@@ -670,13 +672,14 @@
     "name": "Liberty_KingKong_Licorice_4weeks",
     "alt": "Liberty and King Kong puppy Licorice",
     "classes": [
+      "dog",
       "licorice",
       "puppy",
       "liberty",
       "king kong"
     ],
     "centerOfFocus": {
-      "x": 50,
+      "x": 45,
       "y": 50
     },
     "defaultPath": "/images/puppies/liberty_king-kong/webp/150/Liberty_KingKong_Licorice_4weeks.png",
@@ -707,13 +710,14 @@
     "name": "Liberty_KingKong_Jingle_4weeks",
     "alt": "Liberty and King Kong puppy Jingle",
     "classes": [
+      "dog",
       "jingle",
       "puppy",
       "liberty",
       "king kong"
     ],
     "centerOfFocus": {
-      "x": 50,
+      "x": 80,
       "y": 50
     },
     "defaultPath": "/images/puppies/liberty_king-kong/webp/150/Liberty_KingKong_Jingle_4weeks.png",
@@ -744,13 +748,14 @@
     "name": "Liberty_KingKong_Gloria_4weeks",
     "alt": "Liberty and King Kong puppy Gloria",
     "classes": [
+      "dog",
       "gloria",
       "puppy",
       "liberty",
       "king kong"
     ],
     "centerOfFocus": {
-      "x": 50,
+      "x": 90,
       "y": 50
     },
     "defaultPath": "/images/puppies/liberty_king-kong/webp/150/Liberty_KingKong_Gloria_4weeks.png",
@@ -781,13 +786,14 @@
     "name": "Liberty_KingKong_Buddy_4weeks",
     "alt": "Liberty and King Kong puppy Buddy",
     "classes": [
+      "dog",
       "buddy",
       "puppy",
       "liberty",
       "king kong"
     ],
     "centerOfFocus": {
-      "x": 50,
+      "x": 60,
       "y": 50
     },
     "defaultPath": "/images/puppies/liberty_king-kong/webp/150/Liberty_KingKong_Buddy_4weeks.png",
