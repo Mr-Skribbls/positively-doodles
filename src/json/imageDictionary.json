@@ -134,7 +134,7 @@
 
   {
     "name": "liberty001",
-    "alt": "Liberty",
+    "alt": "Liberty puppy",
     "classes": [
       "dog",
       "female",
@@ -334,6 +334,120 @@
       }
     ]
   }, {
+    "name": "Liberty_laying_floor",
+    "alt": "Liberty laying on the floor",
+    "classes": [
+      "dog",
+      "female",
+      "parent",
+      "liberty"
+    ],
+    "centerOfFocus": {
+      "x": 30,
+      "y": 30
+    },
+    "defaultPath": "/images/dogs/Liberty/png/150/Liberty_laying_floor.png",
+    "imageSet": [
+      {
+        "path": "/images/dogs/Liberty/webp/1800/Liberty_laying_floor.webp",
+        "type": "webp",
+        "width": 1800,
+        "height": 1350
+      }, {
+        "path": "/images/dogs/Liberty/webp/900/Liberty_laying_floor.webp",
+        "type": "webp",
+        "width": 900,
+        "height": 675
+      }, {
+        "path": "/images/dogs/Liberty/webp/450/Liberty_laying_floor.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 337
+      }, {
+        "path": "/images/dogs/Liberty/webp/150/Liberty_laying_floor.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 112
+      }, {
+        "path": "/images/dogs/Liberty/png/1800/Liberty_laying_floor.png",
+        "type": "png",
+        "width": 1800,
+        "height": 1350
+      }, {
+        "path": "/images/dogs/Liberty/png/900/Liberty_laying_floor.png",
+        "type": "png",
+        "width": 900,
+        "height": 675
+      }, {
+        "path": "/images/dogs/Liberty/png/450/Liberty_laying_floor.png",
+        "type": "png",
+        "width": 450,
+        "height": 337
+      }, {
+        "path": "/images/dogs/Liberty/png/150/Liberty_laying_floor.png",
+        "type": "png",
+        "width": 150,
+        "height": 112
+      }
+    ]
+  }, {
+    "name": "Liberty_sitting_pretty",
+    "alt": "Liberty laying on the floor",
+    "classes": [
+      "dog",
+      "female",
+      "parent",
+      "liberty"
+    ],
+    "centerOfFocus": {
+      "x": 45,
+      "y": 0
+    },
+    "defaultPath": "/images/dogs/Liberty/png/150/Liberty_sitting_pretty.png",
+    "imageSet": [
+      {
+        "path": "/images/dogs/Liberty/webp/1800/Liberty_sitting_pretty.webp",
+        "type": "webp",
+        "width": 1064,
+        "height": 1800
+      }, {
+        "path": "/images/dogs/Liberty/webp/900/Liberty_sitting_pretty.webp",
+        "type": "webp",
+        "width": 532,
+        "height": 900
+      }, {
+        "path": "/images/dogs/Liberty/webp/450/Liberty_sitting_pretty.webp",
+        "type": "webp",
+        "width": 266,
+        "height": 450
+      }, {
+        "path": "/images/dogs/Liberty/webp/150/Liberty_sitting_pretty.webp",
+        "type": "webp",
+        "width": 88,
+        "height": 150
+      }, {
+        "path": "/images/dogs/Liberty/png/1800/Liberty_sitting_pretty.png",
+        "type": "png",
+        "width": 1064,
+        "height": 1800
+      }, {
+        "path": "/images/dogs/Liberty/png/900/Liberty_sitting_pretty.png",
+        "type": "png",
+        "width": 532,
+        "height": 900
+      }, {
+        "path": "/images/dogs/Liberty/png/450/Liberty_sitting_pretty.png",
+        "type": "png",
+        "width": 266,
+        "height": 450
+      }, {
+        "path": "/images/dogs/Liberty/png/150/Liberty_sitting_pretty.png",
+        "type": "png",
+        "width": 88,
+        "height": 150
+      }
+    ]
+  }, {
     "name": "liberty_baby001",
     "alt": "Liberty",
     "classes": [
@@ -524,6 +638,122 @@
   },
   
   {
+    "name": "Luna_fluffy_cut",
+    "alt": "Luna with a fluffy haircut",
+    "classes": [
+      "dog",
+      "female",
+      "parent",
+      "luna"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 30
+    },
+    "defaultPath": "/images/dogs/Luna/png/150/Luna_fluffy_cut.png",
+    "imageSet": [
+      {
+        "path": "/images/dogs/Luna/webp/1800/Luna_fluffy_cut.webp",
+        "type": "webp",
+        "width": 1350,
+        "height": 1800
+      }, {
+        "path": "/images/dogs/Luna/webp/900/Luna_fluffy_cut.webp",
+        "type": "webp",
+        "width": 675,
+        "height": 900
+      }, {
+        "path": "/images/dogs/Luna/webp/450/Luna_fluffy_cut.webp",
+        "type": "webp",
+        "width": 337,
+        "height": 450
+      }, {
+        "path": "/images/dogs/Luna/webp/150/Luna_fluffy_cut.webp",
+        "type": "webp",
+        "width": 112,
+        "height": 150
+      }, {
+        "path": "/images/dogs/Luna/png/1800/Luna_fluffy_cut.png",
+        "type": "png",
+        "width": 1350,
+        "height": 1800
+      }, {
+        "path": "/images/dogs/Luna/png/900/Luna_fluffy_cut.png",
+        "type": "png",
+        "width": 675,
+        "height": 900
+      }, {
+        "path": "/images/dogs/Luna/png/450/Luna_fluffy_cut.png",
+        "type": "png",
+        "width": 337,
+        "height": 450
+      }, {
+        "path": "/images/dogs/Luna/png/150/Luna_fluffy_cut.png",
+        "type": "png",
+        "width": 112,
+        "height": 150
+      }
+    ]
+  }, {
+    "name": "Luna_laying_floor",
+    "alt": "Luna laying on the floor",
+    "classes": [
+      "dog",
+      "female",
+      "parent",
+      "luna"
+    ],
+    "centerOfFocus": {
+      "x": 25,
+      "y": 50
+    },
+    "defaultPath": "/images/dogs/Luna/png/150/Luna_laying_floor.png",
+    "imageSet": [
+      {
+        "path": "/images/dogs/Luna/webp/1800/Luna_laying_floor.webp",
+        "type": "webp",
+        "width": 1800,
+        "height": 1350
+      }, {
+        "path": "/images/dogs/Luna/webp/900/Luna_laying_floor.webp",
+        "type": "webp",
+        "width": 900,
+        "height": 675
+      }, {
+        "path": "/images/dogs/Luna/webp/450/Luna_laying_floor.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 337
+      }, {
+        "path": "/images/dogs/Luna/webp/150/Luna_laying_floor.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 112
+      }, {
+        "path": "/images/dogs/Luna/png/1800/Luna_laying_floor.png",
+        "type": "png",
+        "width": 1800,
+        "height": 1350
+      }, {
+        "path": "/images/dogs/Luna/png/900/Luna_laying_floor.png",
+        "type": "png",
+        "width": 900,
+        "height": 675
+      }, {
+        "path": "/images/dogs/Luna/png/450/Luna_laying_floor.png",
+        "type": "png",
+        "width": 450,
+        "height": 337
+      }, {
+        "path": "/images/dogs/Luna/png/150/Luna_laying_floor.png",
+        "type": "png",
+        "width": 150,
+        "height": 112
+      }
+    ]
+  },
+  
+  {
     "name": "king_kong",
     "alt": "King Kong",
     "classes": [
@@ -599,8 +829,8 @@
       "dog",
       "maple",
       "puppy",
-      "liberty",
-      "king kong"
+      "liberty puppy",
+      "king kong puppy"
     ],
     "centerOfFocus": {
       "x": 35,
@@ -637,8 +867,8 @@
       "dog",
       "tiny tim",
       "puppy",
-      "liberty",
-      "king kong"
+      "liberty puppy",
+      "king kong puppy"
     ],
     "centerOfFocus": {
       "x": 65,
@@ -675,8 +905,8 @@
       "dog",
       "licorice",
       "puppy",
-      "liberty",
-      "king kong"
+      "liberty puppy",
+      "king kong puppy"
     ],
     "centerOfFocus": {
       "x": 45,
@@ -713,8 +943,8 @@
       "dog",
       "jingle",
       "puppy",
-      "liberty",
-      "king kong"
+      "liberty puppy",
+      "king kong puppy"
     ],
     "centerOfFocus": {
       "x": 80,
@@ -751,8 +981,8 @@
       "dog",
       "gloria",
       "puppy",
-      "liberty",
-      "king kong"
+      "liberty puppy",
+      "king kong puppy"
     ],
     "centerOfFocus": {
       "x": 90,
@@ -789,8 +1019,8 @@
       "dog",
       "buddy",
       "puppy",
-      "liberty",
-      "king kong"
+      "liberty puppy",
+      "king kong puppy"
     ],
     "centerOfFocus": {
       "x": 60,

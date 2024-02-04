@@ -171,8 +171,10 @@ export const dogs:Dog[] = [
       class: BreedClass.AKC,
     },
     images: {
-      main: 'liberty003',
+      main: 'Liberty_sitting_pretty',
       gallery: [
+        'Liberty_sitting_pretty',
+        'Liberty_laying_floor',
         'liberty_baby001',
         'liberty_baby002',
         'liberty_baby003',
