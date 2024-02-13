@@ -1,0 +1,7 @@
+.copyright {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-borders);
+  color: var(--color-canvas);
+  padding: 5px;
+}

@@ -1,7 +1,12 @@
 footer {
-  height: 200px;
-  background-color: var(--color-menu-bg);
+  display: flex;
+  flex-direction: column;
   border-top: 1px solid var(--color-borders);
+  background-color: var(--color-menu-bg);
+  height: 200px;
+}
+
+footer .footer-row {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -32,6 +37,8 @@ footer .logo-container {
   border: 1px solid var(--color-borders);
   border-radius: 75px;
   background-color: var(--color-canvas);
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 footer .logo-container .logo {
