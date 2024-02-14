@@ -112,6 +112,54 @@
   },
 
   {
+    "name": "goodDogBadge",
+    "alt": "Positively Doodles, Good Dog Badge",
+    "classes": [
+      "logo",
+      "good dog badge",
+      "badge"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/logos/png/150/positively-doodles-badge.png",
+    "imageSet": [
+      {
+        "path": "/images/logos/webp/900/positively-doodles-badge.webp",
+        "type": "webp",
+        "width": 900,
+        "height": 888
+      }, {
+        "path": "/images/logos/webp/450/positively-doodles-badge.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 444
+      }, {
+        "path": "/images/logos/webp/150/positively-doodles-badge.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 148
+      }, {
+        "path": "/images/logos/png/900/positively-doodles-badge.png",
+        "type": "png",
+        "width": 900,
+        "height": 888
+      }, {
+        "path": "/images/logos/png/450/positively-doodles-badge.png",
+        "type": "png",
+        "width": 450,
+        "height": 444
+      }, {
+        "path": "/images/logos/png/150/positively-doodles-badge.png",
+        "type": "png",
+        "width": 150,
+        "height": 148
+      }
+    ]
+  },
+
+  {
     "name": "home",
     "alt": "home",
     "classes": [

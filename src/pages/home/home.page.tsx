@@ -5,6 +5,7 @@ import ContentBarTitleLeft from '../../components/contentComponents/contentBarTi
 import content, { ArticleRecord, Section } from '../../services/content.service';
 import { Parallax } from 'react-parallax';
 import useImage, { ImageData } from '../../hooks/useImage';
+import SourceSetImage from '../../components/sourceSetImage/sourceSetImage.component';
 
 interface HomeProps {
 
@@ -47,6 +48,14 @@ const Home:FC<HomeProps> = () => {
           imageWidth: 450,
         }} />}
 
+      </div>
+
+      <div className="badges">
+        <div className="badge">
+          <a target='_blank' href="https://www.gooddog.com/breeders/positively-doodles-illinois">
+            <SourceSetImage imageName='goodDogBadge' sizesRules={['(max-width: 550px) 90%', '250px']} />
+          </a>
+        </div>
       </div>
 
     </div>
