@@ -419,37 +419,37 @@ export const litters:LitterInfo[] = [
         available: true,
         gender: 'M',
         description: "Jingle is the biggest of the litter.  He is one of the first to alert when someone walks in the room.  He loves to give puppy kisses and cuddles, but he also loves to romp around with his litter mates.",
-        imageName: 'Liberty_KingKong_Jingle_4weeks',
+        imageName: 'Liberty_KingKong_Jingle_6weeks',
       }, {
         name: 'Gloria',
         available: true,
         gender: 'F',
         description: "Gloria is spunky and loves to be around those she knows.  She will be perfect for someone who will be with her all day long.",
-        imageName: 'Liberty_KingKong_Gloria_4weeks',
+        imageName: 'Liberty_KingKong_Gloria_6weeks',
       }, {
         name: 'Licorice',
         available: true,
         gender: 'M',
         description: "Licorice is very quiet and very mellow.  He sometimes will just sit back and watch his siblings play and other times is the one trying to get another to wrestle with him.  He is very sweet and loves to give lots of kisses.  He is charting to be around 30 pounds.",
-        imageName: 'Liberty_KingKong_Licorice_4weeks',
+        imageName: 'Liberty_KingKong_Licorice_6weeks',
       }, {
         name: 'Maple',
         available: true,
         gender: 'F',
         description: "She is super smart.  Already, at only 4 weeks old, she is already going to the potty box to go to the bathroom.  She is very mellow and super sweet.",
-        imageName: 'Liberty_KingKong_Maple_4weeks',
+        imageName: 'Liberty_KingKong_Maple_6weeks',
       }, {
         name: 'Tiny Tim',
         available: false,
         gender: 'M',
         description: "Tiny Tim is super sweet.  He loves to play and loves to cuddle.  He has a wavy coat and will be between 30-35 lbs. fully grown. ",
-        imageName: 'Liberty_KingKong_TinyTim_4weeks',
+        imageName: 'Liberty_KingKong_TinyTim_6weeks',
       }, {
         name: 'Buddy',
         available: false,
         gender: 'M',
         description: "Buddy is a beautiful tri-color Sable.  He is almost always the first to go try and explore something new.  He is charting to be about 35 pounds.",
-        imageName: 'Liberty_KingKong_Buddy_4weeks',
+        imageName: 'Liberty_KingKong_Buddy_6weeks',
       }
     ]
   },
