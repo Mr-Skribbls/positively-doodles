@@ -1,0 +1,39 @@
+import SourceSetImage from '../sourceSetImage/sourceSetImage.component';
+import './imageSwitcher.css';
+import { FC, useEffect, useState } from 'react';
+
+interface ImageSwitcherProps {
+  imageName: string
+  sizesRules: string[]
+}
+
+const ImageSwitcher:FC<ImageSwitcherProps> = ({
+  imageName,
+  sizesRules,
+}) => {
+  const [currentImage, setCurrentImage] = useState(imageName);
+  const [isImageChanging, setIsImageChanging] = useState(false);
+
+  useEffect(() => {
+    setIsImageChanging(true);
+    setTimeout(() => {
+      setCurrentImage(imageName);
+      setTimeout(() => setIsImageChanging(false), 10);
+    }, 1000);
+  }, [imageName, setCurrentImage, setIsImageChanging]);
+
+  return (
+    <div className="image-switcher">
+      <div className={`slider ${isImageChanging ? 'sliding' : ''}`}>
+        <div className='image-wrapper'>
+          <SourceSetImage imageName={currentImage} sizesRules={sizesRules} />
+        </div>
+        <div className="image-wrapper">
+          <SourceSetImage imageName={imageName} sizesRules={sizesRules} />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ImageSwitcher;

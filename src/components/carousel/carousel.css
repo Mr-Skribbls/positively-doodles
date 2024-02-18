@@ -1,0 +1,35 @@
+.carousel {
+  display: grid;
+  grid-template-columns: repeat(20, minmax(1%, 5%));
+  grid-template-rows: repeat(10, minmax(1%, 10%));
+  grid-auto-flow: dense;
+  gap: 10px;
+  margin: 10px;
+  height: 30vw;
+}
+
+.carousel .item {
+  grid-column-end: span 4;
+  grid-row-end: span 4;
+}
+
+.carousel .tall {
+  grid-column-end: span 4;
+  grid-row-end: span 6;
+}
+
+.carousel .wide-tall {
+  grid-column-end: span 6;
+  grid-row-end: span 10;
+}
+
+.carousel .wide {
+  grid-column-end: span 6;
+  grid-row-end: span 5;
+}
+
+@media(max-width: 760px) {
+  .carousel {
+    height: 50vw;
+  }
+}
