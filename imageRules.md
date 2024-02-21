@@ -1,7 +1,7 @@
 # Rules
 
 ## Images
-All images need to have to include tiny, small, medium, large, and extra large sizes of the same image.
+All images need to include tiny, and small. Optionally include, medium, large, and extra large sizes.
 
 ### Tiny
 > smallest image size
@@ -27,3 +27,8 @@ All images need to have to include tiny, small, medium, large, and extra large s
 * max-file-size: 1250 KB
 
 
+## PDF
+
+### PDF tool
+https://www.ilovepdf.com/  
+iLovePDF offers online tools for manipulating pdf files. The compress tool work very well for OFA test result PDFs
