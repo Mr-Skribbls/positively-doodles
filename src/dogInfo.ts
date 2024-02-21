@@ -76,6 +76,7 @@ export interface OFADocuments {
   hips?: string,
   heart?: string,
   thyroid?: string,
+  patellas?: string,
 }
 
 export interface DogTesting {
@@ -216,6 +217,18 @@ export const dogs:Dog[] = [
     images: {
       main: 'king_kong',
       gallery: [],
+    },
+    testing: {
+      OFA: {
+        hips: '/documents/king kong/King Kong Pennhip.pdf',
+        eyes: '/documents/king kong/KK eyes.pdf',
+        heart: '/documents/king kong/KK Heart.pdf',
+        patellas: '/documents/king kong/KK Patellas.pdf',
+      },
+      genetics: {
+        path: '/documents/king kong/King Kong Genetic Testing.pdf',
+        company: 'Animal Genetics',
+      }
     },
     additionalInformation: [
       'King Kong is an outside stud from Sun Valley Doodles',
