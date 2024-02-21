@@ -1,0 +1,41 @@
+.pdf-viewer {
+  position: relative;
+}
+
+.pdf-viewer .pdf-expand {
+  position: absolute;
+  padding: 5px 8px;
+  border-radius: 10px;
+  top: 50px;
+  left: 15px;
+  color: white;
+  z-index: 100;
+  cursor: pointer;
+  background-color: grey;
+  opacity: 0.7;
+}
+
+.pdf-viewer .pdf-viewer-modal .modal-pdf-view {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.pdf-viewer .pdf-viewer-modal .modal-pdf-view .title {
+  background-color: var(--color-canvas);
+  min-height: 75px;
+  padding-left: 100px;
+  padding-top: 24px;
+}
+
+.pdf-viewer .pdf-viewer-modal .modal-contents .close-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: rgb(50, 54, 57);
+}
+
+.pdf-viewer .pdf-viewer-modal .modal-pdf-view .pdf-wrapper {
+  flex-grow: 1;
+}
