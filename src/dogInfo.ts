@@ -1,5 +1,3 @@
-import * as Genetics from './genetics';
-
 enum BreedType {
   Poodle = 'Poodle',
   Bernese = 'Bernese',
@@ -71,18 +69,21 @@ export interface StudService {
   pickOfLitter?: 'or' | 'and',
 }
 
-export interface OFATesting {
-  elbows: 'Incomplete' | 'Normal' | 'Clear',
-  eyes: 'Incomplete' | 'Normal' | 'Clear',
-  hips: 'Incomplete' | 'Normal' | 'Clear' | 'Mild Dysplasia',
-  patellas: 'Incomplete' | 'Normal' | 'Clear',
-  heart: 'Incomplete' | 'Normal' | 'Clear' | 'Mild Murmur',
-  thyroid: 'Incomplete' | 'Normal' | 'Clear',
+export interface OFADocuments {
+  canineHealth?: string,
+  elbows?: string,
+  eyes?: string,
+  hips?: string,
+  heart?: string,
+  thyroid?: string,
 }
 
 export interface DogTesting {
-  OFA: OFATesting,
-  genetics?: Genetics.GeneticTesting,
+  OFA?: OFADocuments,
+  genetics?: {
+    path: string,
+    company: string,
+  },
 }
 
 export interface Dog {
@@ -94,7 +95,7 @@ export interface Dog {
   weight: number,
   breed: Breed,
   images: DogImages,
-  testing: DogTesting,
+  testing?: DogTesting,
 
   additionalInformation?: string[],
   studService?: StudService, // [future use] for internal studs
@@ -188,88 +189,16 @@ export const dogs:Dog[] = [
     },
     testing: {
       OFA: {
-        elbows: 'Normal',
-        eyes: 'Normal',
-        hips: 'Normal',
-        patellas: 'Normal',
-        heart: 'Normal',
-        thyroid: 'Normal',
+        canineHealth: '/documents/liberty/compressed/LADY LIBERTY XXII-CANINE HEALTH-2023-10-16.pdf',
+        elbows: '/documents/liberty/compressed/LADY LIBERTY XXII-ELBOW-2023-07-13.pdf',
+        eyes: '/documents/liberty/compressed/LADY LIBERTY XXII-EYES-2023-10-12.pdf',
+        hips: '/documents/liberty/compressed/LADY LIBERTY XXII-HIPS-2023-07-13.pdf',
+        heart: '/documents/liberty/compressed/LADY LIBERTY XXII-BASIC CARDIAC-2023-09-28.pdf',
+        thyroid: '/documents/liberty/compressed/LADY LIBERTY XXII-THYROID-2023-10-09.pdf',
       },
       genetics: {
-        healthTesting: {
-          SOD1: {
-            disease: 'Degenerative Myelopathy, DM',
-            gene: 'SOD1',
-            genotype: 'GG',
-            result: 'Clear',
-          },
-          ATF2: {
-            disease: 'Neonatal Encephalopathy with Seizures, NEWS',
-            gene: 'ATF2',
-            genotype: 'TT',
-            result: 'Clear',
-          },
-          SLC13A1: {
-            disease: 'Osteochondrodysplasia, Skeletal Dwarfism',
-            gene: 'SLC13A1',
-            genotype: 'NN',
-            result: 'Clear',
-          },
-          PRCD_Exon_1: {
-            disease: 'Progressive Retinal Atrophy, prcd',
-            gene: 'PRCD Exon 1',
-            genotype: 'GG',
-            result: 'Clear',
-          },
-          VWF: {
-            disease: 'Von Willebrand Disease Type 1',
-            gene: 'VWF',
-            genotype: 'GG',
-            result: 'Clear',
-          },
-          FGF4_chr12: {
-            disease: 'Chondrodystrophy and Intervertebral Disc Disease',
-            gene: 'FGF4 - chr12',
-            genotype: 'N/N',
-            result: 'Clear',
-          },
-          HEXB_Exon3: {
-            disease: 'GM2 Gangliosidosis',
-            gene: 'HEXB (Exon 3)',
-            genotype: 'NN',
-            result: 'Clear',
-          },
-        },
-        traitTesting: {
-          A_Locus: {
-            result: Genetics.TraitTesting.Results.A_Locus.ayat,
-            desc: Genetics.TraitTesting.Descriptions.A_Locus.ayat,
-          },
-          D_Locus: {
-            result: Genetics.TraitTesting.Results.D_Locus.DD,
-            desc: Genetics.TraitTesting.Descriptions.D_Locus.DD,
-          },
-          E_Locus: {
-            result: Genetics.TraitTesting.Results.E_Locus.Eme,
-            desc: Genetics.TraitTesting.Descriptions.E_Locus.Eme,
-          },
-          K_Locus: {
-            result: Genetics.TraitTesting.Results.K_Locus.kyky,
-            desc: Genetics.TraitTesting.Descriptions.K_Locus.kyky,
-          },
-          Furnishings: {
-            result: Genetics.TraitTesting.Results.Furnishings.FF,
-            desc: Genetics.TraitTesting.Descriptions.Furnishings.FF,
-          },
-          CoatLength: {
-            result: Genetics.TraitTesting.Results.Coat_Length.TT,
-            desc: Genetics.TraitTesting.Descriptions.Coat_Length.TT,
-          },
-          Shedding: {
-            result: Genetics.TraitTesting.Results.Shedding.CT,
-            desc: Genetics.TraitTesting.Descriptions.Shedding.CT,
-          },
-        },
+        path: '/documents/liberty/Liberty Embark Test Results.pdf',
+        company: 'embark'
       },
     },
   }, { // King Kong
@@ -287,96 +216,6 @@ export const dogs:Dog[] = [
     images: {
       main: 'king_kong',
       gallery: [],
-    },
-    testing: {
-      OFA: {
-        elbows: 'Normal',
-        eyes: 'Normal',
-        hips: 'Normal',
-        patellas: 'Normal',
-        heart: 'Normal',
-        thyroid: 'Normal',
-      },
-      genetics: {
-        healthTesting: {
-          SOD1: {
-            disease: 'Degenerative Myelopathy, DM',
-            gene: 'SOD1',
-            genotype: 'GG',
-            result: 'Clear',
-          },
-          ATF2: {
-            disease: 'Neonatal Encephalopathy with Seizures, NEWS',
-            gene: 'ATF2',
-            genotype: 'TT',
-            result: 'Clear',
-          },
-          SLC13A1: {
-            disease: 'Osteochondrodysplasia, Skeletal Dwarfism',
-            gene: 'SLC13A1',
-            genotype: 'NN',
-            result: 'Clear',
-          },
-          PRCD_Exon_1: {
-            disease: 'Progressive Retinal Atrophy, prcd',
-            gene: 'PRCD Exon 1',
-            genotype: 'GG',
-            result: 'Clear',
-          },
-          VWF: {
-            disease: 'Von Willebrand Disease Type 1',
-            gene: 'VWF',
-            genotype: 'GG',
-            result: 'Clear',
-          },
-          FGF4_chr12: {
-            disease: 'Chondrodystrophy and Intervertebral Disc Disease',
-            gene: 'FGF4 - chr12',
-            genotype: 'N/N',
-            result: 'Clear',
-          },
-          HEXB_Exon3: {
-            disease: 'GM2 Gangliosidosis',
-            gene: 'HEXB (Exon 3)',
-            genotype: 'NN',
-            result: 'Clear',
-          },
-        },
-        traitTesting: {
-          K_Locus: {
-            result: Genetics.TraitTesting.Results.K_Locus.kyky,
-            desc: Genetics.TraitTesting.Descriptions.K_Locus.kyky,
-          },
-          A_Locus: {
-            result: Genetics.TraitTesting.Results.A_Locus.atat,
-            desc: Genetics.TraitTesting.Descriptions.A_Locus.atat,
-          },
-          D_Locus: {
-            result: Genetics.TraitTesting.Results.D_Locus.DD,
-            desc: Genetics.TraitTesting.Descriptions.D_Locus.DD,
-          },
-          E_Locus: {
-            result: Genetics.TraitTesting.Results.E_Locus.EE,
-            desc: Genetics.TraitTesting.Descriptions.E_Locus.EE,
-          },
-          Furnishings: {
-            result: Genetics.TraitTesting.Results.Furnishings.FF,
-            desc: Genetics.TraitTesting.Descriptions.Furnishings.FF,
-          },
-          CoatLength: {
-            result: Genetics.TraitTesting.Results.Coat_Length.I1I1,
-            desc: Genetics.TraitTesting.Descriptions.Coat_Length.I1I1,
-          },
-          Shedding: {
-            result: Genetics.TraitTesting.Results.Shedding.nSD,
-            desc: Genetics.TraitTesting.Descriptions.Shedding.nSD,
-          },
-          Curl: {
-            result: Genetics.TraitTesting.Results.Curl.nn,
-            desc: Genetics.TraitTesting.Descriptions.Curl.nn,
-          },
-        },
-      }
     },
     additionalInformation: [
       'King Kong is an outside stud from Sun Valley Doodles',
