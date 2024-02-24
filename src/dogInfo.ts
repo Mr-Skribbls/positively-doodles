@@ -205,7 +205,7 @@ export const dogs:Dog[] = [
         thyroid: '/documents/liberty/compressed/LADY LIBERTY XXII-THYROID-2023-10-09.pdf',
       },
       genetics: {
-        path: '/documents/liberty/Liberty Embark Test Results.pdf',
+        path: '/documents/liberty/compressed/Liberty Embark Test Results.pdf',
         company: 'embark'
       },
     },
