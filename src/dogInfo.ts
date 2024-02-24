@@ -47,6 +47,12 @@ export enum LitterState {
   Complete = 'Complete',
 }
 
+export enum PuppyStatus {
+  Available = 'Available',
+  Reserved = 'Reserved',
+  Sold = 'Found Forever Home',
+}
+
 export interface Breed {
   class: BreedClass,
   size: BreedSize,
@@ -105,7 +111,7 @@ export interface Dog {
 
 export interface Puppy {
   name: string
-  available: boolean
+  status: PuppyStatus
   gender: 'M' | 'F'
   description: string
   imageName: string
@@ -268,43 +274,43 @@ export const litters:LitterInfo[] = [
     reservationFee: 500,
     puppies: [
       {
-        name: 'Jingle',
-        available: true,
-        gender: 'M',
-        description: "Jingle is the biggest of the litter.  He is one of the first to alert when someone walks in the room.  He loves to give puppy kisses and cuddles, but he also loves to romp around with his litter mates.",
-        imageName: 'Liberty_KingKong_Jingle_6weeks',
-        priceAboveStarting: 0,
-      }, {
-        name: 'Gloria',
-        available: true,
-        gender: 'F',
-        description: "Gloria is spunky and loves to be around those she knows.  She will be perfect for someone who will be with her all day long.",
-        imageName: 'Liberty_KingKong_Gloria_6weeks',
-        priceAboveStarting: 0,
-      }, {
-        name: 'Licorice',
-        available: true,
-        gender: 'M',
-        description: "Licorice is very quiet and very mellow.  He sometimes will just sit back and watch his siblings play and other times is the one trying to get another to wrestle with him.  He is very sweet and loves to give lots of kisses.  He is charting to be around 30 pounds.",
-        imageName: 'Liberty_KingKong_Licorice_6weeks',
-        priceAboveStarting: 0,
-      }, {
-        name: 'Maple',
-        available: true,
-        gender: 'F',
-        description: "She is super smart.  Already, at only 4 weeks old, she is already going to the potty box to go to the bathroom.  She is very mellow and super sweet.",
-        imageName: 'Liberty_KingKong_Maple_6weeks',
-        priceAboveStarting: 0,
-      }, {
         name: 'Tiny Tim',
-        available: false,
+        status: PuppyStatus.Sold,
         gender: 'M',
         description: "Tiny Tim is super sweet.  He loves to play and loves to cuddle.  He has a wavy coat and will be between 30-35 lbs. fully grown. ",
         imageName: 'Liberty_KingKong_TinyTim_6weeks',
         priceAboveStarting: 0,
       }, {
+        name: 'Gloria',
+        status: PuppyStatus.Available,
+        gender: 'F',
+        description: "Gloria is spunky and loves to be around those she knows.  She will be perfect for someone who will be with her all day long.",
+        imageName: 'Liberty_KingKong_Gloria_6weeks_2',
+        priceAboveStarting: 0,
+      }, {
+        name: 'Maple',
+        status: PuppyStatus.Available,
+        gender: 'F',
+        description: "She is super smart.  Already, at only 4 weeks old, she is already going to the potty box to go to the bathroom.  She is very mellow and super sweet.",
+        imageName: 'Liberty_KingKong_Maple_6weeks',
+        priceAboveStarting: 0,
+      }, {
+        name: 'Licorice',
+        status: PuppyStatus.Available,
+        gender: 'M',
+        description: "Licorice is very quiet and very mellow.  He sometimes will just sit back and watch his siblings play and other times is the one trying to get another to wrestle with him.  He is very sweet and loves to give lots of kisses.  He is charting to be around 30 pounds.",
+        imageName: 'Liberty_KingKong_Licorice_6weeks',
+        priceAboveStarting: 0,
+      }, {
+        name: 'Jingle',
+        status: PuppyStatus.Available,
+        gender: 'M',
+        description: "Jingle is the biggest of the litter.  He is one of the first to alert when someone walks in the room.  He loves to give puppy kisses and cuddles, but he also loves to romp around with his litter mates.",
+        imageName: 'Liberty_KingKong_Jingle_6weeks',
+        priceAboveStarting: 0,
+      }, {
         name: 'Buddy',
-        available: false,
+        status: PuppyStatus.Available,
         gender: 'M',
         description: "Buddy is a beautiful tri-color Sable.  He is almost always the first to go try and explore something new.  He is charting to be about 35 pounds.",
         imageName: 'Liberty_KingKong_Buddy_6weeks',

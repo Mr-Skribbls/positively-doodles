@@ -1,7 +1,7 @@
 import { FC } from 'react';
 
 import './puppiesLitterCard.css';
-import { LitterInfo, Puppy } from '../../../../dogInfo';
+import { LitterInfo, Puppy, PuppyStatus } from '../../../../dogInfo';
 import { isNil } from 'lodash';
 import SourceSetImage from '../../../sourceSetImage/sourceSetImage.component';
 import useDateHelper from '../../../../hooks/useDateHelper';
@@ -10,13 +10,14 @@ interface PuppiesLitterCardProps {
   litter: LitterInfo
 }
 
-const puppyCard = (puppy: Puppy, startingPrice: number, key: number) => {
+  const statusClass = puppy.status === PuppyStatus.Reserved || puppy.status === PuppyStatus.Sold ? 'reserved' : 'available';
+  const price = puppy.status === PuppyStatus.Available ? `$${startingPrice + puppy.priceAboveStarting}` : puppy.status;
   return (
     <figure key={key} className='puppy-card'>
       <SourceSetImage imageName={puppy.imageName} sizesRules={['250px']} />
       <figcaption>
         <h4>{puppy.name}</h4>
-        <p className={puppy.available ? 'available' : 'reserved'}>{puppy.available ? `$${startingPrice + puppy.priceAboveStarting}` : "Reserved"}</p>
+        <p className={statusClass}>{price}</p>
         <p>{puppy.gender === "M" ? "Boy" : "Girl"}</p>
         <p>{puppy.description}</p>
       </figcaption>
