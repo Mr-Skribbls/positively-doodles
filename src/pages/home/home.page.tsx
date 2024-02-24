@@ -39,6 +39,9 @@ const Home:FC<HomeProps> = () => {
             <SourceSetImage imageName='goodDogBadge' sizesRules={['(max-width: 550px) 90%', '250px']} />
           </a>
         </div>
+        <div className="badge">
+          <SourceSetImage imageName='Esa_Jensen_ABCDT' sizesRules={['(max-width: 550px) 90%', '250px']} />
+        </div>
       </div>
 
     </div>

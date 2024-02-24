@@ -1,4 +1,58 @@
 [
+
+  {
+    "name": "Esa_Jensen_ABCDT",
+    "alt": "Esa Jensen Animal Behavior College Certification",
+    "classes": [
+      "certification",
+      "ABCDT",
+      "Animal Behavior College"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/documents/certifications/png/150/Esa_Jensen_ABCDT.png",
+    "imageSet": [
+      {
+        "path": "/documents/certifications/webp/900/Esa_Jensen_ABCDT.webp",
+        "type": "webp",
+        "width": 900,
+        "height": 678
+      },
+      {
+        "path": "/documents/certifications/webp/450/Esa_Jensen_ABCDT.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 339
+      },
+      {
+        "path": "/documents/certifications/webp/150/Esa_Jensen_ABCDT.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 113
+      },
+      {
+        "path": "/documents/certifications/png/900/Esa_Jensen_ABCDT.png",
+        "type": "png",
+        "width": 900,
+        "height": 678
+      },
+      {
+        "path": "/documents/certifications/png/450/Esa_Jensen_ABCDT.png",
+        "type": "png",
+        "width": 450,
+        "height": 339
+      },
+      {
+        "path": "/documents/certifications/png/150/Esa_Jensen_ABCDT.png",
+        "type": "png",
+        "width": 150,
+        "height": 113
+      }
+    ]
+  },
+
   {
     "name": "headerLogo",
     "alt": "Logo",
