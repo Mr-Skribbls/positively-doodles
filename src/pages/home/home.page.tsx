@@ -5,6 +5,7 @@ import ContentBarTitleLeft from '../../components/contentComponents/contentBarTi
 import content, { ArticleRecord, Section } from '../../services/content.service';
 import SourceSetImage from '../../components/sourceSetImage/sourceSetImage.component';
 import Carousel from '../../components/carousel/carousel.component';
+import Testimonial from '../../components/testimonial/testimonial';
 
 interface HomeProps {
 
@@ -22,18 +23,28 @@ const Home:FC<HomeProps> = () => {
     <div className="home-page site-container">
       <Carousel imageClasses={['puppy']} />
 
-      <div className="content">
-        {!isNil(ourGoalSection) && <ContentBarTitleLeft title={ourGoalSection.sectionTitle} paragraphs={ourGoalSection.paragraphs} />}
+      <article className="content">
+        {!isNil(ourGoalSection) && <ContentBarTitleLeft title={ourGoalSection.sectionTitle} paragraphs={ourGoalSection.paragraphs} imageOverride={{
+          imageName: 'Liberty_KingKong_Buddy_6weeks_2',
+          imageType: 'png',
+          imageWidth: 300,
+        }} />}
         
         {!isNil(whyChooseUsSection) && <ContentBarTitleLeft title={whyChooseUsSection.sectionTitle} paragraphs={whyChooseUsSection.paragraphs} imageOverride={{
-          imageName: 'liberty003',
+          imageName: 'Liberty_KingKong_TinyTim_6weeks',
           imageType: 'png',
           imageWidth: 450,
         }} />}
+      </article>
 
-      </div>
+      <article className='testimonials'>
+        <div className='testimonial-block'>
+          <h1>Testimonials</h1>
+          <Testimonial customerName='Scott Family' />
+        </div>
+      </article>
 
-      <div className="badges">
+      <section className="badges">
         <div className="badge">
           <a target='_blank' href="https://www.gooddog.com/breeders/positively-doodles-illinois">
             <SourceSetImage imageName='goodDogBadge' sizesRules={['(max-width: 550px) 90%', '250px']} />
@@ -42,7 +53,7 @@ const Home:FC<HomeProps> = () => {
         <div className="badge">
           <SourceSetImage imageName='Esa_Jensen_ABCDT' sizesRules={['(max-width: 550px) 90%', '250px']} />
         </div>
-      </div>
+      </section>
 
     </div>
   );

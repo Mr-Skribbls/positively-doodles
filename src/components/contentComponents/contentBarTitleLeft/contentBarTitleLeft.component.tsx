@@ -48,6 +48,7 @@ const ContentBarTitleLeft:FC<ContentBarTitleLeftProps> = ({
   const titleMarkup = !isNil(image) ? (
     <div className='title-container' style={{
       backgroundImage: `url(${imgPath})`,
+      backgroundPosition: `${image.centerOfFocus.x}% ${image.centerOfFocus.y}%`,
     }}>
       <div className='text-container'>
         <Shadow rgba='255,255,255,0.4' />

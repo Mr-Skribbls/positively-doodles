@@ -11,7 +11,7 @@
   margin: 0;
   padding: 0 12px 8px;
   position: relative;
-  background-color: var(--color-sub-menu-item-bg);
+  background-color: var(--color-base);
   border-left: 1px solid var(--color-borders);
 }
 .sub-menu .menu-item:last-child {

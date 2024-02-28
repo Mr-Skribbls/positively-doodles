@@ -1,8 +1,10 @@
 footer {
+  --footer-logo-size: 150px;
+
   display: flex;
   flex-direction: column;
   border-top: 1px solid var(--color-borders);
-  background-color: var(--color-menu-bg);
+  background-color: var(--color-base);
   height: 200px;
 }
 
@@ -30,12 +32,12 @@ footer .contact-info-container a {
 }
 
 footer .logo-container {
-  width: 150px;
-  height: 150px;
-  min-width: 150px;
-  min-height: 150px;
+  width: var(--footer-logo-size);
+  height: var(--footer-logo-size);
+  min-width: var(--footer-logo-size);
+  min-height: var(--footer-logo-size);
+  border-radius: var(--footer-logo-size);
   border: 1px solid var(--color-borders);
-  border-radius: 75px;
   background-color: var(--color-canvas);
   margin-top: 15px;
   margin-bottom: 15px;

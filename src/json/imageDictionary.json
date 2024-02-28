@@ -235,6 +235,59 @@
   },
 
   {
+    "name": "scott_family",
+    "alt": "Scott Family",
+    "classes": [
+      "testimonial",
+      "customer",
+      "scott family"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/testimonials/png/150/scott_family.png",
+    "imageSet": [
+      {
+        "path": "/images/testimonials/webp/900/scott_family.webp",
+        "type": "webp",
+        "width": 900,
+        "height": 899
+      },
+      {
+        "path": "/images/testimonials/webp/450/scott_family.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 449
+      },
+      {
+        "path": "/images/testimonials/webp/150/scott_family.webp",
+        "type": "webp",
+        "width": 149,
+        "height": 149
+      },
+      {
+        "path": "/images/testimonials/png/900/scott_family.png",
+        "type": "png",
+        "width": 900,
+        "height": 899
+      },
+      {
+        "path": "/images/testimonials/png/450/scott_family.png",
+        "type": "png",
+        "width": 450,
+        "height": 449
+      },
+      {
+        "path": "/images/testimonials/png/150/scott_family.png",
+        "type": "png",
+        "width": 149,
+        "height": 149
+      }
+    ]
+  },
+
+  {
     "name": "liberty001",
     "alt": "Liberty puppy",
     "classes": [
@@ -1202,7 +1255,7 @@
     ],
     "centerOfFocus": {
       "x": 50,
-      "y": 40
+      "y": 35
     },
     "defaultPath": "/images/puppies/liberty_king-kong/png/150/Liberty_KingKong_Buddy_6weeks_2.png",
     "imageSet": [
