@@ -1,0 +1,33 @@
+.testimonial {
+  display: flex;
+  flex-direction: row;
+  max-width: 1100px;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 50px;
+  gap:30px;
+}
+
+.testimonial .testimonial-heading {
+  min-width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial .testimonial-heading img {
+  width: 150px;
+  border-radius: 75px;
+  padding-bottom: 15px;
+}
+
+.testimonial .testimonial-content p {
+  padding: 5px;
+}
+
+@media (max-width: 960px) {
+  .testimonial {
+    flex-wrap: wrap;
+  }
+}
