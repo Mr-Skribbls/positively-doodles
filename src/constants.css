@@ -1,10 +1,20 @@
 :root {
   --color-canvas: #F2F2F2;
   --color-canvas-opaque: #F2F2F200;
-  --color-sub-menu-item-bg: #8B3333;
   --color-borders: #2A1D14;
   --color-header-bg: #9F9C95;
-  --color-menu-bg: #8B3333;
+  --color-base:#8B3333;
+  --color-supporting-1: #74cccc;
   --color-text-dark: #2A1D14;
   --color-text-light: #F2F2F2;
+
+  --border-radius: 15px;
+  --border-size: 2px;
+
+  /* 
+  --screen-size-xl: 960px;
+  --screen-size-l: 760px;
+  --screen-size-m: 550px;
+  --screen-size-s: 350px; 
+  */
 }
