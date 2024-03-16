@@ -282,14 +282,14 @@ export const litters:LitterInfo[] = [
         priceAboveStarting: 0,
       }, {
         name: 'Gloria',
-        status: PuppyStatus.Available,
+        status: PuppyStatus.Sold,
         gender: 'F',
         description: "Gloria is spunky and loves to be around those she knows.  She will be perfect for someone who will be with her all day long.",
         imageName: 'Liberty_KingKong_Gloria_6weeks_2',
         priceAboveStarting: 0,
       }, {
         name: 'Maple',
-        status: PuppyStatus.Available,
+        status: PuppyStatus.Sold,
         gender: 'F',
         description: "She is super smart.  Already, at only 4 weeks old, she is already going to the potty box to go to the bathroom.  She is very mellow and super sweet.",
         imageName: 'Liberty_KingKong_Maple_6weeks',
@@ -310,7 +310,7 @@ export const litters:LitterInfo[] = [
         priceAboveStarting: 0,
       }, {
         name: 'Buddy',
-        status: PuppyStatus.Available,
+        status: PuppyStatus.Reserved,
         gender: 'M',
         description: "Buddy is a beautiful tri-color Sable.  He is almost always the first to go try and explore something new.  He is charting to be about 35 pounds.",
         imageName: 'Liberty_KingKong_Buddy_6weeks',
