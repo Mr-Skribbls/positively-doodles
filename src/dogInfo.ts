@@ -159,11 +159,11 @@ const findDog = (name: string, dictionary: Dog[]): Dog => {
         patellas: 'Incomplete',
         heart: 'Incomplete',
         thyroid: 'Incomplete',
-      }
+      },
     },
   };
   return dog;
-}
+};
 
 export const dogs:Dog[] = [
   { // Libby
@@ -206,7 +206,7 @@ export const dogs:Dog[] = [
       },
       genetics: {
         path: '/documents/liberty/compressed/Liberty Embark Test Results.pdf',
-        company: 'embark'
+        company: 'embark',
       },
     },
   }, { // King Kong
@@ -235,13 +235,13 @@ export const dogs:Dog[] = [
       genetics: {
         path: '/documents/king kong/King Kong Genetic Testing.pdf',
         company: 'Animal Genetics',
-      }
+      },
     },
     additionalInformation: [
       'King Kong is an outside stud from Sun Valley Doodles',
       'King Kong is fully furnished with no curl',
       'He is 100% clear of all genetic diseases with Animal Genetics and Embark.',
-      'His OFA\'s are completed and normal.'
+      'His OFA\'s are completed and normal.',
     ],
   },
 ];
@@ -254,7 +254,7 @@ export const litters:LitterInfo[] = [
     birthDate: new Date(2023, 11, 25),
     goHomeDate: new Date(2024, 1, 14),
     size: 6,
-    state: LitterState.Puppy,
+    state: LitterState.Complete,
     puppyBreed: {
       type: BreedType.Bernedoodle,
       expectedSizes: [
@@ -277,45 +277,129 @@ export const litters:LitterInfo[] = [
         name: 'Tiny Tim',
         status: PuppyStatus.Sold,
         gender: 'M',
-        description: "Tiny Tim is super sweet.  He loves to play and loves to cuddle.  He has a wavy coat and will be between 30-35 lbs. fully grown. ",
+        description: 'Tiny Tim is super sweet.  He loves to play and loves to cuddle.  He has a wavy coat and will be between 30-35 lbs. fully grown. ',
         imageName: 'Liberty_KingKong_TinyTim_6weeks',
         priceAboveStarting: 0,
       }, {
         name: 'Gloria',
         status: PuppyStatus.Sold,
         gender: 'F',
-        description: "Gloria is spunky and loves to be around those she knows.  She will be perfect for someone who will be with her all day long.",
+        description: 'Gloria is spunky and loves to be around those she knows.  She will be perfect for someone who will be with her all day long.',
         imageName: 'Liberty_KingKong_Gloria_6weeks_2',
         priceAboveStarting: 0,
       }, {
         name: 'Maple',
         status: PuppyStatus.Sold,
         gender: 'F',
-        description: "She is super smart.  Already, at only 4 weeks old, she is already going to the potty box to go to the bathroom.  She is very mellow and super sweet.",
+        description: 'She is super smart.  Already, at only 4 weeks old, she is already going to the potty box to go to the bathroom.  She is very mellow and super sweet.',
         imageName: 'Liberty_KingKong_Maple_6weeks',
         priceAboveStarting: 0,
       }, {
         name: 'Licorice',
         status: PuppyStatus.Reserved,
         gender: 'M',
-        description: "Licorice is very quiet and very mellow.  He sometimes will just sit back and watch his siblings play and other times is the one trying to get another to wrestle with him.  He is very sweet and loves to give lots of kisses.  He is charting to be around 30 pounds.",
+        description: 'Licorice is very quiet and very mellow.  He sometimes will just sit back and watch his siblings play and other times is the one trying to get another to wrestle with him.  He is very sweet and loves to give lots of kisses.  He is charting to be around 30 pounds.',
         imageName: 'Liberty_KingKong_Licorice_6weeks',
         priceAboveStarting: 0,
       }, {
         name: 'Jingle',
         status: PuppyStatus.Sold,
         gender: 'M',
-        description: "Jingle is the biggest of the litter.  He is one of the first to alert when someone walks in the room.  He loves to give puppy kisses and cuddles, but he also loves to romp around with his litter mates.",
+        description: 'Jingle is the biggest of the litter.  He is one of the first to alert when someone walks in the room.  He loves to give puppy kisses and cuddles, but he also loves to romp around with his litter mates.',
         imageName: 'Liberty_KingKong_Jingle_6weeks',
         priceAboveStarting: 0,
       }, {
         name: 'Buddy',
         status: PuppyStatus.Sold,
         gender: 'M',
-        description: "Buddy is a beautiful tri-color Sable.  He is almost always the first to go try and explore something new.  He is charting to be about 35 pounds.",
+        description: 'Buddy is a beautiful tri-color Sable.  He is almost always the first to go try and explore something new.  He is charting to be about 35 pounds.',
         imageName: 'Liberty_KingKong_Buddy_6weeks',
         priceAboveStarting: 0,
-      }
-    ]
+      },
+    ],
+  }, {
+    dam: findDog('Liberty', dogs),
+    sire: findDog('King Kong', dogs),
+    dueDate: new Date(2024, 6, 19),
+    birthDate: new Date(2024, 6, 17),
+    goHomeDate: new Date(2024, 8, 11),
+    size: 8,
+    state: LitterState.Puppy,
+    puppyBreed: {
+      type: BreedType.Bernedoodle,
+      expectedSizes: [
+        BreedSize.Mini,
+      ],
+      class: BreedClass.F2B,
+    },
+    expectedCoatTypes: [
+      CoatType.Wavy,
+    ],
+    expectedColors: [
+      CoatColorPatterns.ApricotSable,
+      CoatColorPatterns.TraditionalTriColor,
+      CoatColorPatterns.TriColorWithSable,
+    ],
+    startingPrice: 2000,
+    reservationFee: 500,
+    puppies: [
+      {
+        name: 'Hazel',
+        status: PuppyStatus.Available,
+        gender: 'F',
+        description: 'Black Phantom',
+        imageName: 'Liberty_KingKong_Hazel_1week',
+        priceAboveStarting: 0,
+      }, {
+        name: 'Cherry',
+        status: PuppyStatus.Available,
+        gender: 'F',
+        description: 'Sable',
+        imageName: 'Liberty_KingKong_Cherry_1week',
+        priceAboveStarting: 0,
+      }, {
+        name: 'Ivy',
+        status: PuppyStatus.Available,
+        gender: 'F',
+        description: 'Tricolor',
+        imageName: 'Liberty_KingKong_Ivy_1week',
+        priceAboveStarting: 0,
+      }, {
+        name: 'Birch',
+        status: PuppyStatus.Available,
+        gender: 'M',
+        description: 'Sable',
+        imageName: 'Liberty_KingKong_Birch_1week',
+        priceAboveStarting: 0,
+      }, {
+        name: 'Oak',
+        status: PuppyStatus.Available,
+        gender: 'M',
+        description: 'Sable',
+        imageName: 'Liberty_KingKong_Oak_1week',
+        priceAboveStarting: 0,
+      }, {
+        name: 'Spruce',
+        status: PuppyStatus.Available,
+        gender: 'M',
+        description: 'Tricolor',
+        imageName: 'Liberty_KingKong_Spruce_1week',
+        priceAboveStarting: 0,
+      }, {
+        name: 'Cedar',
+        status: PuppyStatus.Available,
+        gender: 'M',
+        description: 'Abstract Sable',
+        imageName: 'Liberty_KingKong_Cedar_1week',
+        priceAboveStarting: 0,
+      }, {
+        name: 'Aspen',
+        status: PuppyStatus.Available,
+        gender: 'M',
+        description: 'Sable',
+        imageName: 'Liberty_KingKong_Aspen_1week',
+        priceAboveStarting: 0,
+      },
+    ],
   },
-]
+];
