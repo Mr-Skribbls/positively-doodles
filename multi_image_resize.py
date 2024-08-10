@@ -90,7 +90,8 @@ def save_resized_image(source_dir, type, size, filename):
   return new_size, new_img_name
 
 def process(source_dir, file_types, sizes):
-  if not os.path.isdir(source_dir):
+  dir_path = os.path.normpath(source_dir)
+  if not os.path.isdir(dir_path):
     print('Source Directory must be a directory.')
     return
   
@@ -112,11 +113,11 @@ def process(source_dir, file_types, sizes):
     if(type not in file_types):
       continue
 
-    create_directory(source_dir, type)
+    create_directory(dir_path, type)
     for size in ordered_sizes:
-      create_directory(os.path.join(source_dir, type), str(size))
-      for filename in os.listdir(source_dir):
-        new_size, new_img_name = save_resized_image(source_dir, type, size, filename)
+      create_directory(os.path.join(dir_path, type), str(size))
+      for filename in os.listdir(dir_path):
+        new_size, new_img_name = save_resized_image(dir_path, type, size, filename)
 
         if new_size == None:
           continue
@@ -148,7 +149,7 @@ def process(source_dir, file_types, sizes):
   for image_json in images_json:
     image_json['defaultPath'] = image_json['imageSet'][len(image_json['imageSet'])-1]['path']
 
-  with open(os.path.join(source_dir, 'imagesJson.json'), 'w', encoding='utf-8') as f:
+  with open(os.path.join(dir_path, 'imagesJson.json'), 'w', encoding='utf-8') as f:
     json.dump(images_json, f, ensure_ascii=False, indent=2)
 
 source = input('Source Directory: ').strip()
