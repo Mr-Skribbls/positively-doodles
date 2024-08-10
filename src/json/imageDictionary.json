@@ -1661,5 +1661,343 @@
         "height": 150
       }
     ]
+  },
+
+  {
+    "name": "Liberty_KingKong_Aspen_1week",
+    "alt": "Liberty and King Kong puppy Aspen",
+    "classes": [
+      "dog",
+      "aspen",
+      "puppy",
+      "liberty puppy",
+      "king kong puppy"
+    ],
+    "centerOfFocus": {
+      "x": 25,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Aspen_1week.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/liberty_king-kong_2/webp/450/Liberty_KingKong_Aspen_1week.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 299
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/webp/150/Liberty_KingKong_Aspen_1week.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 99
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/png/450/Liberty_KingKong_Aspen_1week.png",
+        "type": "png",
+        "width": 450,
+        "height": 299
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Aspen_1week.png",
+        "type": "png",
+        "width": 150,
+        "height": 99
+      }
+    ]
+  },
+  {
+    "name": "Liberty_KingKong_Birch_1week",
+    "alt": "Liberty and King Kong puppy Birch",
+    "classes": [
+      "dog",
+      "birch",
+      "puppy",
+      "liberty puppy",
+      "king kong puppy"
+    ],
+    "centerOfFocus": {
+      "x": 75,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Birch_1week.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/liberty_king-kong_2/webp/450/Liberty_KingKong_Birch_1week.webp",
+        "type": "webp",
+        "width": 449,
+        "height": 299
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/webp/150/Liberty_KingKong_Birch_1week.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 99
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/png/450/Liberty_KingKong_Birch_1week.png",
+        "type": "png",
+        "width": 449,
+        "height": 299
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Birch_1week.png",
+        "type": "png",
+        "width": 150,
+        "height": 99
+      }
+    ]
+  },
+  {
+    "name": "Liberty_KingKong_Cedar_1week",
+    "alt": "Liberty and King Kong puppy Cedar",
+    "classes": [
+      "dog",
+      "cedar",
+      "puppy",
+      "liberty puppy",
+      "king kong puppy"
+    ],
+    "centerOfFocus": {
+      "x": 45,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Cedar_1week.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/liberty_king-kong_2/webp/450/Liberty_KingKong_Cedar_1week.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 300
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/webp/150/Liberty_KingKong_Cedar_1week.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 100
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/png/450/Liberty_KingKong_Cedar_1week.png",
+        "type": "png",
+        "width": 450,
+        "height": 300
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Cedar_1week.png",
+        "type": "png",
+        "width": 150,
+        "height": 100
+      }
+    ]
+  },
+  {
+    "name": "Liberty_KingKong_Cherry_1week",
+    "alt": "Liberty and King Kong puppy Cherry",
+    "classes": [
+      "dog",
+      "cherry",
+      "puppy",
+      "liberty puppy",
+      "king kong puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Cherry_1week.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/liberty_king-kong_2/webp/450/Liberty_KingKong_Cherry_1week.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 299
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/webp/150/Liberty_KingKong_Cherry_1week.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 99
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/png/450/Liberty_KingKong_Cherry_1week.png",
+        "type": "png",
+        "width": 450,
+        "height": 299
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Cherry_1week.png",
+        "type": "png",
+        "width": 150,
+        "height": 99
+      }
+    ]
+  },
+  {
+    "name": "Liberty_KingKong_Hazel_1week",
+    "alt": "Liberty and King Kong puppy Hazel",
+    "classes": [
+      "dog",
+      "hazel",
+      "puppy",
+      "liberty puppy",
+      "king kong puppy"
+    ],
+    "centerOfFocus": {
+      "x": 40,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Hazel_1week.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/liberty_king-kong_2/webp/450/Liberty_KingKong_Hazel_1week.webp",
+        "type": "webp",
+        "width": 449,
+        "height": 299
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/webp/150/Liberty_KingKong_Hazel_1week.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 99
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/png/450/Liberty_KingKong_Hazel_1week.png",
+        "type": "png",
+        "width": 449,
+        "height": 299
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Hazel_1week.png",
+        "type": "png",
+        "width": 150,
+        "height": 99
+      }
+    ]
+  },
+  {
+    "name": "Liberty_KingKong_Ivy_1week",
+    "alt": "Liberty and King Kong puppy Ivy",
+    "classes": [
+      "dog",
+      "ivy",
+      "puppy",
+      "liberty puppy",
+      "king kong puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Ivy_1week.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/liberty_king-kong_2/webp/450/Liberty_KingKong_Ivy_1week.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 300
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/webp/150/Liberty_KingKong_Ivy_1week.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 100
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/png/450/Liberty_KingKong_Ivy_1week.png",
+        "type": "png",
+        "width": 450,
+        "height": 300
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Ivy_1week.png",
+        "type": "png",
+        "width": 150,
+        "height": 100
+      }
+    ]
+  },
+  {
+    "name": "Liberty_KingKong_Oak_1week",
+    "alt": "Liberty and King Kong puppy Oak",
+    "classes": [
+      "dog",
+      "oak",
+      "puppy",
+      "liberty puppy",
+      "king kong puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Oak_1week.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/liberty_king-kong_2/webp/450/Liberty_KingKong_Oak_1week.webp",
+        "type": "webp",
+        "width": 449,
+        "height": 360
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/webp/150/Liberty_KingKong_Oak_1week.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 120
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/png/450/Liberty_KingKong_Oak_1week.png",
+        "type": "png",
+        "width": 449,
+        "height": 360
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Oak_1week.png",
+        "type": "png",
+        "width": 150,
+        "height": 120
+      }
+    ]
+  },
+  {
+    "name": "Liberty_KingKong_Spruce_1week",
+    "alt": "Liberty and King Kong puppy Spruce",
+    "classes": [
+      "dog",
+      "spruce",
+      "puppy",
+      "liberty puppy",
+      "king kong puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Spruce_1week.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/liberty_king-kong_2/webp/450/Liberty_KingKong_Spruce_1week.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 300
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/webp/150/Liberty_KingKong_Spruce_1week.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 100
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/png/450/Liberty_KingKong_Spruce_1week.png",
+        "type": "png",
+        "width": 450,
+        "height": 300
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Spruce_1week.png",
+        "type": "png",
+        "width": 150,
+        "height": 100
+      }
+    ]
   }
+
 ]
