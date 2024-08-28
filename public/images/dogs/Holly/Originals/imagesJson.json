@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Holly_Sitting_on_Chair",
+    "alt": "",
+    "classes": [],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "^directory path^/png/150/Holly_Sitting_on_Chair.png",
+    "imageSet": [
+      {
+        "path": "^directory path^/webp/1800/Holly_Sitting_on_Chair.webp",
+        "type": "webp",
+        "width": 1439,
+        "height": 1800
+      },
+      {
+        "path": "^directory path^/webp/900/Holly_Sitting_on_Chair.webp",
+        "type": "webp",
+        "width": 719,
+        "height": 900
+      },
+      {
+        "path": "^directory path^/webp/450/Holly_Sitting_on_Chair.webp",
+        "type": "webp",
+        "width": 359,
+        "height": 450
+      },
+      {
+        "path": "^directory path^/webp/150/Holly_Sitting_on_Chair.webp",
+        "type": "webp",
+        "width": 119,
+        "height": 150
+      },
+      {
+        "path": "^directory path^/png/1800/Holly_Sitting_on_Chair.png",
+        "type": "png",
+        "width": 1439,
+        "height": 1800
+      },
+      {
+        "path": "^directory path^/png/900/Holly_Sitting_on_Chair.png",
+        "type": "png",
+        "width": 719,
+        "height": 900
+      },
+      {
+        "path": "^directory path^/png/450/Holly_Sitting_on_Chair.png",
+        "type": "png",
+        "width": 359,
+        "height": 450
+      },
+      {
+        "path": "^directory path^/png/150/Holly_Sitting_on_Chair.png",
+        "type": "png",
+        "width": 119,
+        "height": 150
+      }
+    ]
+  }
+]

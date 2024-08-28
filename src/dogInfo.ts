@@ -2,6 +2,8 @@ enum BreedType {
   Poodle = 'Poodle',
   Bernese = 'Bernese',
   Bernedoodle = 'Bernedoodle',
+  Cavapoo = 'Cavapoo',
+  KingCharlesCavalier = 'KingCharlesCavalier',
 }
 
 enum BreedClass {
@@ -18,6 +20,7 @@ enum BreedSize {
   MediumStandard = 'Medium Standard',
   SmallStandard = 'Small Standard',
   Medium = 'Medium',
+  Moyan = 'Moyan',
   Mini = 'Mini',
 }
 
@@ -55,7 +58,7 @@ export enum PuppyStatus {
 
 export interface Breed {
   class: BreedClass,
-  size: BreedSize,
+  size?: BreedSize,
   type: BreedType,
 }
 
@@ -166,7 +169,7 @@ const findDog = (name: string, dictionary: Dog[]): Dog => {
 };
 
 export const dogs:Dog[] = [
-  { // Libby
+  {    // Libby
     name: 'Liberty',
     gender: 'F',
     description: 'Liberty is apricot sable, tall and slender. She Loves to give kisses and is independent, smart, and sassy.',
@@ -183,16 +186,6 @@ export const dogs:Dog[] = [
       main: 'Liberty_sitting_pretty',
       gallery: [
         'Liberty_sitting_pretty',
-        'Liberty_laying_floor',
-        'liberty_baby001',
-        'liberty_baby002',
-        'liberty_baby003',
-        'liberty_baby004',
-        'liberty_baby005',
-        'liberty001',
-        'liberty002',
-        'liberty003',
-        'liberty004',
       ],
     },
     testing: {
@@ -243,6 +236,37 @@ export const dogs:Dog[] = [
       'He is 100% clear of all genetic diseases with Animal Genetics and Embark.',
       'His OFA\'s are completed and normal.',
     ],
+  }, { // Holly
+    name: 'Holly',
+    gender: 'F',
+    description: 'AKC Registered Moyan Poodle',
+    isInternal: true,
+    state: DogState.Breeder,
+    weight: 18,
+    breed: {
+      type: BreedType.Poodle,
+      size: BreedSize.Moyan,
+      class: BreedClass.AKC,
+    },
+    images: {
+      main: 'holly_sitting_chair',
+      gallery: [],
+    },
+  }, { // Finn
+    name: 'Finn',
+    gender: 'M',
+    description: 'ACK Registered King Charles Cavalier Spaniel.',
+    isInternal: false,
+    state: DogState.Breeder,
+    weight: 13.5,
+    breed: {
+      type: BreedType.KingCharlesCavalier,
+      class: BreedClass.AKC,
+    },
+    images: {
+      main: 'finn',
+      gallery: [],
+    },
   },
 ];
 
@@ -348,58 +372,84 @@ export const litters:LitterInfo[] = [
         status: PuppyStatus.Available,
         gender: 'F',
         description: 'Black Phantom',
-        imageName: 'Liberty_KingKong_Hazel_1week',
+        imageName: 'Liberty_KingKong_Hazel_5weeks',
         priceAboveStarting: 0,
       }, {
         name: 'Cherry',
         status: PuppyStatus.Available,
         gender: 'F',
         description: 'Sable',
-        imageName: 'Liberty_KingKong_Cherry_1week',
+        imageName: 'Liberty_KingKong_Cherry_5weeks',
         priceAboveStarting: 0,
       }, {
         name: 'Ivy',
         status: PuppyStatus.Available,
         gender: 'F',
         description: 'Tricolor',
-        imageName: 'Liberty_KingKong_Ivy_1week',
+        imageName: 'Liberty_KingKong_Ivy_5weeks',
         priceAboveStarting: 0,
       }, {
         name: 'Birch',
         status: PuppyStatus.Available,
         gender: 'M',
         description: 'Sable',
-        imageName: 'Liberty_KingKong_Birch_1week',
+        imageName: 'Liberty_KingKong_Birch_5weeks',
         priceAboveStarting: 0,
       }, {
         name: 'Oak',
         status: PuppyStatus.Available,
         gender: 'M',
         description: 'Sable',
-        imageName: 'Liberty_KingKong_Oak_1week',
+        imageName: 'Liberty_KingKong_Oak_5weeks',
         priceAboveStarting: 0,
       }, {
         name: 'Spruce',
         status: PuppyStatus.Available,
         gender: 'M',
         description: 'Tricolor',
-        imageName: 'Liberty_KingKong_Spruce_1week',
+        imageName: 'Liberty_KingKong_Spruce_5weeks',
         priceAboveStarting: 0,
       }, {
         name: 'Cedar',
         status: PuppyStatus.Available,
         gender: 'M',
         description: 'Abstract Sable',
-        imageName: 'Liberty_KingKong_Cedar_1week',
+        imageName: 'Liberty_KingKong_Cedar_5weeks',
         priceAboveStarting: 0,
       }, {
         name: 'Aspen',
         status: PuppyStatus.Available,
         gender: 'M',
         description: 'Sable',
-        imageName: 'Liberty_KingKong_Aspen_1week',
+        imageName: 'Liberty_KingKong_Aspen_5weeks',
         priceAboveStarting: 0,
       },
     ],
+  }, {
+    dam: findDog('Holly', dogs),
+    sire: findDog('Finn', dogs),
+    dueDate: new Date(2024, 9, 23),
+    // birthDate: new Date(2024, 6, 17),
+    // goHomeDate: new Date(2024, 8, 11),
+    size: 10,
+    state: LitterState.Expected,
+    puppyBreed: {
+      type: BreedType.Cavapoo,
+      expectedSizes: [
+        BreedSize.Mini,
+      ],
+      class: BreedClass.F1,
+    },
+    expectedCoatTypes: [
+      CoatType.Wavy,
+    ],
+    expectedColors: [
+      CoatColorPatterns.ApricotSable,
+      CoatColorPatterns.TraditionalTriColor,
+      CoatColorPatterns.TriColorWithSable,
+    ],
+    startingPrice: 3000,
+    reservationFee: 500,
+    puppies: [],
   },
 ];

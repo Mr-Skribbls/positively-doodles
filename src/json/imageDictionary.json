@@ -214,27 +214,6 @@
   },
 
   {
-    "name": "home",
-    "alt": "home",
-    "classes": [
-      "home"
-    ],
-    "centerOfFocus": {
-      "x": 50,
-      "y": 50
-    },
-    "defaultPath": "/images/highLevel/home.jpg",
-    "imageSet": [
-      {
-        "path": "/images/highLevel/home.jpg",
-        "type": "jpg",
-        "width": 2500,
-        "height": 1406
-      }
-    ]
-  },
-
-  {
     "name": "scott_family",
     "alt": "Scott Family",
     "classes": [
@@ -288,264 +267,6 @@
   },
 
   {
-    "name": "liberty001",
-    "alt": "Liberty puppy",
-    "classes": [
-      "dog",
-      "female",
-      "parent",
-      "liberty"
-    ],
-    "centerOfFocus": {
-      "x": 60,
-      "y": 10
-    },
-    "defaultPath": "/images/dogs/Liberty/png/liberty-001-2500x1875.png",
-    "imageSet": [
-      {
-        "path": "/images/dogs/Liberty/webp/liberty-001-2500x1875.webp",
-        "type": "webp",
-        "width": 2500,
-        "height": 1875
-      }, {
-        "path": "/images/dogs/Liberty/webp/liberty-001-1800x1350.webp",
-        "type": "webp",
-        "width": 1800,
-        "height": 1350
-      }, {
-        "path": "/images/dogs/Liberty/webp/liberty-001-900x675.webp",
-        "type": "webp",
-        "width": 900,
-        "height": 675
-      }, {
-        "path": "/images/dogs/Liberty/webp/liberty-001-450x337.webp",
-        "type": "webp",
-        "width": 450,
-        "height": 337
-      }, {
-        "path": "/images/dogs/Liberty/webp/liberty-001-150x112.webp",
-        "type": "webp",
-        "width": 150,
-        "height": 112
-      }, {
-        "path": "/images/dogs/Liberty/png/liberty-001-2500x1875.png",
-        "type": "png",
-        "width": 2500,
-        "height": 1875
-      }, {
-        "path": "/images/dogs/Liberty/png/liberty-001-1800x1350.png",
-        "type": "png",
-        "width": 1800,
-        "height": 1350
-      }, {
-        "path": "/images/dogs/Liberty/png/liberty-001-900x675.png",
-        "type": "png",
-        "width": 900,
-        "height": 675
-      }, {
-        "path": "/images/dogs/Liberty/png/liberty-001-450x337.png",
-        "type": "png",
-        "width": 450,
-        "height": 337
-      }, {
-        "path": "/images/dogs/Liberty/png/liberty-001-150x112.png",
-        "type": "png",
-        "width": 150,
-        "height": 112
-      }
-    ]
-  }, {
-    "name": "liberty003",
-    "alt": "Liberty",
-    "classes": [
-      "dog",
-      "female",
-      "parent",
-      "liberty"
-    ],
-    "centerOfFocus": {
-      "x": 50,
-      "y": 15
-    },
-    "defaultPath": "/images/dogs/Liberty/png/liberty-003-150x112.png",
-    "imageSet": [
-      {
-        "path": "/images/dogs/Liberty/webp/liberty-003-2500x1875.webp",
-        "type": "webp",
-        "width": 2500,
-        "height": 1875
-      }, {
-        "path": "/images/dogs/Liberty/webp/liberty-003-1800x1350.webp",
-        "type": "webp",
-        "width": 1800,
-        "height": 1350
-      }, {
-        "path": "/images/dogs/Liberty/webp/liberty-003-900x675.webp",
-        "type": "webp",
-        "width": 900,
-        "height": 675
-      }, {
-        "path": "/images/dogs/Liberty/webp/liberty-003-450x337.webp",
-        "type": "webp",
-        "width": 450,
-        "height": 337
-      }, {
-        "path": "/images/dogs/Liberty/webp/liberty-003-150x112.webp",
-        "type": "webp",
-        "width": 150,
-        "height": 112
-      }, {
-        "path": "/images/dogs/Liberty/png/liberty-003-2500x1875.png",
-        "type": "png",
-        "width": 2500,
-        "height": 1875
-      }, {
-        "path": "/images/dogs/Liberty/png/liberty-003-1800x1350.png",
-        "type": "png",
-        "width": 1800,
-        "height": 1350
-      }, {
-        "path": "/images/dogs/Liberty/png/liberty-003-900x675.png",
-        "type": "png",
-        "width": 900,
-        "height": 675
-      }, {
-        "path": "/images/dogs/Liberty/png/liberty-003-450x337.png",
-        "type": "png",
-        "width": 450,
-        "height": 337
-      }, {
-        "path": "/images/dogs/Liberty/png/liberty-003-150x112.png",
-        "type": "png",
-        "width": 150,
-        "height": 112
-      }
-    ]
-  }, {
-    "name": "liberty002",
-    "alt": "Liberty",
-    "classes": [
-      "dog",
-      "female",
-      "parent",
-      "liberty"
-    ],
-    "centerOfFocus": {
-      "x": 50,
-      "y": 50
-    },
-    "defaultPath": "/images/dogs/Liberty/png/liberty-002-150x112.png",
-    "imageSet": [
-      {
-        "path": "/images/dogs/Liberty/webp/liberty-002-2500x1875.webp",
-        "type": "webp",
-        "width": 2500,
-        "height": 1875
-      }, {
-        "path": "/images/dogs/Liberty/webp/liberty-002-1800x1350.webp",
-        "type": "webp",
-        "width": 1800,
-        "height": 1350
-      }, {
-        "path": "/images/dogs/Liberty/webp/liberty-002-900x675.webp",
-        "type": "webp",
-        "width": 900,
-        "height": 675
-      }, {
-        "path": "/images/dogs/Liberty/webp/liberty-002-450x337.webp",
-        "type": "webp",
-        "width": 450,
-        "height": 337
-      }, {
-        "path": "/images/dogs/Liberty/webp/liberty-002-150x112.webp",
-        "type": "webp",
-        "width": 150,
-        "height": 112
-      }, {
-        "path": "/images/dogs/Liberty/png/liberty-002-2500x1875.png",
-        "type": "png",
-        "width": 2500,
-        "height": 1875
-      }, {
-        "path": "/images/dogs/Liberty/png/liberty-002-1800x1350.png",
-        "type": "png",
-        "width": 1800,
-        "height": 1350
-      }, {
-        "path": "/images/dogs/Liberty/png/liberty-002-900x675.png",
-        "type": "png",
-        "width": 900,
-        "height": 675
-      }, {
-        "path": "/images/dogs/Liberty/png/liberty-002-450x337.png",
-        "type": "png",
-        "width": 450,
-        "height": 337
-      }, {
-        "path": "/images/dogs/Liberty/png/liberty-002-150x112.png",
-        "type": "png",
-        "width": 150,
-        "height": 112
-      }
-    ]
-  }, {
-    "name": "Liberty_laying_floor",
-    "alt": "Liberty laying on the floor",
-    "classes": [
-      "dog",
-      "female",
-      "parent",
-      "liberty"
-    ],
-    "centerOfFocus": {
-      "x": 30,
-      "y": 30
-    },
-    "defaultPath": "/images/dogs/Liberty/png/150/Liberty_laying_floor.png",
-    "imageSet": [
-      {
-        "path": "/images/dogs/Liberty/webp/1800/Liberty_laying_floor.webp",
-        "type": "webp",
-        "width": 1800,
-        "height": 1350
-      }, {
-        "path": "/images/dogs/Liberty/webp/900/Liberty_laying_floor.webp",
-        "type": "webp",
-        "width": 900,
-        "height": 675
-      }, {
-        "path": "/images/dogs/Liberty/webp/450/Liberty_laying_floor.webp",
-        "type": "webp",
-        "width": 450,
-        "height": 337
-      }, {
-        "path": "/images/dogs/Liberty/webp/150/Liberty_laying_floor.webp",
-        "type": "webp",
-        "width": 150,
-        "height": 112
-      }, {
-        "path": "/images/dogs/Liberty/png/1800/Liberty_laying_floor.png",
-        "type": "png",
-        "width": 1800,
-        "height": 1350
-      }, {
-        "path": "/images/dogs/Liberty/png/900/Liberty_laying_floor.png",
-        "type": "png",
-        "width": 900,
-        "height": 675
-      }, {
-        "path": "/images/dogs/Liberty/png/450/Liberty_laying_floor.png",
-        "type": "png",
-        "width": 450,
-        "height": 337
-      }, {
-        "path": "/images/dogs/Liberty/png/150/Liberty_laying_floor.png",
-        "type": "png",
-        "width": 150,
-        "height": 112
-      }
-    ]
-  }, {
     "name": "Liberty_sitting_pretty",
     "alt": "Liberty laying on the floor",
     "classes": [
@@ -602,192 +323,70 @@
         "height": 150
       }
     ]
-  }, {
-    "name": "liberty_baby001",
-    "alt": "Liberty",
+  },
+
+  {
+    "name": "holly_sitting_chair",
+    "alt": "Holly sitting on a chair",
     "classes": [
       "dog",
       "female",
       "parent",
-      "liberty"
-    ],
-    "centerOfFocus": {
-      "x": 50,
-      "y": 5
-    },
-    "defaultPath": "/images/dogs/Liberty/png/liberty-puppy-001-83x150.png",
-    "imageSet": [
-      {
-        "path": "/images/dogs/Liberty/webp/liberty-puppy-001-503x900.webp",
-        "type": "webp",
-        "width": 503,
-        "height": 900
-      }, {
-        "path": "/images/dogs/Liberty/webp/liberty-puppy-001-251x450.webp",
-        "type": "webp",
-        "width": 251,
-        "height": 450
-      }, {
-        "path": "/images/dogs/Liberty/webp/liberty-puppy-001-83x150.webp",
-        "type": "webp",
-        "width": 83,
-        "height": 150
-      }, {
-        "path": "/images/dogs/Liberty/png/liberty-puppy-001-503x900.png",
-        "type": "png",
-        "width": 503,
-        "height": 900
-      }, {
-        "path": "/images/dogs/Liberty/png/liberty-puppy-001-251x450.png",
-        "type": "png",
-        "width": 251,
-        "height": 450
-      }, {
-        "path": "/images/dogs/Liberty/png/liberty-puppy-001-83x150.png",
-        "type": "png",
-        "width": 83,
-        "height": 150
-      }
-    ]
-  }, {
-    "name": "liberty_baby002",
-    "alt": "Liberty",
-    "classes": [
-      "dog",
-      "female",
-      "parent",
-      "liberty"
-    ],
-    "centerOfFocus": {
-      "x": 50,
-      "y": 5
-    },
-    "defaultPath": "/images/dogs/Liberty/png/liberty-puppy-002-77x150.png",
-    "imageSet": [
-      {
-        "path": "/images/dogs/Liberty/webp/liberty-puppy-002-470x908.webp",
-        "type": "webp",
-        "width": 470,
-        "height": 908
-      }, {
-        "path": "/images/dogs/Liberty/webp/liberty-puppy-002-232x450.webp",
-        "type": "webp",
-        "width": 232,
-        "height": 450
-      }, {
-        "path": "/images/dogs/Liberty/webp/liberty-puppy-002-77x150.webp",
-        "type": "webp",
-        "width": 77,
-        "height": 150
-      }, {
-        "path": "/images/dogs/Liberty/png/liberty-puppy-002-470x908.png",
-        "type": "png",
-        "width": 470,
-        "height": 908
-      }, {
-        "path": "/images/dogs/Liberty/png/liberty-puppy-002-232x450.png",
-        "type": "png",
-        "width": 232,
-        "height": 450
-      }, {
-        "path": "/images/dogs/Liberty/png/liberty-puppy-002-77x150.png",
-        "type": "png",
-        "width": 77,
-        "height": 150
-      }
-    ]
-  }, {
-    "name": "liberty_baby004",
-    "alt": "Liberty",
-    "classes": [
-      "dog",
-      "female",
-      "parent",
-      "liberty"
+      "holly"
     ],
     "centerOfFocus": {
       "x": 50,
       "y": 50
     },
-    "defaultPath": "/images/dogs/Liberty/png/liberty-puppy-004-91x150.png",
+    "defaultPath": "/images/dogs/Holly/png/150/Holly_Sitting_on_Chair.png",
     "imageSet": [
       {
-        "path": "/images/dogs/Liberty/webp/liberty-puppy-004-591x966.webp",
+        "path": "/images/dogs/Holly/webp/1800/Holly_Sitting_on_Chair.webp",
         "type": "webp",
-        "width": 591,
-        "height": 966
-      }, {
-        "path": "/images/dogs/Liberty/webp/liberty-puppy-004-275x450.webp",
-        "type": "webp",
-        "width": 275,
-        "height": 450
-      }, {
-        "path": "/images/dogs/Liberty/webp/liberty-puppy-004-91x150.webp",
-        "type": "webp",
-        "width": 91,
-        "height": 150
-      }, {
-        "path": "/images/dogs/Liberty/png/liberty-puppy-004-591x966.png",
-        "type": "png",
-        "width": 591,
-        "height": 966
-      }, {
-        "path": "/images/dogs/Liberty/png/liberty-puppy-004-275x450.png",
-        "type": "png",
-        "width": 275,
-        "height": 450
-      }, {
-        "path": "/images/dogs/Liberty/png/liberty-puppy-004-91x150.png",
-        "type": "png",
-        "width": 91,
-        "height": 150
-      }
-    ]
-  }, {
-    "name": "liberty_baby005",
-    "alt": "Liberty",
-    "classes": [
-      "dog",
-      "female",
-      "parent",
-      "liberty"
-    ],
-    "centerOfFocus": {
-      "x": 55,
-      "y": 15
-    },
-    "defaultPath": "/images/dogs/Liberty/png/liberty-puppy-005-150x123.png",
-    "imageSet": [
+        "width": 1439,
+        "height": 1800
+      },
       {
-        "path": "/images/dogs/Liberty/webp/liberty-puppy-005-956x790.webp",
+        "path": "/images/dogs/Holly/webp/900/Holly_Sitting_on_Chair.webp",
         "type": "webp",
-        "width": 956,
-        "height": 790
-      }, {
-        "path": "/images/dogs/Liberty/webp/liberty-puppy-005-450x371.webp",
+        "width": 719,
+        "height": 900
+      },
+      {
+        "path": "/images/dogs/Holly/webp/450/Holly_Sitting_on_Chair.webp",
         "type": "webp",
-        "width": 450,
-        "height": 371
-      }, {
-        "path": "/images/dogs/Liberty/webp/liberty-puppy-005-150x123.webp",
+        "width": 359,
+        "height": 450
+      },
+      {
+        "path": "/images/dogs/Holly/webp/150/Holly_Sitting_on_Chair.webp",
         "type": "webp",
-        "width": 150,
-        "height": 123
-      }, {
-        "path": "/images/dogs/Liberty/png/liberty-puppy-005-956x790.png",
+        "width": 119,
+        "height": 150
+      },
+      {
+        "path": "/images/dogs/Holly/png/1800/Holly_Sitting_on_Chair.png",
         "type": "png",
-        "width": 956,
-        "height": 790
-      }, {
-        "path": "/images/dogs/Liberty/png/liberty-puppy-005-450x371.png",
+        "width": 1439,
+        "height": 1800
+      },
+      {
+        "path": "/images/dogs/Holly/png/900/Holly_Sitting_on_Chair.png",
         "type": "png",
-        "width": 450,
-        "height": 371
-      }, {
-        "path": "/images/dogs/Liberty/png/liberty-puppy-005-150x123.png",
+        "width": 719,
+        "height": 900
+      },
+      {
+        "path": "/images/dogs/Holly/png/450/Holly_Sitting_on_Chair.png",
         "type": "png",
-        "width": 150,
-        "height": 123
+        "width": 359,
+        "height": 450
+      },
+      {
+        "path": "/images/dogs/Holly/png/150/Holly_Sitting_on_Chair.png",
+        "type": "png",
+        "width": 119,
+        "height": 150
       }
     ]
   },
@@ -972,6 +571,58 @@
         "path": "/images/dogs/External/King_Kong/png/King_Kong-150x150.png",
         "type": "png",
         "width": 150,
+        "height": 150
+      }
+    ]
+  }, {
+    "name": "finn",
+    "alt": "Finn",
+    "classes": [
+      "external",
+      "male",
+      "parent",
+      "finn"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/dogs/External/Finn/png/150/Finn.png",
+    "imageSet": [
+      {
+        "path": "/images/dogs/External/Finn/webp/900/Finn.webp",
+        "type": "webp",
+        "width": 809,
+        "height": 817
+      },
+      {
+        "path": "/images/dogs/External/Finn/webp/450/Finn.webp",
+        "type": "webp",
+        "width": 445,
+        "height": 449
+      },
+      {
+        "path": "/images/dogs/External/Finn/webp/150/Finn.webp",
+        "type": "webp",
+        "width": 148,
+        "height": 150
+      },
+      {
+        "path": "/images/dogs/External/Finn/png/900/Finn.png",
+        "type": "png",
+        "width": 809,
+        "height": 817
+      },
+      {
+        "path": "/images/dogs/External/Finn/png/450/Finn.png",
+        "type": "png",
+        "width": 445,
+        "height": 449
+      },
+      {
+        "path": "/images/dogs/External/Finn/png/150/Finn.png",
+        "type": "png",
+        "width": 148,
         "height": 150
       }
     ]
@@ -1996,6 +1647,719 @@
         "type": "png",
         "width": 150,
         "height": 100
+      }
+    ]
+  }, {
+    "name": "Liberty_KingKong_Hazel_3weeks",
+    "alt": "Liberty and King Kong puppy Hazel at 3 weeks",
+    "classes": [
+      "dog",
+      "hazel",
+      "puppy",
+      "liberty puppy",
+      "king kong puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Hazel_3weeks.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/liberty_king-kong_2/webp/450/Liberty_KingKong_Hazel_3weeks.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 359
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/webp/150/Liberty_KingKong_Hazel_3weeks.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 119
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/png/450/Liberty_KingKong_Hazel_3weeks.png",
+        "type": "png",
+        "width": 450,
+        "height": 359
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Hazel_3weeks.png",
+        "type": "png",
+        "width": 150,
+        "height": 119
+      }
+    ]
+  },
+  {
+    "name": "Liberty_KingKong_Aspen_5weeks",
+    "alt": "Liberty and King Kong puppy Aspen at 5 weeks",
+    "classes": [
+      "dog",
+      "aspen",
+      "puppy",
+      "liberty puppy",
+      "king kong puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Aspen_5weeks.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/liberty_king-kong_2/webp/450/Liberty_KingKong_Aspen_5weeks.webp",
+        "type": "webp",
+        "width": 360,
+        "height": 450
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/webp/150/Liberty_KingKong_Aspen_5weeks.webp",
+        "type": "webp",
+        "width": 120,
+        "height": 150
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/png/450/Liberty_KingKong_Aspen_5weeks.png",
+        "type": "png",
+        "width": 360,
+        "height": 450
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Aspen_5weeks.png",
+        "type": "png",
+        "width": 120,
+        "height": 150
+      }
+    ]
+  },
+  {
+    "name": "Liberty_KingKong_Cedar_5weeks",
+    "alt": "Liberty and King Kong puppy Cedar at 5 weeks",
+    "classes": [
+      "dog",
+      "cedar",
+      "puppy",
+      "liberty puppy",
+      "king kong puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Cedar_5weeks.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/liberty_king-kong_2/webp/450/Liberty_KingKong_Cedar_5weeks.webp",
+        "type": "webp",
+        "width": 360,
+        "height": 450
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/webp/150/Liberty_KingKong_Cedar_5weeks.webp",
+        "type": "webp",
+        "width": 120,
+        "height": 150
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/png/450/Liberty_KingKong_Cedar_5weeks.png",
+        "type": "png",
+        "width": 360,
+        "height": 450
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Cedar_5weeks.png",
+        "type": "png",
+        "width": 120,
+        "height": 150
+      }
+    ]
+  },
+  {
+    "name": "Liberty_KingKong_Oak_3weeks",
+    "alt": "Liberty and King Kong puppy Oak at 3 weeks",
+    "classes": [
+      "dog",
+      "oak",
+      "puppy",
+      "liberty puppy",
+      "king kong puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Oak_3weeks.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/liberty_king-kong_2/webp/450/Liberty_KingKong_Oak_3weeks.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 300
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/webp/150/Liberty_KingKong_Oak_3weeks.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 100
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/png/450/Liberty_KingKong_Oak_3weeks.png",
+        "type": "png",
+        "width": 450,
+        "height": 300
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Oak_3weeks.png",
+        "type": "png",
+        "width": 150,
+        "height": 100
+      }
+    ]
+  },
+  {
+    "name": "Liberty_KingKong_Group_3weeks",
+    "alt": "Liberty and King Kong puppies in a basket",
+    "classes": [
+      "dog",
+      "basket",
+      "puppy",
+      "liberty puppy",
+      "king kong puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Group_3weeks.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/liberty_king-kong_2/webp/450/Liberty_KingKong_Group_3weeks.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 300
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/webp/150/Liberty_KingKong_Group_3weeks.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 100
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/png/450/Liberty_KingKong_Group_3weeks.png",
+        "type": "png",
+        "width": 450,
+        "height": 300
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Group_3weeks.png",
+        "type": "png",
+        "width": 150,
+        "height": 100
+      }
+    ]
+  },
+  {
+    "name": "Liberty_KingKong_Cedar_3weeks",
+    "alt": "Liberty and King Kong puppy Cedar at 3 weeks",
+    "classes": [
+      "dog",
+      "cedar",
+      "puppy",
+      "liberty puppy",
+      "king kong puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Cedar_3weeks.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/liberty_king-kong_2/webp/450/Liberty_KingKong_Cedar_3weeks.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 299
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/webp/150/Liberty_KingKong_Cedar_3weeks.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 99
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/png/450/Liberty_KingKong_Cedar_3weeks.png",
+        "type": "png",
+        "width": 450,
+        "height": 299
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Cedar_3weeks.png",
+        "type": "png",
+        "width": 150,
+        "height": 99
+      }
+    ]
+  },
+  {
+    "name": "Liberty_KingKong_Aspen_3weeks",
+    "alt": "Liberty and King Kong puppy Aspen at 3 weeks",
+    "classes": [
+      "dog",
+      "aspen",
+      "puppy",
+      "liberty puppy",
+      "king kong puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Aspen_3weeks.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/liberty_king-kong_2/webp/450/Liberty_KingKong_Aspen_3weeks.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 300
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/webp/150/Liberty_KingKong_Aspen_3weeks.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 100
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/png/450/Liberty_KingKong_Aspen_3weeks.png",
+        "type": "png",
+        "width": 450,
+        "height": 300
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Aspen_3weeks.png",
+        "type": "png",
+        "width": 150,
+        "height": 100
+      }
+    ]
+  },
+  {
+    "name": "Liberty_KingKong_Hazel_5weeks",
+    "alt": "Liberty and King Kong puppy Hazel at 5 weeks",
+    "classes": [
+      "dog",
+      "hazel",
+      "puppy",
+      "liberty puppy",
+      "king kong puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Hazel_5weeks.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/liberty_king-kong_2/webp/450/Liberty_KingKong_Hazel_5weeks.webp",
+        "type": "webp",
+        "width": 360,
+        "height": 450
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/webp/150/Liberty_KingKong_Hazel_5weeks.webp",
+        "type": "webp",
+        "width": 120,
+        "height": 150
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/png/450/Liberty_KingKong_Hazel_5weeks.png",
+        "type": "png",
+        "width": 360,
+        "height": 450
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Hazel_5weeks.png",
+        "type": "png",
+        "width": 120,
+        "height": 150
+      }
+    ]
+  },
+  {
+    "name": "Liberty_KingKong_Oak_5weeks",
+    "alt": "Liberty and King Kong puppy Oak at 5 weeks",
+    "classes": [
+      "dog",
+      "oak",
+      "puppy",
+      "liberty puppy",
+      "king kong puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Oak_5weeks.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/liberty_king-kong_2/webp/450/Liberty_KingKong_Oak_5weeks.webp",
+        "type": "webp",
+        "width": 359,
+        "height": 450
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/webp/150/Liberty_KingKong_Oak_5weeks.webp",
+        "type": "webp",
+        "width": 119,
+        "height": 150
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/png/450/Liberty_KingKong_Oak_5weeks.png",
+        "type": "png",
+        "width": 359,
+        "height": 450
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Oak_5weeks.png",
+        "type": "png",
+        "width": 119,
+        "height": 150
+      }
+    ]
+  },
+  {
+    "name": "Liberty_KingKong_Spruce_5weeks",
+    "alt": "Liberty and King Kong puppy Spruce at 5 weeks",
+    "classes": [
+      "dog",
+      "spruce",
+      "puppy",
+      "liberty puppy",
+      "king kong puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Spruce_5weeks.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/liberty_king-kong_2/webp/450/Liberty_KingKong_Spruce_5weeks.webp",
+        "type": "webp",
+        "width": 359,
+        "height": 450
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/webp/150/Liberty_KingKong_Spruce_5weeks.webp",
+        "type": "webp",
+        "width": 119,
+        "height": 150
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/png/450/Liberty_KingKong_Spruce_5weeks.png",
+        "type": "png",
+        "width": 359,
+        "height": 450
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Spruce_5weeks.png",
+        "type": "png",
+        "width": 119,
+        "height": 150
+      }
+    ]
+  },
+  {
+    "name": "Liberty_KingKong_Spruce_3weeks",
+    "alt": "Liberty and King Kong puppy Spruce at 3 weeks",
+    "classes": [
+      "dog",
+      "spruce",
+      "puppy",
+      "liberty puppy",
+      "king kong puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Spruce_3weeks.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/liberty_king-kong_2/webp/450/Liberty_KingKong_Spruce_3weeks.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 300
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/webp/150/Liberty_KingKong_Spruce_3weeks.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 100
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/png/450/Liberty_KingKong_Spruce_3weeks.png",
+        "type": "png",
+        "width": 450,
+        "height": 300
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Spruce_3weeks.png",
+        "type": "png",
+        "width": 150,
+        "height": 100
+      }
+    ]
+  },
+  {
+    "name": "Liberty_KingKong_Birch_5weeks",
+    "alt": "Liberty and King Kong puppy Birch at 5 weeks",
+    "classes": [
+      "dog",
+      "birch",
+      "puppy",
+      "liberty puppy",
+      "king kong puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Birch_5weeks.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/liberty_king-kong_2/webp/450/Liberty_KingKong_Birch_5weeks.webp",
+        "type": "webp",
+        "width": 359,
+        "height": 450
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/webp/150/Liberty_KingKong_Birch_5weeks.webp",
+        "type": "webp",
+        "width": 119,
+        "height": 150
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/png/450/Liberty_KingKong_Birch_5weeks.png",
+        "type": "png",
+        "width": 359,
+        "height": 450
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Birch_5weeks.png",
+        "type": "png",
+        "width": 119,
+        "height": 150
+      }
+    ]
+  },
+  {
+    "name": "Liberty_KingKong_Cherry_3weeks",
+    "alt": "Liberty and King Kong puppy Cherry at 3 weeks",
+    "classes": [
+      "dog",
+      "cherry",
+      "puppy",
+      "liberty puppy",
+      "king kong puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Cherry_3weeks.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/liberty_king-kong_2/webp/450/Liberty_KingKong_Cherry_3weeks.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 299
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/webp/150/Liberty_KingKong_Cherry_3weeks.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 99
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/png/450/Liberty_KingKong_Cherry_3weeks.png",
+        "type": "png",
+        "width": 450,
+        "height": 299
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Cherry_3weeks.png",
+        "type": "png",
+        "width": 150,
+        "height": 99
+      }
+    ]
+  },
+  {
+    "name": "Liberty_KingKong_Ivy_3weeks",
+    "alt": "Liberty and King Kong puppy Ivy at 3 weeks",
+    "classes": [
+      "dog",
+      "ivy",
+      "puppy",
+      "liberty puppy",
+      "king kong puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Ivy_3weeks.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/liberty_king-kong_2/webp/450/Liberty_KingKong_Ivy_3weeks.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 391
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/webp/150/Liberty_KingKong_Ivy_3weeks.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 130
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/png/450/Liberty_KingKong_Ivy_3weeks.png",
+        "type": "png",
+        "width": 450,
+        "height": 391
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Ivy_3weeks.png",
+        "type": "png",
+        "width": 150,
+        "height": 130
+      }
+    ]
+  },
+  {
+    "name": "Liberty_KingKong_Birch_3weeks",
+    "alt": "Liberty and King Kong puppy Birch at 3 weeks",
+    "classes": [
+      "dog",
+      "birch",
+      "puppy",
+      "liberty puppy",
+      "king kong puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Birch_3weeks.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/liberty_king-kong_2/webp/450/Liberty_KingKong_Birch_3weeks.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 300
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/webp/150/Liberty_KingKong_Birch_3weeks.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 100
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/png/450/Liberty_KingKong_Birch_3weeks.png",
+        "type": "png",
+        "width": 450,
+        "height": 300
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Birch_3weeks.png",
+        "type": "png",
+        "width": 150,
+        "height": 100
+      }
+    ]
+  },
+  {
+    "name": "Liberty_KingKong_Ivy_5weeks",
+    "alt": "Liberty and King Kong puppy Ivy at 5 weeks",
+    "classes": [
+      "dog",
+      "ivy",
+      "puppy",
+      "liberty puppy",
+      "king kong puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Ivy_5weeks.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/liberty_king-kong_2/webp/450/Liberty_KingKong_Ivy_5weeks.webp",
+        "type": "webp",
+        "width": 360,
+        "height": 450
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/webp/150/Liberty_KingKong_Ivy_5weeks.webp",
+        "type": "webp",
+        "width": 120,
+        "height": 150
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/png/450/Liberty_KingKong_Ivy_5weeks.png",
+        "type": "png",
+        "width": 360,
+        "height": 450
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Ivy_5weeks.png",
+        "type": "png",
+        "width": 120,
+        "height": 150
+      }
+    ]
+  },
+  {
+    "name": "Liberty_KingKong_Cherry_5weeks",
+    "alt": "Liberty and King Kong puppy Cherry at 5 weeks",
+    "classes": [
+      "dog",
+      "cherry",
+      "puppy",
+      "liberty puppy",
+      "king kong puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Cherry_5weeks.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/liberty_king-kong_2/webp/450/Liberty_KingKong_Cherry_5weeks.webp",
+        "type": "webp",
+        "width": 360,
+        "height": 450
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/webp/150/Liberty_KingKong_Cherry_5weeks.webp",
+        "type": "webp",
+        "width": 120,
+        "height": 150
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/png/450/Liberty_KingKong_Cherry_5weeks.png",
+        "type": "png",
+        "width": 360,
+        "height": 450
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Cherry_5weeks.png",
+        "type": "png",
+        "width": 120,
+        "height": 150
       }
     ]
   }
