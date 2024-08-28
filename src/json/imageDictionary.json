@@ -177,35 +177,35 @@
       "x": 50,
       "y": 50
     },
-    "defaultPath": "/images/logos/png/150/positively-doodles-badge.png",
+    "defaultPath": "/images/logos/png/150/positively-doodles-illinois-badge.png",
     "imageSet": [
       {
-        "path": "/images/logos/webp/900/positively-doodles-badge.webp",
+        "path": "/images/logos/webp/900/positively-doodles-illinois-badge.webp",
         "type": "webp",
         "width": 900,
         "height": 888
       }, {
-        "path": "/images/logos/webp/450/positively-doodles-badge.webp",
+        "path": "/images/logos/webp/450/positively-doodles-illinois-badge.webp",
         "type": "webp",
         "width": 450,
         "height": 444
       }, {
-        "path": "/images/logos/webp/150/positively-doodles-badge.webp",
+        "path": "/images/logos/webp/150/positively-doodles-illinois-badge.webp",
         "type": "webp",
         "width": 150,
         "height": 148
       }, {
-        "path": "/images/logos/png/900/positively-doodles-badge.png",
+        "path": "/images/logos/png/900/positively-doodles-illinois-badge.png",
         "type": "png",
         "width": 900,
         "height": 888
       }, {
-        "path": "/images/logos/png/450/positively-doodles-badge.png",
+        "path": "/images/logos/png/450/positively-doodles-illinois-badge.png",
         "type": "png",
         "width": 450,
         "height": 444
       }, {
-        "path": "/images/logos/png/150/positively-doodles-badge.png",
+        "path": "/images/logos/png/150/positively-doodles-illinois-badge.png",
         "type": "png",
         "width": 150,
         "height": 148
