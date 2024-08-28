@@ -5,7 +5,6 @@ footer {
   flex-direction: column;
   border-top: 1px solid var(--color-borders);
   background-color: var(--color-base);
-  height: 200px;
 }
 
 footer .footer-row {
@@ -25,6 +24,10 @@ footer .contact-info-container {
   align-items: center;
   gap: 10px;
   flex-wrap: wrap;
+}
+
+footer .social-media-container {
+  min-height: 100px;
 }
 
 footer .contact-info-container a {
