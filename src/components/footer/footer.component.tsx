@@ -38,7 +38,8 @@ const Footer:FC<FooterProps> = () => {
           <SourceSetImage className='logo' imageName='smallLogo' sizesRules={['100px']} />
         </div>}
         <div className='contact-info-container'>
-          <a href={`mailto:${constants.emailAddress}`}>{constants.emailAddress}</a>
+          <p><a href={`mailto:${constants.emailAddress}`}>{constants.emailAddress}</a></p>
+          <p><a href={`tel:${constants.phoneNumber}`}>{constants.phoneNumberDisplay}</a></p>
         </div>
       </div>
       <div className='footer-row'>
