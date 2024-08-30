@@ -3,6 +3,8 @@ import useImage from '../../hooks/useImage';
 import './carousel.css';
 import { FC, useEffect, useState } from 'react';
 import ImageSwitcher from '../imageSwitcher/imageSwitcher.component';
+import useTiltedRandomizer from '../../hooks/useTiltedRandomizer';
+import { getRandomInt } from '../../services/random.service';
 
 interface CarouselProps {
   imageClasses: string[]
@@ -12,17 +14,12 @@ const Carousel:FC<CarouselProps> = ({imageClasses}) => {
   const { getImageDataByClassName } = useImage();
   const [ imageIndices, setImageIndices ] = useState(range(7));
   const [ imageNames ] = useState(shuffle(getImageDataByClassName(imageClasses, some).map((imageData) => imageData.name)));
+  const carouselIndex = useTiltedRandomizer(7);
 
   useEffect(() => {
-    const getRandomInt = (min: number, max: number): number => {
-      const minCeiled = Math.ceil(min);
-      const maxFloored = Math.floor(max);
-      return Math.floor(Math.random() * (maxFloored - minCeiled) + minCeiled);
-    };
-
     const changeImage = (indices: number[], excludedIndices: number[]): number[] => {
       const newIndices = clone(indices);
-      newIndices[getRandomInt(0, 7)] = excludedIndices[getRandomInt(0, excludedIndices.length - 1)];
+      newIndices[carouselIndex.next() - 1] = excludedIndices[getRandomInt(0, excludedIndices.length - 1)];
       return newIndices;
     };
 
@@ -32,7 +29,7 @@ const Carousel:FC<CarouselProps> = ({imageClasses}) => {
     }, 5000);
 
     return () => clearInterval(interval);
-  }, [imageNames, imageIndices, setImageIndices]);
+  }, [imageNames, imageIndices, setImageIndices, carouselIndex, getRandomInt]);
 
   return (
     <div className='carousel'>
