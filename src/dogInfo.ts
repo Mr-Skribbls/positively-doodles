@@ -364,7 +364,7 @@ export const litters:LitterInfo[] = [
       CoatColorPatterns.TraditionalTriColor,
       CoatColorPatterns.TriColorWithSable,
     ],
-    startingPrice: 2000,
+    startingPrice: 1500,
     reservationFee: 500,
     puppies: [
       {
