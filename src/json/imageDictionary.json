@@ -1661,7 +1661,7 @@
     ],
     "centerOfFocus": {
       "x": 50,
-      "y": 50
+      "y": 25
     },
     "defaultPath": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Hazel_3weeks.png",
     "imageSet": [
@@ -1913,7 +1913,7 @@
     ],
     "centerOfFocus": {
       "x": 50,
-      "y": 50
+      "y": 30
     },
     "defaultPath": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Aspen_3weeks.png",
     "imageSet": [
@@ -2165,7 +2165,7 @@
     ],
     "centerOfFocus": {
       "x": 50,
-      "y": 50
+      "y": 40
     },
     "defaultPath": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Cherry_3weeks.png",
     "imageSet": [
@@ -2207,7 +2207,7 @@
     ],
     "centerOfFocus": {
       "x": 50,
-      "y": 50
+      "y": 30
     },
     "defaultPath": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Ivy_3weeks.png",
     "imageSet": [
@@ -2290,7 +2290,7 @@
       "king kong puppy"
     ],
     "centerOfFocus": {
-      "x": 50,
+      "x": 30,
       "y": 50
     },
     "defaultPath": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Ivy_5weeks.png",
