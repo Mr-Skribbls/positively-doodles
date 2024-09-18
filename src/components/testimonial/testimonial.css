@@ -18,8 +18,12 @@
 
 .testimonial .testimonial-heading img {
   width: 150px;
-  border-radius: 75px;
-  padding-bottom: 15px;
+  height: 150px;
+  border-radius: 150px;
+}
+
+.testimonial .testimonial-heading h2 {
+  text-align: center;
 }
 
 .testimonial .testimonial-content p {

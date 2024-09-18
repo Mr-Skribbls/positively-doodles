@@ -42,6 +42,9 @@ const Home:FC<HomeProps> = () => {
         <div className='testimonial-block'>
           <h1>Testimonials</h1>
           <Testimonial customerName='Scott Family' />
+          <Testimonial customerName='Baril Family' />
+          <Testimonial customerName='Hosier Family' />
+          <Testimonial customerName='Traughber Family' />
         </div>
       </article>
 
