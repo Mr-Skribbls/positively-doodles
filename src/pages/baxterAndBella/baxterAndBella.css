@@ -31,7 +31,11 @@
   padding: 5px 0;
 }
 
-.baxter-and-bella-page p.learn-more {
+.baxter-and-bella-page .discount-code span {
+  color: red;
+}
+
+.baxter-and-bella-page p.learn-more, .baxter-and-bella-page p.discount-code {
   padding: 15px;
   max-width: 850px;
   margin: 0 auto;

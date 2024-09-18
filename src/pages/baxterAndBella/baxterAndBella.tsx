@@ -22,8 +22,12 @@ const BaxterAndBella:FC<BaxterAndBellaProps> = () => {
   return (
     <div className='baxter-and-bella-page site-container'>
       <div className='logo'>
-        <SourceSetImage imageName='Baxter_and_Bella_Partners_Badge' sizesRules={['(max-width: 35vw) 90%', '35vw']} />
+        <a target='_blank' href='https://www.baxterandbella.com/learn-more'>
+          <SourceSetImage imageName='Baxter_and_Bella_Partners_Badge' sizesRules={['(max-width: 35vw) 90%', '35vw']} />
+        </a>
       </div>
+
+      <p className='discount-code'>Discount Code: <span>POSITIVELYDOODLES</span></p>
 
       {!isNil(baxterAndBellaArticle) && <Article articleRecord={baxterAndBellaArticle}></Article>}
 
