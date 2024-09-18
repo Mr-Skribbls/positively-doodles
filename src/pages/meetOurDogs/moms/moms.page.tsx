@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, useEffect } from 'react';
 import './moms.css';
 import { dogs } from '../../../dogInfo';
 import constants from '../../../constants';
@@ -10,6 +10,10 @@ interface MomsProps {
 }
 
 const Moms:FC<MomsProps> = () => {
+  useEffect(() => {
+    window.scrollTo(0,0)
+  }, [])
+  
   const moms = dogs.filter((dog) => dog.gender === 'F');
   return (
     <div className="moms-page site-container">

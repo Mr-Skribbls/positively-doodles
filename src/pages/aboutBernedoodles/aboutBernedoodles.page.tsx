@@ -9,7 +9,10 @@ interface AboutBernedoodlesProps {
 }
 
 const AboutBernedoodles:FC<AboutBernedoodlesProps> = () => {
+<<<<<<< Updated upstream
   const { findArticle } = useContent();
+=======
+>>>>>>> Stashed changes
 
   useEffect(() => {
     window.scrollTo(0,0)

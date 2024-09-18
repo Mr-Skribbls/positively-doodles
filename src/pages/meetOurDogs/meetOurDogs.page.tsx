@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, useEffect } from 'react';
 import './meetOurDogs.css';
 import { dogs } from '../../dogInfo';
 import constants from '../../constants';
@@ -10,6 +10,10 @@ interface MeetOurDogsProps {
 }
 
 const MeetOurDogs:FC<MeetOurDogsProps> = () => {
+  useEffect(() => {
+    window.scrollTo(0,0)
+  }, [])
+
   return (
     <div className="meet-our-dogs-page site-container">
       <PageTitle title={`${constants.companyName} Parents`} />

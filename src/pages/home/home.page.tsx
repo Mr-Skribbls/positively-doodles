@@ -16,7 +16,9 @@ interface HomeProps {
 const Home:FC<HomeProps> = () => {
   const {findSection, findArticle} = useContent();
 
-  const findSection = (article:ArticleRecord, sectionTitle: string) => article.sections.find((section) => section.sectionTitle === sectionTitle);
+  useEffect(() => {
+    window.scrollTo(0,0)
+  }, [])
 
   const ourGoalSection:Section | undefined = findSection(findArticle('about positively doodles'), 'Our Goal')
 

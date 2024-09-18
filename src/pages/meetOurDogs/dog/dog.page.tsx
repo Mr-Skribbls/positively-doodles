@@ -1,4 +1,4 @@
-import { FC, useState } from 'react';
+import { FC, useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import { dogs } from '../../../dogInfo';
 
@@ -18,6 +18,10 @@ const Dog:FC<DogProps> = () => {
   const { name } = useParams();
   const [modalImages, setModalImages] = useState<string[] | null>();
   const {getImageDataByName} = useImage();
+
+  useEffect(() => {
+    window.scrollTo(0,0)
+  }, [])
   
   const dog = dogs.find((d) => d.name === name);
 
