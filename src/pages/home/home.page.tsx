@@ -6,6 +6,7 @@ import content, { ArticleRecord, Section } from '../../services/content.service'
 import SourceSetImage from '../../components/sourceSetImage/sourceSetImage.component';
 import Carousel from '../../components/carousel/carousel.component';
 import Testimonial from '../../components/testimonial/testimonial';
+import { Link } from 'react-router-dom';
 
 interface HomeProps {
 
@@ -45,6 +46,11 @@ const Home:FC<HomeProps> = () => {
       </article>
 
       <section className="badges">
+        <div className="badge">
+          <Link to="baxter-and-bella">
+            <SourceSetImage imageName='Baxter_and_Bella_Partners_Badge' sizesRules={['(max-width: 550px) 90%', '250px']} />
+          </Link>
+        </div>
         <div className="badge">
           <a target='_blank' href="https://www.gooddog.com/breeders/positively-doodles-illinois">
             <SourceSetImage imageName='goodDogBadge' sizesRules={['(max-width: 550px) 90%', '250px']} />
