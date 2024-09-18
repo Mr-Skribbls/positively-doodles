@@ -376,7 +376,7 @@ export const litters:LitterInfo[] = [
         priceAboveStarting: 0,
       }, {
         name: 'Cherry',
-        status: PuppyStatus.Available,
+        status: PuppyStatus.Sold,
         gender: 'F',
         description: 'Sable',
         imageName: 'Liberty_KingKong_Cherry_5weeks',
