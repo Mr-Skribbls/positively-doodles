@@ -7,7 +7,10 @@ import useContent from '../../hooks/useContent';
 import SourceSetImage from '../../components/sourceSetImage/sourceSetImage.component';
 import Carousel from '../../components/carousel/carousel.component';
 import Testimonial from '../../components/testimonial/testimonial';
+import MyMap from '../../components/myMap/myMap';
 import { Link } from 'react-router-dom';
+import { Marker } from 'react-leaflet';
+import useLeafletMarkers from '../../hooks/useLeafletMarkers';
 
 interface HomeProps {
 
@@ -15,6 +18,7 @@ interface HomeProps {
 
 const Home:FC<HomeProps> = () => {
   const {findSection, findArticle} = useContent();
+  const { getMarkersByType } = useLeafletMarkers();
 
   useEffect(() => {
     window.scrollTo(0,0)
@@ -66,6 +70,12 @@ const Home:FC<HomeProps> = () => {
         <div className="badge">
           <SourceSetImage imageName='Esa_Jensen_ABCDT' sizesRules={['(max-width: 550px) 90%', '250px']} />
         </div>
+      </section>
+
+      <section className='map'>
+        <MyMap>
+          {getMarkersByType('customer').map((marker, key) => <Marker key={key} position={marker.position} />)}
+        </MyMap>
       </section>
 
     </div>
