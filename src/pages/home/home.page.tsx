@@ -1,8 +1,9 @@
-import { FC } from 'react';
+import { FC, useEffect } from 'react';
 import './home.css';
 import isNil from 'lodash/isNil';
 import ContentBarTitleLeft from '../../components/contentComponents/contentBarTitleLeft/contentBarTitleLeft.component';
-import content, { ArticleRecord, Section } from '../../services/content.service';
+import { Section } from '../../services/content.service';
+import useContent from '../../hooks/useContent';
 import SourceSetImage from '../../components/sourceSetImage/sourceSetImage.component';
 import Carousel from '../../components/carousel/carousel.component';
 import Testimonial from '../../components/testimonial/testimonial';
@@ -13,12 +14,13 @@ interface HomeProps {
 }
 
 const Home:FC<HomeProps> = () => {
+  const {findSection, findArticle} = useContent();
 
   const findSection = (article:ArticleRecord, sectionTitle: string) => article.sections.find((section) => section.sectionTitle === sectionTitle);
 
-  const ourGoalSection:Section | undefined = findSection(content.articles['about positively doodles'], 'Our Goal');
+  const ourGoalSection:Section | undefined = findSection(findArticle('about positively doodles'), 'Our Goal')
 
-  const whyChooseUsSection: Section | undefined = findSection(content.articles['about positively doodles'], 'Why Choose Positively Doodles?');
+  const whyChooseUsSection: Section | undefined = findSection(findArticle('about positively doodles'), 'Why Choose Positively Doodles?')
 
   return (
     <div className="home-page site-container">
