@@ -13,6 +13,7 @@ const AvailablePuppies:FC<AvailablePuppiesProps> = () => {
   const [availableLitters, setAvailableLitters] = useState<LitterInfo[]>([]);
 
   useEffect(() => {
+    window.scrollTo(0,0);
     setAvailableLitters(litters.filter(isLitterAvailable));
   }, []);
 

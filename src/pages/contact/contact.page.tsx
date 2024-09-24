@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, useEffect } from 'react';
 import './contact.css';
 import constants from '../../constants';
 
@@ -7,6 +7,10 @@ interface ContactProps {
 }
 
 const Contact:FC<ContactProps> = () => {
+  useEffect(() => {
+    window.scrollTo(0,0)
+  }, [])
+
   return (
     <div className="contact-page site-container">
       <p>If you're interested in getting a puppy from us please call, send us an email, or contact us on facebook.</p>

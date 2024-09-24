@@ -1,0 +1,46 @@
+.baxter-and-bella-page {
+
+}
+
+.baxter-and-bella-page .logo {
+  max-width: 25vw;
+  margin: 0 auto;
+}
+
+.baxter-and-bella-page article {
+  padding: 15px;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.baxter-and-bella-page article section {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.baxter-and-bella-page article h1 {
+  font-size: 26px;
+  padding: 0 0 1rem 0;
+}
+
+.baxter-and-bella-page article section h2 {
+  font-size: 20px;
+}
+
+.baxter-and-bella-page article section p {
+  padding: 5px 0;
+}
+
+.baxter-and-bella-page .discount-code span {
+  color: red;
+}
+
+.baxter-and-bella-page p.learn-more, .baxter-and-bella-page p.discount-code {
+  padding: 15px;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.baxter-and-bella-page p.learn-more a {
+  text-decoration: underline;
+}

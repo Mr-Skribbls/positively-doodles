@@ -211,6 +211,57 @@
         "height": 148
       }
     ]
+  }, {
+    "name": "Baxter_and_Bella_Partners_Badge",
+    "alt": "Positively Doodles, Baxter and Bella Badge",
+    "classes": [
+      "logo",
+      "baxter and bella badge",
+      "badge"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/logos/png/150/Baxter_and_Bella_Partners_Badge.png",
+    "imageSet": [
+      {
+        "path": "/images/logos/webp/900/Baxter_and_Bella_Partners_Badge.webp",
+        "type": "webp",
+        "width": 900,
+        "height": 855
+      },
+      {
+        "path": "/images/logos/webp/450/Baxter_and_Bella_Partners_Badge.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 427
+      },
+      {
+        "path": "/images/logos/webp/150/Baxter_and_Bella_Partners_Badge.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 142
+      },
+      {
+        "path": "/images/logos/png/900/Baxter_and_Bella_Partners_Badge.png",
+        "type": "png",
+        "width": 900,
+        "height": 855
+      },
+      {
+        "path": "/images/logos/png/450/Baxter_and_Bella_Partners_Badge.png",
+        "type": "png",
+        "width": 450,
+        "height": 427
+      },
+      {
+        "path": "/images/logos/png/150/Baxter_and_Bella_Partners_Badge.png",
+        "type": "png",
+        "width": 150,
+        "height": 142
+      }
+    ]
   },
 
   {
@@ -262,6 +313,159 @@
         "type": "png",
         "width": 149,
         "height": 149
+      }
+    ]
+  }, {
+    "name": "baril_family",
+    "alt": "Baril Family",
+    "classes": [
+      "testimonial",
+      "customer",
+      "baril family"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/testimonials/png/150/baril_family.png",
+    "imageSet": [
+      {
+        "path": "/images/testimonials/webp/900/baril_family.webp",
+        "type": "webp",
+        "width": 675,
+        "height": 900
+      },
+      {
+        "path": "/images/testimonials/webp/450/baril_family.webp",
+        "type": "webp",
+        "width": 337,
+        "height": 450
+      },
+      {
+        "path": "/images/testimonials/webp/150/baril_family.webp",
+        "type": "webp",
+        "width": 112,
+        "height": 150
+      },
+      {
+        "path": "/images/testimonials/png/900/baril_family.png",
+        "type": "png",
+        "width": 675,
+        "height": 900
+      },
+      {
+        "path": "/images/testimonials/png/450/baril_family.png",
+        "type": "png",
+        "width": 337,
+        "height": 450
+      },
+      {
+        "path": "/images/testimonials/png/150/baril_family.png",
+        "type": "png",
+        "width": 112,
+        "height": 150
+      }
+    ]
+  }, {
+    "name": "hosier_family",
+    "alt": "Hosier Family",
+    "classes": [
+      "testimonial",
+      "customer",
+      "hosier family"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/testimonials/png/150/hosier_family.png",
+    "imageSet": [
+      {
+        "path": "/images/testimonials/webp/900/hosier_family.webp",
+        "type": "webp",
+        "width": 900,
+        "height": 675
+      },
+      {
+        "path": "/images/testimonials/webp/450/hosier_family.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 337
+      },
+      {
+        "path": "/images/testimonials/webp/150/hosier_family.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 112
+      },
+      {
+        "path": "/images/testimonials/png/900/hosier_family.png",
+        "type": "png",
+        "width": 900,
+        "height": 675
+      },
+      {
+        "path": "/images/testimonials/png/450/hosier_family.png",
+        "type": "png",
+        "width": 450,
+        "height": 337
+      },
+      {
+        "path": "/images/testimonials/png/150/hosier_family.png",
+        "type": "png",
+        "width": 150,
+        "height": 112
+      }
+    ]
+  }, {
+    "name": "traughber_family",
+    "alt": "Traughber Family",
+    "classes": [
+      "testimonial",
+      "customer",
+      "traughber family"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/testimonials/png/150/traughber_family.png",
+    "imageSet": [
+      {
+        "path": "/images/testimonials/webp/900/traughber_family.webp",
+        "type": "webp",
+        "width": 702,
+        "height": 900
+      },
+      {
+        "path": "/images/testimonials/webp/450/traughber_family.webp",
+        "type": "webp",
+        "width": 351,
+        "height": 450
+      },
+      {
+        "path": "/images/testimonials/webp/150/traughber_family.webp",
+        "type": "webp",
+        "width": 117,
+        "height": 150
+      },
+      {
+        "path": "/images/testimonials/png/900/traughber_family.png",
+        "type": "png",
+        "width": 702,
+        "height": 900
+      },
+      {
+        "path": "/images/testimonials/png/450/traughber_family.png",
+        "type": "png",
+        "width": 351,
+        "height": 450
+      },
+      {
+        "path": "/images/testimonials/png/150/traughber_family.png",
+        "type": "png",
+        "width": 117,
+        "height": 150
       }
     ]
   },

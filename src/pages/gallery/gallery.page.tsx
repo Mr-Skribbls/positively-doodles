@@ -36,6 +36,10 @@ const Gallery:FC<GalleryProps> = () => {
   const { imageFilters } = useParams<string>();
 
   useEffect(() => {
+    window.scrollTo(0,0)
+  }, []);
+
+  useEffect(() => {
     const filters = (imageFilters || '').split('|');
     const imagesData = shuffle(getImageDataByClassName(filters, some));
     const displayImages = imagesData.map((imageData) => {

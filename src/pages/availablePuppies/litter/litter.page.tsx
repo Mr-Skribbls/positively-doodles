@@ -16,6 +16,10 @@ const Litter:FC<LitterProps> = () => {
   const { id } = useParams();
 
   useEffect(() => {
+    window.scrollTo(0,0)
+  }, [])
+
+  useEffect(() => {
     const [dam, sire, date] = (id || '').split('_');
     const litter = litters.find((l) => {
       return l.dam?.name === dam && 

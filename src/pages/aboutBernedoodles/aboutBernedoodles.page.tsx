@@ -1,18 +1,29 @@
-import { FC } from 'react';
+import { FC, useEffect } from 'react';
 import './aboutBernedoodles.css';
 import Article from '../../components/contentComponents/article/article.component';
-import content from '../../services/content.service';
+import useContent from '../../hooks/useContent';
+import { isNil } from 'lodash';
 
 interface AboutBernedoodlesProps {
 
 }
 
 const AboutBernedoodles:FC<AboutBernedoodlesProps> = () => {
+  const { findArticle } = useContent();
+
+  useEffect(() => {
+    window.scrollTo(0,0)
+  }, [])
+
+  const breedsArticle = findArticle('breeds');
+  const generationsArticle = findArticle('generations');
+  const furnishingArticle = findArticle('furnishing');
+
   return (
     <div className='about-bernedoodles site-container'>
-      <Article articleRecord={content.articles.breeds}></Article>
-      <Article articleRecord={content.articles.generations}></Article>
-      <Article articleRecord={content.articles.furnishing}></Article>
+      {!isNil(breedsArticle) && <Article articleRecord={breedsArticle}></Article>}
+      {!isNil(generationsArticle) && <Article articleRecord={generationsArticle}></Article>}
+      {!isNil(furnishingArticle) && <Article articleRecord={furnishingArticle}></Article>}
     </div>
   )
 };

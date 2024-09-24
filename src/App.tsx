@@ -12,6 +12,7 @@ import Contact from './pages/contact/contact.page'
 import AvailablePuppies from './pages/availablePuppies/availablePuppies.page'
 import Litter from './pages/availablePuppies/litter/litter.page'
 import AboutBernedoodles from './pages/aboutBernedoodles/aboutBernedoodles.page'
+import BaxterAndBella from './pages/baxterAndBella/baxterAndBella'
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path='available-puppies' element={<AvailablePuppies />} />
           <Route path='litter/:id' element={<Litter />} />
           <Route path='about-bernedoodles' element={<AboutBernedoodles />} />
+          <Route path='baxter-and-bella' element={<BaxterAndBella />} />
 
           <Route path='*' element={<ErrorPage />} />
         </Route>
