@@ -35,7 +35,11 @@ const markers:MyMapMarker[] = [
     type: "customer",
     position: [ 36.5298, -87.3595 ],
     icon: "",
-  },
+  }, {
+    type: "customer",
+    position: [38.4426, -88.4036],
+    icon: "",
+  }
 ]
 
 const getMarkersByType = (type: string) => {
