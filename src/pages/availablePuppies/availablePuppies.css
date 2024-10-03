@@ -1,0 +1,12 @@
+.available-puppies .section-header {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.available-puppies .section-header h2 {
+  margin: 32px;
+}
+
+.available-puppies .expected-litters {
+  margin-bottom: 50px;
+}
