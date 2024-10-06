@@ -1,18 +1,18 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import './App.css'
-import ErrorPage from './errorPage'
-import SharedLayout from './pages/sharedLayout'
-import Home from './pages/home/home.page'
-import MeetOurDogs from './pages/meetOurDogs/meetOurDogs.page'
-import Moms from './pages/meetOurDogs/moms/moms.page'
-import Dads from './pages/meetOurDogs/dads/dads.page'
-import Dog from './pages/meetOurDogs/dog/dog.page'
-import Gallery from './pages/gallery/gallery.page'
-import Contact from './pages/contact/contact.page'
-import AvailablePuppies from './pages/availablePuppies/availablePuppies.page'
-import Litter from './pages/availablePuppies/litter/litter.page'
-import AboutBernedoodles from './pages/aboutBernedoodles/aboutBernedoodles.page'
-import BaxterAndBella from './pages/baxterAndBella/baxterAndBella'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import './App.css';
+import ErrorPage from './errorPage';
+import SharedLayout from './pages/sharedLayout';
+import Home from './pages/home/home.page';
+import MeetOurDogs from './pages/meetOurDogs/meetOurDogs.page';
+import Moms from './pages/meetOurDogs/moms/moms.page';
+import Dads from './pages/meetOurDogs/dads/dads.page';
+import Dog from './pages/meetOurDogs/dog/dog.page';
+import Gallery from './pages/gallery/gallery.page';
+import Contact from './pages/contact/contact.page';
+import AvailablePuppies from './pages/availablePuppies/availablePuppies.page';
+import Litter from './pages/availablePuppies/litter/litter.page';
+import AboutBernedoodles from './pages/aboutBernedoodles/aboutBernedoodles.page';
+import BaxterAndBella from './pages/baxterAndBella/baxterAndBella';
 
 function App() {
   return (
@@ -35,7 +35,7 @@ function App() {
         </Route>
       </Routes>
     </BrowserRouter>
-  )
+  );
 }
 
-export default App
+export default App;

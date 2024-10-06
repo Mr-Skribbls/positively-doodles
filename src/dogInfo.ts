@@ -34,6 +34,8 @@ enum CoatColorPatterns {
   ApricotSable = 'Apricot Sable',
   TraditionalTriColor = 'Traditional Tri-color',
   TriColorWithSable = 'Tri-color with Sable',
+  BlackTanPoints = 'Black with Tan Points',
+  Red = 'Red',
 }
 
 export enum DogState {
@@ -122,12 +124,14 @@ export interface Puppy {
 }
 
 export interface LitterInfo {
+  // id: the id is the compound of dam sire and hyphenated dueDate with _ separator
   dam: Dog, // composite key
   sire: Dog, // composite key
   dueDate: Date, // composite key
   birthDate?: Date,
   goHomeDate?: Date,
   size: number, // number of puppies
+  expectedPuppySize: string, // expected size the puppies should get
   state: LitterState,
   puppyBreed: LitterBreed,
   expectedCoatTypes: CoatType[],
@@ -278,6 +282,7 @@ export const litters:LitterInfo[] = [
     birthDate: new Date(2023, 11, 25),
     goHomeDate: new Date(2024, 1, 14),
     size: 6,
+    expectedPuppySize: '30 to 45 lbs',
     state: LitterState.Complete,
     puppyBreed: {
       type: BreedType.Bernedoodle,
@@ -348,7 +353,8 @@ export const litters:LitterInfo[] = [
     birthDate: new Date(2024, 6, 17),
     goHomeDate: new Date(2024, 8, 11),
     size: 8,
-    state: LitterState.Puppy,
+    expectedPuppySize: '30 to 45 lbs',
+    state: LitterState.HomeBound,
     puppyBreed: {
       type: BreedType.Bernedoodle,
       expectedSizes: [
@@ -371,56 +377,56 @@ export const litters:LitterInfo[] = [
         name: 'Hazel',
         status: PuppyStatus.Available,
         gender: 'F',
-        description: 'Black Phantom',
+        description: 'Hazel is phantom and was the largest puppy born in this litter and is now tied for the largest pup position. She is expected to weigh around 40-45 lbs when full grown. Hazel is very sweet, mellow, and loving. She does very well with other dogs and people.',
         imageName: 'Liberty_KingKong_Hazel_5weeks',
         priceAboveStarting: 0,
       }, {
         name: 'Cherry',
         status: PuppyStatus.Sold,
         gender: 'F',
-        description: 'Sable',
+        description: 'Cherry is a stunning phantom sable. She is confident, smart, and outgoing. She loves to try new things. Cherry is our smallest puppy. She will probably have an adult weight of 30 lbs.',
         imageName: 'Liberty_KingKong_Cherry_5weeks',
         priceAboveStarting: 0,
       }, {
         name: 'Ivy',
         status: PuppyStatus.Available,
         gender: 'F',
-        description: 'Tricolor',
+        description: 'Ivy is our beautiful tri-colored female. She is both sweet and spunky. Despite her small stature. She has no problem holding her own when playing with her 5 brothers. Her adult weight is expected to be between 30-35 lbs.',
         imageName: 'Liberty_KingKong_Ivy_5weeks',
         priceAboveStarting: 0,
       }, {
         name: 'Birch',
         status: PuppyStatus.Available,
         gender: 'M',
-        description: 'Sable',
+        description: 'Birch is tied with Hazel for the largest puppy award. He is smart and enjoys his training sessions. He is a big boy and will probably reach between 40-45 lbs adult weight.',
         imageName: 'Liberty_KingKong_Birch_5weeks',
         priceAboveStarting: 0,
       }, {
         name: 'Oak',
         status: PuppyStatus.Available,
         gender: 'M',
-        description: 'Sable',
+        description: 'Oak is a very dark shaded sable, so dark that his back is black. Oak is a very mellow, sweet and gentle boy. He would do best in a home that wants a cuddle buddy. He will probably weigh between 35-40 lbs.',
         imageName: 'Liberty_KingKong_Oak_5weeks',
         priceAboveStarting: 0,
       }, {
         name: 'Spruce',
         status: PuppyStatus.Available,
         gender: 'M',
-        description: 'Tricolor',
+        description: 'Spruce has been diagnosed with a liver shunt. Fortunately, with medical care, Spruce can live a normal life. He\'ll require daily medication and a potential future surgery. We\'re seeking a compassionate, lifelong home willing to provide the necessary care, and we\'re waiving adoption fees to find a furever family that ensures his well-being. We will be very particular as his health and well being is our priority. If you have an interest in applying for this wonderful puppy, please contact me for an interview.',
         imageName: 'Liberty_KingKong_Spruce_5weeks',
-        priceAboveStarting: 0,
+        priceAboveStarting: -1000,
       }, {
         name: 'Cedar',
-        status: PuppyStatus.Available,
+        status: PuppyStatus.Reserved,
         gender: 'M',
-        description: 'Abstract Sable',
+        description: 'Cedar is a light phantom sable. His phantom markings and sable will fade as he grows. he has the sweetest disposition! He is very people focused and has a medium-low energy level. He will probably be around 40 lbs full grown.',
         imageName: 'Liberty_KingKong_Cedar_5weeks',
         priceAboveStarting: 0,
       }, {
         name: 'Aspen',
         status: PuppyStatus.Available,
         gender: 'M',
-        description: 'Sable',
+        description: 'Aspen is our smallest boy, and our most energetic puppy. He is happy, playful, confident, and always ready for a romp around. He is always the last one playing after all of his siblings have fallen asleep. He will be best in a semi-active family that loves to explore and hike. He will probably grow to be between 30-35 lbs.',
         imageName: 'Liberty_KingKong_Aspen_5weeks',
         priceAboveStarting: 0,
       },
@@ -432,6 +438,7 @@ export const litters:LitterInfo[] = [
     // birthDate: new Date(2024, 6, 17),
     // goHomeDate: new Date(2024, 8, 11),
     size: 10,
+    expectedPuppySize: '12 to 18 lbs',
     state: LitterState.Expected,
     puppyBreed: {
       type: BreedType.Cavapoo,
@@ -444,11 +451,10 @@ export const litters:LitterInfo[] = [
       CoatType.Wavy,
     ],
     expectedColors: [
-      CoatColorPatterns.ApricotSable,
-      CoatColorPatterns.TraditionalTriColor,
-      CoatColorPatterns.TriColorWithSable,
+      CoatColorPatterns.BlackTanPoints,
+      CoatColorPatterns.Red,
     ],
-    startingPrice: 3000,
+    startingPrice: 2000,
     reservationFee: 500,
     puppies: [],
   },

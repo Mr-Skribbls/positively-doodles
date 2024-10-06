@@ -1,4 +1,4 @@
 .litter-card {
-  max-width: 850px;
+  max-width: var(--available-puppies-max-width);
   margin: 0 auto;
 }

@@ -16,7 +16,7 @@ const LitterCard:FC<LitterCardProps> = ({
       {litter.state === LitterState.Expected && <ExpectedLitterCard litter={litter} />}
       {(litter.state === LitterState.Puppy || litter.state === LitterState.HomeBound) && <PuppiesLitterCard litter={litter} />}
     </div>
-  )
+  );
 };
 
 export default LitterCard;

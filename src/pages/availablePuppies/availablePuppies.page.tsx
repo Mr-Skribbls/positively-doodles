@@ -19,21 +19,21 @@ const AvailablePuppies:FC<AvailablePuppiesProps> = () => {
     setUpcomingLitters(litters.filter(isLitterExpected));
   }, []);
 
-  const isLitterAvailable = (litter:LitterInfo) => 
+  const isLitterAvailable = (litter:LitterInfo) =>
     litter.state === LitterState.Puppy ||
     litter.state === LitterState.HomeBound;
-  
+
   const isLitterExpected = (litter:LitterInfo) => litter.state === LitterState.Expected;
 
   return (
     <div className='available-puppies site-container'>
       <PageTitle title={`${constants.companyName} Puppies`} />
-      <section>
+      {availableLitters.length > 0 && <section>
         <div className='section-header'>
           <h2>Available Puppies</h2>
         </div>
         {availableLitters.map((litter, key) => <LitterCard key={key} litter={litter} />)}
-      </section>
+      </section>}
       {upcomingLitters.length > 0 && <section className='expected-litters'>
         <div className='section-header'>
           <h2>Expected Litters</h2>
@@ -41,7 +41,7 @@ const AvailablePuppies:FC<AvailablePuppiesProps> = () => {
         {upcomingLitters.map((litter, key) => <LitterCard key={key} litter={litter} />)}
       </section>}
     </div>
-  )
+  );
 };
 
 export default AvailablePuppies;

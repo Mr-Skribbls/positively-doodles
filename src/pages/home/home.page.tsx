@@ -21,12 +21,12 @@ const Home:FC<HomeProps> = () => {
   const { getMarkersByType } = useLeafletMarkers();
 
   useEffect(() => {
-    window.scrollTo(0,0)
-  }, [])
+    window.scrollTo(0,0);
+  }, []);
 
-  const ourGoalSection:Section | undefined = findSection(findArticle('about positively doodles'), 'Our Goal')
+  const ourGoalSection:Section | undefined = findSection(findArticle('about positively doodles'), 'Our Goal');
 
-  const whyChooseUsSection: Section | undefined = findSection(findArticle('about positively doodles'), 'Why Choose Positively Doodles?')
+  const whyChooseUsSection: Section | undefined = findSection(findArticle('about positively doodles'), 'Why Choose Positively Doodles?');
 
   return (
     <div className="home-page site-container">
@@ -38,7 +38,7 @@ const Home:FC<HomeProps> = () => {
           imageType: 'png',
           imageWidth: 300,
         }} />}
-        
+
         {!isNil(whyChooseUsSection) && <ContentBarTitleLeft title={whyChooseUsSection.sectionTitle} paragraphs={whyChooseUsSection.paragraphs} imageOverride={{
           imageName: 'Liberty_KingKong_TinyTim_6weeks',
           imageType: 'png',

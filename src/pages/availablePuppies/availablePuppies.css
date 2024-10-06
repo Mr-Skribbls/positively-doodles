@@ -1,5 +1,9 @@
+.available-puppies {
+  --available-puppies-max-width: 80vw;
+}
+
 .available-puppies .section-header {
-  max-width: 850px;
+  max-width: var(--available-puppies-max-width);
   margin: 0 auto;
 }
 

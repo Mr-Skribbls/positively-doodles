@@ -1,33 +1,28 @@
 import { FC, useEffect, useState } from 'react';
-import { LitterInfo, litters } from '../../../dogInfo';
+import { LitterInfo } from '../../../dogInfo';
 import isNil from 'lodash/isNil';
 import './litter.css';
-import useDateHelper from '../../../hooks/useDateHelper';
 import Parent from '../../../components/litter/parent/parent.component';
 import { useParams } from 'react-router-dom';
+import useLitter from '../../../hooks/useLitter';
 
 interface LitterProps {
-  
+
 }
 
 const Litter:FC<LitterProps> = () => {
-  const {hyphenatedDate} = useDateHelper();
+  const litterHelper = useLitter();
   const [litter, setLitter] = useState<LitterInfo|null>();
   const { id } = useParams();
 
   useEffect(() => {
-    window.scrollTo(0,0)
-  }, [])
+    window.scrollTo(0,0);
+  }, []);
 
   useEffect(() => {
-    const [dam, sire, date] = (id || '').split('_');
-    const litter = litters.find((l) => {
-      return l.dam?.name === dam && 
-             l.sire?.name === sire && 
-             hyphenatedDate(l.dueDate) === date;
-    });
+    const litter = litterHelper.getLitter((id || ''));
     setLitter(litter);
-  }, [id, hyphenatedDate]);
+  }, [id, litterHelper]);
 
   return (
     <div className="litter-container site-container">

@@ -2,7 +2,7 @@
   margin: 10px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    grid-template-rows: repeat(6, minmax(60px, 0.45fr));
+  grid-template-rows: repeat(6, minmax(60px, 0.45fr));
   gap: 10px;
   grid-auto-flow: dense;
 }

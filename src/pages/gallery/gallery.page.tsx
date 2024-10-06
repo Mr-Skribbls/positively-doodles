@@ -11,7 +11,7 @@ import useImage, { ImageData } from '../../hooks/useImage';
 import { every, shuffle, some } from 'lodash';
 
 interface GalleryProps {
-  
+
 }
 
 interface DisplayImage {
@@ -27,7 +27,7 @@ const imageSizes = [
   'medium',
   'medium',
   'medium',
-]
+];
 
 const Gallery:FC<GalleryProps> = () => {
   const {getImageDataByClassName} = useImage();
@@ -36,7 +36,7 @@ const Gallery:FC<GalleryProps> = () => {
   const { imageFilters } = useParams<string>();
 
   useEffect(() => {
-    window.scrollTo(0,0)
+    window.scrollTo(0,0);
   }, []);
 
   useEffect(() => {
@@ -49,26 +49,26 @@ const Gallery:FC<GalleryProps> = () => {
       };
     });
     setDisplayImages(displayImages);
-  }, [imageFilters]);
-  
+  }, [imageFilters, getImageDataByClassName]);
+
   const getModalImages = (baseImageData: ImageData): string[] => {
     const relatedImages = getImageDataByClassName(baseImageData.classes, every);
     return [baseImageData.name, ...relatedImages.map((imageData) => imageData.name)];
-  }
+  };
 
   const imageCard = (displayImage: DisplayImage, key: number) => {
     const sizesRules = displayImage.size === 'small' ? ['240px'] :
       displayImage.size === 'medium' ? ['480px'] :
-      ['720px']
+        ['720px'];
     return (
-      <div 
+      <div
         className={`${displayImage.size} gallery-image`}
         onClick={() => setModalImageNames(getModalImages(displayImage.image))}
         key={key}>
         <SourceSetImage imageName={displayImage.image.name} sizesRules={sizesRules} />
       </div>
     );
-  }
+  };
 
   return (
     <div className='site-container'>
@@ -79,7 +79,7 @@ const Gallery:FC<GalleryProps> = () => {
         </Modal>
       </div>
     </div>
-  )
+  );
 };
 
 export default Gallery;

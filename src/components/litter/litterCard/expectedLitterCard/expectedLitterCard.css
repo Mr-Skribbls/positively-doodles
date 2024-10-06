@@ -27,3 +27,7 @@
 .expected-litter-card .card-container figcaption ul {
   list-style: none;
 }
+
+.expected-litter-card a {
+  text-decoration: underline;
+}

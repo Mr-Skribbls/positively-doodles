@@ -2,9 +2,9 @@ import { FC } from 'react';
 import { LitterInfo } from '../../../../dogInfo';
 import isNil from 'lodash/isNil';
 import { Link } from 'react-router-dom';
-import useDateHelper from '../../../../hooks/useDateHelper';
 import './expectedLitterCard.css';
 import SourceSetImage from '../../../sourceSetImage/sourceSetImage.component';
+import useLitter from '../../../../hooks/useLitter';
 
 interface ExpectedLitterCardProps {
   litter: LitterInfo,
@@ -13,7 +13,7 @@ interface ExpectedLitterCardProps {
 const ExpectedLitterCard:FC<ExpectedLitterCardProps> = ({
   litter,
 }) => {
-  const dateHelper = useDateHelper();
+  const litterHelper = useLitter();
   return (
     <figure className='expected-litter-card'>
       <div className="card-container">
@@ -27,6 +27,7 @@ const ExpectedLitterCard:FC<ExpectedLitterCardProps> = ({
         </div>
         <figcaption>
           <h4>{litter.dam.name} and {litter.sire.name} litter</h4>
+          <h5>{litter.puppyBreed.type} Puppies</h5>
           <div>
             <ul>
               <li>
@@ -34,17 +35,16 @@ const ExpectedLitterCard:FC<ExpectedLitterCardProps> = ({
                 <span>{litter.dueDate.toDateString()}</span>
               </li>
               <li>
-                <span className="label">Expecting: </span>
-                <span>{litter.size}</span>
+                <span className="label">Expected Adult Size: </span>
+                <span>{litter.expectedPuppySize}</span>
               </li>
-              <li><Link to={`/litter/${litter.dam.name}_${litter.sire.name}_${dateHelper.hyphenatedDate(litter.dueDate)}`}>Find out more</Link></li>
+              <li><Link to={`/litter/${litterHelper.getLitterId(litter)}`}>Find out more</Link></li>
             </ul>
           </div>
         </figcaption>
       </div>
-      
     </figure>
-  )
+  );
 };
 
 export default ExpectedLitterCard;
