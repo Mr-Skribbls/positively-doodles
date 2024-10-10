@@ -396,21 +396,21 @@ export const litters:LitterInfo[] = [
         priceAboveStarting: 0,
       }, {
         name: 'Birch',
-        status: PuppyStatus.Available,
+        status: PuppyStatus.Reserved,
         gender: 'M',
         description: 'Birch is tied with Hazel for the largest puppy award. He is smart and enjoys his training sessions. He is a big boy and will probably reach between 40-45 lbs adult weight.',
         imageName: 'Liberty_KingKong_Birch_5weeks',
         priceAboveStarting: 0,
       }, {
         name: 'Oak',
-        status: PuppyStatus.Available,
+        status: PuppyStatus.Reserved,
         gender: 'M',
         description: 'Oak is a very dark shaded sable, so dark that his back is black. Oak is a very mellow, sweet and gentle boy. He would do best in a home that wants a cuddle buddy. He will probably weigh between 35-40 lbs.',
         imageName: 'Liberty_KingKong_Oak_5weeks',
         priceAboveStarting: 0,
       }, {
         name: 'Spruce',
-        status: PuppyStatus.Available,
+        status: PuppyStatus.Sold,
         gender: 'M',
         description: 'Spruce has been diagnosed with a liver shunt. Fortunately, with medical care, Spruce can live a normal life. He\'ll require daily medication and a potential future surgery. We\'re seeking a compassionate, lifelong home willing to provide the necessary care, and we\'re waiving adoption fees to find a furever family that ensures his well-being. We will be very particular as his health and well being is our priority. If you have an interest in applying for this wonderful puppy, please contact me for an interview.',
         imageName: 'Liberty_KingKong_Spruce_5weeks',
@@ -424,7 +424,7 @@ export const litters:LitterInfo[] = [
         priceAboveStarting: 0,
       }, {
         name: 'Aspen',
-        status: PuppyStatus.Available,
+        status: PuppyStatus.Reserved,
         gender: 'M',
         description: 'Aspen is our smallest boy, and our most energetic puppy. He is happy, playful, confident, and always ready for a romp around. He is always the last one playing after all of his siblings have fallen asleep. He will be best in a semi-active family that loves to explore and hike. He will probably grow to be between 30-35 lbs.',
         imageName: 'Liberty_KingKong_Aspen_5weeks',
