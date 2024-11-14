@@ -424,7 +424,7 @@ export const litters:LitterInfo[] = [
         priceAboveStarting: 0,
       }, {
         name: 'Aspen',
-        status: PuppyStatus.sold,
+        status: PuppyStatus.Sold,
         gender: 'M',
         description: 'Aspen is our smallest boy, and our most energetic puppy. He is happy, playful, confident, and always ready for a romp around. He is always the last one playing after all of his siblings have fallen asleep. He will be best in a semi-active family that loves to explore and hike. He will probably grow to be between 30-35 lbs.',
         imageName: 'Liberty_KingKong_Aspen_5weeks',
