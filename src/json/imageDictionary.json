@@ -2567,6 +2567,48 @@
         "height": 150
       }
     ]
+  },
+  {
+    "name": "Liberty_KingKong_Birch_16weeks",
+    "alt": "Liberty and King Kong puppy Birch at 16 weeks",
+    "classes": [
+      "dog",
+      "birch",
+      "puppy",
+      "liberty puppy",
+      "king kong puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Birch_16weeks.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/liberty_king-kong_2/webp/450/Liberty_KingKong_Birch_16weeks.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 360
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/webp/150/Liberty_KingKong_Birch_16weeks.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 120
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/png/450/Liberty_KingKong_Birch_16weeks.png",
+        "type": "png",
+        "width": 450,
+        "height": 360
+      },
+      {
+        "path": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Birch_16weeks.png",
+        "type": "png",
+        "width": 150,
+        "height": 120
+      }
+    ]
   }
 
 ]
