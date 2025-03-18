@@ -1,5 +1,5 @@
 import { litters, LitterInfo } from "../dogInfo";
-import useDateHelper from "./useDateHelper";
+import useDateHelper from "./useDateHelper/useDateHelper";
 
 const DELIMITER = '_';
 
