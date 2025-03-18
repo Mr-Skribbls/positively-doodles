@@ -5,7 +5,7 @@ import isEmpty from 'lodash/isEmpty';
 import useWindowDimensions from '../../hooks/useWindowDimensions';
 import SocialIcon from '../socialIcon/socialIcon.component';
 import SourceSetImage from '../sourceSetImage/sourceSetImage.component';
-import Copyright from '../copyright/copyright.component';
+import Copyright from '../copyright/copyright';
 
 interface FooterProps {
 
