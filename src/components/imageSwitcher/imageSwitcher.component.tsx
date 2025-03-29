@@ -16,11 +16,13 @@ const ImageSwitcher:FC<ImageSwitcherProps> = ({
   const [isImageChanging, setIsImageChanging] = useState(false);
 
   useEffect(() => {
-    setIsImageChanging(true);
     setTimeout(() => {
-      setCurrentImage(imageName);
-      setTimeout(() => setIsImageChanging(false), 10);
-    }, 1000);
+      setIsImageChanging(true);
+      setTimeout(() => {
+        setCurrentImage(imageName);
+        setTimeout(() => setIsImageChanging(false), 10); // Time after the switch occurs
+      }, 1000); // Time while the switch occurs. 
+    }, 2000); // Time before switch occurs. This will give the new image time to render before switching.
   }, [imageName, setCurrentImage, setIsImageChanging]);
 
   return (

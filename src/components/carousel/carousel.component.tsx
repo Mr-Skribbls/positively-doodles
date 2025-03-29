@@ -29,7 +29,7 @@ const Carousel:FC<CarouselProps> = ({imageClasses}) => {
     }, 5000);
 
     return () => clearInterval(interval);
-  }, [imageNames, imageIndices, setImageIndices, carouselIndex, getRandomInt]);
+  }, [imageNames, imageIndices, setImageIndices, carouselIndex]);
 
   return (
     <div className='carousel'>

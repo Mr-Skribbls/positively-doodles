@@ -19,7 +19,7 @@ const SourceSetImage:FC<SourceSetImageProps> = ({
 
   useEffect(() => {
     setImageData(getImageDataByName([imageName]));
-  }, [imageName]);
+  }, [imageName, getImageDataByName]);
 
   const getSrcSet = (imageSet: ImageDefinition[]): string => {
     return imageSet.map((image) => `${image.path} ${image.width}w`).join(',');
@@ -34,6 +34,7 @@ const SourceSetImage:FC<SourceSetImageProps> = ({
   return (
     <>
       {!isNil(imageData[0]) && <img
+        loading='lazy'
         className={styleClasses}
         src={imageData[0].defaultPath}
         srcSet={getSrcSet(imageData[0].imageSet)}
