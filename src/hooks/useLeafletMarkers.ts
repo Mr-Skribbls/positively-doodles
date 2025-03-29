@@ -58,8 +58,8 @@ const markers:MyMapMarker[]|CustomerMarker[] = [
   }, {
     type: 'customer',
     dog: 'Cedar',
-    place: 'Bloomington, IL',
-    position: [40.4842, -88.9937],
+    place: 'Nashville, TN',
+    position: [36.1627, -86.7816],
     icon: '',
   }, {
     type: 'customer',
