@@ -396,9 +396,9 @@ export const litters:LitterInfo[] = [
         priceAboveStarting: 0,
       }, {
         name: 'Birch',
-        status: PuppyStatus.Available,
+        status: PuppyStatus.Sold,
         gender: 'M',
-        description: 'Birch is a smart, calm, and sweet boy with the best disposition. He is crate-trained and sleeps through the night. He is excelling in house training, potty training, sit, stay, come, and leash walking. He loves exploring outside. He will do best in a low to medium low energy environment. He will likely be around 40-50lbs when full grown.',
+        description: '',
         imageName: 'Liberty_KingKong_Birch_16weeks',
         priceAboveStarting: 0,
       }, {
