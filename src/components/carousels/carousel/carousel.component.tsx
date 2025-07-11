@@ -1,10 +1,10 @@
 import { clone, range, shuffle, some } from 'lodash';
-import useImage from '../../hooks/useImage';
+import useImage from '../../../hooks/useImage';
 import './carousel.css';
 import { FC, useEffect, useState } from 'react';
-import ImageSwitcher from '../imageSwitcher/imageSwitcher.component';
-import useTiltedRandomizer from '../../hooks/useTiltedRandomizer';
-import { getRandomInt } from '../../services/random.service';
+import ImageSwitcher from '../../imageSwitcher/imageSwitcher.component';
+import useTiltedRandomizer from '../../../hooks/useTiltedRandomizer';
+import { getRandomInt } from '../../../services/random.service';
 
 interface CarouselProps {
   imageClasses: string[]

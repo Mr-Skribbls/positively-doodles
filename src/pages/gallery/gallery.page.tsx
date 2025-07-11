@@ -9,6 +9,8 @@ import { useParams } from 'react-router-dom';
 import SourceSetImage from '../../components/sourceSetImage/sourceSetImage.component';
 import useImage, { ImageData } from '../../hooks/useImage';
 import { every, shuffle, some } from 'lodash';
+import useImageDetail, { DogImageDetail } from '../../hooks/useImageDetail';
+import ModalImageDetail from '../../components/modal/templates/modelImageDetail/modelImageDetail';
 
 interface GalleryProps {
 
@@ -16,6 +18,7 @@ interface GalleryProps {
 
 interface DisplayImage {
   image: ImageData,
+  detailId?: string,
   size: string,
 }
 
@@ -31,8 +34,10 @@ const imageSizes = [
 
 const Gallery:FC<GalleryProps> = () => {
   const {getImageDataByClassName} = useImage();
+  const { getImageDetail } = useImageDetail();
   const [displayImages, setDisplayImages] = useState<DisplayImage[]>([]);
   const [modalImageNames, setModalImageNames] = useState<string[]|null>();
+  const [modalImageDetail, setModalImageDetail] = useState<DogImageDetail|undefined>();
   const { imageFilters } = useParams<string>();
 
   useEffect(() => {
@@ -45,6 +50,7 @@ const Gallery:FC<GalleryProps> = () => {
     const displayImages = imagesData.map((imageData) => {
       return {
         image: imageData,
+        detailId: imageData.detailId,
         size: imageSizes[random(0, imageSizes.length-1)],
       };
     });
@@ -63,7 +69,13 @@ const Gallery:FC<GalleryProps> = () => {
     return (
       <div
         className={`${displayImage.size} gallery-image`}
-        onClick={() => setModalImageNames(getModalImages(displayImage.image))}
+        onClick={() => {
+          setModalImageNames(getModalImages(displayImage.image))
+          if(displayImage.detailId) {
+            const modalImageDetail = getImageDetail(displayImage.detailId) as DogImageDetail;
+            setModalImageDetail(modalImageDetail);
+          }
+        }}
         key={key}>
         <SourceSetImage imageName={displayImage.image.name} sizesRules={sizesRules} />
       </div>
@@ -74,9 +86,13 @@ const Gallery:FC<GalleryProps> = () => {
     <div className='site-container'>
       <div className="gallery-wrapper">
         {displayImages.map((displayImage, key) => imageCard(displayImage, key))}
-        <Modal isOpen={!isNil(modalImageNames)} close={() => setModalImageNames(null)}>
-          {modalImageNames && <ModalGallery images={modalImageNames}></ModalGallery>}
-        </Modal>
+        { isNil(modalImageDetail) ? 
+          <Modal isOpen={!isNil(modalImageNames)} close={() => setModalImageNames(null)}>
+            {modalImageNames && <ModalGallery images={modalImageNames}></ModalGallery>}
+          </Modal> : 
+          <Modal isOpen={!isNil(modalImageDetail)} close={() => setModalImageDetail(undefined)}>
+          <ModalImageDetail dogImageDetail={modalImageDetail}></ModalImageDetail>
+        </Modal>}
       </div>
     </div>
   );

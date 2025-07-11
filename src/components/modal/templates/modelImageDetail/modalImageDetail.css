@@ -1,0 +1,30 @@
+.model-image-detail {
+  --margin: 75px;
+  margin: var(--margin);
+  height: calc(100vh - 2 * var(--margin));
+  border: 2px solid var(--color-base);
+  border-radius: 25px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+
+.model-image-detail .image-wrapper {
+  width: 45%;
+  height: 100%;
+}
+
+.model-image-detail .info {
+  background-color: var(--color-canvas);
+  width: 55%;
+  height: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.model-image-detail .info .carousel-container {
+  width: 100%;
+  height: 300px;
+}

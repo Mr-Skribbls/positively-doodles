@@ -5,7 +5,7 @@ import ContentBarTitleLeft from '../../components/contentComponents/contentBarTi
 import { Section } from '../../services/content.service';
 import useContent from '../../hooks/useContent';
 import SourceSetImage from '../../components/sourceSetImage/sourceSetImage.component';
-import Carousel from '../../components/carousel/carousel.component';
+import Carousel from '../../components/carousels/carousel/carousel.component';
 import Testimonial from '../../components/testimonial/testimonial';
 import MyMap from '../../components/myMap/myMap';
 import { Link } from 'react-router-dom';

@@ -17,6 +17,7 @@ export interface ImageDefinition {
 export interface ImageData {
   name: string
   alt: string
+  detailId?: string,
   classes: string[]
   centerOfFocus: CenterOfFocus
   defaultPath: string
@@ -28,6 +29,8 @@ const getImageDataByName = (names: string[]): ImageData[] => imageData.filter((d
 type Predicate = <T>(collection: List<T> | null | undefined, predicate?: ListIterateeCustom<T, boolean>) => boolean;
 
 const getImageDataByClassName = (className: string[], predicate: Predicate): ImageData[] => imageData.filter((data) => predicate(className, (c) => includes(data.classes, c)));
+
+const getImageDataByDetailId = (detailId: string): ImageData[] => imageData.filter((data) => data.detailId === detailId);
 
 const findImageDefinition = (imageDefinitions: ImageDefinition[]) => ({
   type,
@@ -62,6 +65,7 @@ const useImage = () => {
   return {
     getImageDataByName,
     getImageDataByClassName,
+    getImageDataByDetailId,
     findImageDefinition,
   }
 }

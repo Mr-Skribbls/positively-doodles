@@ -14,6 +14,8 @@
     "@types/geojson": "^7946.0.14",
     "@types/leaflet": "^1.9.12",
     "@types/lodash": "^4.14.202",
+    "embla-carousel": "^8.6.0",
+    "embla-carousel-react": "^8.6.0",
     "leaflet": "^1.9.4",
     "lodash": "^4.17.21",
     "react": "^18.2.0",
