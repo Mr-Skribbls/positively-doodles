@@ -1,0 +1,60 @@
+.showcase-carousel {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.showcase-carousel .embla {
+  overflow: hidden;
+  height: 100%;
+  flex-grow: 1;
+}
+
+.showcase-carousel .embla__container {
+  display: flex;
+  height: 100%;
+}
+
+.showcase-carousel .embla__slide {
+  flex: 0 0 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.showcase-carousel .embla__controls {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 100%;
+}
+.showcase-carousel .embla__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.showcase-carousel .embla__button {
+  background-color: transparent;
+  touch-action: manipulation;
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  width: 3.6rem;
+  height: 3.6rem;
+  z-index: 1;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.showcase-carousel .embla__button:disabled {
+  visibility: hidden;
+}
+.showcase-carousel .embla__button__svg {
+  width: 35%;
+  height: 35%;
+}
+.showcase-carousel .embla__selected-snap-display {
+  display: none;
+  visibility: hidden;
+}

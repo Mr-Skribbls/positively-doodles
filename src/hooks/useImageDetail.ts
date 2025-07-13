@@ -1,6 +1,11 @@
 import { Dog, dogs, LitterInfo, litters, puppies, Puppy } from '../dogInfo';
 import imageDetailData from '../json/imageDetailDictionary.json';
 
+export enum DetailRecordType {
+  Dog = 'dog',
+  Puppy = 'puppy',
+}
+
 interface ImageDetailRecord {
   id: string,
   recordId: string,
@@ -9,6 +14,7 @@ interface ImageDetailRecord {
 
 export interface ImageDetail {
   detailId: string,
+  type: DetailRecordType,
 }
 
 export interface DogImageDetail extends ImageDetail {
@@ -29,8 +35,8 @@ const getImageDetail = (imageDetailId: string): DogImageDetail | PuppyImageDetai
   if(!imageDetailRecord) return;
 
   const imageDetail = 
-    imageDetailRecord.type === 'dog' ? generateDogImageDetail(imageDetailRecord) : 
-    imageDetailRecord.type === 'puppy' ? generatePuppyImageDetail(imageDetailRecord) :
+    imageDetailRecord.type === DetailRecordType.Dog ? generateDogImageDetail(imageDetailRecord) : 
+    imageDetailRecord.type === DetailRecordType.Puppy ? generatePuppyImageDetail(imageDetailRecord) :
     undefined;
 
   return imageDetail;
@@ -39,6 +45,7 @@ const getImageDetail = (imageDetailId: string): DogImageDetail | PuppyImageDetai
 const generateDogImageDetail = (imageDetailRecord: ImageDetailRecord): DogImageDetail => {
   const detail = {
     detailId: imageDetailRecord.id,
+    type: imageDetailRecord.type as DetailRecordType,
     dogId: imageDetailRecord.recordId,
     record: dogs.find((dog) => dog.id === imageDetailRecord.recordId),
     litters: litters.filter((litter) => 
@@ -46,12 +53,14 @@ const generateDogImageDetail = (imageDetailRecord: ImageDetailRecord): DogImageD
       litter.sire.id === imageDetailRecord.recordId  
     ),
   }
+
   return detail;
 };
 
 const generatePuppyImageDetail = (imageDetailRecord: ImageDetailRecord): PuppyImageDetail => {
   const detail = {
     detailId: imageDetailRecord.id,
+    type: imageDetailRecord.type as DetailRecordType,
     puppyId: imageDetailRecord.recordId,
     record: puppies.find((puppy) => puppy.id === imageDetailRecord.recordId),
     litter: litters.find((litter) => litter.puppies?.map((puppy) => puppy.id).includes(imageDetailRecord.recordId)),

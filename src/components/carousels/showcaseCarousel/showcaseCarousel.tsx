@@ -1,6 +1,6 @@
+import './showcaseCarousel.css';
 import { FC } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
-import './simpleCarousel.css';
 import SourceSetImage from '../../sourceSetImage/sourceSetImage.component';
 import PrevButton from '../prevButton';
 import NextButton from '../nextButton';
@@ -8,11 +8,11 @@ import { usePrevNextButtons } from '../../../hooks/usePrevNextButtons';
 import { SelectedSnapDisplay } from '../emblaCarouselSelectedSnapDisplay';
 import { useSelectedSnapDisplay } from '../../../hooks/useSelectedSnapDisplay';
 
-interface SimpleCarouselProps {
+interface ShowcaseCarouselProps {
   imageNames: string[],
 }
 
-const SimpleCarousel:FC<SimpleCarouselProps> = ({
+const ShowcaseCarousel:FC<ShowcaseCarouselProps> = ({
   imageNames,
 }) => {
   const [ emblaRef, emblaApi ] = useEmblaCarousel({ 
@@ -30,7 +30,7 @@ const SimpleCarousel:FC<SimpleCarouselProps> = ({
   const { selectedSnap, snapCount } = useSelectedSnapDisplay(emblaApi);
 
   return (
-    <div className='simple-carousel'>
+    <div className='showcase-carousel'>
       <section className='embla' ref={emblaRef}>
         <div className='embla__container'>
           {imageNames.map((imageName, key) => (
@@ -56,4 +56,4 @@ const SimpleCarousel:FC<SimpleCarouselProps> = ({
   );
 };
 
-export default SimpleCarousel;
+export default ShowcaseCarousel;

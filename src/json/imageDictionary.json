@@ -599,6 +599,7 @@
   {
     "name": "Luna_fluffy_cut",
     "alt": "Luna with a fluffy haircut",
+    "detailId": "5abae1b2-a156-4659-8d94-a6605041fd20",
     "classes": [
       "dog",
       "female",
@@ -607,7 +608,7 @@
     ],
     "centerOfFocus": {
       "x": 50,
-      "y": 30
+      "y": 0
     },
     "defaultPath": "/images/dogs/Luna/png/150/Luna_fluffy_cut.png",
     "imageSet": [
@@ -656,6 +657,7 @@
   }, {
     "name": "Luna_laying_floor",
     "alt": "Luna laying on the floor",
+    "detailId": "5abae1b2-a156-4659-8d94-a6605041fd20",
     "classes": [
       "dog",
       "female",

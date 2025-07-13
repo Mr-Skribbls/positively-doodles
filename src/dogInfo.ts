@@ -81,6 +81,7 @@ export interface StudService {
 }
 
 export interface OFADocuments {
+  ofaPreliminaryId?: number
   ofaId?: number,
   canineHealth?: string,
   elbows?: string,
@@ -282,7 +283,38 @@ export const dogs:Dog[] = [
       main: 'finn',
       gallery: [],
     },
-  },
+  }, { // Luna
+    id: '73c2bfee-83d2-47d1-9bf5-7e78613d6f89',
+    name: 'Luna',
+    gender: 'F',
+    description: 'Luna is a mini tri-chocolate parti multi-generational bernadoodle.',
+    isInternal: true,
+    state: DogState.Breeder,
+    weight: 45,
+    breed: {
+      type: BreedType.Bernedoodle,
+      size: BreedSize.Mini,
+      class: BreedClass.Multigeneration,
+    },
+    images: {
+      main: 'Luna_fluffy_cut',
+      gallery: [
+        'Luna_fluffy_cut',
+        'Luna_laying_floor',
+      ],
+    },
+    testing: {
+      OFA: {
+        ofaPreliminaryId: 2537502,
+        ofaId: 2585205,
+      },
+      genetics: {
+        results: 'Genetically clear through Embark and parentage.',
+        path: '',
+        company: 'Embark',
+      }
+    },
+  }
 ];
 
 export const puppies: Puppy[] = [

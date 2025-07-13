@@ -8,9 +8,9 @@ import ModalGallery from '../../components/modal/templates/modalGallery/modalGal
 import { useParams } from 'react-router-dom';
 import SourceSetImage from '../../components/sourceSetImage/sourceSetImage.component';
 import useImage, { ImageData } from '../../hooks/useImage';
-import { every, shuffle, some } from 'lodash';
-import useImageDetail, { DogImageDetail } from '../../hooks/useImageDetail';
-import ModalImageDetail from '../../components/modal/templates/modelImageDetail/modelImageDetail';
+import { every, isEmpty, shuffle, some } from 'lodash';
+import useImageDetail, { DetailRecordType, DogImageDetail } from '../../hooks/useImageDetail';
+import ModalDogImageDetail from '../../components/modal/templates/modalDogImageDetail/modalDogImageDetail';
 
 interface GalleryProps {
 
@@ -33,12 +33,13 @@ const imageSizes = [
 ];
 
 const Gallery:FC<GalleryProps> = () => {
-  const {getImageDataByClassName} = useImage();
-  const { getImageDetail } = useImageDetail();
-  const [displayImages, setDisplayImages] = useState<DisplayImage[]>([]);
-  const [modalImageNames, setModalImageNames] = useState<string[]|null>();
-  const [modalImageDetail, setModalImageDetail] = useState<DogImageDetail|undefined>();
+  const [ displayImages, setDisplayImages ] = useState<DisplayImage[]>([]);
+  const [ modalImageNames, setModalImageNames ] = useState<string[]>([]);
+  const [ modalImageDetail, setModalImageDetail ] = useState<DogImageDetail>();
+  const [ selectedImageName, setSelectedImageName ] = useState<string>('');
   const { imageFilters } = useParams<string>();
+  const { getImageDataByClassName } = useImage();
+  const { getImageDetail } = useImageDetail();
 
   useEffect(() => {
     window.scrollTo(0,0);
@@ -70,11 +71,13 @@ const Gallery:FC<GalleryProps> = () => {
       <div
         className={`${displayImage.size} gallery-image`}
         onClick={() => {
-          setModalImageNames(getModalImages(displayImage.image))
           if(displayImage.detailId) {
             const modalImageDetail = getImageDetail(displayImage.detailId) as DogImageDetail;
             setModalImageDetail(modalImageDetail);
+          } else {
+            setModalImageNames(getModalImages(displayImage.image))
           }
+          setSelectedImageName(displayImage.image.name);
         }}
         key={key}>
         <SourceSetImage imageName={displayImage.image.name} sizesRules={sizesRules} />
@@ -82,17 +85,24 @@ const Gallery:FC<GalleryProps> = () => {
     );
   };
 
+  const closeModal = () => {
+    setModalImageNames([]);
+    setModalImageDetail(undefined);
+    setSelectedImageName('');
+  }
+
   return (
     <div className='site-container'>
       <div className="gallery-wrapper">
         {displayImages.map((displayImage, key) => imageCard(displayImage, key))}
-        { isNil(modalImageDetail) ? 
-          <Modal isOpen={!isNil(modalImageNames)} close={() => setModalImageNames(null)}>
-            {modalImageNames && <ModalGallery images={modalImageNames}></ModalGallery>}
-          </Modal> : 
-          <Modal isOpen={!isNil(modalImageDetail)} close={() => setModalImageDetail(undefined)}>
-          <ModalImageDetail dogImageDetail={modalImageDetail}></ModalImageDetail>
-        </Modal>}
+        <Modal isOpen={!isEmpty(modalImageNames)} close={closeModal}>
+          {modalImageNames && <ModalGallery images={modalImageNames}></ModalGallery>}
+        </Modal>
+        <Modal isOpen={!isNil(modalImageDetail)} close={closeModal}>
+          {modalImageDetail?.type === DetailRecordType.Dog && 
+            <ModalDogImageDetail dogImageDetail={modalImageDetail} imagePriority={[selectedImageName]}></ModalDogImageDetail>
+          }
+        </Modal>
       </div>
     </div>
   );
