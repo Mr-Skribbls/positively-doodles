@@ -1,3 +1,13 @@
+.gallery-instructions {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  padding: 5px;
+  border: 1px solid var(--color-base);
+  border-radius: 5px;
+  text-align: center;
+}
+
 .gallery-wrapper {
   margin: 10px;
   display: grid;

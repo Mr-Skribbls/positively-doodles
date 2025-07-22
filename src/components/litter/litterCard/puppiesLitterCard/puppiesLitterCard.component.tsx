@@ -9,7 +9,8 @@ import ModalGallery from '../../../modal/templates/modalGallery/modalGallery.com
 import useImage, {ImageData} from '../../../../hooks/useImage';
 import constants from '../../../../constants';
 import ContactForm from '../../../contactForm/contactForm';
-import { Link } from 'react-router-dom';
+import useLitter from '../../../../hooks/useLitter';
+import ProgramDescription from '../../../contentComponents/static/programDescription';
 
 interface PuppiesLitterCardProps {
   litter: LitterInfo
@@ -36,6 +37,7 @@ const puppyCard = (puppy: Puppy, startingPrice: number, openModalCB:(imageName: 
 const PuppiesLitterCard:FC<PuppiesLitterCardProps> = ({litter}) => {
   const {getImageDataByClassName, getImageDataByName} = useImage();
   const [modalImageNames, setModalImageNames] = useState<string[] | null>();
+  const { litterDescription } = useLitter();
 
   const getModalImageNames = (baseImageData: ImageData): string[] => {
     const relatedImages = getImageDataByClassName(baseImageData.classes, every);
@@ -62,11 +64,9 @@ const PuppiesLitterCard:FC<PuppiesLitterCardProps> = ({litter}) => {
         <div className='litter-details-container'>
           <div className='litter-details'>
             <p>
-              We welcomed {litter.size} adorable {litter.puppyBreed.expectedSizes.join(' to ')} {litter.puppyBreed.type} puppies{litter.birthDate && ` on ${litter.birthDate.toDateString()}`}. {litter.dam.name} and {litter.sire.name} had {litter.puppies?.filter((p) => p.gender === 'F').length} beautiful girls and {litter.puppies?.filter((p) => p.gender === 'M').length} handsome boys. These cute pups will be ready to go to their new loving homes on {litter.goHomeDate?.toDateString()}.
+              {litterDescription(litter)}
             </p>
-            <p>
-              All of our dogs and puppies are raised in our home. We love and care for each of them. Puppy training begins when they are 3 days old with ENS (Early Neurological Stimulation) and ESI (Early Scent Introduction). These stimulations help develop resilience, coping mechanisms, a strong neurological system, and nose awareness. It is a gentile experience for them to learn and prepares them to be exceptional companions. On day 16 they begin early potty and crate training. Once eyes and ears open we start desensitizing to sounds and textures. These trainings progressively increase as they develop and progress. We continue them until your puppy goes home with you. We are partners with BAXTER and Bella. This program can help you build on this training so your puppy grows into a wonderful companion. <Link to="../baxter-and-bella">Click here to learn more about BAXTER and Bella </Link>
-            </p>
+            <ProgramDescription />
             <p>
               If you're interested in adopting one of these cute pups contact us using the contact form on this page, call us at <a href={`tel:${constants.phoneNumber}`}>{constants.phoneNumberDisplay}</a>, email us at <a href={`mailto:${constants.emailAddress}`}>{constants.emailAddress}</a>, or message us on <a target='_blank' href={constants.facebookAddress}>facebook</a>.
             </p>

@@ -533,6 +533,7 @@
   {
     "name": "holly_sitting_chair",
     "alt": "Holly sitting on a chair",
+    "detailId": "8fdc0ce3-49ac-45af-9674-fdd8dcdb328e",
     "classes": [
       "dog",
       "female",
@@ -838,6 +839,7 @@
   {
     "name": "Liberty_KingKong_Maple_4weeks",
     "alt": "Liberty and King Kong puppy Maple",
+    "detailId": "b82030c8-6c92-4322-b852-ff6363451546",
     "classes": [
       "dog",
       "maple",
@@ -876,6 +878,7 @@
   }, {
     "name": "Liberty_KingKong_TinyTim_4weeks",
     "alt": "Liberty and King Kong puppy Tiny Tim",
+    "detailId": "3e9a9bb0-3d19-42a9-b88d-760fc2e2bc9b",
     "classes": [
       "dog",
       "tiny tim",
@@ -914,6 +917,7 @@
   }, {
     "name": "Liberty_KingKong_Licorice_4weeks",
     "alt": "Liberty and King Kong puppy Licorice",
+    "detailId": "752a9ff7-303c-4955-a9d3-6ca42fde50fa",
     "classes": [
       "dog",
       "licorice",
@@ -952,6 +956,7 @@
   }, {
     "name": "Liberty_KingKong_Jingle_4weeks",
     "alt": "Liberty and King Kong puppy Jingle",
+    "detailId": "aa150f73-f1f9-48ed-9936-401d70edd4b2",
     "classes": [
       "dog",
       "jingle",
@@ -990,6 +995,7 @@
   }, {
     "name": "Liberty_KingKong_Gloria_4weeks",
     "alt": "Liberty and King Kong puppy Gloria",
+    "detailId": "e7427f96-6347-49dc-93c9-4f3c490f4b90",
     "classes": [
       "dog",
       "gloria",
@@ -1028,6 +1034,7 @@
   }, {
     "name": "Liberty_KingKong_Buddy_4weeks",
     "alt": "Liberty and King Kong puppy Buddy",
+    "detailId": "eb382e4d-bbe8-438e-9292-604ce3b12a12",
     "classes": [
       "dog",
       "buddy",
@@ -1066,6 +1073,7 @@
   }, {
     "name": "Liberty_KingKong_Buddy_6weeks",
     "alt": "Liberty and King Kong puppy Buddy",
+    "detailId": "eb382e4d-bbe8-438e-9292-604ce3b12a12",
     "classes": [
       "dog",
       "buddy",
@@ -1104,6 +1112,7 @@
   }, {
     "name": "Liberty_KingKong_Buddy_6weeks_2",
     "alt": "Liberty and King Kong puppy Buddy",
+    "detailId": "eb382e4d-bbe8-438e-9292-604ce3b12a12",
     "classes": [
       "dog",
       "buddy",
@@ -1142,6 +1151,7 @@
   }, {
     "name": "Liberty_KingKong_Gloria_6weeks",
     "alt": "Liberty and King Kong puppy Gloria",
+    "detailId": "e7427f96-6347-49dc-93c9-4f3c490f4b90",
     "classes": [
       "dog",
       "gloria",
@@ -1180,6 +1190,7 @@
   }, {
     "name": "Liberty_KingKong_Gloria_6weeks_2",
     "alt": "Liberty and King Kong puppy Gloria",
+    "detailId": "e7427f96-6347-49dc-93c9-4f3c490f4b90",
     "classes": [
       "dog",
       "gloria",
@@ -1218,6 +1229,7 @@
   }, {
     "name": "Liberty_KingKong_Jingle_6weeks",
     "alt": "Liberty and King Kong puppy Jingle",
+    "detailId": "aa150f73-f1f9-48ed-9936-401d70edd4b2",
     "classes": [
       "dog",
       "jingle",
@@ -1256,6 +1268,7 @@
   }, {
     "name": "Liberty_KingKong_Jingle_6weeks_2",
     "alt": "Liberty and King Kong puppy Jingle",
+    "detailId": "aa150f73-f1f9-48ed-9936-401d70edd4b2",
     "classes": [
       "dog",
       "jingle",
@@ -1294,6 +1307,7 @@
   }, {
     "name": "Liberty_KingKong_Licorice_6weeks",
     "alt": "Liberty and King Kong puppy Licorice",
+    "detailId": "752a9ff7-303c-4955-a9d3-6ca42fde50fa",
     "classes": [
       "dog",
       "licorice",
@@ -1332,6 +1346,7 @@
   }, {
     "name": "Liberty_KingKong_Licorice_6weeks_2",
     "alt": "Liberty and King Kong puppy Licorice",
+    "detailId": "752a9ff7-303c-4955-a9d3-6ca42fde50fa",
     "classes": [
       "dog",
       "licorice",
@@ -1370,6 +1385,7 @@
   }, {
     "name": "Liberty_KingKong_Maple_6weeks",
     "alt": "Liberty and King Kong puppy Maple",
+    "detailId": "b82030c8-6c92-4322-b852-ff6363451546",
     "classes": [
       "dog",
       "maple",
@@ -1408,6 +1424,7 @@
   }, {
     "name": "Liberty_KingKong_Maple_6weeks_2",
     "alt": "Liberty and King Kong puppy Maple",
+    "detailId": "b82030c8-6c92-4322-b852-ff6363451546",
     "classes": [
       "dog",
       "maple",
@@ -1446,6 +1463,7 @@
   }, {
     "name": "Liberty_KingKong_TinyTim_6weeks",
     "alt": "Liberty and King Kong puppy Tiny Tim",
+    "detailId": "3e9a9bb0-3d19-42a9-b88d-760fc2e2bc9b",
     "classes": [
       "dog",
       "tiny tim",
@@ -1484,6 +1502,7 @@
   }, {
     "name": "Liberty_KingKong_TinyTim_6weeks_2",
     "alt": "Liberty and King Kong puppy Tiny Tim",
+    "detailId": "3e9a9bb0-3d19-42a9-b88d-760fc2e2bc9b",
     "classes": [
       "dog",
       "tiny tim",
@@ -1524,6 +1543,7 @@
   {
     "name": "Liberty_KingKong_Aspen_1week",
     "alt": "Liberty and King Kong puppy Aspen",
+    "detailId": "6fea3f0a-4910-4fca-acf8-c26917dae7b5",
     "classes": [
       "dog",
       "aspen",
@@ -1566,6 +1586,7 @@
   {
     "name": "Liberty_KingKong_Birch_1week",
     "alt": "Liberty and King Kong puppy Birch",
+    "detailId": "4a24bffa-631f-4a78-b0e2-3bb599840579",
     "classes": [
       "dog",
       "birch",
@@ -1608,6 +1629,7 @@
   {
     "name": "Liberty_KingKong_Cedar_1week",
     "alt": "Liberty and King Kong puppy Cedar",
+    "detailId": "f0175ee3-0bf2-4589-8e9e-713145921cff",
     "classes": [
       "dog",
       "cedar",
@@ -1650,6 +1672,7 @@
   {
     "name": "Liberty_KingKong_Cherry_1week",
     "alt": "Liberty and King Kong puppy Cherry",
+    "detailId": "b4d156c3-4b07-4cd1-b48a-2227878a151a",
     "classes": [
       "dog",
       "cherry",
@@ -1692,6 +1715,7 @@
   {
     "name": "Liberty_KingKong_Hazel_1week",
     "alt": "Liberty and King Kong puppy Hazel",
+    "detailId": "d474160d-1d34-4ddf-b835-4ad4d7dc594e",
     "classes": [
       "dog",
       "hazel",
@@ -1734,6 +1758,7 @@
   {
     "name": "Liberty_KingKong_Ivy_1week",
     "alt": "Liberty and King Kong puppy Ivy",
+    "detailId": "43b05753-7c03-4fe8-a2c0-05c830fe052f",
     "classes": [
       "dog",
       "ivy",
@@ -1776,6 +1801,7 @@
   {
     "name": "Liberty_KingKong_Oak_1week",
     "alt": "Liberty and King Kong puppy Oak",
+    "detailId": "d89638d9-0773-4c68-8c02-53b790f625b3",
     "classes": [
       "dog",
       "oak",
@@ -1818,6 +1844,7 @@
   {
     "name": "Liberty_KingKong_Spruce_1week",
     "alt": "Liberty and King Kong puppy Spruce",
+    "detailId": "b74f668c-6c15-40cd-9def-da51bbed8642",
     "classes": [
       "dog",
       "spruce",
@@ -1860,6 +1887,7 @@
   {
     "name": "Liberty_KingKong_Hazel_3weeks",
     "alt": "Liberty and King Kong puppy Hazel at 3 weeks",
+    "detailId": "d474160d-1d34-4ddf-b835-4ad4d7dc594e",
     "classes": [
       "dog",
       "hazel",
@@ -1902,6 +1930,7 @@
   {
     "name": "Liberty_KingKong_Aspen_5weeks",
     "alt": "Liberty and King Kong puppy Aspen at 5 weeks",
+    "detailId": "6fea3f0a-4910-4fca-acf8-c26917dae7b5",
     "classes": [
       "dog",
       "aspen",
@@ -1944,6 +1973,7 @@
   {
     "name": "Liberty_KingKong_Cedar_5weeks",
     "alt": "Liberty and King Kong puppy Cedar at 5 weeks",
+    "detailId": "f0175ee3-0bf2-4589-8e9e-713145921cff",
     "classes": [
       "dog",
       "cedar",
@@ -1986,6 +2016,7 @@
   {
     "name": "Liberty_KingKong_Oak_3weeks",
     "alt": "Liberty and King Kong puppy Oak at 3 weeks",
+    "detailId": "d89638d9-0773-4c68-8c02-53b790f625b3",
     "classes": [
       "dog",
       "oak",
@@ -2028,15 +2059,17 @@
   {
     "name": "Liberty_KingKong_Group_3weeks",
     "alt": "Liberty and King Kong puppies in a basket",
+    "detailId": "a57041fd-c7d7-4a6a-b5b6-efc92199b99f",
     "classes": [
       "dog",
       "basket",
       "puppy",
+      "litter",
       "liberty puppy",
       "king kong puppy"
     ],
     "centerOfFocus": {
-      "x": 50,
+      "x": 30,
       "y": 50
     },
     "defaultPath": "/images/puppies/liberty_king-kong_2/png/150/Liberty_KingKong_Group_3weeks.png",
@@ -2070,6 +2103,7 @@
   {
     "name": "Liberty_KingKong_Cedar_3weeks",
     "alt": "Liberty and King Kong puppy Cedar at 3 weeks",
+    "detailId": "f0175ee3-0bf2-4589-8e9e-713145921cff",
     "classes": [
       "dog",
       "cedar",
@@ -2112,6 +2146,7 @@
   {
     "name": "Liberty_KingKong_Aspen_3weeks",
     "alt": "Liberty and King Kong puppy Aspen at 3 weeks",
+    "detailId": "6fea3f0a-4910-4fca-acf8-c26917dae7b5",
     "classes": [
       "dog",
       "aspen",
@@ -2154,6 +2189,7 @@
   {
     "name": "Liberty_KingKong_Hazel_5weeks",
     "alt": "Liberty and King Kong puppy Hazel at 5 weeks",
+    "detailId": "d474160d-1d34-4ddf-b835-4ad4d7dc594e",
     "classes": [
       "dog",
       "hazel",
@@ -2196,6 +2232,7 @@
   {
     "name": "Liberty_KingKong_Oak_5weeks",
     "alt": "Liberty and King Kong puppy Oak at 5 weeks",
+    "detailId": "d89638d9-0773-4c68-8c02-53b790f625b3",
     "classes": [
       "dog",
       "oak",
@@ -2238,6 +2275,7 @@
   {
     "name": "Liberty_KingKong_Spruce_5weeks",
     "alt": "Liberty and King Kong puppy Spruce at 5 weeks",
+    "detailId": "b74f668c-6c15-40cd-9def-da51bbed8642",
     "classes": [
       "dog",
       "spruce",
@@ -2280,6 +2318,7 @@
   {
     "name": "Liberty_KingKong_Spruce_3weeks",
     "alt": "Liberty and King Kong puppy Spruce at 3 weeks",
+    "detailId": "b74f668c-6c15-40cd-9def-da51bbed8642",
     "classes": [
       "dog",
       "spruce",
@@ -2322,6 +2361,7 @@
   {
     "name": "Liberty_KingKong_Birch_5weeks",
     "alt": "Liberty and King Kong puppy Birch at 5 weeks",
+    "detailId": "4a24bffa-631f-4a78-b0e2-3bb599840579",
     "classes": [
       "dog",
       "birch",
@@ -2364,6 +2404,7 @@
   {
     "name": "Liberty_KingKong_Cherry_3weeks",
     "alt": "Liberty and King Kong puppy Cherry at 3 weeks",
+    "detailId": "b4d156c3-4b07-4cd1-b48a-2227878a151a",
     "classes": [
       "dog",
       "cherry",
@@ -2406,6 +2447,7 @@
   {
     "name": "Liberty_KingKong_Ivy_3weeks",
     "alt": "Liberty and King Kong puppy Ivy at 3 weeks",
+    "detailId": "43b05753-7c03-4fe8-a2c0-05c830fe052f",
     "classes": [
       "dog",
       "ivy",
@@ -2448,6 +2490,7 @@
   {
     "name": "Liberty_KingKong_Birch_3weeks",
     "alt": "Liberty and King Kong puppy Birch at 3 weeks",
+    "detailId": "4a24bffa-631f-4a78-b0e2-3bb599840579",
     "classes": [
       "dog",
       "birch",
@@ -2490,6 +2533,7 @@
   {
     "name": "Liberty_KingKong_Ivy_5weeks",
     "alt": "Liberty and King Kong puppy Ivy at 5 weeks",
+    "detailId": "43b05753-7c03-4fe8-a2c0-05c830fe052f",
     "classes": [
       "dog",
       "ivy",
@@ -2532,6 +2576,7 @@
   {
     "name": "Liberty_KingKong_Cherry_5weeks",
     "alt": "Liberty and King Kong puppy Cherry at 5 weeks",
+    "detailId": "b4d156c3-4b07-4cd1-b48a-2227878a151a",
     "classes": [
       "dog",
       "cherry",
@@ -2574,6 +2619,7 @@
   {
     "name": "Liberty_KingKong_Birch_16weeks",
     "alt": "Liberty and King Kong puppy Birch at 16 weeks",
+    "detailId": "4a24bffa-631f-4a78-b0e2-3bb599840579",
     "classes": [
       "dog",
       "birch",

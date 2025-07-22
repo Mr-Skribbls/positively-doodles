@@ -4,6 +4,7 @@ import imageDetailData from '../json/imageDetailDictionary.json';
 export enum DetailRecordType {
   Dog = 'dog',
   Puppy = 'puppy',
+  Litter = 'litter',
 }
 
 interface ImageDetailRecord {
@@ -29,6 +30,11 @@ export interface PuppyImageDetail extends ImageDetail {
   litter?: LitterInfo,
 }
 
+export interface LitterImageDetail extends ImageDetail {
+  litterId: string, // LitterInfo.id (see dogInfo.ts)
+  record?: LitterInfo
+}
+
 const getImageDetail = (imageDetailId: string): DogImageDetail | PuppyImageDetail | undefined => {
   const imageDetailRecord: ImageDetailRecord | undefined = imageDetailData.find((imageDetail) => imageDetail.id === imageDetailId);
   
@@ -37,6 +43,7 @@ const getImageDetail = (imageDetailId: string): DogImageDetail | PuppyImageDetai
   const imageDetail = 
     imageDetailRecord.type === DetailRecordType.Dog ? generateDogImageDetail(imageDetailRecord) : 
     imageDetailRecord.type === DetailRecordType.Puppy ? generatePuppyImageDetail(imageDetailRecord) :
+    imageDetailRecord.type === DetailRecordType.Litter ? generateLitterImageDetail(imageDetailRecord) :
     undefined;
 
   return imageDetail;
@@ -66,6 +73,16 @@ const generatePuppyImageDetail = (imageDetailRecord: ImageDetailRecord): PuppyIm
     litter: litters.find((litter) => litter.puppies?.map((puppy) => puppy.id).includes(imageDetailRecord.recordId)),
   }
   return detail
+}
+
+const generateLitterImageDetail = (imageDetailRecord: ImageDetailRecord): LitterImageDetail => {
+  const detail = {
+    detailId: imageDetailRecord.id,
+    type: imageDetailRecord.type as DetailRecordType,
+    litterId: imageDetailRecord.recordId,
+    record: litters.find((litter) => litter.id === imageDetailRecord.recordId),
+  };
+  return detail;
 }
 
 export default function useImageDetail() {

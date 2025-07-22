@@ -130,6 +130,7 @@ export interface Puppy {
 
 export interface LitterInfo {
   // id: the id is the compound of dam sire and hyphenated dueDate with _ separator
+  id: string,
   dam: Dog, // composite key
   sire: Dog, // composite key
   dueDate: Date, // composite key
@@ -318,7 +319,7 @@ export const dogs:Dog[] = [
 ];
 
 export const puppies: Puppy[] = [
-  {
+  {    // Tiny Tim
     id: '1f4d856a-0413-4ed2-a76a-f91d4c5b1184',
     name: 'Tiny Tim',
     status: PuppyStatus.Sold,
@@ -326,7 +327,7 @@ export const puppies: Puppy[] = [
     description: 'Tiny Tim is super sweet.  He loves to play and loves to cuddle.  He has a wavy coat and will be between 30-35 lbs. fully grown. ',
     imageName: 'Liberty_KingKong_TinyTim_6weeks',
     priceAboveStarting: 0,
-  }, {
+  }, { // Gloria
     id: '931256d9-4dc0-4c61-98f3-9263073a2204',
     name: 'Gloria',
     status: PuppyStatus.Sold,
@@ -334,7 +335,7 @@ export const puppies: Puppy[] = [
     description: 'Gloria is spunky and loves to be around those she knows.  She will be perfect for someone who will be with her all day long.',
     imageName: 'Liberty_KingKong_Gloria_6weeks_2',
     priceAboveStarting: 0,
-  }, {
+  }, { // Maple
     id: '61558fdd-f10d-4b04-95b9-790862fd3ac4',
     name: 'Maple',
     status: PuppyStatus.Sold,
@@ -342,7 +343,7 @@ export const puppies: Puppy[] = [
     description: 'She is super smart.  Already, at only 4 weeks old, she is already going to the potty box to go to the bathroom.  She is very mellow and super sweet.',
     imageName: 'Liberty_KingKong_Maple_6weeks',
     priceAboveStarting: 0,
-  }, {
+  }, { // Licorice
     id: '53d125b6-8f70-4b9d-aaba-6c9de02ca92a',
     name: 'Licorice',
     status: PuppyStatus.Reserved,
@@ -350,7 +351,7 @@ export const puppies: Puppy[] = [
     description: 'Licorice is very quiet and very mellow.  He sometimes will just sit back and watch his siblings play and other times is the one trying to get another to wrestle with him.  He is very sweet and loves to give lots of kisses.  He is charting to be around 30 pounds.',
     imageName: 'Liberty_KingKong_Licorice_6weeks',
     priceAboveStarting: 0,
-  }, {
+  }, { // Jingle
     id: 'd9f15140-5f60-4404-89b7-f724c2729e5c',
     name: 'Jingle',
     status: PuppyStatus.Sold,
@@ -358,7 +359,7 @@ export const puppies: Puppy[] = [
     description: 'Jingle is the biggest of the litter.  He is one of the first to alert when someone walks in the room.  He loves to give puppy kisses and cuddles, but he also loves to romp around with his litter mates.',
     imageName: 'Liberty_KingKong_Jingle_6weeks',
     priceAboveStarting: 0,
-  }, {
+  }, { // Buddy
     id: '624d3910-7cdb-4e03-8c5b-0f78cde56264',
     name: 'Buddy',
     status: PuppyStatus.Sold,
@@ -366,7 +367,7 @@ export const puppies: Puppy[] = [
     description: 'Buddy is a beautiful tri-color Sable.  He is almost always the first to go try and explore something new.  He is charting to be about 35 pounds.',
     imageName: 'Liberty_KingKong_Buddy_6weeks',
     priceAboveStarting: 0,
-  }, {
+  }, { // Hazel
     id: 'c5633b99-8011-4101-a187-b71980ac9851',
     name: 'Hazel',
     status: PuppyStatus.Sold,
@@ -374,7 +375,7 @@ export const puppies: Puppy[] = [
     description: '',
     imageName: 'Liberty_KingKong_Hazel_5weeks',
     priceAboveStarting: 0,
-  }, {
+  }, { // Cherry
     id: 'aac8147f-5e91-49d4-b420-652ab6285f69',
     name: 'Cherry',
     status: PuppyStatus.Sold,
@@ -382,7 +383,7 @@ export const puppies: Puppy[] = [
     description: '',
     imageName: 'Liberty_KingKong_Cherry_5weeks',
     priceAboveStarting: 0,
-  }, {
+  }, { // Ivy
     id: 'c2e1e218-4c2f-43a9-a8e2-6fdde8c4b3a5',
     name: 'Ivy',
     status: PuppyStatus.Sold,
@@ -390,7 +391,7 @@ export const puppies: Puppy[] = [
     description: '',
     imageName: 'Liberty_KingKong_Ivy_5weeks',
     priceAboveStarting: 0,
-  }, {
+  }, { // Birch
     id: '2f5f5d49-e380-4077-910a-cc575540483d',
     name: 'Birch',
     status: PuppyStatus.Sold,
@@ -398,7 +399,7 @@ export const puppies: Puppy[] = [
     description: '',
     imageName: 'Liberty_KingKong_Birch_16weeks',
     priceAboveStarting: 0,
-  }, {
+  }, { // Oak
     id: 'ed68364f-c5e3-4f78-ab84-9815a00058af',
     name: 'Oak',
     status: PuppyStatus.Sold,
@@ -406,7 +407,7 @@ export const puppies: Puppy[] = [
     description: '',
     imageName: 'Liberty_KingKong_Oak_5weeks',
     priceAboveStarting: 0,
-  }, {
+  }, { // Spruce
     id: '3b8ef45b-cb87-49e6-aead-875240e0c89f',
     name: 'Spruce',
     status: PuppyStatus.Sold,
@@ -414,7 +415,7 @@ export const puppies: Puppy[] = [
     description: '',
     imageName: 'Liberty_KingKong_Spruce_5weeks',
     priceAboveStarting: -1000,
-  }, {
+  }, { // Cedar
     id: 'e1527389-0329-47c3-887e-0c97825490e0',
     name: 'Cedar',
     status: PuppyStatus.Sold,
@@ -422,7 +423,7 @@ export const puppies: Puppy[] = [
     description: '',
     imageName: 'Liberty_KingKong_Cedar_5weeks',
     priceAboveStarting: 0,
-  }, {
+  }, { // Aspen
     id: '803c9d34-6573-4885-9ff8-e3325003899f',
     name: 'Aspen',
     status: PuppyStatus.Sold,
@@ -435,6 +436,7 @@ export const puppies: Puppy[] = [
 
 export const litters:LitterInfo[] = [
   {
+    id: '832fd26e-0a4d-45e3-b1fe-714c8edff83a',
     dam: findDog('Liberty', dogs),
     sire: findDog('King Kong', dogs),
     dueDate: new Date(2023, 11, 26),
@@ -469,6 +471,7 @@ export const litters:LitterInfo[] = [
       '624d3910-7cdb-4e03-8c5b-0f78cde56264',
     ].includes(puppy.id)),
   }, {
+    id: '6fe7617e-9f6f-40c1-b00d-2a444a9b6370',
     dam: findDog('Liberty', dogs),
     sire: findDog('King Kong', dogs),
     dueDate: new Date(2024, 6, 19),

@@ -1,35 +1,23 @@
-import './modalDogImageDetail.css';
 import { FC, useEffect, useState } from 'react';
 import { DogImageDetail } from '../../../../hooks/useImageDetail';
 import useImage from '../../../../hooks/useImage';
-import { isEmpty, isNil, orderBy } from 'lodash';
+import { isEmpty, isNil } from 'lodash';
 import SimpleCarousel from '../../../carousels/simpleCarousel/simpleCarousel';
 import { litters, Puppy } from '../../../../dogInfo';
-import ShowcaseCarousel from '../../../carousels/showcaseCarousel/showcaseCarousel';
 
 interface ModalDogImageDetailProps {
   dogImageDetail: DogImageDetail,
-  imagePriority: string[],
 }
 
 const ModalDogImageDetail:FC<ModalDogImageDetailProps> = ({
   dogImageDetail,
-  imagePriority,
 }) => {
-  const [ imageNames, setImageNames ] = useState<string[]>([]);
   const [ puppyImageNames, setPuppyImageNames ] = useState<string[]>([]);
   const { getImageDataByDetailId, getImageDataByName } = useImage();
 
   useEffect(() => {
-    const images = getImageDataByDetailId(dogImageDetail?.detailId || '');
-    const imageNames = orderBy(images.map((image) => image.name), (imageName) => {
-      const index = imagePriority?.indexOf(imageName);
-      return index !== -1 ? index : Infinity;
-    }, ['asc']);
-    setImageNames(imageNames);
-
     let puppies: Puppy[] = [];
-    puppies = litters.filter((litter) => litter.dam.id === dogImageDetail?.record?.id).reduce((puppies, litter) => {
+    puppies = dogImageDetail.litters.reduce((puppies, litter) => {
       if(isNil(litter.puppies)) return puppies
       puppies = [...puppies, ...litter.puppies];
       return puppies;
@@ -37,7 +25,7 @@ const ModalDogImageDetail:FC<ModalDogImageDetailProps> = ({
 
     const puppyImageNames = puppies.map((puppy) => puppy.imageName);
     setPuppyImageNames(puppyImageNames)
-  }, [ dogImageDetail, imagePriority, getImageDataByDetailId, getImageDataByName ]);
+  }, [ dogImageDetail, getImageDataByDetailId, getImageDataByName ]);
   
   const getOFALink = (ofaId: number): string => `https://ofa.org/advanced-search/?appnum=${ofaId}`
 
@@ -75,22 +63,17 @@ const ModalDogImageDetail:FC<ModalDogImageDetailProps> = ({
   }
 
   return (
-    <div className='model-image-detail'>
-      <div className="image-wrapper">
-        <ShowcaseCarousel imageNames={imageNames}></ShowcaseCarousel>
-      </div>
-      <div className='info'>
-        <h1>{dogImageDetail?.record?.name}</h1>
-        <p>{dogImageDetail?.record?.description}</p>
-        { getGeneticTestingMessage(dogImageDetail) }
-        { getOFATestingMessage(dogImageDetail) }
-        {!isEmpty(puppyImageNames) && <>
-          <h3>Past Puppies</h3>
-          <div className='carousel-container'>
-            <SimpleCarousel imageNames={puppyImageNames}></SimpleCarousel>
-          </div>
-        </>}
-      </div>
+    <div className='info'>
+      <h1>{dogImageDetail?.record?.name}</h1>
+      <p>{dogImageDetail?.record?.description}</p>
+      { getGeneticTestingMessage(dogImageDetail) }
+      { getOFATestingMessage(dogImageDetail) }
+      {!isEmpty(puppyImageNames) && <>
+        <h3>Past Puppies</h3>
+        <div className='carousel-container'>
+          <SimpleCarousel imageNames={puppyImageNames}></SimpleCarousel>
+        </div>
+      </>}
     </div>
   )
 }
