@@ -35,7 +35,7 @@ export interface LitterImageDetail extends ImageDetail {
   record?: LitterInfo
 }
 
-const getImageDetail = (imageDetailId: string): DogImageDetail | PuppyImageDetail | undefined => {
+const getImageDetail = (imageDetailId: string): DogImageDetail | PuppyImageDetail | LitterImageDetail | undefined => {
   const imageDetailRecord: ImageDetailRecord | undefined = imageDetailData.find((imageDetail) => imageDetail.id === imageDetailId);
   
   if(!imageDetailRecord) return;
