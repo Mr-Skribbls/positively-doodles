@@ -1,82 +1,87 @@
 [
   {
     "name": "Twiggy",
-    "alt": "",
-    "classes": [],
+    "alt": "External stub named Twiggy",
+    "classes": [
+      "external",
+      "male",
+      "parent",
+      "twiggy"
+    ],
     "centerOfFocus": {
       "x": 50,
-      "y": 50
+      "y": 25
     },
-    "defaultPath": "^directory path^/png/150/Twiggy.png",
+    "defaultPath": "/images/dogs/External/Twiggy/png/150/Twiggy.png",
     "imageSet": [
       {
-        "path": "^directory path^/webp/1800/Twiggy.webp",
+        "path": "/images/dogs/External/Twiggy/webp/1800/Twiggy.webp",
         "type": "webp",
         "width": 1124,
         "height": 1395
       },
       {
-        "path": "^directory path^/webp/900/Twiggy.webp",
+        "path": "/images/dogs/External/Twiggy/webp/900/Twiggy.webp",
         "type": "webp",
         "width": 725,
         "height": 900
       },
       {
-        "path": "^directory path^/webp/450/Twiggy.webp",
+        "path": "/images/dogs/External/Twiggy/webp/450/Twiggy.webp",
         "type": "webp",
         "width": 362,
         "height": 450
       },
       {
-        "path": "^directory path^/webp/150/Twiggy.webp",
+        "path": "/images/dogs/External/Twiggy/webp/150/Twiggy.webp",
         "type": "webp",
         "width": 120,
         "height": 150
       },
       {
-        "path": "^directory path^/jpg/1800/Twiggy.jpg",
+        "path": "/images/dogs/External/Twiggy/jpg/1800/Twiggy.jpg",
         "type": "jpg",
         "width": 1124,
         "height": 1395
       },
       {
-        "path": "^directory path^/jpg/900/Twiggy.jpg",
+        "path": "/images/dogs/External/Twiggy/jpg/900/Twiggy.jpg",
         "type": "jpg",
         "width": 725,
         "height": 900
       },
       {
-        "path": "^directory path^/jpg/450/Twiggy.jpg",
+        "path": "/images/dogs/External/Twiggy/jpg/450/Twiggy.jpg",
         "type": "jpg",
         "width": 362,
         "height": 450
       },
       {
-        "path": "^directory path^/jpg/150/Twiggy.jpg",
+        "path": "/images/dogs/External/Twiggy/jpg/150/Twiggy.jpg",
         "type": "jpg",
         "width": 120,
         "height": 150
       },
       {
-        "path": "^directory path^/png/1800/Twiggy.png",
+        "path": "/images/dogs/External/Twiggy/png/1800/Twiggy.png",
         "type": "png",
         "width": 1124,
         "height": 1395
       },
       {
-        "path": "^directory path^/png/900/Twiggy.png",
+        "path": "/images/dogs/External/Twiggy/png/900/Twiggy.png",
         "type": "png",
         "width": 725,
         "height": 900
       },
       {
-        "path": "^directory path^/png/450/Twiggy.png",
+        "path": "/images/dogs/External/Twiggy/png/450/Twiggy.png",
         "type": "png",
         "width": 362,
         "height": 450
       },
       {
-        "path": "^directory path^/png/150/Twiggy.png",
+        "path": "/images/dogs/External/Twiggy/png/150/Twiggy.png",
         "type": "png",
         "width": 120,
         "height": 150

@@ -268,22 +268,6 @@ export const dogs:Dog[] = [
       main: 'holly_sitting_chair',
       gallery: [],
     },
-  }, { // Finn
-    id: '8dc00a6b-7b8c-4b17-a8c0-c5ddcb62fb90',
-    name: 'Finn',
-    gender: 'M',
-    description: 'ACK Registered King Charles Cavalier Spaniel.',
-    isInternal: false,
-    state: DogState.Breeder,
-    weight: 13.5,
-    breed: {
-      type: BreedType.KingCharlesCavalier,
-      class: BreedClass.AKC,
-    },
-    images: {
-      main: 'finn',
-      gallery: [],
-    },
   }, { // Luna
     id: '73c2bfee-83d2-47d1-9bf5-7e78613d6f89',
     name: 'Luna',
