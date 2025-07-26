@@ -527,6 +527,184 @@
         "height": 150
       }
     ]
+  }, {
+    "name": "Liberty_sitting_handkerchief_1",
+    "alt": "Libby wearing a flag handkerchiefs",
+    "detailId": "7050e3a2-fda0-44b6-88d9-5e0e1ad70683",
+    "classes": [
+      "dog",
+      "female",
+      "parent",
+      "liberty"
+    ],
+    "centerOfFocus": {
+      "x": 15,
+      "y": 0
+    },
+    "defaultPath": "/images/dogs/Liberty/png/150/Liberty_sitting_handkerchief_1.png",
+    "imageSet": [
+      {
+        "path": "/images/dogs/Liberty/webp/1800/Liberty_sitting_handkerchief_1.webp",
+        "type": "webp",
+        "width": 1800,
+        "height": 1350
+      },
+      {
+        "path": "/images/dogs/Liberty/webp/900/Liberty_sitting_handkerchief_1.webp",
+        "type": "webp",
+        "width": 900,
+        "height": 675
+      },
+      {
+        "path": "/images/dogs/Liberty/webp/450/Liberty_sitting_handkerchief_1.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 337
+      },
+      {
+        "path": "/images/dogs/Liberty/webp/150/Liberty_sitting_handkerchief_1.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 112
+      },
+      {
+        "path": "/images/dogs/Liberty/jpg/1800/Liberty_sitting_handkerchief_1.jpg",
+        "type": "jpg",
+        "width": 1800,
+        "height": 1350
+      },
+      {
+        "path": "/images/dogs/Liberty/jpg/900/Liberty_sitting_handkerchief_1.jpg",
+        "type": "jpg",
+        "width": 900,
+        "height": 675
+      },
+      {
+        "path": "/images/dogs/Liberty/jpg/450/Liberty_sitting_handkerchief_1.jpg",
+        "type": "jpg",
+        "width": 450,
+        "height": 337
+      },
+      {
+        "path": "/images/dogs/Liberty/jpg/150/Liberty_sitting_handkerchief_1.jpg",
+        "type": "jpg",
+        "width": 150,
+        "height": 112
+      },
+      {
+        "path": "/images/dogs/Liberty/png/1800/Liberty_sitting_handkerchief_1.png",
+        "type": "png",
+        "width": 1800,
+        "height": 1350
+      },
+      {
+        "path": "/images/dogs/Liberty/png/900/Liberty_sitting_handkerchief_1.png",
+        "type": "png",
+        "width": 900,
+        "height": 675
+      },
+      {
+        "path": "/images/dogs/Liberty/png/450/Liberty_sitting_handkerchief_1.png",
+        "type": "png",
+        "width": 450,
+        "height": 337
+      },
+      {
+        "path": "/images/dogs/Liberty/png/150/Liberty_sitting_handkerchief_1.png",
+        "type": "png",
+        "width": 150,
+        "height": 112
+      }
+    ]
+  }, {
+    "name": "Liberty_sitting_handkerchief_2",
+    "alt": "Libby wearing a flag handkerchiefs",
+    "detailId": "7050e3a2-fda0-44b6-88d9-5e0e1ad70683",
+    "classes": [
+      "dog",
+      "female",
+      "parent",
+      "liberty"
+    ],
+    "centerOfFocus": {
+      "x": 25,
+      "y": 5
+    },
+    "defaultPath": "/images/dogs/Liberty/png/150/Liberty_sitting_handkerchief_2.png",
+    "imageSet": [
+      {
+        "path": "/images/dogs/Liberty/webp/1800/Liberty_sitting_handkerchief_2.webp",
+        "type": "webp",
+        "width": 1800,
+        "height": 1350
+      },
+      {
+        "path": "/images/dogs/Liberty/webp/900/Liberty_sitting_handkerchief_2.webp",
+        "type": "webp",
+        "width": 900,
+        "height": 675
+      },
+      {
+        "path": "/images/dogs/Liberty/webp/450/Liberty_sitting_handkerchief_2.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 337
+      },
+      {
+        "path": "/images/dogs/Liberty/webp/150/Liberty_sitting_handkerchief_2.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 112
+      },
+      {
+        "path": "/images/dogs/Liberty/jpg/1800/Liberty_sitting_handkerchief_2.jpg",
+        "type": "jpg",
+        "width": 1800,
+        "height": 1350
+      },
+      {
+        "path": "/images/dogs/Liberty/jpg/900/Liberty_sitting_handkerchief_2.jpg",
+        "type": "jpg",
+        "width": 900,
+        "height": 675
+      },
+      {
+        "path": "/images/dogs/Liberty/jpg/450/Liberty_sitting_handkerchief_2.jpg",
+        "type": "jpg",
+        "width": 450,
+        "height": 337
+      },
+      {
+        "path": "/images/dogs/Liberty/jpg/150/Liberty_sitting_handkerchief_2.jpg",
+        "type": "jpg",
+        "width": 150,
+        "height": 112
+      },
+      {
+        "path": "/images/dogs/Liberty/png/1800/Liberty_sitting_handkerchief_2.png",
+        "type": "png",
+        "width": 1800,
+        "height": 1350
+      },
+      {
+        "path": "/images/dogs/Liberty/png/900/Liberty_sitting_handkerchief_2.png",
+        "type": "png",
+        "width": 900,
+        "height": 675
+      },
+      {
+        "path": "/images/dogs/Liberty/png/450/Liberty_sitting_handkerchief_2.png",
+        "type": "png",
+        "width": 450,
+        "height": 337
+      },
+      {
+        "path": "/images/dogs/Liberty/png/150/Liberty_sitting_handkerchief_2.png",
+        "type": "png",
+        "width": 150,
+        "height": 112
+      }
+    ]
   },
 
   {

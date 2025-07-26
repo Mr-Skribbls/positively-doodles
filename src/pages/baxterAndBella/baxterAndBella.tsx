@@ -23,7 +23,7 @@ const BaxterAndBella:FC<BaxterAndBellaProps> = () => {
     <div className='baxter-and-bella-page site-container'>
       <div className='logo'>
         <a target='_blank' href='https://www.baxterandbella.com/learn-more'>
-          <SourceSetImage imageName='Baxter_and_Bella_Partners_Badge' sizesRules={['(max-width: 35vw) 90%', '35vw']} />
+          <SourceSetImage imageName='Baxter_and_Bella_Partners_Badge' />
         </a>
       </div>
 

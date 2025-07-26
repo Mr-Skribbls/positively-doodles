@@ -5,12 +5,10 @@ import { FC, useEffect, useState } from 'react';
 
 interface ImageSwitcherProps {
   imageName: string
-  sizesRules: string[]
 }
 
 const ImageSwitcher:FC<ImageSwitcherProps> = ({
   imageName,
-  sizesRules,
 }) => {
   const [currentImage, setCurrentImage] = useState<string | undefined>();
   const [isImageChanging, setIsImageChanging] = useState(false);
@@ -29,10 +27,10 @@ const ImageSwitcher:FC<ImageSwitcherProps> = ({
     <div className="image-switcher">
       <div className={`slider ${isImageChanging ? 'sliding' : ''}`}>
         <div className='image-wrapper'>
-          {!isNil(currentImage) && <SourceSetImage imageName={currentImage} sizesRules={sizesRules} />}
+          {!isNil(currentImage) && <SourceSetImage imageName={currentImage} />}
         </div>
         <div className="image-wrapper">
-          <SourceSetImage imageName={imageName} sizesRules={sizesRules} />
+          <SourceSetImage imageName={imageName} />
         </div>
       </div>
     </div>

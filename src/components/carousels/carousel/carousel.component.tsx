@@ -43,25 +43,25 @@ const Carousel:FC<CarouselProps> = ({imageClasses}) => {
     <div className='carousel'>
       { isLoading && <div className="loading">Loading...</div> }
       <div className="item wide">
-        <ImageSwitcher imageName={imageNames[imageIndices[0]]} sizesRules={['40%']} />
+        <ImageSwitcher imageName={imageNames[imageIndices[0]]} />
       </div>
       <div className="item">
-        <ImageSwitcher imageName={imageNames[imageIndices[1]]} sizesRules={['20%']} />
+        <ImageSwitcher imageName={imageNames[imageIndices[1]]} />
       </div>
       <div className="item wide-tall">
-        <ImageSwitcher imageName={imageNames[imageIndices[2]]} sizesRules={['40%']} />
+        <ImageSwitcher imageName={imageNames[imageIndices[2]]} />
       </div>
       <div className="item tall">
-        <ImageSwitcher imageName={imageNames[imageIndices[3]]} sizesRules={['40%']} />
+        <ImageSwitcher imageName={imageNames[imageIndices[3]]} />
       </div>
       <div className="item tall">
-        <ImageSwitcher imageName={imageNames[imageIndices[4]]} sizesRules={['40%']} />
+        <ImageSwitcher imageName={imageNames[imageIndices[4]]} />
       </div>
       <div className="item wide">
-        <ImageSwitcher imageName={imageNames[imageIndices[5]]} sizesRules={['40%']} />
+        <ImageSwitcher imageName={imageNames[imageIndices[5]]} />
       </div>
       <div className="item">
-        <ImageSwitcher imageName={imageNames[imageIndices[6]]} sizesRules={['20%']} />
+        <ImageSwitcher imageName={imageNames[imageIndices[6]]} />
       </div>
     </div>
   );

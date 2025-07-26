@@ -72,7 +72,7 @@ const Gallery:FC<GalleryProps> = () => {
           setSelectedImageName(displayImage.image.name);
         }}
         key={key}>
-        <SourceSetImage imageName={displayImage.image.name} sizesRules={sizesRules} />
+        <SourceSetImage imageName={displayImage.image.name} />
       </div>
     );
   };

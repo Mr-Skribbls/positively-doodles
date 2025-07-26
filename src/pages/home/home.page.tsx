@@ -58,16 +58,16 @@ const Home:FC<HomeProps> = () => {
       <section className="badges">
         <div className="badge">
           <Link to="baxter-and-bella">
-            <SourceSetImage imageName='Baxter_and_Bella_Partners_Badge' sizesRules={['(max-width: 550px) 90%', '250px']} />
+            <SourceSetImage imageName='Baxter_and_Bella_Partners_Badge' />
           </Link>
         </div>
         <div className="badge">
           <a target='_blank' href="https://www.gooddog.com/breeders/positively-doodles-illinois">
-            <SourceSetImage imageName='goodDogBadge' sizesRules={['(max-width: 550px) 90%', '250px']} />
+            <SourceSetImage imageName='goodDogBadge' />
           </a>
         </div>
         <div className="badge">
-          <SourceSetImage imageName='Esa_Jensen_ABCDT' sizesRules={['(max-width: 550px) 90%', '250px']} />
+          <SourceSetImage imageName='Esa_Jensen_ABCDT' />
         </div>
       </section>
 

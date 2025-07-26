@@ -15,7 +15,7 @@ const Parent:FC<ParentProps> = ({
   return (
     <article className="parent">
       <figure className="image">
-          <SourceSetImage imageName={dog.images.main} sizesRules={['50%']} />
+          <SourceSetImage imageName={dog.images.main} />
       </figure>
       <figcaption>
         <h3>{dog.name}</h3>

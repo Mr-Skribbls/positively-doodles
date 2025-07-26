@@ -35,7 +35,7 @@ const ShowcaseCarousel:FC<ShowcaseCarouselProps> = ({
         <div className='embla__container'>
           {imageNames.map((imageName, key) => (
             <div key={key} className="embla__slide">
-              <SourceSetImage imageName={imageName} sizesRules={['250px']}></SourceSetImage>
+              <SourceSetImage imageName={imageName}></SourceSetImage>
             </div>
           ))}
         </div>

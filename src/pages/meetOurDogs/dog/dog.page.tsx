@@ -41,7 +41,7 @@ const Dog:FC<DogProps> = () => {
 
         <section className='images'>
           {imageNames.map((imageName, key) => <div key={key} onClick={() => setModalImages(getModalImages(imageName, imageNames))}>
-            <SourceSetImage imageName={imageName} sizesRules={['100px']} />
+            <SourceSetImage imageName={imageName} />
           </div>)}
         </section>
 

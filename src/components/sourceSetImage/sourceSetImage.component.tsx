@@ -2,31 +2,43 @@ import { FC, useEffect, useState } from 'react';
 import useImage, {ImageData, ImageDefinition} from '../../hooks/useImage';
 import isNil from 'lodash/isNil';
 import './sourceSetImage.css';
+import { compact, isEmpty, reverse, sortedUniq, uniq } from 'lodash';
 
 interface SourceSetImageProps {
   imageName: string
-  sizesRules: string[]
   className?: string
 }
 
 const SourceSetImage:FC<SourceSetImageProps> = ({
   imageName,
-  sizesRules,
   className,
 }) => {
-  const {getImageDataByName} = useImage();
-  const [imageData, setImageData] = useState<ImageData[]>([]);
+  const { getImageDataByName } = useImage();
+  const [ imageData, setImageData ] = useState<ImageData[]>([]);
+  const [ sizeRules, setSizeRules ] = useState<string>('');
 
   useEffect(() => {
     setImageData(getImageDataByName([imageName]));
   }, [imageName, getImageDataByName]);
 
-  const getSrcSet = (imageSet: ImageDefinition[]): string => {
-    return imageSet.map((image) => `${image.path} ${image.width}w`).join(',');
-  }
+  useEffect(() => {
+    let sizeRules = '';
+    if(!isEmpty(imageData)) {
+      const imageSizes = reverse(sortedUniq(compact(imageData[0].imageSet.map((image) => image.width).sort((a, b) => a - b))));
+      console.log(imageSizes);
+      const rules = imageSizes.map((size) => {
+        return `(min-width: ${size}px) ${size}px`;
+      });
+      sizeRules = rules.join(',');
+    }
+    setSizeRules(sizeRules);
+  }, [imageData]);
 
-  const getSizes = (sizesRules: string[]) => {
-    return sizesRules.join(',');
+  const getSrcSet = (imageSet: ImageDefinition[]): string => {
+    const res = imageSet.map((image) => {
+      return `${image.path} ${image.width}w`;
+    }).join(',');
+    return res;
   }
 
   const styleClasses = `source-set-image ${className}`;
@@ -38,7 +50,7 @@ const SourceSetImage:FC<SourceSetImageProps> = ({
         className={styleClasses}
         src={imageData[0].defaultPath}
         srcSet={getSrcSet(imageData[0].imageSet)}
-        sizes={getSizes(sizesRules)}
+        sizes={sizeRules}
         alt={imageData[0].alt}
         style={{objectPosition: `${imageData[0].centerOfFocus.x}% ${imageData[0].centerOfFocus.y}%`}} />}
     </>

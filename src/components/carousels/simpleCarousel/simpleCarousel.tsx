@@ -36,7 +36,7 @@ const SimpleCarousel:FC<SimpleCarouselProps> = ({
         <div className='embla__container'>
           {imageNames.map((imageName, key) => (
             <ContentBlock key={key} className="embla__slide" borderSize={1}>
-              <SourceSetImage imageName={imageName} sizesRules={['250px']}></SourceSetImage>
+              <SourceSetImage imageName={imageName}></SourceSetImage>
             </ContentBlock>
           ))}
         </div>
