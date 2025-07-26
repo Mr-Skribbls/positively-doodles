@@ -1,0 +1,81 @@
+[
+
+  {
+    "id": "7050e3a2-fda0-44b6-88d9-5e0e1ad70683",
+    "recordId": "f9392faa-8f0c-44f7-9477-bb32ce7a8bc9",
+    "type": "dog"
+  }, {
+    "id": "5abae1b2-a156-4659-8d94-a6605041fd20",
+    "recordId": "73c2bfee-83d2-47d1-9bf5-7e78613d6f89",
+    "type": "dog"
+  }, {
+    "id": "8fdc0ce3-49ac-45af-9674-fdd8dcdb328e",
+    "recordId": "0e7a755e-9773-4b11-9cae-6f4c16babff3",
+    "type": "dog"
+  }, 
+
+  {
+    "id": "3e9a9bb0-3d19-42a9-b88d-760fc2e2bc9b",
+    "recordId": "1f4d856a-0413-4ed2-a76a-f91d4c5b1184",
+    "type": "puppy"
+  }, {
+    "id": "e7427f96-6347-49dc-93c9-4f3c490f4b90",
+    "recordId": "931256d9-4dc0-4c61-98f3-9263073a2204",
+    "type": "puppy"
+  }, {
+    "id": "b82030c8-6c92-4322-b852-ff6363451546",
+    "recordId": "61558fdd-f10d-4b04-95b9-790862fd3ac4",
+    "type": "puppy"
+  }, {
+    "id": "752a9ff7-303c-4955-a9d3-6ca42fde50fa",
+    "recordId": "53d125b6-8f70-4b9d-aaba-6c9de02ca92a",
+    "type": "puppy"
+  }, {
+    "id": "aa150f73-f1f9-48ed-9936-401d70edd4b2",
+    "recordId": "d9f15140-5f60-4404-89b7-f724c2729e5c",
+    "type": "puppy"
+  }, {
+    "id": "eb382e4d-bbe8-438e-9292-604ce3b12a12",
+    "recordId": "624d3910-7cdb-4e03-8c5b-0f78cde56264",
+    "type": "puppy"
+  }, 
+  
+  {
+    "id": "a57041fd-c7d7-4a6a-b5b6-efc92199b99f",
+    "recordId": "832fd26e-0a4d-45e3-b1fe-714c8edff83a",
+    "type": "litter"
+  }, {
+    "id": "d474160d-1d34-4ddf-b835-4ad4d7dc594e",
+    "recordId": "c5633b99-8011-4101-a187-b71980ac9851",
+    "type": "puppy"
+  }, {
+    "id": "b4d156c3-4b07-4cd1-b48a-2227878a151a",
+    "recordId": "aac8147f-5e91-49d4-b420-652ab6285f69",
+    "type": "puppy"
+  }, {
+    "id": "43b05753-7c03-4fe8-a2c0-05c830fe052f",
+    "recordId": "c2e1e218-4c2f-43a9-a8e2-6fdde8c4b3a5",
+    "type": "puppy"
+  }, {
+    "id": "4a24bffa-631f-4a78-b0e2-3bb599840579",
+    "recordId": "2f5f5d49-e380-4077-910a-cc575540483d",
+    "type": "puppy"
+  }, {
+    "id": "d89638d9-0773-4c68-8c02-53b790f625b3",
+    "recordId": "ed68364f-c5e3-4f78-ab84-9815a00058af",
+    "type": "puppy"
+  }, {
+    "id": "b74f668c-6c15-40cd-9def-da51bbed8642",
+    "recordId": "3b8ef45b-cb87-49e6-aead-875240e0c89f",
+    "type": "puppy"
+  }, {
+    "id": "f0175ee3-0bf2-4589-8e9e-713145921cff",
+    "recordId": "e1527389-0329-47c3-887e-0c97825490e0",
+    "type": "puppy"
+  }, {
+    "id": "6fea3f0a-4910-4fca-acf8-c26917dae7b5",
+    "recordId": "803c9d34-6573-4885-9ff8-e3325003899f",
+    "type": "puppy"
+  }
+  
+]

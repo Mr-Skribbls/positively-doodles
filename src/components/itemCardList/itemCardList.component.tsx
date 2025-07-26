@@ -14,7 +14,7 @@ const ItemCardList:FC<ItemCardListProps> = ({ dog }) => {
   return (
     <Link to={`/dog/${dog.name}`} className="item-card-list">
       <div className="image">
-        <SourceSetImage imageName={dog.images.main} sizesRules={['(max-width: 750px) 100%, 30%']} />
+        <SourceSetImage imageName={dog.images.main} />
       </div>
       <figcaption className="fig-container">
         <h2>{dog.name}</h2>

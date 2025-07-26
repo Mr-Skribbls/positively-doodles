@@ -1,0 +1,34 @@
+.dog-showcase-card {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  overflow: hidden;
+  line-height: 1.5;
+}
+
+.dog-showcase-card > .image-wrapper {
+  width: 100%;
+  max-width: 250px;
+  min-width: 250px;
+  cursor: pointer;
+  max-height: 50vh;
+}
+
+.dog-showcase-card figcaption {
+  padding: 10px;
+}
+
+.dog-showcase-card figcaption p.reserved {
+  color: var(--color-base);
+}
+
+@media (max-width: 700px) {
+  .dog-showcase-card .image-wrapper {
+    max-width: 100vw;
+    border-radius: var(--border-radius);
+  }
+  
+  .dog-showcase-card {
+    flex-wrap: wrap;
+  }
+}

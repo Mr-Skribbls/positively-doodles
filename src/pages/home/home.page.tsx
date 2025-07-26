@@ -5,12 +5,13 @@ import ContentBarTitleLeft from '../../components/contentComponents/contentBarTi
 import { Section } from '../../services/content.service';
 import useContent from '../../hooks/useContent';
 import SourceSetImage from '../../components/sourceSetImage/sourceSetImage.component';
-import Carousel from '../../components/carousel/carousel.component';
+import Carousel from '../../components/carousels/carousel/carousel.component';
 import Testimonial from '../../components/testimonial/testimonial';
 import MyMap from '../../components/myMap/myMap';
 import { Link } from 'react-router-dom';
 import { Marker } from 'react-leaflet';
 import useLeafletMarkers from '../../hooks/useLeafletMarkers';
+import ContentBlock from '../../components/contentBlock/contentBlock';
 
 interface HomeProps {
 
@@ -44,31 +45,29 @@ const Home:FC<HomeProps> = () => {
           imageType: 'png',
           imageWidth: 450,
         }} />}
-      </article>
 
-      <article className='testimonials'>
-        <div className='testimonial-block'>
+        <ContentBlock className='testimonial-block' as='section'>
           <h1>Testimonials</h1>
           <Testimonial customerName='Scott Family' />
           <Testimonial customerName='Baril Family' />
           <Testimonial customerName='Hosier Family' />
           <Testimonial customerName='Traughber Family' />
-        </div>
+        </ContentBlock>
       </article>
 
       <section className="badges">
         <div className="badge">
           <Link to="baxter-and-bella">
-            <SourceSetImage imageName='Baxter_and_Bella_Partners_Badge' sizesRules={['(max-width: 550px) 90%', '250px']} />
+            <SourceSetImage imageName='Baxter_and_Bella_Partners_Badge' />
           </Link>
         </div>
         <div className="badge">
           <a target='_blank' href="https://www.gooddog.com/breeders/positively-doodles-illinois">
-            <SourceSetImage imageName='goodDogBadge' sizesRules={['(max-width: 550px) 90%', '250px']} />
+            <SourceSetImage imageName='goodDogBadge' />
           </a>
         </div>
         <div className="badge">
-          <SourceSetImage imageName='Esa_Jensen_ABCDT' sizesRules={['(max-width: 550px) 90%', '250px']} />
+          <SourceSetImage imageName='Esa_Jensen_ABCDT' />
         </div>
       </section>
 

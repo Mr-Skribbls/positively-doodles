@@ -10,7 +10,7 @@ const HeaderLogo:FC<HeaderLogoProps> = () => {
   return (
     <div className="header-logo wrapper">
       <div className='header-logo container'>
-        <SourceSetImage imageName='headerLogo' sizesRules={['298px']} />
+        <SourceSetImage imageName='headerLogo' />
       </div>
     </div>
   );

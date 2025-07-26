@@ -1,16 +1,38 @@
-.available-puppies {
-  --available-puppies-max-width: 80vw;
-}
-
-.available-puppies .section-header {
-  max-width: var(--available-puppies-max-width);
-  margin: 0 auto;
+.available-puppies > * {
+  max-width: 80vw;
+  margin: 0 auto 25px;
 }
 
 .available-puppies .section-header h2 {
-  margin: 32px;
+  margin: 15px;
 }
 
 .available-puppies .expected-litters {
   margin-bottom: 50px;
+}
+
+.available-puppies .contact-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 15px;
+}
+
+.available-puppies .contact-details > * {
+  padding: 15px;
+  flex-basis: 50%;
+}
+
+.available-puppies .contact-details .litter-details {
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+@media (max-width: 1000px) {
+  .available-puppies .contact-details {
+    flex-direction: column;
+  }
 }

@@ -1,8 +1,7 @@
 import { FC } from 'react';
-import './litterCard.css';
 import { LitterInfo, LitterState } from '../../../dogInfo';
-import ExpectedLitterCard from './expectedLitterCard/expectedLitterCard.component';
-import PuppiesLitterCard from './puppiesLitterCard/puppiesLitterCard.component';
+import ExpectedLitterPanel from './expectedLitterPanel/expectedLitterPanel.component';
+import PuppiesLitterPanel from './puppiesLitterPanel/puppiesLitterPanel.component';
 
 interface LitterCardProps {
   litter: LitterInfo,
@@ -13,8 +12,8 @@ const LitterCard:FC<LitterCardProps> = ({
 }) => {
   return (
     <div className='litter-card'>
-      {litter.state === LitterState.Expected && <ExpectedLitterCard litter={litter} />}
-      {(litter.state === LitterState.Puppy || litter.state === LitterState.HomeBound) && <PuppiesLitterCard litter={litter} />}
+      {litter.state === LitterState.Expected && <ExpectedLitterPanel litter={litter} />}
+      {(litter.state === LitterState.Puppy || litter.state === LitterState.HomeBound) && <PuppiesLitterPanel litter={litter} />}
     </div>
   );
 };

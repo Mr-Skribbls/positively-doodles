@@ -1,5 +1,3 @@
-import { WindowDimensions } from '../../hooks/useWindowDimensions';
-
 interface SetIsOpen {
   (value: boolean) : void,
 }
@@ -15,7 +13,8 @@ export interface MenuItem {
   subMenu?: SubMenu,
 }
 
-export const getMenuItems = (windowDimensions: WindowDimensions): MenuItem[] => {
+// export const getMenuItems = (windowDimensions: WindowDimensions): MenuItem[] => {
+export const getMenuItems = (): MenuItem[] => {
   const menuItems: MenuItem[] = [
     {    // home
       order: 1,
@@ -25,31 +24,35 @@ export const getMenuItems = (windowDimensions: WindowDimensions): MenuItem[] => 
       order: 3,
       to: '/contact',
       caption: 'Contact',
-    }, { // meet our dogs
+    // }, { // meet our dogs
+    //   order: 2,
+    //   to: '/meet-our-dogs',
+    //   caption: windowDimensions.width < 575 ? 'Dogs' : 'Meet Our Dogs',
+    //   subMenu: {
+    //     menuItems: [
+    //       {    // moms
+    //         order: 1,
+    //         to: '/moms',
+    //         caption: 'Moms',
+    //       }, { // dads
+    //         order: 2,
+    //         to: '/dads',
+    //         caption: 'Dads',
+    //       }, {
+    //         order: 3,
+    //         to: '/available-puppies',
+    //         caption: 'Available Puppies',
+    //       }, {
+    //         order: 4,
+    //         to: '/about-bernedoodles',
+    //         caption: 'About Bernedoodles',
+    //       }
+    //     ],
+    //   }
+    }, {
       order: 2,
-      to: '/meet-our-dogs',
-      caption: windowDimensions.width < 575 ? 'Dogs' : 'Meet Our Dogs',
-      subMenu: {
-        menuItems: [
-          {    // moms
-            order: 1,
-            to: '/moms',
-            caption: 'Moms',
-          }, { // dads
-            order: 2,
-            to: '/dads',
-            caption: 'Dads',
-          }, {
-            order: 3,
-            to: '/available-puppies',
-            caption: 'Available Puppies',
-          }, {
-            order: 4,
-            to: '/about-bernedoodles',
-            caption: 'About Bernedoodles',
-          }
-        ],
-      }
+      to: '/available-puppies',
+      caption: 'Puppies',
     }, {
       order: 5,
       to: '/gallery/dog',

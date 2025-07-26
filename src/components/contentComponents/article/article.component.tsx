@@ -44,7 +44,7 @@ const SectionTitle:FC<SectionTitleProps> = ({sectionTitle}) => {
 const Content:FC<ContentProps> = ({content}) => {
   const pictures = content.images?.map((image, key) => {
     return (
-      <SourceSetImage key={key} className={image.className} imageName={image.imageName} sizesRules={['450px']} />
+      <SourceSetImage key={key} className={image.className} imageName={image.imageName} />
     );
   });
 

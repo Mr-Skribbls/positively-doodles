@@ -1,0 +1,43 @@
+.expected-litter-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .expected-litter-panel .panel-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.expected-litter-panel .parent-images {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.expected-litter-panel .parent-images > div {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.expected-litter-panel .panel-container figcaption {
+  margin-top: 20px;
+}
+
+.expected-litter-panel .panel-container figcaption ul {
+  list-style: none;
+}
+
+.expected-litter-panel a {
+  text-decoration: underline;
+} */
+
+.expected-litter-panel .image-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.expected-litter-panel .image-container > img {
+  /* flex-grow: 1; */
+  height: 100%;
+}

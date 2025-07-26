@@ -17,7 +17,7 @@ const Testimonial:FC<TestimonialProps> = ({
     <>
       {!isNil(testimonial) && <section className='testimonial'>
         <div className='testimonial-heading'>
-          <SourceSetImage imageName={testimonial.imageName} sizesRules={['250px']} />
+          <SourceSetImage imageName={testimonial.imageName} />
           <h2>{testimonial.customer}</h2>
         </div>
         <div className='testimonial-content'>

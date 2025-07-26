@@ -35,7 +35,7 @@ const Footer:FC<FooterProps> = () => {
           </a>}
         </div>
         {windowDimensions.width > 650 && <div className='logo-container'>
-          <SourceSetImage className='logo' imageName='smallLogo' sizesRules={['100px']} />
+          <SourceSetImage className='logo' imageName='smallLogo' />
         </div>}
         <div className='contact-info-container'>
           <p><a href={`mailto:${constants.emailAddress}`}>{constants.emailAddress}</a></p>
