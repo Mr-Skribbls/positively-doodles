@@ -315,6 +315,23 @@ export const dogs:Dog[] = [
         company: 'Embark',
       }
     },
+  }, { // Twiggy
+    id: '9641d81b-7806-42b3-9f9d-b4c876e01aca',
+    name: 'Twiggy',
+    gender: 'M',
+    description: 'Twiggy is an outside stud',
+    isInternal: false,
+    state: DogState.Breeder,
+    weight: 15,
+    breed: {
+      type: BreedType.Bernese,
+      size: BreedSize.Mini,
+      class: BreedClass.F1,
+    },
+    images: {
+      main: '',
+      gallery: []
+    }
   }
 ];
 
@@ -444,7 +461,7 @@ export const litters:LitterInfo[] = [
     goHomeDate: new Date(2024, 1, 14),
     size: 6,
     expectedPuppySize: '30 to 45 lbs',
-    state: LitterState.Complete,
+    state: LitterState.HomeBound,
     puppyBreed: {
       type: BreedType.Bernedoodle,
       expectedSizes: [
@@ -479,7 +496,7 @@ export const litters:LitterInfo[] = [
     goHomeDate: new Date(2024, 8, 11),
     size: 8,
     expectedPuppySize: '30 to 45 lbs',
-    state: LitterState.HomeBound,
+    state: LitterState.Complete,
     puppyBreed: {
       type: BreedType.Bernedoodle,
       expectedSizes: [
@@ -507,5 +524,24 @@ export const litters:LitterInfo[] = [
       'e1527389-0329-47c3-887e-0c97825490e0',
       '803c9d34-6573-4885-9ff8-e3325003899f',
     ].includes(puppy.id)),
-  },
+  }, {
+    id: '0ca167c1-b62d-45d9-a074-4c0d085ed45d',
+    dam: findDog('Liberty', dogs),
+    sire: findDog('Twiggy', dogs),
+    dueDate: new Date(2025, 8, 10),
+    expectedPuppySize: '30 to 45 lbs',
+    state: LitterState.Expected,
+    size: 0,
+    puppyBreed: {
+      type: BreedType.Bernedoodle,
+      expectedSizes: [
+        BreedSize.Mini,
+      ],
+      class: BreedClass.F1B
+    },
+    expectedCoatTypes: [],
+    expectedColors: [],
+    startingPrice: 0,
+    reservationFee: 0
+  }
 ];
