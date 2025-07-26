@@ -2,7 +2,7 @@ import { FC, useEffect, useState } from 'react';
 import useImage, {ImageData, ImageDefinition} from '../../hooks/useImage';
 import isNil from 'lodash/isNil';
 import './sourceSetImage.css';
-import { compact, isEmpty, reverse, sortedUniq, uniq } from 'lodash';
+import { compact, isEmpty, reverse, sortedUniq } from 'lodash';
 
 interface SourceSetImageProps {
   imageName: string
