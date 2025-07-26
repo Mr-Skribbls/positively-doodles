@@ -2,8 +2,6 @@
   --margin: 75px;
   margin: var(--margin);
   height: calc(100vh - 2 * var(--margin));
-  border: 2px solid var(--color-base);
-  border-radius: 25px;
   overflow: hidden;
   display: flex;
   flex-direction: row;

@@ -7,6 +7,7 @@ import NextButton from '../nextButton';
 import { usePrevNextButtons } from '../../../hooks/usePrevNextButtons';
 import { SelectedSnapDisplay } from '../emblaCarouselSelectedSnapDisplay';
 import { useSelectedSnapDisplay } from '../../../hooks/useSelectedSnapDisplay';
+import ContentBlock from '../../contentBlock/contentBlock';
 
 interface SimpleCarouselProps {
   imageNames: string[],
@@ -34,9 +35,9 @@ const SimpleCarousel:FC<SimpleCarouselProps> = ({
       <section className='embla' ref={emblaRef}>
         <div className='embla__container'>
           {imageNames.map((imageName, key) => (
-            <div key={key} className="embla__slide">
+            <ContentBlock key={key} className="embla__slide" borderSize={1}>
               <SourceSetImage imageName={imageName} sizesRules={['250px']}></SourceSetImage>
-            </div>
+            </ContentBlock>
           ))}
         </div>
       </section>

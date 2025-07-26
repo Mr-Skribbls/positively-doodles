@@ -3,7 +3,7 @@ import { DogImageDetail } from '../../../../hooks/useImageDetail';
 import useImage from '../../../../hooks/useImage';
 import { isEmpty, isNil } from 'lodash';
 import SimpleCarousel from '../../../carousels/simpleCarousel/simpleCarousel';
-import { litters, Puppy } from '../../../../dogInfo';
+import { Puppy } from '../../../../dogInfo';
 
 interface ModalDogImageDetailProps {
   dogImageDetail: DogImageDetail,

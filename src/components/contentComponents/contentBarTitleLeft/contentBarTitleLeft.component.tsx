@@ -4,6 +4,7 @@ import isNil from 'lodash/isNil';
 import { Paragraph } from '../../../services/content.service';
 import Shadow from '../../shadow/shadow.component';
 import useImage, { ImageData } from '../../../hooks/useImage';
+import ContentBlock from '../../contentBlock/contentBlock';
 
 interface ImageOverride {
   imageName: string
@@ -31,7 +32,7 @@ const ContentBarTitleLeft:FC<ContentBarTitleLeftProps> = ({
 
   useEffect(() => {
     setImageData(getImageDataByName([imageOverride?.imageName || '']));
-  }, [imageOverride])
+  }, [getImageDataByName, imageOverride])
 
   const findParagraphWithImage = (paragraphs: Paragraph[]) => paragraphs.find((p: Paragraph) => !isNil(p.images) && p.images.length > 0);
 
@@ -62,12 +63,12 @@ const ContentBarTitleLeft:FC<ContentBarTitleLeftProps> = ({
   );
 
   return (
-    <section className='content-bar-title-left'>
+    <ContentBlock as='section' className='content-bar-title-left'>
       {titleMarkup}
       <div className='content-container'>
         {paragraphs.map((p, key) => <p key={key}>{p.text}</p>)}
       </div>
-    </section>
+    </ContentBlock>
   )
 }
 

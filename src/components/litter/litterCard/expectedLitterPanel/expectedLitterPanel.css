@@ -1,33 +1,33 @@
-.expected-litter-card {
+.expected-litter-panel {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.expected-litter-card .card-container {
+.expected-litter-panel .panel-container {
   display: flex;
   flex-direction: column;
 }
 
-.expected-litter-card .parent-images {
+.expected-litter-panel .parent-images {
   display: flex;
   flex-direction: row;
   gap: 20px;
 }
 
-.expected-litter-card .parent-images > div {
+.expected-litter-panel .parent-images > div {
   max-width: 200px;
   max-height: 200px;
 }
 
-.expected-litter-card .card-container figcaption {
+.expected-litter-panel .panel-container figcaption {
   margin-top: 20px;
 }
 
-.expected-litter-card .card-container figcaption ul {
+.expected-litter-panel .panel-container figcaption ul {
   list-style: none;
 }
 
-.expected-litter-card a {
+.expected-litter-panel a {
   text-decoration: underline;
 }

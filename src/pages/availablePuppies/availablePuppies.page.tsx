@@ -4,6 +4,9 @@ import constants from '../../constants';
 import LitterCard from '../../components/litter/litterCard/litterCard.component';
 import PageTitle from '../../components/pageTitle/pageTitle.component';
 import './availablePuppies.css';
+import ContentBlock from '../../components/contentBlock/contentBlock';
+import ProgramDescription from '../../components/contentComponents/static/programDescription';
+import ContactForm from '../../components/contactForm/contactForm';
 
 interface AvailablePuppiesProps {
 
@@ -40,6 +43,17 @@ const AvailablePuppies:FC<AvailablePuppiesProps> = () => {
         </div>
         {upcomingLitters.map((litter, key) => <LitterCard key={key} litter={litter} />)}
       </section>}
+      <ContentBlock as='section' className='contact-details'>
+        <ContentBlock className='litter-details' borderSize={1}>
+          <ProgramDescription />
+          <p>
+            If you're interested in adopting one of these cute pups contact us using the contact form on this page, call us at <a href={`tel:${constants.phoneNumber}`}>{constants.phoneNumberDisplay}</a>, email us at <a href={`mailto:${constants.emailAddress}`}>{constants.emailAddress}</a>, or message us on <a target='_blank' href={constants.facebookAddress}>facebook</a>.
+          </p>
+        </ContentBlock>
+        <ContentBlock className='contact-form' borderSize={1}>
+          <ContactForm />
+        </ContentBlock>
+      </ContentBlock>
     </div>
   );
 };

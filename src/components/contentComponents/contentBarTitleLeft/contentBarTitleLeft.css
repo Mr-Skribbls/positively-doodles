@@ -3,8 +3,6 @@
   flex-direction: row;
   justify-content: center;
   align-items: stretch;
-  border: var(--border-size) solid var(--color-base);
-  border-radius: var(--border-radius);
 }
 
 .content-bar-title-left > div {

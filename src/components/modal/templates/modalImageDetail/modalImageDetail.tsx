@@ -12,6 +12,7 @@ import ShowcaseCarousel from '../../../carousels/showcaseCarousel/showcaseCarous
 import ModalDogImageDetail from './modalDogImageDetail';
 import ModalPuppyImageDetail from './modalPuppyImageDetail';
 import ModalLitterImageDetail from './modalLitterImageDetail';
+import ContentBlock from '../../../contentBlock/contentBlock';
 
 interface ModalImageDetailProps {
   imageDetail: ImageDetail,
@@ -35,20 +36,20 @@ const ModalImageDetail:FC<ModalImageDetailProps> = ({
   }, [ imageDetail, imagePriority, getImageDataByDetailId, getImageDataByName ]);
   
   return (
-    <div className='model-image-detail'>
+    <ContentBlock className='model-image-detail'>
       <div className="image-wrapper">
         <ShowcaseCarousel imageNames={imageNames}></ShowcaseCarousel>
       </div>
-      { imageDetail?.type === DetailRecordType.Dog && 
+      {imageDetail?.type === DetailRecordType.Dog &&
         <ModalDogImageDetail dogImageDetail={imageDetail as DogImageDetail}></ModalDogImageDetail>
       }
-      { imageDetail?.type === DetailRecordType.Puppy && 
+      {imageDetail?.type === DetailRecordType.Puppy &&
         <ModalPuppyImageDetail puppyImageDetail={imageDetail as PuppyImageDetail}></ModalPuppyImageDetail>
       }
-      { imageDetail?.type === DetailRecordType.Litter && 
+      {imageDetail?.type === DetailRecordType.Litter &&
         <ModalLitterImageDetail litterImageDetail={imageDetail as LitterImageDetail}></ModalLitterImageDetail>
       }
-    </div>
+    </ContentBlock>
   )
 }
 

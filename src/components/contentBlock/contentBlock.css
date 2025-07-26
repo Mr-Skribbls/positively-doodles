@@ -1,0 +1,4 @@
+.content-block {
+  border-color: var(--color-base);
+  border-radius: var(--border-radius);
+}

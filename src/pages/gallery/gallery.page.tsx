@@ -10,6 +10,7 @@ import useImage, { ImageData } from '../../hooks/useImage';
 import { shuffle, some } from 'lodash';
 import useImageDetail, { ImageDetail } from '../../hooks/useImageDetail';
 import ModalImageDetail from '../../components/modal/templates/modalImageDetail/modalImageDetail';
+import ContentBlock from '../../components/contentBlock/contentBlock';
 
 interface GalleryProps {
 
@@ -83,7 +84,9 @@ const Gallery:FC<GalleryProps> = () => {
 
   return (
     <div className='site-container'>
-      <p className='gallery-instructions'>Click or tap on an image for more details</p>
+      <ContentBlock as='p' className='gallery-instructions' borderSize={1} borderRadius={5}>
+        Click or tap on an image for more details
+      </ContentBlock>
       <div className="gallery-wrapper">
         {displayImages.map((displayImage, key) => imageCard(displayImage, key))}
         <Modal isOpen={!isNil(modalImageDetail)} close={closeModal}>

@@ -37,23 +37,7 @@
   margin-top: 50px;
 }
 
-.home-page .testimonials {
-  font-size: 1.2rem;
-  display: flex;
-  margin: 0 5vw 50px;
-  line-height: 1.35;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 50px;
-}
-
-.home-page .testimonials .testimonial-block {
-  border-radius: var(--border-radius);
-  border: var(--border-size) solid var(--color-base);
-}
-
-.home-page .testimonials .testimonial-block h1 {
+.home-page .testimonial-block h1 {
   text-align: center;
   padding-top: 30px;
 }

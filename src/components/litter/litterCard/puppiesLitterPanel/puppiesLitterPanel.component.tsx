@@ -1,17 +1,15 @@
 import { FC, useState } from 'react';
 
-import './puppiesLitterCard.css';
+import './puppiesLitterPanel.css';
 import { LitterInfo, Puppy, PuppyStatus } from '../../../../dogInfo';
 import { isNil } from 'lodash';
 import Modal from '../../../modal/modal.component';
 import ModalGallery from '../../../modal/templates/modalGallery/modalGallery.component';
-import constants from '../../../../constants';
-import ContactForm from '../../../contactForm/contactForm';
 import useLitter from '../../../../hooks/useLitter';
-import ProgramDescription from '../../../contentComponents/static/programDescription';
 import DogShowcaseCard from '../../../dogShowcaseCard/dogShowcaseCard';
+import ContentBlock from '../../../contentBlock/contentBlock';
 
-interface PuppiesLitterCardProps {
+interface PuppiesLitterPanelProps {
   litter: LitterInfo
 }
 
@@ -23,7 +21,7 @@ const puppyPrice = (puppy: Puppy, startingPrice: number) => {
   return puppy.status === PuppyStatus.Available ? `$${startingPrice + puppy.priceAboveStarting}` : puppy.status;
 }
 
-const PuppiesLitterCard:FC<PuppiesLitterCardProps> = ({litter}) => {
+const PuppiesLitterPanel:FC<PuppiesLitterPanelProps> = ({litter}) => {
   const [modalImageNames, setModalImageNames] = useState<string[] | null>();
   const { litterDescription } = useLitter();
 
@@ -33,8 +31,9 @@ const PuppiesLitterCard:FC<PuppiesLitterCardProps> = ({litter}) => {
 
   return (
     <>
-      <section className='puppies-litter-card'>
+      <ContentBlock as='section' className='puppies-litter-card'>
         <h2>{litter.puppyBreed.class} {litter.puppyBreed.expectedSizes.join(' to ')} {litter.puppyBreed.type} Litter</h2>
+        <p>{litterDescription(litter)}</p>
         <div className='puppy-cards'>
           {!isNil(litter.puppies) && litter.puppies.map(
             (puppy, key) => (
@@ -46,21 +45,7 @@ const PuppiesLitterCard:FC<PuppiesLitterCardProps> = ({litter}) => {
               </DogShowcaseCard>
             ))}
         </div>
-        <div className='litter-details-container'>
-          <div className='litter-details'>
-            <p>
-              {litterDescription(litter)}
-            </p>
-            <ProgramDescription />
-            <p>
-              If you're interested in adopting one of these cute pups contact us using the contact form on this page, call us at <a href={`tel:${constants.phoneNumber}`}>{constants.phoneNumberDisplay}</a>, email us at <a href={`mailto:${constants.emailAddress}`}>{constants.emailAddress}</a>, or message us on <a target='_blank' href={constants.facebookAddress}>facebook</a>.
-            </p>
-          </div>
-          <div className='contact-form'>
-            <ContactForm />
-          </div>
-        </div>
-      </section>
+      </ContentBlock>
       <Modal isOpen={!isNil(modalImageNames)} close={closeModal}>
         {!isNil(modalImageNames) && <ModalGallery images={modalImageNames} />}
       </Modal>
@@ -68,4 +53,4 @@ const PuppiesLitterCard:FC<PuppiesLitterCardProps> = ({litter}) => {
   );
 };
 
-export default PuppiesLitterCard;
+export default PuppiesLitterPanel;

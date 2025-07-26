@@ -7,6 +7,7 @@ import useImage, {ImageData} from '../../hooks/useImage';
 import './dogShowcaseCard.css';
 import Modal from '../modal/modal.component';
 import ModalImageDetail from '../modal/templates/modalImageDetail/modalImageDetail';
+import ContentBlock from '../contentBlock/contentBlock';
 
 
 interface DogShowcaseCardProps {
@@ -56,17 +57,17 @@ const DogShowcaseCard:FC<DogShowcaseCardProps> = ({
   };
 
   return (
-    <figure className='dog-showcase-card'>
+    <ContentBlock as='figure' className='dog-showcase-card' borderSize={1}>
       {!isNil(image) && <div className='image-wrapper' onClick={() => toggleModal()}>
         <SourceSetImage imageName={image.name} sizesRules={['(max-width: 700px) 100vw','250px']} />
       </div>}
       <figcaption>
         {children}
       </figcaption>
-      <Modal isOpen={isModalOpen} close={toggleModal}>
+      {isModalOpen && <Modal isOpen={isModalOpen} close={toggleModal}>
         {imageDetail && <ModalImageDetail imageDetail={imageDetail} imagePriority={[(image as ImageData).name]}></ModalImageDetail>}
-      </Modal>
-    </figure>
+      </Modal>}
+    </ContentBlock>
   )
 }
 

@@ -11,6 +11,7 @@ import MyMap from '../../components/myMap/myMap';
 import { Link } from 'react-router-dom';
 import { Marker } from 'react-leaflet';
 import useLeafletMarkers from '../../hooks/useLeafletMarkers';
+import ContentBlock from '../../components/contentBlock/contentBlock';
 
 interface HomeProps {
 
@@ -44,16 +45,14 @@ const Home:FC<HomeProps> = () => {
           imageType: 'png',
           imageWidth: 450,
         }} />}
-      </article>
 
-      <article className='testimonials'>
-        <div className='testimonial-block'>
+        <ContentBlock className='testimonial-block' as='section'>
           <h1>Testimonials</h1>
           <Testimonial customerName='Scott Family' />
           <Testimonial customerName='Baril Family' />
           <Testimonial customerName='Hosier Family' />
           <Testimonial customerName='Traughber Family' />
-        </div>
+        </ContentBlock>
       </article>
 
       <section className="badges">
