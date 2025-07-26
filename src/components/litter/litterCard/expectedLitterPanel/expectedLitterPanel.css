@@ -4,7 +4,7 @@
   align-items: center;
 }
 
-.expected-litter-panel .panel-container {
+/* .expected-litter-panel .panel-container {
   display: flex;
   flex-direction: column;
 }
@@ -30,4 +30,14 @@
 
 .expected-litter-panel a {
   text-decoration: underline;
+} */
+
+.expected-litter-panel .image-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.expected-litter-panel .image-container > img {
+  /* flex-grow: 1; */
+  height: 100%;
 }

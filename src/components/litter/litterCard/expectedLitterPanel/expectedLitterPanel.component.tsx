@@ -1,11 +1,9 @@
 import { FC } from 'react';
 import { LitterInfo } from '../../../../dogInfo';
-import isNil from 'lodash/isNil';
-import { Link } from 'react-router-dom';
 import './expectedLitterPanel.css';
-import SourceSetImage from '../../../sourceSetImage/sourceSetImage.component';
-import useLitter from '../../../../hooks/useLitter';
 import ContentBlock from '../../../contentBlock/contentBlock';
+import DogShowcaseCard from '../../../dogShowcaseCard/dogShowcaseCard';
+import useWindowDimensions from '../../../../hooks/useWindowDimensions';
 
 interface ExpectedLitterPanelProps {
   litter: LitterInfo,
@@ -14,10 +12,69 @@ interface ExpectedLitterPanelProps {
 const ExpectedLitterPanel:FC<ExpectedLitterPanelProps> = ({
   litter,
 }) => {
+  const windowDimensions = useWindowDimensions();
+
+  const maxWidth = () => windowDimensions.width > 1350 ? '50%' : '100%';
+  const flexDirection = () => windowDimensions.width > 1350 ? 'row' : 'column';
+  const maxParentDescriptionWidth = '350px';
+
   return (
     <>
-      <ContentBlock as='figure' className='expected-litter-panel'>
+      <ContentBlock as='figure' className='expected-litter-panel' style={{
+        padding: '15px',
+        gap: '15px',
+      }}>
         <h2>{litter.puppyBreed.class} {litter.puppyBreed.expectedSizes.join(' to ')} {litter.puppyBreed.type} Litter</h2>
+
+        <p>{litter.preBirthDescription}</p>
+
+        <div style={{
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '15px',
+        }}>
+          <h4>Parents</h4>
+          <div style={{
+            display: 'flex',
+            flexDirection: flexDirection(),
+            gap: '15px',
+          }}>
+            <DogShowcaseCard dog={litter.dam} style={{
+              maxWidth: maxWidth(),
+            }}>
+              <h4>{litter.dam.name}</h4>
+              <p>
+                {litter.dam.description}
+              </p>
+            </DogShowcaseCard>
+
+            <DogShowcaseCard dog={litter.sire} style={{
+              maxWidth: maxWidth(),
+            }}>
+              <h4>{litter.sire.name}</h4>
+              <p style={{
+                maxWidth: maxParentDescriptionWidth,
+              }}>
+                {litter.sire.description}
+              </p>
+            </DogShowcaseCard>
+          </div>
+        </div>
+
+
+
+        {/* <ContentBlock borderSize={1}>
+          <div className="image-container">
+            <SourceSetImage imageName={litter.dam.images.main} sizesRules={['200px']} />
+          </div>
+            <SourceSetImage imageName={litter.sire.images.main} sizesRules={['200px']} />
+        </ContentBlock> */}
+
+
+
+
+
+
         {/* <div className="panel-container">
           <div className='parent-images'>
             <div className='dam-image'>

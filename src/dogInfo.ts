@@ -31,6 +31,8 @@ enum CoatType {
 }
 
 enum CoatColorPatterns {
+  Sable = 'Sable',
+  Phantom = 'Phantom',
   ApricotSable = 'Apricot Sable',
   TraditionalTriColor = 'Traditional Tri-color',
   TriColorWithSable = 'Tri-color with Sable',
@@ -133,6 +135,7 @@ export interface LitterInfo {
   id: string,
   dam: Dog, // composite key
   sire: Dog, // composite key
+  preBirthDescription?: string,
   dueDate: Date, // composite key
   birthDate?: Date,
   goHomeDate?: Date,
@@ -272,7 +275,7 @@ export const dogs:Dog[] = [
     id: '73c2bfee-83d2-47d1-9bf5-7e78613d6f89',
     name: 'Luna',
     gender: 'F',
-    description: 'Luna is a mini tri-chocolate parti multi-generational bernadoodle.',
+    description: 'Luna is a mini tri-chocolate parti multi-generational bernedoodle.',
     isInternal: true,
     state: DogState.Breeder,
     weight: 45,
@@ -303,18 +306,18 @@ export const dogs:Dog[] = [
     id: '9641d81b-7806-42b3-9f9d-b4c876e01aca',
     name: 'Twiggy',
     gender: 'M',
-    description: 'Twiggy is an outside stud',
+    description: 'Twiggy is an outside stud.',
     isInternal: false,
     state: DogState.Breeder,
-    weight: 15,
+    weight: 20,
     breed: {
-      type: BreedType.Bernese,
+      type: BreedType.Bernedoodle,
       size: BreedSize.Mini,
       class: BreedClass.F1,
     },
     images: {
-      main: '',
-      gallery: []
+      main: 'Twiggy',
+      gallery: ['Twiggy']
     }
   }
 ];
@@ -445,7 +448,7 @@ export const litters:LitterInfo[] = [
     goHomeDate: new Date(2024, 1, 14),
     size: 6,
     expectedPuppySize: '30 to 45 lbs',
-    state: LitterState.HomeBound,
+    state: LitterState.Complete,
     puppyBreed: {
       type: BreedType.Bernedoodle,
       expectedSizes: [
@@ -512,8 +515,9 @@ export const litters:LitterInfo[] = [
     id: '0ca167c1-b62d-45d9-a074-4c0d085ed45d',
     dam: findDog('Liberty', dogs),
     sire: findDog('Twiggy', dogs),
+    preBirthDescription: 'We\'re expecting F1B Mini Bernedoodles in the fall of this year. They should range between 20 and 45 lbs in weight as adults. We should get traditional tri color, phantom, and sable puppies. They could have curly, wavy, or straight coats.',
     dueDate: new Date(2025, 8, 10),
-    expectedPuppySize: '30 to 45 lbs',
+    expectedPuppySize: '20 to 45 lbs',
     state: LitterState.Expected,
     size: 0,
     puppyBreed: {
@@ -523,9 +527,17 @@ export const litters:LitterInfo[] = [
       ],
       class: BreedClass.F1B
     },
-    expectedCoatTypes: [],
-    expectedColors: [],
-    startingPrice: 0,
-    reservationFee: 0
+    expectedCoatTypes: [
+      CoatType.Curly,
+      CoatType.Wavy,
+      CoatType.Straight,
+    ],
+    expectedColors: [
+      CoatColorPatterns.Sable,
+      CoatColorPatterns.TraditionalTriColor,
+      CoatColorPatterns.Phantom,
+    ],
+    startingPrice: 2000,
+    reservationFee: 500, // this is part of the final price not in addition.
   }
 ];

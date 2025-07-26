@@ -8,6 +8,7 @@ interface ContentBlockProps {
   borderSize?: number;
   borderRadius?: number;
   borderColor?: string;
+  style?: {[key:string]: unknown};
   [key: string]: unknown;
 }
 
@@ -17,16 +18,20 @@ const ContentBlock:FC<ContentBlockProps> = ({
   borderSize = 2,
   borderRadius = 15,
   borderColor = '#8B3333',
+  style,
   ...rest
 }) => {
 
   const border = (borderSize: number) => `${borderSize}px solid ${borderColor}`;
 
+  const componentStyle = {
+    border: border(borderSize),
+    borderRadius: `${borderRadius}px`,
+    overflow: 'hidden',
+  }
+
   return (
-    <DynamicElement as={Component} style={{
-      border: border(borderSize),
-      borderRadius: `${borderRadius}px`,
-    }} {...rest}>
+    <DynamicElement as={Component} style={{...componentStyle, ...style}} {...rest}>
       {children}
     </DynamicElement>
   )

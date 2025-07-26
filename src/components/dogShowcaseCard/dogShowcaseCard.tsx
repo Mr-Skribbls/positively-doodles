@@ -11,13 +11,15 @@ import ContentBlock from '../contentBlock/contentBlock';
 
 
 interface DogShowcaseCardProps {
-  dog: Puppy | Dog,
-  children: React.ReactNode,
+  dog: Puppy | Dog;
+  children: React.ReactNode;
+  [key: string]: unknown;
 }
 
 const DogShowcaseCard:FC<DogShowcaseCardProps> = ({
   dog,
-  children
+  children,
+  ...rest
 }) => {
   const [ image, setImage ] = useState<ImageData>();
   const [ imageDetail, setImageDetail ] = useState<ImageDetail>();
@@ -57,7 +59,7 @@ const DogShowcaseCard:FC<DogShowcaseCardProps> = ({
   };
 
   return (
-    <ContentBlock as='figure' className='dog-showcase-card' borderSize={1}>
+    <ContentBlock as='figure' className='dog-showcase-card' borderSize={1} {...rest}>
       {!isNil(image) && <div className='image-wrapper' onClick={() => toggleModal()}>
         <SourceSetImage imageName={image.name} sizesRules={['(max-width: 700px) 100vw','250px']} />
       </div>}
