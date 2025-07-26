@@ -31,6 +31,9 @@ const AvailablePuppies:FC<AvailablePuppiesProps> = () => {
   return (
     <div className='available-puppies site-container'>
       <PageTitle title={`${constants.companyName} Puppies`} />
+      <ContentBlock as='p' className='gallery-instructions' borderSize={1} borderRadius={5}>
+        Click or tap on an image for more details
+      </ContentBlock>
       {availableLitters.length > 0 && <section>
         <div className='section-header'>
           <h2>Available Puppies</h2>

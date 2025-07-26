@@ -22,6 +22,7 @@ enum BreedSize {
   Medium = 'Medium',
   Moyan = 'Moyan',
   Mini = 'Mini',
+  MicroMini = 'Micro Mini'
 }
 
 enum CoatType {
@@ -187,7 +188,7 @@ export const dogs:Dog[] = [
     id: 'f9392faa-8f0c-44f7-9477-bb32ce7a8bc9',
     name: 'Liberty',
     gender: 'F',
-    description: 'Liberty is the start of our breeding business! She is a beautiful apricot sable, standard AKC Poodle. She’s a 40-pound bundle of intelligence and affection, with all the classic traits that make Poodles such a beloved breed. She is gentle and intuitive, sweet and sassy. Libby is always eager to be close and involved in whatever we\'re doing whether we\'re watching a movie or playing outside. Her smaller standard size makes her easy to manage, but she still has plenty of energy for play and adventure.',
+    description: 'Liberty is the start of our breeding business! She is a beautiful apricot sable, standard AKC Poodle. She\'s a 40-pound bundle of intelligence and affection, with all the classic traits that make Poodles such a beloved breed. She is gentle and intuitive, sweet and sassy. Libby is always eager to be close and involved in whatever we\'re doing whether we\'re watching a movie or playing outside. Her smaller standard size makes her easy to manage, but she still has plenty of energy for play and adventure.',
     isInternal: true,
     state: DogState.Breeder,
     link: '/dog/Liberty',
@@ -198,8 +199,10 @@ export const dogs:Dog[] = [
       class: BreedClass.AKC,
     },
     images: {
-      main: 'Liberty_sitting_pretty',
+      main: 'Liberty_sitting_handkerchief_2',
       gallery: [
+        'Liberty_sitting_handkerchief_2',
+        'Liberty_sitting_handkerchief_1',
         'Liberty_sitting_pretty',
       ],
     },
@@ -306,18 +309,18 @@ export const dogs:Dog[] = [
     id: '9641d81b-7806-42b3-9f9d-b4c876e01aca',
     name: 'Twiggy',
     gender: 'M',
-    description: 'Twiggy is an outside stud.',
+    description: 'Twiggy is an outside stud. He is a tri-colored F1 Bernedoodle. He is a micro mini at only 20 lbs.',
     isInternal: false,
     state: DogState.Breeder,
     weight: 20,
     breed: {
       type: BreedType.Bernedoodle,
-      size: BreedSize.Mini,
+      size: BreedSize.MicroMini,
       class: BreedClass.F1,
     },
     images: {
       main: 'Twiggy',
-      gallery: ['Twiggy']
+      gallery: ['Twiggy'],
     }
   }
 ];

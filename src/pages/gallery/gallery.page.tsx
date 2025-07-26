@@ -58,9 +58,6 @@ const Gallery:FC<GalleryProps> = () => {
   }, [imageFilters, getImageDataByClassName]);
 
   const imageCard = (displayImage: DisplayImage, key: number) => {
-    const sizesRules = displayImage.size === 'small' ? ['240px'] :
-      displayImage.size === 'medium' ? ['480px'] :
-        ['720px'];
     return (
       <div
         className={`${displayImage.size} gallery-image`}
