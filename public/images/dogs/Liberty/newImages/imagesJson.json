@@ -1,0 +1,170 @@
+[
+  {
+    "name": "20220722_204217",
+    "alt": "",
+    "classes": [],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "^directory path^/png/150/20220722_204217.png",
+    "imageSet": [
+      {
+        "path": "^directory path^/webp/1800/20220722_204217.webp",
+        "type": "webp",
+        "width": 1800,
+        "height": 1350
+      },
+      {
+        "path": "^directory path^/webp/900/20220722_204217.webp",
+        "type": "webp",
+        "width": 900,
+        "height": 675
+      },
+      {
+        "path": "^directory path^/webp/450/20220722_204217.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 337
+      },
+      {
+        "path": "^directory path^/webp/150/20220722_204217.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 112
+      },
+      {
+        "path": "^directory path^/jpg/1800/20220722_204217.jpg",
+        "type": "jpg",
+        "width": 1800,
+        "height": 1350
+      },
+      {
+        "path": "^directory path^/jpg/900/20220722_204217.jpg",
+        "type": "jpg",
+        "width": 900,
+        "height": 675
+      },
+      {
+        "path": "^directory path^/jpg/450/20220722_204217.jpg",
+        "type": "jpg",
+        "width": 450,
+        "height": 337
+      },
+      {
+        "path": "^directory path^/jpg/150/20220722_204217.jpg",
+        "type": "jpg",
+        "width": 150,
+        "height": 112
+      },
+      {
+        "path": "^directory path^/png/1800/20220722_204217.png",
+        "type": "png",
+        "width": 1800,
+        "height": 1350
+      },
+      {
+        "path": "^directory path^/png/900/20220722_204217.png",
+        "type": "png",
+        "width": 900,
+        "height": 675
+      },
+      {
+        "path": "^directory path^/png/450/20220722_204217.png",
+        "type": "png",
+        "width": 450,
+        "height": 337
+      },
+      {
+        "path": "^directory path^/png/150/20220722_204217.png",
+        "type": "png",
+        "width": 150,
+        "height": 112
+      }
+    ]
+  },
+  {
+    "name": "20220722_204310",
+    "alt": "",
+    "classes": [],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "^directory path^/png/150/20220722_204310.png",
+    "imageSet": [
+      {
+        "path": "^directory path^/webp/1800/20220722_204310.webp",
+        "type": "webp",
+        "width": 1800,
+        "height": 1350
+      },
+      {
+        "path": "^directory path^/webp/900/20220722_204310.webp",
+        "type": "webp",
+        "width": 900,
+        "height": 675
+      },
+      {
+        "path": "^directory path^/webp/450/20220722_204310.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 337
+      },
+      {
+        "path": "^directory path^/webp/150/20220722_204310.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 112
+      },
+      {
+        "path": "^directory path^/jpg/1800/20220722_204310.jpg",
+        "type": "jpg",
+        "width": 1800,
+        "height": 1350
+      },
+      {
+        "path": "^directory path^/jpg/900/20220722_204310.jpg",
+        "type": "jpg",
+        "width": 900,
+        "height": 675
+      },
+      {
+        "path": "^directory path^/jpg/450/20220722_204310.jpg",
+        "type": "jpg",
+        "width": 450,
+        "height": 337
+      },
+      {
+        "path": "^directory path^/jpg/150/20220722_204310.jpg",
+        "type": "jpg",
+        "width": 150,
+        "height": 112
+      },
+      {
+        "path": "^directory path^/png/1800/20220722_204310.png",
+        "type": "png",
+        "width": 1800,
+        "height": 1350
+      },
+      {
+        "path": "^directory path^/png/900/20220722_204310.png",
+        "type": "png",
+        "width": 900,
+        "height": 675
+      },
+      {
+        "path": "^directory path^/png/450/20220722_204310.png",
+        "type": "png",
+        "width": 450,
+        "height": 337
+      },
+      {
+        "path": "^directory path^/png/150/20220722_204310.png",
+        "type": "png",
+        "width": 150,
+        "height": 112
+      }
+    ]
+  }
+]
