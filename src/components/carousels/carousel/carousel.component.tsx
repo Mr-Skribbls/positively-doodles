@@ -12,10 +12,11 @@ interface CarouselProps {
 
 const Carousel:FC<CarouselProps> = ({imageClasses}) => {
   const { getImageDataByClassName } = useImage();
-  const [ isLoading, setIsLoading ] = useState(false);
   const [ imageIndices, setImageIndices ] = useState(range(7));
   const [ imageNames ] = useState(shuffle(getImageDataByClassName(imageClasses, some).map((imageData) => imageData.name)));
   const carouselIndex = useTiltedRandomizer(7);
+
+  const imageChangeInterval = 5000;
 
   useEffect(() => {
     const changeImage = (indices: number[], excludedIndices: number[]): number[] => {
@@ -27,21 +28,13 @@ const Carousel:FC<CarouselProps> = ({imageClasses}) => {
     const interval = setInterval(() => {
       const excludedIndices = range(imageNames.length).filter((i) => !imageIndices.includes(i));
       setImageIndices(changeImage(imageIndices, excludedIndices));
-    }, 5000);
+    }, imageChangeInterval);
 
     return () => clearInterval(interval);
   }, [imageNames, imageIndices, setImageIndices, carouselIndex]);
 
-  useEffect(() => {
-    setIsLoading(true);
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 1900);
-  }, []);
-
   return (
     <div className='carousel'>
-      { isLoading && <div className="loading">Loading...</div> }
       <div className="item wide">
         <ImageSwitcher imageName={imageNames[imageIndices[0]]} />
       </div>

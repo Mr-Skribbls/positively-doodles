@@ -1,7 +1,7 @@
 import { isNil } from 'lodash';
 import SourceSetImage from '../sourceSetImage/sourceSetImage.component';
 import './imageSwitcher.css';
-import { FC, useEffect, useState } from 'react';
+import { FC, useState } from 'react';
 
 interface ImageSwitcherProps {
   imageName: string
@@ -10,27 +10,29 @@ interface ImageSwitcherProps {
 const ImageSwitcher:FC<ImageSwitcherProps> = ({
   imageName,
 }) => {
-  const [currentImage, setCurrentImage] = useState<string | undefined>();
+  const [currentImage, setCurrentImage] = useState<string>();
   const [isImageChanging, setIsImageChanging] = useState(false);
 
-  useEffect(() => {
+  const changeImage = () => {
+    setIsImageChanging(true);
     setTimeout(() => {
-      setIsImageChanging(true);
-      setTimeout(() => {
-        setCurrentImage(imageName);
-        setTimeout(() => setIsImageChanging(false), 10); // Time after the switch occurs
-      }, 1000); // Time while the switch occurs. 
-    }, 2000); // Time before switch occurs. This will give the new image time to render before switching.
-  }, [imageName, setCurrentImage, setIsImageChanging]);
+      setCurrentImage(imageName);
+      setTimeout(() => setIsImageChanging(false), 10);
+    }, 1000);
+  }
+
+  const nextImageLoaded = () => {
+    changeImage();
+  }
 
   return (
     <div className="image-switcher">
       <div className={`slider ${isImageChanging ? 'sliding' : ''}`}>
         <div className='image-wrapper'>
-          {!isNil(currentImage) && <SourceSetImage imageName={currentImage} />}
+          {!isNil(currentImage) && <SourceSetImage imageName={currentImage} loading='eager' />}
         </div>
-        <div className="image-wrapper">
-          <SourceSetImage imageName={imageName} />
+        <div className="image-wrapper next-image">
+          <SourceSetImage imageName={imageName} loading='eager' onLoad={nextImageLoaded} />
         </div>
       </div>
     </div>
