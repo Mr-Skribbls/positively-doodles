@@ -12,6 +12,7 @@ import { Link } from 'react-router-dom';
 import { Marker } from 'react-leaflet';
 import useLeafletMarkers from '../../hooks/useLeafletMarkers';
 import ContentBlock from '../../components/contentBlock/contentBlock';
+import { Helmet } from 'react-helmet';
 
 interface HomeProps {
 
@@ -31,8 +32,13 @@ const Home:FC<HomeProps> = () => {
 
   return (
     <div className="home-page site-container">
-      <Carousel imageClasses={['puppy']} />
+      <Helmet>
+        <meta name="keywords" content="doodle puppies for sale, doodle puppies, puppies for sale, cute puppies for sale, bernedoodle puppies, cavapoo puppies"></meta>
+        <meta name="description" content="Find your perfect Doodle puppy at Positively Doodles! We offer healthy, happy, and well-socialized Doodle puppies. Explore our available litters, and learn about their unique traits!"></meta>
+      </Helmet>
 
+      <Carousel imageClasses={['puppy']} />
+      
       <article className="content">
         {!isNil(ourGoalSection) && <ContentBarTitleLeft title={ourGoalSection.sectionTitle} paragraphs={ourGoalSection.paragraphs} imageOverride={{
           imageName: 'Liberty_KingKong_Buddy_6weeks_2',

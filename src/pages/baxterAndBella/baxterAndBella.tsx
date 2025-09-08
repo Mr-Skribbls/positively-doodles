@@ -5,6 +5,7 @@ import SourceSetImage from '../../components/sourceSetImage/sourceSetImage.compo
 import { isNil } from 'lodash';
 import Article from '../../components/contentComponents/article/article.component';
 import './baxterAndBella.css';
+import { Helmet } from 'react-helmet';
 
 interface BaxterAndBellaProps {
 
@@ -21,6 +22,10 @@ const BaxterAndBella:FC<BaxterAndBellaProps> = () => {
 
   return (
     <div className='baxter-and-bella-page site-container'>
+      <Helmet>
+        <meta name='robots' content='noindex' />
+        <meta name="description" content="We’ve joined forces with BAXTER & Bella to give your new puppy the training and support it needs to thrive."></meta>
+      </Helmet>
       <div className='logo'>
         <a target='_blank' href='https://www.baxterandbella.com/learn-more'>
           <SourceSetImage imageName='Baxter_and_Bella_Partners_Badge' />

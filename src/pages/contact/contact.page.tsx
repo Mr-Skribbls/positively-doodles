@@ -1,6 +1,7 @@
 import { FC, useEffect } from 'react';
 import './contact.css';
 import constants from '../../constants';
+import { Helmet } from 'react-helmet';
 
 interface ContactProps {
 
@@ -13,6 +14,10 @@ const Contact:FC<ContactProps> = () => {
 
   return (
     <div className="contact-page site-container">
+      <Helmet>
+        <title>{constants.companyName} Contact</title>
+        <meta name='robots' content='noindex' />
+      </Helmet>
       <p>If you're interested in getting a puppy from us please call, send us an email, or contact us on facebook.</p>
       <p>phone: <a href={`tel:${constants.phoneNumber}`}>{constants.phoneNumberDisplay}</a></p>
       <p>email: <a href={`mailto:${constants.emailAddress}`}>{constants.emailAddress}</a></p>

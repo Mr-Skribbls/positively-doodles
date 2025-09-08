@@ -7,6 +7,7 @@ import './availablePuppies.css';
 import ContentBlock from '../../components/contentBlock/contentBlock';
 import ProgramDescription from '../../components/contentComponents/static/programDescription';
 import ContactForm from '../../components/contactForm/contactForm';
+import { Helmet } from 'react-helmet';
 
 interface AvailablePuppiesProps {
 
@@ -30,6 +31,11 @@ const AvailablePuppies:FC<AvailablePuppiesProps> = () => {
 
   return (
     <div className='available-puppies site-container'>
+      <Helmet>
+        <title>{constants.companyName} Puppies</title>
+        <meta name="keywords" content="doodle puppies for sale, available doodle puppies, doodle puppies near me, doodle puppies ready now, doodle puppies available today, bernedoodle puppies for sale, cute doodle puppies for sale, family-raised doodle puppies"></meta>
+        <meta name='description' content='Meet the little ones ready to be part of your family' />
+      </Helmet>
       <PageTitle title={`${constants.companyName} Puppies`} />
       <ContentBlock as='p' className='gallery-instructions' borderSize={1} borderRadius={5}>
         Click or tap on an image for more details
