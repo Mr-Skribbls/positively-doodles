@@ -518,11 +518,12 @@ export const litters:LitterInfo[] = [
     id: '0ca167c1-b62d-45d9-a074-4c0d085ed45d',
     dam: findDog('Liberty', dogs),
     sire: findDog('Twiggy', dogs),
-    preBirthDescription: 'We\'re expecting F1B Mini Bernedoodles in the fall of this year. They should range between 20 and 45 lbs in weight as adults. We should get traditional tri color, phantom, and sable puppies. They could have curly, wavy, or straight coats.',
+    // preBirthDescription: 'We\'re expecting F1B Mini Bernedoodles in the fall of this year. They should range between 20 and 45 lbs in weight as adults. We should get traditional tri color, phantom, and sable puppies. They could have curly, wavy, or straight coats.',
+    preBirthDescription: 'We welcomed 6 adorable Mini Bernedoodle puppies on Tue Sep 09 2025. Liberty and Twiggy had 3 beautiful girls and 3 handsome boys. These cute pups will be ready to go to their new loving homes Tue Nov 04 2025. Pictures will be coming soon.',
     dueDate: new Date(2025, 8, 10),
     expectedPuppySize: '20 to 45 lbs',
     state: LitterState.Expected,
-    size: 0,
+    size: 6,
     puppyBreed: {
       type: BreedType.Bernedoodle,
       expectedSizes: [
@@ -542,5 +543,8 @@ export const litters:LitterInfo[] = [
     ],
     startingPrice: 2000,
     reservationFee: 500, // this is part of the final price not in addition.
+    birthDate: new Date(2025, 8, 9),
+    goHomeDate: new Date(2025, 10, 4),
+    puppies: []
   }
 ];
