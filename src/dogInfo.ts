@@ -438,7 +438,55 @@ export const puppies: Puppy[] = [
     description: '',
     imageName: 'Liberty_KingKong_Aspen_5weeks',
     priceAboveStarting: 0,
-  }, 
+  }, {
+    id: 'e868ec72-0326-47f5-89ac-681ac8b4368b',
+    name: 'Acorn',
+    status: PuppyStatus.Available,
+    gender: 'M',
+    description: '',
+    imageName: 'Acorn',
+    priceAboveStarting: 0,
+  }, {
+    id: '6fe814aa-b1bf-49f6-aa77-8c95330e5d02',
+    name: 'Buttercup',
+    status: PuppyStatus.Available,
+    gender: 'F',
+    description: '',
+    imageName: 'Buttercup',
+    priceAboveStarting: 0,
+  }, {
+    id: '517ce702-80e7-4fcf-b264-6ed806e854cd',
+    name: 'Hubbard',
+    status: PuppyStatus.Available,
+    gender: 'M',
+    description: '',
+    imageName: 'Hubbard',
+    priceAboveStarting: 0,
+  }, {
+    id: '3c3fbd7b-b245-47b1-abc2-dd972cc70b5a',
+    name: 'Pumpkin',
+    status: PuppyStatus.Available,
+    gender: 'M',
+    description: '',
+    imageName: 'Pumpkin',
+    priceAboveStarting: 0,
+  }, {
+    id: '47992bac-392d-4d02-adfe-6e740694e36a',
+    name: 'Sugar',
+    status: PuppyStatus.Available,
+    gender: 'F',
+    description: '',
+    imageName: 'Sugar',
+    priceAboveStarting: 0,
+  }, {
+    id: 'b44cb0b7-61fd-4bd3-9c98-a545c19940ec',
+    name: 'Sweetmeat',
+    status: PuppyStatus.Available,
+    gender: 'F',
+    description: '',
+    imageName: 'Sweetmeat',
+    priceAboveStarting: 0,
+  },
 ];
 
 export const litters:LitterInfo[] = [
@@ -522,7 +570,7 @@ export const litters:LitterInfo[] = [
     preBirthDescription: 'We welcomed 6 adorable Mini Bernedoodle puppies on Tue Sep 09 2025. Liberty and Twiggy had 3 beautiful girls and 3 handsome boys. These cute pups will be ready to go to their new loving homes Tue Nov 04 2025. Pictures will be coming soon.',
     dueDate: new Date(2025, 8, 10),
     expectedPuppySize: '20 to 45 lbs',
-    state: LitterState.Expected,
+    state: LitterState.Puppy,
     size: 6,
     puppyBreed: {
       type: BreedType.Bernedoodle,
@@ -545,6 +593,13 @@ export const litters:LitterInfo[] = [
     reservationFee: 500, // this is part of the final price not in addition.
     birthDate: new Date(2025, 8, 9),
     goHomeDate: new Date(2025, 10, 4),
-    puppies: []
+    puppies: puppies.filter((puppy) => [
+      'e868ec72-0326-47f5-89ac-681ac8b4368b',
+      '6fe814aa-b1bf-49f6-aa77-8c95330e5d02',
+      '517ce702-80e7-4fcf-b264-6ed806e854cd',
+      '3c3fbd7b-b245-47b1-abc2-dd972cc70b5a',
+      '47992bac-392d-4d02-adfe-6e740694e36a',
+      'b44cb0b7-61fd-4bd3-9c98-a545c19940ec',
+    ].includes(puppy.id)),
   }
 ];

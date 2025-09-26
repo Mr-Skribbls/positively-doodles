@@ -2871,6 +2871,337 @@
         "height": 120
       }
     ]
+  },
+
+  {
+    "name": "Acorn",
+    "alt": "Liberty and Twiggy puppy Acorn at 2 weeks",
+    "detailId": "6e952d5e-8f50-4950-9f65-f5b13f1fb0fc",
+    "classes": [
+      "dog",
+      "acorn",
+      "puppy",
+      "liberty puppy",
+      "twiggy puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/liberty_twiggy/png/150/Acorn.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/liberty_twiggy/webp/900/Acorn.webp",
+        "type": "webp",
+        "width": 900,
+        "height": 599
+      },
+      {
+        "path": "/images/puppies/liberty_twiggy/webp/450/Acorn.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 299
+      },
+      {
+        "path": "/images/puppies/liberty_twiggy/webp/150/Acorn.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 99
+      },
+      {
+        "path": "/images/puppies/liberty_twiggy/png/900/Acorn.png",
+        "type": "png",
+        "width": 900,
+        "height": 599
+      },
+      {
+        "path": "/images/puppies/liberty_twiggy/png/450/Acorn.png",
+        "type": "png",
+        "width": 450,
+        "height": 299
+      },
+      {
+        "path": "/images/puppies/liberty_twiggy/png/150/Acorn.png",
+        "type": "png",
+        "width": 150,
+        "height": 99
+      }
+    ]
+  },
+  {
+    "name": "Buttercup",
+    "alt": "Liberty and Twiggy puppy Buttercup at 2 weeks",
+    "detailId": "a062201c-7c07-46f4-ab25-26c9a9d32eb1",
+    "classes": [
+      "dog",
+      "buttercup",
+      "puppy",
+      "liberty puppy",
+      "twiggy puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/liberty_twiggy/png/150/Buttercup.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/liberty_twiggy/webp/900/Buttercup.webp",
+        "type": "webp",
+        "width": 900,
+        "height": 600
+      },
+      {
+        "path": "/images/puppies/liberty_twiggy/webp/450/Buttercup.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 300
+      },
+      {
+        "path": "/images/puppies/liberty_twiggy/webp/150/Buttercup.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 100
+      },
+      {
+        "path": "/images/puppies/liberty_twiggy/png/900/Buttercup.png",
+        "type": "png",
+        "width": 900,
+        "height": 600
+      },
+      {
+        "path": "/images/puppies/liberty_twiggy/png/450/Buttercup.png",
+        "type": "png",
+        "width": 450,
+        "height": 300
+      },
+      {
+        "path": "/images/puppies/liberty_twiggy/png/150/Buttercup.png",
+        "type": "png",
+        "width": 150,
+        "height": 100
+      }
+    ]
+  },
+  {
+    "name": "Hubbard",
+    "alt": "Liberty and Twiggy puppy Hubbard at 2 weeks",
+    "detailId": "f2e3a4a5-ffcc-4a7d-bcaa-e36833e5a8b7",
+    "classes": [
+      "dog",
+      "hubbard",
+      "puppy",
+      "liberty puppy",
+      "twiggy puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/liberty_twiggy/png/150/Hubbard.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/liberty_twiggy/webp/900/Hubbard.webp",
+        "type": "webp",
+        "width": 900,
+        "height": 599
+      },
+      {
+        "path": "/images/puppies/liberty_twiggy/webp/450/Hubbard.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 299
+      },
+      {
+        "path": "/images/puppies/liberty_twiggy/webp/150/Hubbard.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 99
+      },
+      {
+        "path": "/images/puppies/liberty_twiggy/png/900/Hubbard.png",
+        "type": "png",
+        "width": 900,
+        "height": 599
+      },
+      {
+        "path": "/images/puppies/liberty_twiggy/png/450/Hubbard.png",
+        "type": "png",
+        "width": 450,
+        "height": 299
+      },
+      {
+        "path": "/images/puppies/liberty_twiggy/png/150/Hubbard.png",
+        "type": "png",
+        "width": 150,
+        "height": 99
+      }
+    ]
+  },
+  {
+    "name": "Pumpkin",
+    "alt": "Liberty and Twiggy puppy Pumpkin at 2 weeks",
+    "detailId": "0dceb69b-afdb-4d31-900e-e9af8d953fe6",
+    "classes": [
+      "dog",
+      "pumpkin",
+      "puppy",
+      "liberty puppy",
+      "twiggy puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/liberty_twiggy/png/150/Pumpkin.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/liberty_twiggy/webp/900/Pumpkin.webp",
+        "type": "webp",
+        "width": 900,
+        "height": 600
+      },
+      {
+        "path": "/images/puppies/liberty_twiggy/webp/450/Pumpkin.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 300
+      },
+      {
+        "path": "/images/puppies/liberty_twiggy/webp/150/Pumpkin.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 100
+      },
+      {
+        "path": "/images/puppies/liberty_twiggy/png/900/Pumpkin.png",
+        "type": "png",
+        "width": 900,
+        "height": 600
+      },
+      {
+        "path": "/images/puppies/liberty_twiggy/png/450/Pumpkin.png",
+        "type": "png",
+        "width": 450,
+        "height": 300
+      },
+      {
+        "path": "/images/puppies/liberty_twiggy/png/150/Pumpkin.png",
+        "type": "png",
+        "width": 150,
+        "height": 100
+      }
+    ]
+  },
+  {
+    "name": "Sugar",
+    "alt": "Liberty and Twiggy puppy Sugar at 2 weeks",
+    "detailId": "f7ddc5b7-eb2f-465a-8d53-95fa6693bbe2",
+    "classes": [
+      "dog",
+      "sugar",
+      "puppy",
+      "liberty puppy",
+      "twiggy puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/liberty_twiggy/png/150/Sugar.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/liberty_twiggy/webp/900/Sugar.webp",
+        "type": "webp",
+        "width": 900,
+        "height": 599
+      },
+      {
+        "path": "/images/puppies/liberty_twiggy/webp/450/Sugar.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 299
+      },
+      {
+        "path": "/images/puppies/liberty_twiggy/webp/150/Sugar.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 99
+      },
+      {
+        "path": "/images/puppies/liberty_twiggy/png/900/Sugar.png",
+        "type": "png",
+        "width": 900,
+        "height": 599
+      },
+      {
+        "path": "/images/puppies/liberty_twiggy/png/450/Sugar.png",
+        "type": "png",
+        "width": 450,
+        "height": 299
+      },
+      {
+        "path": "/images/puppies/liberty_twiggy/png/150/Sugar.png",
+        "type": "png",
+        "width": 150,
+        "height": 99
+      }
+    ]
+  },
+  {
+    "name": "Sweetmeat",
+    "alt": "Liberty and Twiggy puppy Sweetmeat at 2 weeks",
+    "detailId": "2002935d-0b33-4796-8e13-730ce8154fbf",
+    "classes": [
+      "dog",
+      "sweetmeat",
+      "puppy",
+      "liberty puppy",
+      "twiggy puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/liberty_twiggy/png/150/Sweetmeat.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/liberty_twiggy/webp/900/Sweetmeat.webp",
+        "type": "webp",
+        "width": 900,
+        "height": 599
+      },
+      {
+        "path": "/images/puppies/liberty_twiggy/webp/450/Sweetmeat.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 299
+      },
+      {
+        "path": "/images/puppies/liberty_twiggy/webp/150/Sweetmeat.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 99
+      },
+      {
+        "path": "/images/puppies/liberty_twiggy/png/900/Sweetmeat.png",
+        "type": "png",
+        "width": 900,
+        "height": 599
+      },
+      {
+        "path": "/images/puppies/liberty_twiggy/png/450/Sweetmeat.png",
+        "type": "png",
+        "width": 450,
+        "height": 299
+      },
+      {
+        "path": "/images/puppies/liberty_twiggy/png/150/Sweetmeat.png",
+        "type": "png",
+        "width": 150,
+        "height": 99
+      }
+    ]
   }
 
 ]
