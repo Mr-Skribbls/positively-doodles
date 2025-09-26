@@ -438,52 +438,52 @@ export const puppies: Puppy[] = [
     description: '',
     imageName: 'Liberty_KingKong_Aspen_5weeks',
     priceAboveStarting: 0,
-  }, {
+  }, { // Acorn
     id: 'e868ec72-0326-47f5-89ac-681ac8b4368b',
     name: 'Acorn',
     status: PuppyStatus.Available,
     gender: 'M',
-    description: '',
+    description: 'Acorn is our only sable-colored little squash in this little bunch, and he’s truly one of a kind. As of this morning, he weighed in at 1 pound and 5 ounces, making him the second smallest in the group at the moment. Despite his petite size, Acorn is doing wonderfully and continues to grow steadily each day. What stands out most about Acorn is his incredibly mellow personality. During his daily Early Neurological Stimulation (ENS) sessions, he remains calm and relaxed, taking everything in stride with a gentle and peaceful demeanor. He’s a sweet and easygoing little one who already seems wise beyond his weeks. We\'re loving watching him develop and can\'t wait to see how his temperament continues to unfold as he grows.',
     imageName: 'Acorn',
     priceAboveStarting: 0,
-  }, {
+  }, { // Buttercup
     id: '6fe814aa-b1bf-49f6-aa77-8c95330e5d02',
     name: 'Buttercup',
     status: PuppyStatus.Available,
     gender: 'F',
-    description: '',
+    description: 'Buttercup is our biggest squash, and we are absolutely smitten with her! At just two weeks old, she weighed in at 2 lbs. and 14 oz.— the chunkiest of the batch from day one. She\'s got the most beautiful phantom markings that make her stand out, and her little face is just so squishy, it\'s almost too much cuteness to handle.',
     imageName: 'Buttercup',
     priceAboveStarting: 0,
-  }, {
+  }, { // Hubbard
     id: '517ce702-80e7-4fcf-b264-6ed806e854cd',
     name: 'Hubbard',
     status: PuppyStatus.Available,
     gender: 'M',
-    description: '',
+    description: 'Hubbard weighed in at 2 lbs 1 oz this morning! Our sweet  phantom abstract squash is growing beautifully and hitting all his little milestones. His coat is beginning to show signs of being wavy to curly, giving him that irresistibly soft and fluffy look we all adore. And the most exciting news — his little peepers are just starting to open! It\'s always such a special moment when their eyes begin to peek out at the world for the first time. We can’t wait to see his personality shine through in the coming days!',
     imageName: 'Hubbard',
     priceAboveStarting: 0,
-  }, {
+  }, { // Pumpkin
     id: '3c3fbd7b-b245-47b1-abc2-dd972cc70b5a',
     name: 'Pumpkin',
     status: PuppyStatus.Available,
     gender: 'M',
-    description: '',
+    description: 'Pumpkin is a stunning phantom puppy with a sleek, straight coat that shimmers in the light. His markings are developing nicely, and he already has such a sweet, gentle presence. Watching him snuggle up with his siblings or stretch out in contentment is such a joy. We can’t wait to see how his personality continues to blossom as he grows!',
     imageName: 'Pumpkin',
     priceAboveStarting: 0,
-  }, {
+  }, { // Sugar
     id: '47992bac-392d-4d02-adfe-6e740694e36a',
     name: 'Sugar',
     status: PuppyStatus.Available,
     gender: 'F',
-    description: '',
+    description: 'Sugar is our tiniest little squash, and truly the sweetest little thing. Today she weighed in at just 1 pound and 5.5 ounces—such a delicate little bundle! She’s still so small that she fits perfectly in one of my hands, like a warm, sleepy puff of joy. It’s amazing how something so tiny can already have such a big impact on us all. Her coat is starting to come in more fully now, and you can see the gentle waves beginning to form, giving her that soft, tousled look that’s just irresistible. And those copper points—wow. They’re coming in beautifully, adding such a rich contrast to her black fur and making her little face even more expressive and striking. Watching her grow and change each day is such a joy. Even though she’s still so small, Sugar is already leaving a big impression on our hearts.',
     imageName: 'Sugar',
     priceAboveStarting: 0,
-  }, {
+  }, { // Sweetmeat
     id: 'b44cb0b7-61fd-4bd3-9c98-a545c19940ec',
     name: 'Sweetmeat',
     status: PuppyStatus.Available,
     gender: 'F',
-    description: '',
+    description: 'Sweetmeat is our other beautiful phantom abstract little squash, and she’s truly a sight to behold. Her sleek, smooth coat gleams in the light, showcasing a rich blend of colors that make her stand out among the rest. She has stunning copper points that highlight her features perfectly, adding a warm, radiant glow to her appearance. A touch of white graces her delicate chin and chest, and you can spot little hints of it on a few of her tiny toes—just enough to make her extra charming. She’s already full of quiet sweetness, but I know there’s so much more to her than meets the eye. I look forward to watching her personality emerge with each passing day—to see the little quirks, preferences, and playfulness that will make her uniquely Sweetmeat. Whether she turns out to be bold and adventurous or gentle and reserved, I can’t wait to get to know the heart behind those beautiful eyes.',
     imageName: 'Sweetmeat',
     priceAboveStarting: 0,
   },
