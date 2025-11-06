@@ -1047,6 +1047,111 @@
         "height": 150
       }
     ]
+  }, {
+    "name": "Flair",
+    "alt": "Co-owned Dam named Flair",
+    "classes": [
+      "co-owned",
+      "kentuckiana poodles",
+      "female",
+      "parent",
+      "flair"
+    ],
+    "centerOfFocus": {
+      "x": 75,
+      "y": 12
+    },
+    "defaultPath": "/images/dogs/External/Flair/png/150/Flair.png",
+    "imageSet": [
+      {
+        "path": "/images/dogs/External/Flair/webp/900/Flair.webp",
+        "type": "webp",
+        "width": 900,
+        "height": 895
+      },
+      {
+        "path": "/images/dogs/External/Flair/webp/450/Flair.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 447
+      },
+      {
+        "path": "/images/dogs/External/Flair/webp/150/Flair.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 149
+      },
+      {
+        "path": "/images/dogs/External/Flair/png/900/Flair.png",
+        "type": "png",
+        "width": 900,
+        "height": 895
+      },
+      {
+        "path": "/images/dogs/External/Flair/png/450/Flair.png",
+        "type": "png",
+        "width": 450,
+        "height": 447
+      },
+      {
+        "path": "/images/dogs/External/Flair/png/150/Flair.png",
+        "type": "png",
+        "width": 150,
+        "height": 149
+      }
+    ]
+  }, {
+    "name": "Creed",
+    "alt": "External Stud named Creed",
+    "classes": [
+      "external",
+      "male",
+      "parent",
+      "creed"
+    ],
+    "centerOfFocus": {
+      "x": 25,
+      "y": 25
+    },
+    "defaultPath": "/images/dogs/External/Creed/png/150/Creed.png",
+    "imageSet": [
+      {
+        "path": "/images/dogs/External/Creed/webp/900/Creed.webp",
+        "type": "webp",
+        "width": 900,
+        "height": 604
+      },
+      {
+        "path": "/images/dogs/External/Creed/webp/450/Creed.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 302
+      },
+      {
+        "path": "/images/dogs/External/Creed/webp/150/Creed.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 100
+      },
+      {
+        "path": "/images/dogs/External/Creed/png/900/Creed.png",
+        "type": "png",
+        "width": 900,
+        "height": 604
+      },
+      {
+        "path": "/images/dogs/External/Creed/png/450/Creed.png",
+        "type": "png",
+        "width": 450,
+        "height": 302
+      },
+      {
+        "path": "/images/dogs/External/Creed/png/150/Creed.png",
+        "type": "png",
+        "width": 150,
+        "height": 100
+      }
+    ]
   },
 
   {

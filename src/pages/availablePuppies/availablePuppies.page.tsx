@@ -50,7 +50,9 @@ const AvailablePuppies:FC<AvailablePuppiesProps> = () => {
         <div className='section-header'>
           <h2>Expected Litters</h2>
         </div>
-        {upcomingLitters.map((litter, key) => <LitterCard key={key} litter={litter} />)}
+        <div className='expected-list'>
+          {upcomingLitters.map((litter, key) => <LitterCard key={key} litter={litter} />)}
+        </div>
       </section>}
       <ContentBlock as='section' className='contact-details'>
         <ContentBlock className='litter-details' borderSize={1}>

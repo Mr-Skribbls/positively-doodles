@@ -39,6 +39,10 @@ enum CoatColorPatterns {
   TriColorWithSable = 'Tri-color with Sable',
   BlackTanPoints = 'Black with Tan Points',
   Red = 'Red',
+  Black = 'Black',
+  Brown = 'Brown',
+  Parti = 'Parti',
+  Merle = 'Merle',
 }
 
 export enum DogState {
@@ -184,7 +188,24 @@ const findDog = (name: string, dictionary: Dog[]): Dog => {
 };
 
 export const dogs:Dog[] = [
-  {    // Libby
+  {    // Undecided Stud
+    id: '',
+    name: 'Undecided Stud',
+    gender: 'M',
+    description: 'We are currently looking for the perfect stud.',
+    isInternal: true,
+    state: DogState.Breeder,
+    weight: 45,
+    breed: {
+      type: BreedType.Bernedoodle,
+      size: BreedSize.Mini,
+      class: BreedClass.Multigeneration,
+    },
+    images: {
+      main: '',
+      gallery: [],
+    },
+  }, { // Libby
     id: 'f9392faa-8f0c-44f7-9477-bb32ce7a8bc9',
     name: 'Liberty',
     gender: 'F',
@@ -278,17 +299,17 @@ export const dogs:Dog[] = [
     id: '73c2bfee-83d2-47d1-9bf5-7e78613d6f89',
     name: 'Luna',
     gender: 'F',
-    description: 'Luna is a mini tri-chocolate parti multi-generational bernedoodle.',
+    description: 'Luna is a medium multi-generational Bernedoodle. She is a stunning tri-chocolate parti with a soft, curly coat and a gentle spirit. Weighing 55 pounds, she has a nurturing temperament and naturally cares for our puppies, earning her the title of our beloved “nanny dog.” Luna’s affectionate personality and love for cuddles make her truly special.',
     isInternal: true,
     state: DogState.Breeder,
-    weight: 45,
+    weight: 55,
     breed: {
       type: BreedType.Bernedoodle,
-      size: BreedSize.Mini,
+      size: BreedSize.Medium,
       class: BreedClass.Multigeneration,
     },
     images: {
-      main: 'Luna_fluffy_cut',
+      main: 'Luna_laying_floor',
       gallery: [
         'Luna_fluffy_cut',
         'Luna_laying_floor',
@@ -321,6 +342,40 @@ export const dogs:Dog[] = [
     images: {
       main: 'Twiggy',
       gallery: ['Twiggy'],
+    }
+  }, { // Flair
+    id: 'a7393bd9-f77e-460b-bb4e-6167ed5dd1d2',
+    name: 'Flair',
+    gender: 'F',
+    description: 'Flair is an elegant red Poodle with hidden merle genetics, co-owned with Kentuckiana Poodles. Weighing 60 pounds, she lives a happy and well-loved life in her guardian home. She carries genes for chocolate, parti, and intense red coloring.',
+    isInternal: false,
+    state: DogState.Breeder,
+    weight: 65,
+    breed: {
+      type: BreedType.Poodle,
+      size: BreedSize.Standard,
+      class: BreedClass.AKC,
+    },
+    images: {
+      main: 'Flair',
+      gallery: [],
+    }
+  }, { // Creed
+    id: '3a2312f8-5eb5-4d17-aea5-360d8047d0a3',
+    name: 'Creed',
+    gender: 'M',
+    description: 'Creed is a handsome 60-pound black phantom Standard Poodle who carries genes for chocolate, parti, and intense red coloring.',
+    isInternal: false,
+    state: DogState.Breeder,
+    weight: 60,
+    breed: {
+      type: BreedType.Poodle,
+      size: BreedSize.Standard,
+      class: BreedClass.AKC,
+    },
+    images: {
+      main: 'Creed',
+      gallery: [],
     }
   }
 ];
@@ -601,5 +656,56 @@ export const litters:LitterInfo[] = [
       '47992bac-392d-4d02-adfe-6e740694e36a',
       'b44cb0b7-61fd-4bd3-9c98-a545c19940ec',
     ].includes(puppy.id)),
+  }, {
+    dam: findDog('Flair', dogs),
+    sire: findDog('Creed', dogs),
+    dueDate: new Date(2025, 11, 8),
+    id: '',
+    size: 8,
+    expectedPuppySize: '60 lbs',
+    state: LitterState.Expected,
+    puppyBreed: {
+      type: BreedType.Poodle,
+      expectedSizes: [
+        BreedSize.Standard,
+      ],
+      class: BreedClass.AKC
+    },
+    expectedCoatTypes: [
+      CoatType.Curly,
+    ],
+    expectedColors: [
+      CoatColorPatterns.Phantom,
+      CoatColorPatterns.Black,
+      CoatColorPatterns.Brown,
+      CoatColorPatterns.Red,
+      CoatColorPatterns.Parti,
+      CoatColorPatterns.Merle,
+    ],
+    reservationFee: 500,
+    startingPrice: 1000,
+  }, {
+    dam: findDog('Luna', dogs),
+    sire: findDog('Undecided Stud', dogs),
+    dueDate: new Date(2025, 11, 8),
+    id: '',
+    size: 8,
+    expectedPuppySize: '55 lbs',
+    state: LitterState.Expected,
+    puppyBreed: {
+      type: BreedType.Bernedoodle,
+      expectedSizes: [
+        BreedSize.Mini,
+      ],
+      class: BreedClass.Multigeneration
+    },
+    expectedCoatTypes: [
+      CoatType.Curly,
+    ],
+    expectedColors: [
+      CoatColorPatterns.Parti,
+    ],
+    reservationFee: 500,
+    startingPrice: 2000,
   }
 ];

@@ -11,6 +11,12 @@
   margin-bottom: 50px;
 }
 
+.available-puppies .expected-litters .expected-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
 .available-puppies .contact-details {
   display: flex;
   flex-direction: row;
