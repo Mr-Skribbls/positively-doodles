@@ -504,7 +504,7 @@ export const puppies: Puppy[] = [
   }, { // Buttercup
     id: '6fe814aa-b1bf-49f6-aa77-8c95330e5d02',
     name: 'Buttercup',
-    status: PuppyStatus.Available,
+    status: PuppyStatus.Sold,
     gender: 'F',
     description: 'Buttercup is our largest pup and will likely reach about 50 pounds when fully grown. She’s calm yet confident — a wonderful mix of playfulness and snuggles.',
     imageName: 'Buttercup_02',
@@ -536,7 +536,7 @@ export const puppies: Puppy[] = [
   }, { // Sweetmeat
     id: 'b44cb0b7-61fd-4bd3-9c98-a545c19940ec',
     name: 'Sweetmeat',
-    status: PuppyStatus.Available,
+    status: PuppyStatus.Reserved,
     gender: 'F',
     description: 'Sweetmeat is the most spirited of the litter, always eager to play and explore. She’s energetic and full of curiosity, yet she also has a tender, affectionate side and enjoys quiet cuddle time. She will likely reach about 50 pounds when fully grown. Her straight coat carries a delicate wave, adding to her bright and endearing look.',
     imageName: 'Sweetmeat_02',
