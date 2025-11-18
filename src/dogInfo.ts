@@ -408,7 +408,7 @@ export const puppies: Puppy[] = [
   }, { // Licorice
     id: '53d125b6-8f70-4b9d-aaba-6c9de02ca92a',
     name: 'Licorice',
-    status: PuppyStatus.Reserved,
+    status: PuppyStatus.Sold,
     gender: 'M',
     description: 'Licorice is very quiet and very mellow.  He sometimes will just sit back and watch his siblings play and other times is the one trying to get another to wrestle with him.  He is very sweet and loves to give lots of kisses.  He is charting to be around 30 pounds.',
     imageName: 'Liberty_KingKong_Licorice_6weeks',
@@ -520,7 +520,7 @@ export const puppies: Puppy[] = [
   }, { // Pumpkin
     id: '3c3fbd7b-b245-47b1-abc2-dd972cc70b5a',
     name: 'Pumpkin',
-    status: PuppyStatus.Available,
+    status: PuppyStatus.Sold,
     gender: 'M',
     description: 'Pumpkin is the most easygoing pup of the litter, with a sweet and gentle personality. He is expected to reach around 40 pounds when fully grown. He’s happy to sit back and observe the world around him, yet he’s often the first to venture out and explore something new. His soft, silky straight coat perfectly complements his calm demeanor.',
     imageName: 'Pumpkin_02',
@@ -536,7 +536,7 @@ export const puppies: Puppy[] = [
   }, { // Sweetmeat
     id: 'b44cb0b7-61fd-4bd3-9c98-a545c19940ec',
     name: 'Sweetmeat',
-    status: PuppyStatus.Reserved,
+    status: PuppyStatus.Sold,
     gender: 'F',
     description: 'Sweetmeat is the most spirited of the litter, always eager to play and explore. She’s energetic and full of curiosity, yet she also has a tender, affectionate side and enjoys quiet cuddle time. She will likely reach about 50 pounds when fully grown. Her straight coat carries a delicate wave, adding to her bright and endearing look.',
     imageName: 'Sweetmeat_02',
@@ -625,7 +625,7 @@ export const litters:LitterInfo[] = [
     preBirthDescription: 'We welcomed 6 adorable Mini Bernedoodle puppies on Tue Sep 09 2025. Liberty and Twiggy had 3 beautiful girls and 3 handsome boys. These cute pups will be ready to go to their new loving homes Tue Nov 04 2025. Pictures will be coming soon.',
     dueDate: new Date(2025, 8, 10),
     expectedPuppySize: '20 to 45 lbs',
-    state: LitterState.Puppy,
+    state: LitterState.HomeBound,
     size: 6,
     puppyBreed: {
       type: BreedType.Bernedoodle,
