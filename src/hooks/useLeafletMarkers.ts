@@ -112,7 +112,46 @@ const markers:MyMapMarker[]|CustomerMarker[] = [
     place: 'Joliet, IL',
     position: [41.5244, -88.0855],
     icon: '',
-  }
+  }, {
+    type: 'customer',
+    dog: 'Acorn',
+    litter: 'Liberty | Twiggy',
+    place: 'Cincinnati, OH',
+    position: [39.1031, -84.5120],
+    icon: '',
+  },
+  {
+    type: 'customer',
+    dog: 'Hubbard',
+    litter: 'Liberty | Twiggy',
+    place: 'Bellville, IL',
+    position: [38.5201, -89.9840],
+    icon: '',
+  },
+  {
+    type: 'customer',
+    dog: 'Buttercup',
+    litter: 'Liberty | Twiggy',
+    place: 'Arnold, MO',
+    position: [38.4442, -90.3739],
+    icon: '',
+  },
+  {
+    type: 'customer',
+    dog: 'Sweetmeat',
+    litter: 'Liberty | Twiggy',
+    place: 'Clementon, NJ',
+    position: [39.8056, -74.9904],
+    icon: '',
+  },
+  {
+    type: 'customer',
+    dog: 'Pumpkin',
+    litter: 'Liberty | Twiggy',
+    place: 'Mt Juliet, TN',
+    position: [36.2001, -86.5186],
+    icon: '',
+  },
 ]
 
 const getMarkersByType = (type: string) => {

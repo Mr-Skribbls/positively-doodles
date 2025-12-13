@@ -43,6 +43,7 @@ enum CoatColorPatterns {
   Brown = 'Brown',
   Parti = 'Parti',
   Merle = 'Merle',
+  Blenheim = 'Blenheim',
 }
 
 export enum DogState {
@@ -282,7 +283,7 @@ export const dogs:Dog[] = [
     id: '0e7a755e-9773-4b11-9cae-6f4c16babff3',
     name: 'Holly',
     gender: 'F',
-    description: 'AKC Registered Moyan Poodle',
+    description: 'Holly joined our program from another breeder. She has had one previous litter, and because she began her breeding journey later in life, this will be her retirement litter. Holly is a sweet, affectionate, and deeply loving girl who brings so much warmth to everyone around her.',
     isInternal: true,
     state: DogState.Breeder,
     weight: 18,
@@ -377,6 +378,57 @@ export const dogs:Dog[] = [
       main: 'Creed',
       gallery: [],
     }
+  }, { // Bullet
+    id: '8f3ab31c-27a3-49cd-b31f-e91b3d25bedf',
+    name: 'Bullet',
+    gender: 'M',
+    description: 'Bullet is genetically clear which is nearly impossible to find in a Cavapoo. With his fully furnished straight coat and color genetics and you basically have a unicorn stud.',
+    isInternal: false,
+    state: DogState.Breeder,
+    weight: 16,
+    breed: {
+      type: BreedType.Cavapoo,
+      size: BreedSize.Mini,
+      class: BreedClass.Multigeneration,
+    },
+    images: {
+      main: 'Bullet',
+      gallery: [],
+    },
+  }, { // Meeko
+    id: '5eb71f99-c84a-4dc8-8a30-37b8e674192f',
+    name: 'Meeko',
+    gender: 'M',
+    description: 'Meeko is a tri-chocolate straight coat Bernedoodle. He is 21 pounds. He was chosen as a stud for this litter because of his straight fully furnished chocolate coat.',
+    isInternal: false,
+    state: DogState.Breeder,
+    weight: 21,
+    breed: {
+      type: BreedType.Bernedoodle,
+      size: BreedSize.MicroMini,
+      class: BreedClass.Multigeneration,
+    },
+    images: {
+      main: 'Meeko',
+      gallery: [],
+    },
+  }, {
+    id: 'faff5e81-11b9-49ed-b29e-33adb1669eb2',
+    name: 'Bogey',
+    gender: 'M',
+    description: 'Bogey is a multi-generational micro-mini bernedoodle. He is 52% bernese, and only 18 pounds. He is fully furnished, genetically clear and has a straight coat.',
+    isInternal: false,
+    state: DogState.Breeder,
+    weight: 18,
+    breed: {
+      type: BreedType.Bernedoodle,
+      size: BreedSize.MicroMini,
+      class: BreedClass.Multigeneration,
+    },
+    images: {
+      main: 'Bogey',
+      gallery: [],
+    },
   }
 ];
 
@@ -386,7 +438,7 @@ export const puppies: Puppy[] = [
     name: 'Tiny Tim',
     status: PuppyStatus.Sold,
     gender: 'M',
-    description: 'Tiny Tim is super sweet.  He loves to play and loves to cuddle.  He has a wavy coat and will be between 30-35 lbs. fully grown. ',
+    description: '',
     imageName: 'Liberty_KingKong_TinyTim_6weeks',
     priceAboveStarting: 0,
   }, { // Gloria
@@ -394,7 +446,7 @@ export const puppies: Puppy[] = [
     name: 'Gloria',
     status: PuppyStatus.Sold,
     gender: 'F',
-    description: 'Gloria is spunky and loves to be around those she knows.  She will be perfect for someone who will be with her all day long.',
+    description: '',
     imageName: 'Liberty_KingKong_Gloria_6weeks_2',
     priceAboveStarting: 0,
   }, { // Maple
@@ -402,7 +454,7 @@ export const puppies: Puppy[] = [
     name: 'Maple',
     status: PuppyStatus.Sold,
     gender: 'F',
-    description: 'She is super smart.  Already, at only 4 weeks old, she is already going to the potty box to go to the bathroom.  She is very mellow and super sweet.',
+    description: '',
     imageName: 'Liberty_KingKong_Maple_6weeks',
     priceAboveStarting: 0,
   }, { // Licorice
@@ -410,7 +462,7 @@ export const puppies: Puppy[] = [
     name: 'Licorice',
     status: PuppyStatus.Sold,
     gender: 'M',
-    description: 'Licorice is very quiet and very mellow.  He sometimes will just sit back and watch his siblings play and other times is the one trying to get another to wrestle with him.  He is very sweet and loves to give lots of kisses.  He is charting to be around 30 pounds.',
+    description: '',
     imageName: 'Liberty_KingKong_Licorice_6weeks',
     priceAboveStarting: 0,
   }, { // Jingle
@@ -418,7 +470,7 @@ export const puppies: Puppy[] = [
     name: 'Jingle',
     status: PuppyStatus.Sold,
     gender: 'M',
-    description: 'Jingle is the biggest of the litter.  He is one of the first to alert when someone walks in the room.  He loves to give puppy kisses and cuddles, but he also loves to romp around with his litter mates.',
+    description: '',
     imageName: 'Liberty_KingKong_Jingle_6weeks',
     priceAboveStarting: 0,
   }, { // Buddy
@@ -426,7 +478,7 @@ export const puppies: Puppy[] = [
     name: 'Buddy',
     status: PuppyStatus.Sold,
     gender: 'M',
-    description: 'Buddy is a beautiful tri-color Sable.  He is almost always the first to go try and explore something new.  He is charting to be about 35 pounds.',
+    description: '',
     imageName: 'Liberty_KingKong_Buddy_6weeks',
     priceAboveStarting: 0,
   }, { // Hazel
@@ -506,7 +558,7 @@ export const puppies: Puppy[] = [
     name: 'Buttercup',
     status: PuppyStatus.Sold,
     gender: 'F',
-    description: 'Buttercup is our largest pup and will likely reach about 50 pounds when fully grown. She’s calm yet confident — a wonderful mix of playfulness and snuggles.',
+    description: '',
     imageName: 'Buttercup_02',
     priceAboveStarting: 0,
   }, { // Hubbard
@@ -522,7 +574,7 @@ export const puppies: Puppy[] = [
     name: 'Pumpkin',
     status: PuppyStatus.Sold,
     gender: 'M',
-    description: 'Pumpkin is the most easygoing pup of the litter, with a sweet and gentle personality. He is expected to reach around 40 pounds when fully grown. He’s happy to sit back and observe the world around him, yet he’s often the first to venture out and explore something new. His soft, silky straight coat perfectly complements his calm demeanor.',
+    description: '',
     imageName: 'Pumpkin_02',
     priceAboveStarting: 0,
   }, { // Sugar
@@ -538,14 +590,88 @@ export const puppies: Puppy[] = [
     name: 'Sweetmeat',
     status: PuppyStatus.Sold,
     gender: 'F',
-    description: 'Sweetmeat is the most spirited of the litter, always eager to play and explore. She’s energetic and full of curiosity, yet she also has a tender, affectionate side and enjoys quiet cuddle time. She will likely reach about 50 pounds when fully grown. Her straight coat carries a delicate wave, adding to her bright and endearing look.',
+    description: '',
     imageName: 'Sweetmeat_02',
     priceAboveStarting: 0,
-  },
+  }, 
+  
+  {    // Noelle
+    id: '901f2d9f-ea8d-412b-a0fd-265d41a98d6f',
+    gender: 'F',
+    description: 'Noelle is red.',
+    imageName: 'Flair_Creed_Noelle_4Days',
+    name: 'Noelle',
+    status: PuppyStatus.Available,
+    priceAboveStarting: 0,
+  }, { // Crystal
+    id: '7eb550ce-c136-4cce-92c1-2026c3e2d193',
+    gender: 'F',
+    description: 'Crystal is tricolor.',
+    imageName: 'Flair_Creed_Crystal_4Days',
+    name: 'Crystal',
+    status: PuppyStatus.Available,
+    priceAboveStarting: 0,
+  }, { // Aurora
+    id: 'b1349864-8b66-4f79-99f2-84c07f908d6d',
+    gender: 'F',
+    description: 'Aurora is a chocolate phantom merle.',
+    imageName: 'Flair_Creed_Aurora_4Days',
+    name: 'Aurora',
+    status: PuppyStatus.Available,
+    priceAboveStarting: 1000,
+  }, { // Ember
+    id: 'de240ff1-40c2-43b8-af46-8f8bb9b88766',
+    gender: 'M',
+    description: 'Ember is red.',
+    imageName: 'Flair_Creed_Ember_4Days',
+    name: 'Ember',
+    status: PuppyStatus.Available,
+    priceAboveStarting: 0,
+  }, { // Ice
+    id: '2e042cae-7f79-4f17-8f0c-2af8cff20a8a',
+    gender: 'M',
+    description: 'Ice is red parti.',
+    imageName: 'Flair_Creed_Ice_4Days',
+    name: 'Ice',
+    status: PuppyStatus.Available,
+    priceAboveStarting: 0,
+  }, { // Fudge
+    id: 'efa7d454-1665-43ac-9f55-26b7b656df5e',
+    gender: 'M',
+    description: 'Fudge is chocolate phantom.',
+    imageName: 'Flair_Creed_Fudge_4Days',
+    name: 'Fudge',
+    status: PuppyStatus.Available,
+    priceAboveStarting: 0,
+  }, { // Coal
+    id: '1f633b4a-6ed6-431b-a09c-db17e3d13b2f',
+    gender: 'M',
+    description: 'Coal is black phantom.',
+    imageName: 'Flair_Creed_Coal_4Days',
+    name: 'Coal',
+    status: PuppyStatus.Available,
+    priceAboveStarting: 0,
+  }, { // Storm
+    id: 'cf3af56f-fb82-446d-b293-2a2a05af9ffd',
+    gender: 'M',
+    description: 'Storm is a black phantom merle.',
+    imageName: 'Flair_Creed_Storm_4Days',
+    name: 'Storm',
+    status: PuppyStatus.Available,
+    priceAboveStarting: 1000,
+  }, { // Frost
+    id: 'dc930071-5cfc-421a-942f-50536f646573',
+    gender: 'M',
+    description: 'Frost is red parti.',
+    imageName: 'Flair_Creed_Frost_4Days',
+    name: 'Frost',
+    status: PuppyStatus.Available,
+    priceAboveStarting: 0,
+  }
 ];
 
 export const litters:LitterInfo[] = [
-  {
+  {    // Liberty - King Kong
     id: '832fd26e-0a4d-45e3-b1fe-714c8edff83a',
     dam: findDog('Liberty', dogs),
     sire: findDog('King Kong', dogs),
@@ -580,7 +706,7 @@ export const litters:LitterInfo[] = [
       'd9f15140-5f60-4404-89b7-f724c2729e5c',
       '624d3910-7cdb-4e03-8c5b-0f78cde56264',
     ].includes(puppy.id)),
-  }, {
+  }, { // Liberty - King Kong
     id: '6fe7617e-9f6f-40c1-b00d-2a444a9b6370',
     dam: findDog('Liberty', dogs),
     sire: findDog('King Kong', dogs),
@@ -617,7 +743,7 @@ export const litters:LitterInfo[] = [
       'e1527389-0329-47c3-887e-0c97825490e0',
       '803c9d34-6573-4885-9ff8-e3325003899f',
     ].includes(puppy.id)),
-  }, {
+  }, { // Liberty - Twiggy
     id: '0ca167c1-b62d-45d9-a074-4c0d085ed45d',
     dam: findDog('Liberty', dogs),
     sire: findDog('Twiggy', dogs),
@@ -625,7 +751,7 @@ export const litters:LitterInfo[] = [
     preBirthDescription: 'We welcomed 6 adorable Mini Bernedoodle puppies on Tue Sep 09 2025. Liberty and Twiggy had 3 beautiful girls and 3 handsome boys. These cute pups will be ready to go to their new loving homes Tue Nov 04 2025. Pictures will be coming soon.',
     dueDate: new Date(2025, 8, 10),
     expectedPuppySize: '20 to 45 lbs',
-    state: LitterState.HomeBound,
+    state: LitterState.Complete,
     size: 6,
     puppyBreed: {
       type: BreedType.Bernedoodle,
@@ -656,14 +782,14 @@ export const litters:LitterInfo[] = [
       '47992bac-392d-4d02-adfe-6e740694e36a',
       'b44cb0b7-61fd-4bd3-9c98-a545c19940ec',
     ].includes(puppy.id)),
-  }, {
+  }, { // Flair - Creed
     dam: findDog('Flair', dogs),
     sire: findDog('Creed', dogs),
     dueDate: new Date(2025, 11, 8),
     id: '',
-    size: 8,
+    size: 9,
     expectedPuppySize: '60 lbs',
-    state: LitterState.Expected,
+    state: LitterState.Puppy,
     puppyBreed: {
       type: BreedType.Poodle,
       expectedSizes: [
@@ -682,11 +808,24 @@ export const litters:LitterInfo[] = [
       CoatColorPatterns.Parti,
       CoatColorPatterns.Merle,
     ],
+    puppies: puppies.filter((puppy) => [
+      '901f2d9f-ea8d-412b-a0fd-265d41a98d6f',
+      '7eb550ce-c136-4cce-92c1-2026c3e2d193',
+      'b1349864-8b66-4f79-99f2-84c07f908d6d',
+      'de240ff1-40c2-43b8-af46-8f8bb9b88766',
+      '2e042cae-7f79-4f17-8f0c-2af8cff20a8a',
+      'efa7d454-1665-43ac-9f55-26b7b656df5e',
+      '1f633b4a-6ed6-431b-a09c-db17e3d13b2f',
+      'cf3af56f-fb82-446d-b293-2a2a05af9ffd',
+      'dc930071-5cfc-421a-942f-50536f646573',
+    ].includes(puppy.id)),
     reservationFee: 500,
-    startingPrice: 1000,
-  }, {
+    startingPrice: 2000,
+    goHomeDate: new Date(2026, 1, 2),
+    birthDate: new Date(2025, 11, 8),
+  }, { // Luna - Meeko
     dam: findDog('Luna', dogs),
-    sire: findDog('Undecided Stud', dogs),
+    sire: findDog('Meeko', dogs),
     dueDate: new Date(2025, 11, 8),
     id: '',
     size: 8,
@@ -706,6 +845,58 @@ export const litters:LitterInfo[] = [
       CoatColorPatterns.Parti,
     ],
     reservationFee: 500,
-    startingPrice: 2000,
+    startingPrice: 2500,
+  }, { // Holly - Bullet
+    dam: findDog('Holly', dogs),
+    sire: findDog('Bullet', dogs),
+    dueDate: new Date(2026, 1, 28),
+    id: '',
+    size: 8,
+    expectedPuppySize: '40 lbs',
+    state: LitterState.Expected,
+    puppyBreed: {
+      type: BreedType.Cavapoo,
+      expectedSizes: [
+        BreedSize.Mini,
+      ],
+      class: BreedClass.Multigeneration,
+    },
+    expectedCoatTypes: [
+      CoatType.Wavy,
+    ],
+    expectedColors: [
+      CoatColorPatterns.TraditionalTriColor,
+      CoatColorPatterns.Red,
+      CoatColorPatterns.Blenheim,
+      CoatColorPatterns.BlackTanPoints,
+    ],
+    reservationFee: 500,
+    startingPrice: 2700,
+  }, { // Liberty - Bogey
+    dam: findDog('Liberty', dogs),
+    sire: findDog('Bogey', dogs),
+    dueDate: new Date(2026, 1, 28),
+    id: '',
+    size: 8,
+    expectedPuppySize: '35 lbs',
+    state: LitterState.Expected,
+    puppyBreed: {
+      type: BreedType.Bernedoodle,
+      expectedSizes: [
+        BreedSize.Mini,
+      ],
+      class: BreedClass.Multigeneration,
+    },
+    expectedCoatTypes: [
+      CoatType.Wavy,
+    ],
+    expectedColors: [
+      CoatColorPatterns.TraditionalTriColor,
+      CoatColorPatterns.Red,
+      CoatColorPatterns.Phantom,
+      CoatColorPatterns.Sable,
+    ],
+    reservationFee: 500,
+    startingPrice: 2500,
   }
 ];

@@ -32,7 +32,7 @@ const DogShowcaseCard:FC<DogShowcaseCardProps> = ({
     let imageName = '';
     if((dog as Puppy).imageName) {
       imageName = (dog as Puppy).imageName
-    } else if ((dog as Dog).images.main) {
+    } else if ((dog as Dog).images?.main) {
       imageName = (dog as Dog).images.main
     }
 
