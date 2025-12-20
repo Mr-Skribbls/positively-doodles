@@ -617,7 +617,7 @@ export const puppies: Puppy[] = [
     description: 'Aurora is a chocolate phantom merle.',
     imageName: 'Flair_Creed_Aurora_4Days',
     name: 'Aurora',
-    status: PuppyStatus.Available,
+    status: PuppyStatus.Reserved,
     priceAboveStarting: 1000,
   }, { // Ember
     id: 'de240ff1-40c2-43b8-af46-8f8bb9b88766',
@@ -820,7 +820,7 @@ export const litters:LitterInfo[] = [
       'dc930071-5cfc-421a-942f-50536f646573',
     ].includes(puppy.id)),
     reservationFee: 500,
-    startingPrice: 2000,
+    startingPrice: 1500,
     goHomeDate: new Date(2026, 1, 2),
     birthDate: new Date(2025, 11, 8),
   }, { // Luna - Meeko
