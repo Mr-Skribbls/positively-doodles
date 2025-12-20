@@ -4325,6 +4325,502 @@
         "height": 112
       }
     ]
+  },
+
+  {
+    "name": "Flair_Creed_Coal_1Week",
+    "alt": "Flair and Creed puppy Coal at 1 week",
+    "detailId": "4a9afebe-c831-4db5-9dca-b61739214bf9",
+    "classes": [
+      "dog",
+      "coal",
+      "puppy",
+      "flair puppy",
+      "creed puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 75
+    },
+    "defaultPath": "/images/puppies/flair_creed/png/150/Flair_Creed_Coal_1Week.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/flair_creed/webp/900/Flair_Creed_Coal_1Week.webp",
+        "type": "webp",
+        "width": 900,
+        "height": 600
+      },
+      {
+        "path": "/images/puppies/flair_creed/webp/450/Flair_Creed_Coal_1Week.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 300
+      },
+      {
+        "path": "/images/puppies/flair_creed/webp/150/Flair_Creed_Coal_1Week.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 100
+      },
+      {
+        "path": "/images/puppies/flair_creed/png/900/Flair_Creed_Coal_1Week.png",
+        "type": "png",
+        "width": 900,
+        "height": 600
+      },
+      {
+        "path": "/images/puppies/flair_creed/png/450/Flair_Creed_Coal_1Week.png",
+        "type": "png",
+        "width": 450,
+        "height": 300
+      },
+      {
+        "path": "/images/puppies/flair_creed/png/150/Flair_Creed_Coal_1Week.png",
+        "type": "png",
+        "width": 150,
+        "height": 100
+      }
+    ]
+  },
+  {
+    "name": "Flair_Creed_Noelle_1Week",
+    "alt": "Flair and Creed puppy Noelle at 1 week",
+    "detailId": "058eeb9a-d0ed-45d8-89e5-bbe3725e0ce4",
+    "classes": [
+      "dog",
+      "noelle",
+      "puppy",
+      "flair puppy",
+      "creed puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/flair_creed/png/150/Flair_Creed_Noelle_1Week.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/flair_creed/webp/900/Flair_Creed_Noelle_1Week.webp",
+        "type": "webp",
+        "width": 900,
+        "height": 599
+      },
+      {
+        "path": "/images/puppies/flair_creed/webp/450/Flair_Creed_Noelle_1Week.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 299
+      },
+      {
+        "path": "/images/puppies/flair_creed/webp/150/Flair_Creed_Noelle_1Week.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 99
+      },
+      {
+        "path": "/images/puppies/flair_creed/png/900/Flair_Creed_Noelle_1Week.png",
+        "type": "png",
+        "width": 900,
+        "height": 599
+      },
+      {
+        "path": "/images/puppies/flair_creed/png/450/Flair_Creed_Noelle_1Week.png",
+        "type": "png",
+        "width": 450,
+        "height": 299
+      },
+      {
+        "path": "/images/puppies/flair_creed/png/150/Flair_Creed_Noelle_1Week.png",
+        "type": "png",
+        "width": 150,
+        "height": 99
+      }
+    ]
+  },
+  {
+    "name": "Flair_Creed_Frost_1Week",
+    "alt": "Flair and Creed puppy Frost at 1 week",
+    "detailId": "0f4f6d4b-3d03-43c5-8a5f-a7657944500c",
+    "classes": [
+      "dog",
+      "frost",
+      "puppy",
+      "flair puppy",
+      "creed puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/flair_creed/png/150/Flair_Creed_Frost_1Week.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/flair_creed/webp/900/Flair_Creed_Frost_1Week.webp",
+        "type": "webp",
+        "width": 900,
+        "height": 600
+      },
+      {
+        "path": "/images/puppies/flair_creed/webp/450/Flair_Creed_Frost_1Week.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 300
+      },
+      {
+        "path": "/images/puppies/flair_creed/webp/150/Flair_Creed_Frost_1Week.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 100
+      },
+      {
+        "path": "/images/puppies/flair_creed/png/900/Flair_Creed_Frost_1Week.png",
+        "type": "png",
+        "width": 900,
+        "height": 600
+      },
+      {
+        "path": "/images/puppies/flair_creed/png/450/Flair_Creed_Frost_1Week.png",
+        "type": "png",
+        "width": 450,
+        "height": 300
+      },
+      {
+        "path": "/images/puppies/flair_creed/png/150/Flair_Creed_Frost_1Week.png",
+        "type": "png",
+        "width": 150,
+        "height": 100
+      }
+    ]
+  },
+  {
+    "name": "Flair_Creed_Ice_1Week",
+    "alt": "Flair and Creed puppy Ice at 1 week",
+    "detailId": "bd7214b3-4dd0-4edb-a96a-92f7a8ba5e8a",
+    "classes": [
+      "dog",
+      "ice",
+      "puppy",
+      "flair puppy",
+      "creed puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/flair_creed/png/150/Flair_Creed_Ice_1Week.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/flair_creed/webp/900/Flair_Creed_Ice_1Week.webp",
+        "type": "webp",
+        "width": 900,
+        "height": 599
+      },
+      {
+        "path": "/images/puppies/flair_creed/webp/450/Flair_Creed_Ice_1Week.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 299
+      },
+      {
+        "path": "/images/puppies/flair_creed/webp/150/Flair_Creed_Ice_1Week.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 99
+      },
+      {
+        "path": "/images/puppies/flair_creed/png/900/Flair_Creed_Ice_1Week.png",
+        "type": "png",
+        "width": 900,
+        "height": 599
+      },
+      {
+        "path": "/images/puppies/flair_creed/png/450/Flair_Creed_Ice_1Week.png",
+        "type": "png",
+        "width": 450,
+        "height": 299
+      },
+      {
+        "path": "/images/puppies/flair_creed/png/150/Flair_Creed_Ice_1Week.png",
+        "type": "png",
+        "width": 150,
+        "height": 99
+      }
+    ]
+  },
+  {
+    "name": "Flair_Creed_Storm_1Week",
+    "alt": "Flair and Creed puppy Storm at 1 week",
+    "detailId": "0c273b73-85e2-4be9-a197-adb79373e2c1",
+    "classes": [
+      "dog",
+      "storm",
+      "puppy",
+      "flair puppy",
+      "creed puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 75
+    },
+    "defaultPath": "/images/puppies/flair_creed/png/150/Flair_Creed_Storm_1Week.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/flair_creed/webp/900/Flair_Creed_Storm_1Week.webp",
+        "type": "webp",
+        "width": 900,
+        "height": 599
+      },
+      {
+        "path": "/images/puppies/flair_creed/webp/450/Flair_Creed_Storm_1Week.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 299
+      },
+      {
+        "path": "/images/puppies/flair_creed/webp/150/Flair_Creed_Storm_1Week.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 99
+      },
+      {
+        "path": "/images/puppies/flair_creed/png/900/Flair_Creed_Storm_1Week.png",
+        "type": "png",
+        "width": 900,
+        "height": 599
+      },
+      {
+        "path": "/images/puppies/flair_creed/png/450/Flair_Creed_Storm_1Week.png",
+        "type": "png",
+        "width": 450,
+        "height": 299
+      },
+      {
+        "path": "/images/puppies/flair_creed/png/150/Flair_Creed_Storm_1Week.png",
+        "type": "png",
+        "width": 150,
+        "height": 99
+      }
+    ]
+  },
+  {
+    "name": "Flair_Creed_Fudge_1Week",
+    "alt": "Flair and Creed puppy Fudge at 1 week",
+    "detailId": "cac85452-e272-4fb4-869c-57beb4726771",
+    "classes": [
+      "dog",
+      "fudge",
+      "puppy",
+      "flair puppy",
+      "creed puppy"
+    ],
+    "centerOfFocus": {
+      "x": 25,
+      "y": 75
+    },
+    "defaultPath": "/images/puppies/flair_creed/png/150/Flair_Creed_Fudge_1Week.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/flair_creed/webp/900/Flair_Creed_Fudge_1Week.webp",
+        "type": "webp",
+        "width": 900,
+        "height": 599
+      },
+      {
+        "path": "/images/puppies/flair_creed/webp/450/Flair_Creed_Fudge_1Week.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 299
+      },
+      {
+        "path": "/images/puppies/flair_creed/webp/150/Flair_Creed_Fudge_1Week.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 99
+      },
+      {
+        "path": "/images/puppies/flair_creed/png/900/Flair_Creed_Fudge_1Week.png",
+        "type": "png",
+        "width": 900,
+        "height": 599
+      },
+      {
+        "path": "/images/puppies/flair_creed/png/450/Flair_Creed_Fudge_1Week.png",
+        "type": "png",
+        "width": 450,
+        "height": 299
+      },
+      {
+        "path": "/images/puppies/flair_creed/png/150/Flair_Creed_Fudge_1Week.png",
+        "type": "png",
+        "width": 150,
+        "height": 99
+      }
+    ]
+  },
+  {
+    "name": "Flair_Creed_Crystal_1Week",
+    "alt": "Flair and Creed puppy Crystal at 1 week",
+    "detailId": "99711f48-9332-42b3-b8f9-3a45208da9f8",
+    "classes": [
+      "dog",
+      "crystal",
+      "puppy",
+      "flair puppy",
+      "creed puppy"
+    ],
+    "centerOfFocus": {
+      "x": 0,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/flair_creed/png/150/Flair_Creed_Crystal_1Week.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/flair_creed/webp/900/Flair_Creed_Crystal_1Week.webp",
+        "type": "webp",
+        "width": 900,
+        "height": 600
+      },
+      {
+        "path": "/images/puppies/flair_creed/webp/450/Flair_Creed_Crystal_1Week.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 300
+      },
+      {
+        "path": "/images/puppies/flair_creed/webp/150/Flair_Creed_Crystal_1Week.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 100
+      },
+      {
+        "path": "/images/puppies/flair_creed/png/900/Flair_Creed_Crystal_1Week.png",
+        "type": "png",
+        "width": 900,
+        "height": 600
+      },
+      {
+        "path": "/images/puppies/flair_creed/png/450/Flair_Creed_Crystal_1Week.png",
+        "type": "png",
+        "width": 450,
+        "height": 300
+      },
+      {
+        "path": "/images/puppies/flair_creed/png/150/Flair_Creed_Crystal_1Week.png",
+        "type": "png",
+        "width": 150,
+        "height": 100
+      }
+    ]
+  },
+  {
+    "name": "Flair_Creed_Ember_1Week",
+    "alt": "Flair and Creed puppy Ember at 1 week",
+    "detailId": "97bc5b72-0bad-47eb-8303-468654b3fbdd",
+    "classes": [
+      "dog",
+      "ember",
+      "puppy",
+      "flair puppy",
+      "creed puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 75
+    },
+    "defaultPath": "/images/puppies/flair_creed/png/150/Flair_Creed_Ember_1Week.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/flair_creed/webp/900/Flair_Creed_Ember_1Week.webp",
+        "type": "webp",
+        "width": 900,
+        "height": 600
+      },
+      {
+        "path": "/images/puppies/flair_creed/webp/450/Flair_Creed_Ember_1Week.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 300
+      },
+      {
+        "path": "/images/puppies/flair_creed/webp/150/Flair_Creed_Ember_1Week.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 100
+      },
+      {
+        "path": "/images/puppies/flair_creed/png/900/Flair_Creed_Ember_1Week.png",
+        "type": "png",
+        "width": 900,
+        "height": 600
+      },
+      {
+        "path": "/images/puppies/flair_creed/png/450/Flair_Creed_Ember_1Week.png",
+        "type": "png",
+        "width": 450,
+        "height": 300
+      },
+      {
+        "path": "/images/puppies/flair_creed/png/150/Flair_Creed_Ember_1Week.png",
+        "type": "png",
+        "width": 150,
+        "height": 100
+      }
+    ]
+  },
+  {
+    "name": "Flair_Creed_Aurora_1Week",
+    "alt": "Flair and Creed puppy Aurora at 1 week",
+    "detailId": "ad109e67-155f-48c8-bbc4-531a76a9b076",
+    "classes": [
+      "dog",
+      "aurora",
+      "puppy",
+      "flair puppy",
+      "creed puppy"
+    ],
+    "centerOfFocus": {
+      "x": 25,
+      "y": 75
+    },
+    "defaultPath": "/images/puppies/flair_creed/png/150/Flair_Creed_Aurora_1Week.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/flair_creed/webp/900/Flair_Creed_Aurora_1Week.webp",
+        "type": "webp",
+        "width": 900,
+        "height": 599
+      },
+      {
+        "path": "/images/puppies/flair_creed/webp/450/Flair_Creed_Aurora_1Week.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 299
+      },
+      {
+        "path": "/images/puppies/flair_creed/webp/150/Flair_Creed_Aurora_1Week.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 99
+      },
+      {
+        "path": "/images/puppies/flair_creed/png/900/Flair_Creed_Aurora_1Week.png",
+        "type": "png",
+        "width": 900,
+        "height": 599
+      },
+      {
+        "path": "/images/puppies/flair_creed/png/450/Flair_Creed_Aurora_1Week.png",
+        "type": "png",
+        "width": 450,
+        "height": 299
+      },
+      {
+        "path": "/images/puppies/flair_creed/png/150/Flair_Creed_Aurora_1Week.png",
+        "type": "png",
+        "width": 150,
+        "height": 99
+      }
+    ]
   }
 
 ]
