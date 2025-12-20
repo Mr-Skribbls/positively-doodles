@@ -47,10 +47,15 @@ const useLitter = () => {
     return `We welcomed ${litter.size} adorable ${litter.puppyBreed.expectedSizes.join(' to ')} ${litter.puppyBreed.type} puppies ${birthDay}. ${parents} had ${countPuppiesBy('gender', 'F')} beautiful girls and ${countPuppiesBy('gender', 'M')} handsome boys. ${goHomeMessage()}`;
   }
 
+  const priceDisclaimer = () => {
+    return 'Listed prices are for pet only. If you are a breeder looking to purchase one of our puppies for your program contact us for breeder prices.'
+  }
+
   return {
     getLitterId,
     getLitter: getLitter(litters),
     litterDescription,
+    priceDisclaimer,
   };
 };
 

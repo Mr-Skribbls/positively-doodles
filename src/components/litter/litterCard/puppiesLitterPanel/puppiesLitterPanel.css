@@ -18,6 +18,10 @@
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 }
 
+.puppies-litter-card .price-disclaimer {
+  color: var(--color-base);
+}
+
 @media (max-width: 700px) {
   .puppies-litter-card .puppy-cards {
     display: flex; 

@@ -2,7 +2,7 @@ import { FC, useState } from 'react';
 
 import './puppiesLitterPanel.css';
 import { LitterInfo, Puppy, PuppyStatus } from '../../../../dogInfo';
-import { isNil } from 'lodash';
+import { isEmpty, isNil } from 'lodash';
 import Modal from '../../../modal/modal.component';
 import ModalGallery from '../../../modal/templates/modalGallery/modalGallery.component';
 import useLitter from '../../../../hooks/useLitter';
@@ -23,7 +23,7 @@ const puppyPrice = (puppy: Puppy, startingPrice: number) => {
 
 const PuppiesLitterPanel:FC<PuppiesLitterPanelProps> = ({litter}) => {
   const [modalImageNames, setModalImageNames] = useState<string[] | null>();
-  const { litterDescription } = useLitter();
+  const { litterDescription, priceDisclaimer } = useLitter();
 
   const closeModal = () => {
     setModalImageNames(null);
@@ -34,6 +34,9 @@ const PuppiesLitterPanel:FC<PuppiesLitterPanelProps> = ({litter}) => {
       <ContentBlock as='section' className='puppies-litter-card'>
         <h2>{litter.puppyBreed.class} {litter.puppyBreed.expectedSizes.join(' to ')} {litter.puppyBreed.type} Litter</h2>
         <p>{litterDescription(litter)}</p>
+        { !isNil(litter.puppies) && !isEmpty(litter.puppies) &&
+          <p className='price-disclaimer'>{priceDisclaimer()}</p>
+        }
         <div className='puppy-cards'>
           {!isNil(litter.puppies) && litter.puppies.map(
             (puppy, key) => (
