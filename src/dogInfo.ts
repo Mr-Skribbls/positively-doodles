@@ -609,15 +609,15 @@ export const puppies: Puppy[] = [
     description: 'Crystal is tricolor.',
     imageName: 'Flair_Creed_Crystal_1Week',
     name: 'Crystal',
-    status: PuppyStatus.Available,
-    priceAboveStarting: 0,
+    status: PuppyStatus.Reserved,
+    priceAboveStarting: 500,
   }, { // Aurora
     id: 'b1349864-8b66-4f79-99f2-84c07f908d6d',
     gender: 'F',
     description: 'Aurora is a chocolate phantom merle.',
     imageName: 'Flair_Creed_Aurora_1Week',
     name: 'Aurora',
-    status: PuppyStatus.Reserved,
+    status: PuppyStatus.Available,
     priceAboveStarting: 1000,
   }, { // Ember
     id: 'de240ff1-40c2-43b8-af46-8f8bb9b88766',
