@@ -593,15 +593,13 @@ export const puppies: Puppy[] = [
     description: '',
     imageName: 'Sweetmeat_02',
     priceAboveStarting: 0,
-  }, 
-  
-  {    // Noelle
+  }, {    // Noelle
     id: '901f2d9f-ea8d-412b-a0fd-265d41a98d6f',
     gender: 'F',
     description: 'Noelle is red.',
     imageName: 'Flair_Creed_Noelle_1Week',
     name: 'Noelle',
-    status: PuppyStatus.Available,
+    status: PuppyStatus.Sold,
     priceAboveStarting: 0,
   }, { // Crystal
     id: '7eb550ce-c136-4cce-92c1-2026c3e2d193',
@@ -609,15 +607,15 @@ export const puppies: Puppy[] = [
     description: 'Crystal is tricolor.',
     imageName: 'Flair_Creed_Crystal_1Week',
     name: 'Crystal',
-    status: PuppyStatus.Reserved,
-    priceAboveStarting: 500,
+    status: PuppyStatus.Sold,
+    priceAboveStarting: 0,
   }, { // Aurora
     id: 'b1349864-8b66-4f79-99f2-84c07f908d6d',
     gender: 'F',
     description: 'Aurora is a chocolate phantom merle.',
     imageName: 'Flair_Creed_Aurora_1Week',
     name: 'Aurora',
-    status: PuppyStatus.Available,
+    status: PuppyStatus.Sold,
     priceAboveStarting: 1000,
   }, { // Ember
     id: 'de240ff1-40c2-43b8-af46-8f8bb9b88766',
@@ -625,7 +623,7 @@ export const puppies: Puppy[] = [
     description: 'Ember is red.',
     imageName: 'Flair_Creed_Ember_1Week',
     name: 'Ember',
-    status: PuppyStatus.Available,
+    status: PuppyStatus.Sold,
     priceAboveStarting: 0,
   }, { // Ice
     id: '2e042cae-7f79-4f17-8f0c-2af8cff20a8a',
@@ -633,7 +631,7 @@ export const puppies: Puppy[] = [
     description: 'Ice is red parti.',
     imageName: 'Flair_Creed_Ice_1Week',
     name: 'Ice',
-    status: PuppyStatus.Available,
+    status: PuppyStatus.Sold,
     priceAboveStarting: 0,
   }, { // Fudge
     id: 'efa7d454-1665-43ac-9f55-26b7b656df5e',
@@ -641,7 +639,7 @@ export const puppies: Puppy[] = [
     description: 'Fudge is chocolate phantom.',
     imageName: 'Flair_Creed_Fudge_1Week',
     name: 'Fudge',
-    status: PuppyStatus.Available,
+    status: PuppyStatus.Sold,
     priceAboveStarting: 0,
   }, { // Coal
     id: '1f633b4a-6ed6-431b-a09c-db17e3d13b2f',
@@ -649,7 +647,7 @@ export const puppies: Puppy[] = [
     description: 'Coal is black phantom.',
     imageName: 'Flair_Creed_Coal_1Week',
     name: 'Coal',
-    status: PuppyStatus.Available,
+    status: PuppyStatus.Sold,
     priceAboveStarting: 0,
   }, { // Storm
     id: 'cf3af56f-fb82-446d-b293-2a2a05af9ffd',
@@ -657,7 +655,7 @@ export const puppies: Puppy[] = [
     description: 'Storm is a black phantom merle.',
     imageName: 'Flair_Creed_Storm_1Week',
     name: 'Storm',
-    status: PuppyStatus.Available,
+    status: PuppyStatus.Sold,
     priceAboveStarting: 1000,
   }, { // Frost
     id: 'dc930071-5cfc-421a-942f-50536f646573',
@@ -665,9 +663,75 @@ export const puppies: Puppy[] = [
     description: 'Frost is red parti.',
     imageName: 'Flair_Creed_Frost_1Week',
     name: 'Frost',
+    status: PuppyStatus.Sold,
+    priceAboveStarting: 0,
+  },
+
+  {
+    id: 'ab83c495-5bc2-4d52-938f-f863baa2a5ab',
+    gender: 'F',
+    description: '',
+    imageName: 'Luna_Meeko_AlmondJoy_2Days',
+    name: 'Almond Joy',
     status: PuppyStatus.Available,
     priceAboveStarting: 0,
-  }
+  }, {
+    id: '91cad84b-a3d8-4f2d-939d-8394c723d293',
+    gender: 'F',
+    description: '',
+    imageName: 'Luna_Meeko_BabyRuth_2Days',
+    name: ' Baby Ruth',
+    status: PuppyStatus.Available,
+    priceAboveStarting: 0,
+  }, {
+    id: 'ef2c0e5d-d484-4682-a433-55f229a3f709',
+    gender: 'M',
+    description: '',
+    imageName: 'Luna_Meeko_ChocolateChip_2Days',
+    name: 'Chocolate Chip',
+    status: PuppyStatus.Available,
+    priceAboveStarting: 0,
+  }, {
+    id: '8e76c191-cbf6-4fab-865b-5d5604499959',
+    gender: 'M',
+    description: '',
+    imageName: 'Luna_Meeko_Heath_2Days',
+    name: 'Heath',
+    status: PuppyStatus.Available,
+    priceAboveStarting: 0,
+  }, {
+    id: '8eb3b009-8279-41d0-bdf4-138ec8dcd18c',
+    gender: 'F',
+    description: '',
+    imageName: 'Luna_Meeko_KitKat_2Days',
+    name: 'Kit Kat',
+    status: PuppyStatus.Available,
+    priceAboveStarting: 0,
+  }, {
+    id: 'c6735091-d885-4ea5-8b03-3a5af1fdfd5c',
+    gender: 'F',
+    description: '',
+    imageName: 'Luna_Meeko_Reese_2Days',
+    name: 'Reese',
+    status: PuppyStatus.Available,
+    priceAboveStarting: 0,
+  }, {
+    id: 'c1e058c9-b3aa-46e3-8804-f3ec1b3b53ec',
+    gender: 'M',
+    description: '',
+    imageName: 'Luna_Meeko_Rolo_2Days',
+    name: 'Rolo',
+    status: PuppyStatus.Available,
+    priceAboveStarting: 0,
+  }, {
+    id: '29a854e7-4a06-4d3c-843f-f40fb6231344',
+    gender: 'F',
+    description: '',
+    imageName: 'Luna_Meeko_Twix_2Days',
+    name: 'Twix',
+    status: PuppyStatus.Available,
+    priceAboveStarting: 0,
+  },
 ];
 
 export const litters:LitterInfo[] = [
@@ -788,7 +852,7 @@ export const litters:LitterInfo[] = [
     id: '',
     size: 9,
     expectedPuppySize: '60 lbs',
-    state: LitterState.Puppy,
+    state: LitterState.Complete,
     puppyBreed: {
       type: BreedType.Poodle,
       expectedSizes: [
@@ -829,11 +893,12 @@ export const litters:LitterInfo[] = [
     id: '',
     size: 8,
     expectedPuppySize: '55 lbs',
-    state: LitterState.Expected,
+    state: LitterState.Puppy,
     puppyBreed: {
       type: BreedType.Bernedoodle,
       expectedSizes: [
         BreedSize.Mini,
+        BreedSize.Medium,
       ],
       class: BreedClass.Multigeneration
     },
@@ -845,6 +910,17 @@ export const litters:LitterInfo[] = [
     ],
     reservationFee: 500,
     startingPrice: 2500,
+    puppies: puppies.filter((puppy) => [
+      'ab83c495-5bc2-4d52-938f-f863baa2a5ab',
+      '91cad84b-a3d8-4f2d-939d-8394c723d293',
+      'ef2c0e5d-d484-4682-a433-55f229a3f709',
+      '8e76c191-cbf6-4fab-865b-5d5604499959',
+      '8eb3b009-8279-41d0-bdf4-138ec8dcd18c',
+      'c6735091-d885-4ea5-8b03-3a5af1fdfd5c',
+      'c1e058c9-b3aa-46e3-8804-f3ec1b3b53ec',
+      '29a854e7-4a06-4d3c-843f-f40fb6231344',
+    ].includes(puppy.id)),
+    goHomeDate: new Date(2026, 2, 24),
   }, { // Holly - Bullet
     dam: findDog('Holly', dogs),
     sire: findDog('Bullet', dogs),

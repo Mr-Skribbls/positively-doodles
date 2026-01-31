@@ -4821,6 +4821,447 @@
         "height": 99
       }
     ]
+  },
+
+  {
+    "name": "Luna_Meeko_Reese_2Days",
+    "alt": "Luna and Meeko puppy Reese at 2 days",
+    "detailId": "8de84602-4f61-48da-bc45-1f65d8fc7b03",
+    "classes": [
+      "dog",
+      "reese",
+      "puppy",
+      "luna puppy",
+      "meeko puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/luna_meeko/png/150/Luna_Meeko_Reese_2Days.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/luna_meeko/webp/900/Luna_Meeko_Reese_2Days.webp",
+        "type": "webp",
+        "width": 900,
+        "height": 730
+      },
+      {
+        "path": "/images/puppies/luna_meeko/webp/450/Luna_Meeko_Reese_2Days.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 365
+      },
+      {
+        "path": "/images/puppies/luna_meeko/webp/150/Luna_Meeko_Reese_2Days.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 121
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/900/Luna_Meeko_Reese_2Days.png",
+        "type": "png",
+        "width": 900,
+        "height": 730
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/450/Luna_Meeko_Reese_2Days.png",
+        "type": "png",
+        "width": 450,
+        "height": 365
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/150/Luna_Meeko_Reese_2Days.png",
+        "type": "png",
+        "width": 150,
+        "height": 121
+      }
+    ]
+  },
+  {
+    "name": "Luna_Meeko_Rolo_2Days",
+    "alt": "Luna and Meeko puppy Rolo at 2 days",
+    "detailId": "454a8f02-6209-4401-8014-82e6e1be2b10",
+    "classes": [
+      "dog",
+      "rolo",
+      "puppy",
+      "luna puppy",
+      "meeko puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/luna_meeko/png/150/Luna_Meeko_Rolo_2Days.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/luna_meeko/webp/900/Luna_Meeko_Rolo_2Days.webp",
+        "type": "webp",
+        "width": 841,
+        "height": 900
+      },
+      {
+        "path": "/images/puppies/luna_meeko/webp/450/Luna_Meeko_Rolo_2Days.webp",
+        "type": "webp",
+        "width": 420,
+        "height": 450
+      },
+      {
+        "path": "/images/puppies/luna_meeko/webp/150/Luna_Meeko_Rolo_2Days.webp",
+        "type": "webp",
+        "width": 140,
+        "height": 150
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/900/Luna_Meeko_Rolo_2Days.png",
+        "type": "png",
+        "width": 841,
+        "height": 900
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/450/Luna_Meeko_Rolo_2Days.png",
+        "type": "png",
+        "width": 420,
+        "height": 450
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/150/Luna_Meeko_Rolo_2Days.png",
+        "type": "png",
+        "width": 140,
+        "height": 150
+      }
+    ]
+  },
+  {
+    "name": "Luna_Meeko_AlmondJoy_2Days",
+    "alt": "Luna and Meeko puppy Almond Joy at 2 days",
+    "detailId": "eb129f00-022c-4efb-b3fa-86d8e976964e",
+    "classes": [
+      "dog",
+      "almond joy",
+      "puppy",
+      "luna puppy",
+      "meeko puppy"
+    ],
+    "centerOfFocus": {
+      "x": 65,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/luna_meeko/png/150/Luna_Meeko_AlmondJoy_2Days.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/luna_meeko/webp/900/Luna_Meeko_AlmondJoy_2Days.webp",
+        "type": "webp",
+        "width": 900,
+        "height": 615
+      },
+      {
+        "path": "/images/puppies/luna_meeko/webp/450/Luna_Meeko_AlmondJoy_2Days.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 307
+      },
+      {
+        "path": "/images/puppies/luna_meeko/webp/150/Luna_Meeko_AlmondJoy_2Days.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 102
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/900/Luna_Meeko_AlmondJoy_2Days.png",
+        "type": "png",
+        "width": 900,
+        "height": 615
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/450/Luna_Meeko_AlmondJoy_2Days.png",
+        "type": "png",
+        "width": 450,
+        "height": 307
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/150/Luna_Meeko_AlmondJoy_2Days.png",
+        "type": "png",
+        "width": 150,
+        "height": 102
+      }
+    ]
+  },
+  {
+    "name": "Luna_Meeko_Heath_2Days",
+    "alt": "Luna and Meeko puppy Heath at 2 days",
+    "detailId": "b934e923-ffe0-45d3-af50-f69aeaf2aec6",
+    "classes": [
+      "dog",
+      "heath",
+      "puppy",
+      "luna puppy",
+      "meeko puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/luna_meeko/png/150/Luna_Meeko_Heath_2Days.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/luna_meeko/webp/900/Luna_Meeko_Heath_2Days.webp",
+        "type": "webp",
+        "width": 899,
+        "height": 643
+      },
+      {
+        "path": "/images/puppies/luna_meeko/webp/450/Luna_Meeko_Heath_2Days.webp",
+        "type": "webp",
+        "width": 449,
+        "height": 321
+      },
+      {
+        "path": "/images/puppies/luna_meeko/webp/150/Luna_Meeko_Heath_2Days.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 107
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/900/Luna_Meeko_Heath_2Days.png",
+        "type": "png",
+        "width": 899,
+        "height": 643
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/450/Luna_Meeko_Heath_2Days.png",
+        "type": "png",
+        "width": 449,
+        "height": 321
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/150/Luna_Meeko_Heath_2Days.png",
+        "type": "png",
+        "width": 150,
+        "height": 107
+      }
+    ]
+  },
+  {
+    "name": "Luna_Meeko_Twix_2Days",
+    "alt": "Luna and Meeko puppy Twix at 2 days",
+    "detailId": "8b74c40c-396d-45cd-982a-e6ab18a0d1f4",
+    "classes": [
+      "dog",
+      "twix",
+      "puppy",
+      "luna puppy",
+      "meeko puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/luna_meeko/png/150/Luna_Meeko_Twix_2Days.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/luna_meeko/webp/900/Luna_Meeko_Twix_2Days.webp",
+        "type": "webp",
+        "width": 899,
+        "height": 771
+      },
+      {
+        "path": "/images/puppies/luna_meeko/webp/450/Luna_Meeko_Twix_2Days.webp",
+        "type": "webp",
+        "width": 449,
+        "height": 385
+      },
+      {
+        "path": "/images/puppies/luna_meeko/webp/150/Luna_Meeko_Twix_2Days.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 128
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/900/Luna_Meeko_Twix_2Days.png",
+        "type": "png",
+        "width": 899,
+        "height": 771
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/450/Luna_Meeko_Twix_2Days.png",
+        "type": "png",
+        "width": 449,
+        "height": 385
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/150/Luna_Meeko_Twix_2Days.png",
+        "type": "png",
+        "width": 150,
+        "height": 128
+      }
+    ]
+  },
+  {
+    "name": "Luna_Meeko_BabyRuth_2Days",
+    "alt": "Luna and Meeko puppy Baby Ruth at 2 days",
+    "detailId": "23d430b8-8d20-4c05-aa9f-8438beb63f0b",
+    "classes": [
+      "dog",
+      "baby ruth",
+      "puppy",
+      "luna puppy",
+      "meeko puppy"
+    ],
+    "centerOfFocus": {
+      "x": 25,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/luna_meeko/png/150/Luna_Meeko_BabyRuth_2Days.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/luna_meeko/webp/900/Luna_Meeko_BabyRuth_2Days.webp",
+        "type": "webp",
+        "width": 900,
+        "height": 821
+      },
+      {
+        "path": "/images/puppies/luna_meeko/webp/450/Luna_Meeko_BabyRuth_2Days.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 410
+      },
+      {
+        "path": "/images/puppies/luna_meeko/webp/150/Luna_Meeko_BabyRuth_2Days.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 136
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/900/Luna_Meeko_BabyRuth_2Days.png",
+        "type": "png",
+        "width": 900,
+        "height": 821
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/450/Luna_Meeko_BabyRuth_2Days.png",
+        "type": "png",
+        "width": 450,
+        "height": 410
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/150/Luna_Meeko_BabyRuth_2Days.png",
+        "type": "png",
+        "width": 150,
+        "height": 136
+      }
+    ]
+  },
+  {
+    "name": "Luna_Meeko_ChocolateChip_2Days",
+    "alt": "Luna and Meeko puppy Chocolate Chip at 2 days",
+    "detailId": "daf0d678-65d4-40e7-934f-ab361e819a9c",
+    "classes": [
+      "dog",
+      "chocolate chip",
+      "puppy",
+      "luna puppy",
+      "meeko puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 85
+    },
+    "defaultPath": "/images/puppies/luna_meeko/png/150/Luna_Meeko_ChocolateChip_2Days.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/luna_meeko/webp/900/Luna_Meeko_ChocolateChip_2Days.webp",
+        "type": "webp",
+        "width": 582,
+        "height": 900
+      },
+      {
+        "path": "/images/puppies/luna_meeko/webp/450/Luna_Meeko_ChocolateChip_2Days.webp",
+        "type": "webp",
+        "width": 291,
+        "height": 450
+      },
+      {
+        "path": "/images/puppies/luna_meeko/webp/150/Luna_Meeko_ChocolateChip_2Days.webp",
+        "type": "webp",
+        "width": 97,
+        "height": 150
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/900/Luna_Meeko_ChocolateChip_2Days.png",
+        "type": "png",
+        "width": 582,
+        "height": 900
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/450/Luna_Meeko_ChocolateChip_2Days.png",
+        "type": "png",
+        "width": 291,
+        "height": 450
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/150/Luna_Meeko_ChocolateChip_2Days.png",
+        "type": "png",
+        "width": 97,
+        "height": 150
+      }
+    ]
+  },
+  {
+    "name": "Luna_Meeko_KitKat_2Days",
+    "alt": "Luna and Meeko puppy Kit Kat at 2 days",
+    "detailId": "f61a9b34-3a2b-424f-be68-24e88d6f5beb",
+    "classes": [
+      "dog",
+      "Kit Kat",
+      "puppy",
+      "luna puppy",
+      "meeko puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/luna_meeko/png/150/Luna_Meeko_KitKat_2Days.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/luna_meeko/webp/900/Luna_Meeko_KitKat_2Days.webp",
+        "type": "webp",
+        "width": 900,
+        "height": 686
+      },
+      {
+        "path": "/images/puppies/luna_meeko/webp/450/Luna_Meeko_KitKat_2Days.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 343
+      },
+      {
+        "path": "/images/puppies/luna_meeko/webp/150/Luna_Meeko_KitKat_2Days.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 114
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/900/Luna_Meeko_KitKat_2Days.png",
+        "type": "png",
+        "width": 900,
+        "height": 686
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/450/Luna_Meeko_KitKat_2Days.png",
+        "type": "png",
+        "width": 450,
+        "height": 343
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/150/Luna_Meeko_KitKat_2Days.png",
+        "type": "png",
+        "width": 150,
+        "height": 114
+      }
+    ]
   }
 
 ]
