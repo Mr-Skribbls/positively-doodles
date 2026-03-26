@@ -4835,7 +4835,7 @@
       "meeko puppy"
     ],
     "centerOfFocus": {
-      "x": 50,
+      "x": 10,
       "y": 50
     },
     "defaultPath": "/images/puppies/luna_meeko/png/150/Luna_Meeko_Reese_2Days.png",
@@ -4890,8 +4890,8 @@
       "meeko puppy"
     ],
     "centerOfFocus": {
-      "x": 50,
-      "y": 50
+      "x": 40,
+      "y": 70
     },
     "defaultPath": "/images/puppies/luna_meeko/png/150/Luna_Meeko_Rolo_2Days.png",
     "imageSet": [
@@ -5214,14 +5214,14 @@
     "detailId": "f61a9b34-3a2b-424f-be68-24e88d6f5beb",
     "classes": [
       "dog",
-      "Kit Kat",
+      "kit kat",
       "puppy",
       "luna puppy",
       "meeko puppy"
     ],
     "centerOfFocus": {
-      "x": 50,
-      "y": 50
+      "x": 25,
+      "y": 75
     },
     "defaultPath": "/images/puppies/luna_meeko/png/150/Luna_Meeko_KitKat_2Days.png",
     "imageSet": [
@@ -5260,6 +5260,1437 @@
         "type": "png",
         "width": 150,
         "height": 114
+      }
+    ]
+  },
+  {
+    "name": "Luna_Meeko_AlmondJoy_7weeks_2",
+    "alt": "Luna and Meeko puppy Almond Joy at 7 weeks",
+    "detailId": "eb129f00-022c-4efb-b3fa-86d8e976964e",
+    "classes": [
+      "dog",
+      "almond joy",
+      "puppy",
+      "luna puppy",
+      "meeko puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 25
+    },
+    "defaultPath": "/images/puppies/luna_meeko/png/150/Luna_Meeko_AlmondJoy_7weeks_2.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/luna_meeko/webp/900/Luna_Meeko_AlmondJoy_7weeks_2.webp",
+        "type": "webp",
+        "width": 600,
+        "height": 900
+      },
+      {
+        "path": "/images/puppies/luna_meeko/webp/450/Luna_Meeko_AlmondJoy_7weeks_2.webp",
+        "type": "webp",
+        "width": 300,
+        "height": 450
+      },
+      {
+        "path": "/images/puppies/luna_meeko/webp/150/Luna_Meeko_AlmondJoy_7weeks_2.webp",
+        "type": "webp",
+        "width": 100,
+        "height": 150
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/900/Luna_Meeko_AlmondJoy_7weeks_2.png",
+        "type": "png",
+        "width": 600,
+        "height": 900
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/450/Luna_Meeko_AlmondJoy_7weeks_2.png",
+        "type": "png",
+        "width": 300,
+        "height": 450
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/150/Luna_Meeko_AlmondJoy_7weeks_2.png",
+        "type": "png",
+        "width": 100,
+        "height": 150
+      }
+    ]
+  },
+  {
+    "name": "Luna_Meeko_ChocolateChip_4weeks",
+    "alt": "Luna and Meeko puppy Chocolate Chip at 4 weeks",
+    "detailId": "daf0d678-65d4-40e7-934f-ab361e819a9c",
+    "classes": [
+      "dog",
+      "chocolate chip",
+      "puppy",
+      "luna puppy",
+      "meeko puppy"
+    ],
+    "centerOfFocus": {
+      "x": 25,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/luna_meeko/png/150/Luna_Meeko_ChocolateChip_4weeks.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/luna_meeko/webp/900/Luna_Meeko_ChocolateChip_4weeks.webp",
+        "type": "webp",
+        "width": 900,
+        "height": 599
+      },
+      {
+        "path": "/images/puppies/luna_meeko/webp/450/Luna_Meeko_ChocolateChip_4weeks.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 299
+      },
+      {
+        "path": "/images/puppies/luna_meeko/webp/150/Luna_Meeko_ChocolateChip_4weeks.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 99
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/900/Luna_Meeko_ChocolateChip_4weeks.png",
+        "type": "png",
+        "width": 900,
+        "height": 599
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/450/Luna_Meeko_ChocolateChip_4weeks.png",
+        "type": "png",
+        "width": 450,
+        "height": 299
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/150/Luna_Meeko_ChocolateChip_4weeks.png",
+        "type": "png",
+        "width": 150,
+        "height": 99
+      }
+    ]
+  },
+  {
+    "name": "Luna_Meeko_KitKat_7weeks",
+    "alt": "Luna and Meeko puppy Kit Kat at 7 weeks",
+    "detailId": "f61a9b34-3a2b-424f-be68-24e88d6f5beb",
+    "classes": [
+      "dog",
+      "kit kat",
+      "puppy",
+      "luna puppy",
+      "meeko puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 25
+    },
+    "defaultPath": "/images/puppies/luna_meeko/png/150/Luna_Meeko_KitKat_7weeks.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/luna_meeko/webp/900/Luna_Meeko_KitKat_7weeks.webp",
+        "type": "webp",
+        "width": 600,
+        "height": 900
+      },
+      {
+        "path": "/images/puppies/luna_meeko/webp/450/Luna_Meeko_KitKat_7weeks.webp",
+        "type": "webp",
+        "width": 300,
+        "height": 450
+      },
+      {
+        "path": "/images/puppies/luna_meeko/webp/150/Luna_Meeko_KitKat_7weeks.webp",
+        "type": "webp",
+        "width": 100,
+        "height": 150
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/900/Luna_Meeko_KitKat_7weeks.png",
+        "type": "png",
+        "width": 600,
+        "height": 900
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/450/Luna_Meeko_KitKat_7weeks.png",
+        "type": "png",
+        "width": 300,
+        "height": 450
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/150/Luna_Meeko_KitKat_7weeks.png",
+        "type": "png",
+        "width": 100,
+        "height": 150
+      }
+    ]
+  },
+  {
+    "name": "Luna_Meeko_KitKat_7weeks_2",
+    "alt": "Luna and Meeko puppy Kit Kat at 7 weeks",
+    "detailId": "f61a9b34-3a2b-424f-be68-24e88d6f5beb",
+    "classes": [
+      "dog",
+      "kit kat",
+      "puppy",
+      "luna puppy",
+      "meeko puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/luna_meeko/png/150/Luna_Meeko_KitKat_7weeks_2.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/luna_meeko/webp/900/Luna_Meeko_KitKat_7weeks_2.webp",
+        "type": "webp",
+        "width": 600,
+        "height": 900
+      },
+      {
+        "path": "/images/puppies/luna_meeko/webp/450/Luna_Meeko_KitKat_7weeks_2.webp",
+        "type": "webp",
+        "width": 300,
+        "height": 450
+      },
+      {
+        "path": "/images/puppies/luna_meeko/webp/150/Luna_Meeko_KitKat_7weeks_2.webp",
+        "type": "webp",
+        "width": 100,
+        "height": 150
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/900/Luna_Meeko_KitKat_7weeks_2.png",
+        "type": "png",
+        "width": 600,
+        "height": 900
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/450/Luna_Meeko_KitKat_7weeks_2.png",
+        "type": "png",
+        "width": 300,
+        "height": 450
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/150/Luna_Meeko_KitKat_7weeks_2.png",
+        "type": "png",
+        "width": 100,
+        "height": 150
+      }
+    ]
+  },
+  {
+    "name": "Luna_Meeko_Heath_4weeks",
+    "alt": "Luna and Meeko puppy Heath at 4 weeks",
+    "detailId": "b934e923-ffe0-45d3-af50-f69aeaf2aec6",
+    "classes": [
+      "dog",
+      "heath",
+      "puppy",
+      "luna puppy",
+      "meeko puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/luna_meeko/png/150/Luna_Meeko_Heath_4weeks.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/luna_meeko/webp/900/Luna_Meeko_Heath_4weeks.webp",
+        "type": "webp",
+        "width": 900,
+        "height": 600
+      },
+      {
+        "path": "/images/puppies/luna_meeko/webp/450/Luna_Meeko_Heath_4weeks.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 300
+      },
+      {
+        "path": "/images/puppies/luna_meeko/webp/150/Luna_Meeko_Heath_4weeks.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 100
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/900/Luna_Meeko_Heath_4weeks.png",
+        "type": "png",
+        "width": 900,
+        "height": 600
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/450/Luna_Meeko_Heath_4weeks.png",
+        "type": "png",
+        "width": 450,
+        "height": 300
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/150/Luna_Meeko_Heath_4weeks.png",
+        "type": "png",
+        "width": 150,
+        "height": 100
+      }
+    ]
+  },
+  {
+    "name": "Luna_Meeko_BabyRuth_4weeks",
+    "alt": "Luna and Meeko puppy Baby Ruth at 4 weeks",
+    "detailId": "23d430b8-8d20-4c05-aa9f-8438beb63f0b",
+    "classes": [
+      "dog",
+      "baby ruth",
+      "puppy",
+      "luna puppy",
+      "meeko puppy"
+    ],
+    "centerOfFocus": {
+      "x": 85,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/luna_meeko/png/150/Luna_Meeko_BabyRuth_4weeks.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/luna_meeko/webp/900/Luna_Meeko_BabyRuth_4weeks.webp",
+        "type": "webp",
+        "width": 900,
+        "height": 599
+      },
+      {
+        "path": "/images/puppies/luna_meeko/webp/450/Luna_Meeko_BabyRuth_4weeks.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 299
+      },
+      {
+        "path": "/images/puppies/luna_meeko/webp/150/Luna_Meeko_BabyRuth_4weeks.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 99
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/900/Luna_Meeko_BabyRuth_4weeks.png",
+        "type": "png",
+        "width": 900,
+        "height": 599
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/450/Luna_Meeko_BabyRuth_4weeks.png",
+        "type": "png",
+        "width": 450,
+        "height": 299
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/150/Luna_Meeko_BabyRuth_4weeks.png",
+        "type": "png",
+        "width": 150,
+        "height": 99
+      }
+    ]
+  },
+  {
+    "name": "Luna_Meeko_Reese_5weeks",
+    "alt": "Luna and Meeko puppy Reese at 5 weeks",
+    "detailId": "8de84602-4f61-48da-bc45-1f65d8fc7b03",
+    "classes": [
+      "dog",
+      "reese",
+      "puppy",
+      "luna puppy",
+      "meeko puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/luna_meeko/png/150/Luna_Meeko_Reese_5weeks.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/luna_meeko/webp/900/Luna_Meeko_Reese_5weeks.webp",
+        "type": "webp",
+        "width": 600,
+        "height": 900
+      },
+      {
+        "path": "/images/puppies/luna_meeko/webp/450/Luna_Meeko_Reese_5weeks.webp",
+        "type": "webp",
+        "width": 300,
+        "height": 450
+      },
+      {
+        "path": "/images/puppies/luna_meeko/webp/150/Luna_Meeko_Reese_5weeks.webp",
+        "type": "webp",
+        "width": 100,
+        "height": 150
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/900/Luna_Meeko_Reese_5weeks.png",
+        "type": "png",
+        "width": 600,
+        "height": 900
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/450/Luna_Meeko_Reese_5weeks.png",
+        "type": "png",
+        "width": 300,
+        "height": 450
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/150/Luna_Meeko_Reese_5weeks.png",
+        "type": "png",
+        "width": 100,
+        "height": 150
+      }
+    ]
+  },
+  {
+    "name": "Luna_Meeko_Rolo_7weeks",
+    "alt": "Luna and Meeko puppy Rolo at 7 weeks",
+    "detailId": "454a8f02-6209-4401-8014-82e6e1be2b10",
+    "classes": [
+      "dog",
+      "rolo",
+      "puppy",
+      "luna puppy",
+      "meeko puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 25
+    },
+    "defaultPath": "/images/puppies/luna_meeko/png/150/Luna_Meeko_Rolo_7weeks.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/luna_meeko/webp/900/Luna_Meeko_Rolo_7weeks.webp",
+        "type": "webp",
+        "width": 600,
+        "height": 900
+      },
+      {
+        "path": "/images/puppies/luna_meeko/webp/450/Luna_Meeko_Rolo_7weeks.webp",
+        "type": "webp",
+        "width": 300,
+        "height": 450
+      },
+      {
+        "path": "/images/puppies/luna_meeko/webp/150/Luna_Meeko_Rolo_7weeks.webp",
+        "type": "webp",
+        "width": 100,
+        "height": 150
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/900/Luna_Meeko_Rolo_7weeks.png",
+        "type": "png",
+        "width": 600,
+        "height": 900
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/450/Luna_Meeko_Rolo_7weeks.png",
+        "type": "png",
+        "width": 300,
+        "height": 450
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/150/Luna_Meeko_Rolo_7weeks.png",
+        "type": "png",
+        "width": 100,
+        "height": 150
+      }
+    ]
+  },
+  {
+    "name": "Luna_Meeko_Reese_4weeks",
+    "alt": "Luna and Meeko puppy Reese at 4 weeks",
+    "detailId": "8de84602-4f61-48da-bc45-1f65d8fc7b03",
+    "classes": [
+      "dog",
+      "reese",
+      "puppy",
+      "luna puppy",
+      "meeko puppy"
+    ],
+    "centerOfFocus": {
+      "x": 75,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/luna_meeko/png/150/Luna_Meeko_Reese_4weeks.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/luna_meeko/webp/900/Luna_Meeko_Reese_4weeks.webp",
+        "type": "webp",
+        "width": 900,
+        "height": 599
+      },
+      {
+        "path": "/images/puppies/luna_meeko/webp/450/Luna_Meeko_Reese_4weeks.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 299
+      },
+      {
+        "path": "/images/puppies/luna_meeko/webp/150/Luna_Meeko_Reese_4weeks.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 99
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/900/Luna_Meeko_Reese_4weeks.png",
+        "type": "png",
+        "width": 900,
+        "height": 599
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/450/Luna_Meeko_Reese_4weeks.png",
+        "type": "png",
+        "width": 450,
+        "height": 299
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/150/Luna_Meeko_Reese_4weeks.png",
+        "type": "png",
+        "width": 150,
+        "height": 99
+      }
+    ]
+  },
+  {
+    "name": "Luna_Meeko_ChocolateChip_7weeks",
+    "alt": "Luna and Meeko puppy Chocolate Chip at 7 weeks",
+    "detailId": "daf0d678-65d4-40e7-934f-ab361e819a9c",
+    "classes": [
+      "dog",
+      "chocolate chip",
+      "puppy",
+      "luna puppy",
+      "meeko puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 25
+    },
+    "defaultPath": "/images/puppies/luna_meeko/png/150/Luna_Meeko_ChocolateChip_7weeks.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/luna_meeko/webp/900/Luna_Meeko_ChocolateChip_7weeks.webp",
+        "type": "webp",
+        "width": 600,
+        "height": 900
+      },
+      {
+        "path": "/images/puppies/luna_meeko/webp/450/Luna_Meeko_ChocolateChip_7weeks.webp",
+        "type": "webp",
+        "width": 300,
+        "height": 450
+      },
+      {
+        "path": "/images/puppies/luna_meeko/webp/150/Luna_Meeko_ChocolateChip_7weeks.webp",
+        "type": "webp",
+        "width": 100,
+        "height": 150
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/900/Luna_Meeko_ChocolateChip_7weeks.png",
+        "type": "png",
+        "width": 600,
+        "height": 900
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/450/Luna_Meeko_ChocolateChip_7weeks.png",
+        "type": "png",
+        "width": 300,
+        "height": 450
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/150/Luna_Meeko_ChocolateChip_7weeks.png",
+        "type": "png",
+        "width": 100,
+        "height": 150
+      }
+    ]
+  },
+  {
+    "name": "Luna_Meeko_KitKat_4weeks",
+    "alt": "Luna and Meeko puppy Kit Kat at 4 weeks",
+    "detailId": "f61a9b34-3a2b-424f-be68-24e88d6f5beb",
+    "classes": [
+      "dog",
+      "kit kat",
+      "puppy",
+      "luna puppy",
+      "meeko puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/luna_meeko/png/150/Luna_Meeko_KitKat_4weeks.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/luna_meeko/webp/900/Luna_Meeko_KitKat_4weeks.webp",
+        "type": "webp",
+        "width": 900,
+        "height": 599
+      },
+      {
+        "path": "/images/puppies/luna_meeko/webp/450/Luna_Meeko_KitKat_4weeks.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 299
+      },
+      {
+        "path": "/images/puppies/luna_meeko/webp/150/Luna_Meeko_KitKat_4weeks.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 99
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/900/Luna_Meeko_KitKat_4weeks.png",
+        "type": "png",
+        "width": 900,
+        "height": 599
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/450/Luna_Meeko_KitKat_4weeks.png",
+        "type": "png",
+        "width": 450,
+        "height": 299
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/150/Luna_Meeko_KitKat_4weeks.png",
+        "type": "png",
+        "width": 150,
+        "height": 99
+      }
+    ]
+  },
+  {
+    "name": "Luna_Meeko_AlmondJoy_7weeks",
+    "alt": "Luna and Meeko puppy Almond Joy at 7 weeks",
+    "detailId": "eb129f00-022c-4efb-b3fa-86d8e976964e",
+    "classes": [
+      "dog",
+      "almond joy",
+      "puppy",
+      "luna puppy",
+      "meeko puppy"
+    ],
+    "centerOfFocus": {
+      "x": 60,
+      "y": 75
+    },
+    "defaultPath": "/images/puppies/luna_meeko/png/150/Luna_Meeko_AlmondJoy_7weeks.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/luna_meeko/webp/900/Luna_Meeko_AlmondJoy_7weeks.webp",
+        "type": "webp",
+        "width": 900,
+        "height": 600
+      },
+      {
+        "path": "/images/puppies/luna_meeko/webp/450/Luna_Meeko_AlmondJoy_7weeks.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 300
+      },
+      {
+        "path": "/images/puppies/luna_meeko/webp/150/Luna_Meeko_AlmondJoy_7weeks.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 100
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/900/Luna_Meeko_AlmondJoy_7weeks.png",
+        "type": "png",
+        "width": 900,
+        "height": 600
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/450/Luna_Meeko_AlmondJoy_7weeks.png",
+        "type": "png",
+        "width": 450,
+        "height": 300
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/150/Luna_Meeko_AlmondJoy_7weeks.png",
+        "type": "png",
+        "width": 150,
+        "height": 100
+      }
+    ]
+  },
+  {
+    "name": "Luna_Meeko_Rolo_4weeks",
+    "alt": "Luna and Meeko puppy Rolo at 4 weeks",
+    "detailId": "454a8f02-6209-4401-8014-82e6e1be2b10",
+    "classes": [
+      "dog",
+      "rolo",
+      "puppy",
+      "luna puppy",
+      "meeko puppy"
+    ],
+    "centerOfFocus": {
+      "x": 25,
+      "y": 25
+    },
+    "defaultPath": "/images/puppies/luna_meeko/png/150/Luna_Meeko_Rolo_4weeks.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/luna_meeko/webp/900/Luna_Meeko_Rolo_4weeks.webp",
+        "type": "webp",
+        "width": 900,
+        "height": 600
+      },
+      {
+        "path": "/images/puppies/luna_meeko/webp/450/Luna_Meeko_Rolo_4weeks.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 300
+      },
+      {
+        "path": "/images/puppies/luna_meeko/webp/150/Luna_Meeko_Rolo_4weeks.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 100
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/900/Luna_Meeko_Rolo_4weeks.png",
+        "type": "png",
+        "width": 900,
+        "height": 600
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/450/Luna_Meeko_Rolo_4weeks.png",
+        "type": "png",
+        "width": 450,
+        "height": 300
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/150/Luna_Meeko_Rolo_4weeks.png",
+        "type": "png",
+        "width": 150,
+        "height": 100
+      }
+    ]
+  },
+  {
+    "name": "Luna_Meeko_BabyRuth_7weeks_3",
+    "alt": "Luna and Meeko puppy Baby Ruth at 7 weeks",
+    "detailId": "23d430b8-8d20-4c05-aa9f-8438beb63f0b",
+    "classes": [
+      "dog",
+      "baby ruth",
+      "puppy",
+      "luna puppy",
+      "meeko puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/luna_meeko/png/150/Luna_Meeko_BabyRuth_7weeks_3.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/luna_meeko/webp/900/Luna_Meeko_BabyRuth_7weeks_3.webp",
+        "type": "webp",
+        "width": 600,
+        "height": 900
+      },
+      {
+        "path": "/images/puppies/luna_meeko/webp/450/Luna_Meeko_BabyRuth_7weeks_3.webp",
+        "type": "webp",
+        "width": 300,
+        "height": 450
+      },
+      {
+        "path": "/images/puppies/luna_meeko/webp/150/Luna_Meeko_BabyRuth_7weeks_3.webp",
+        "type": "webp",
+        "width": 100,
+        "height": 150
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/900/Luna_Meeko_BabyRuth_7weeks_3.png",
+        "type": "png",
+        "width": 600,
+        "height": 900
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/450/Luna_Meeko_BabyRuth_7weeks_3.png",
+        "type": "png",
+        "width": 300,
+        "height": 450
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/150/Luna_Meeko_BabyRuth_7weeks_3.png",
+        "type": "png",
+        "width": 100,
+        "height": 150
+      }
+    ]
+  },
+  {
+    "name": "Luna_Meeko_BabyRuth_7weeks_2",
+    "alt": "Luna and Meeko puppy Baby Ruth at 7 weeks",
+    "detailId": "23d430b8-8d20-4c05-aa9f-8438beb63f0b",
+    "classes": [
+      "dog",
+      "baby ruth",
+      "puppy",
+      "luna puppy",
+      "meeko puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/luna_meeko/png/150/Luna_Meeko_BabyRuth_7weeks_2.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/luna_meeko/webp/900/Luna_Meeko_BabyRuth_7weeks_2.webp",
+        "type": "webp",
+        "width": 600,
+        "height": 900
+      },
+      {
+        "path": "/images/puppies/luna_meeko/webp/450/Luna_Meeko_BabyRuth_7weeks_2.webp",
+        "type": "webp",
+        "width": 300,
+        "height": 450
+      },
+      {
+        "path": "/images/puppies/luna_meeko/webp/150/Luna_Meeko_BabyRuth_7weeks_2.webp",
+        "type": "webp",
+        "width": 100,
+        "height": 150
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/900/Luna_Meeko_BabyRuth_7weeks_2.png",
+        "type": "png",
+        "width": 600,
+        "height": 900
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/450/Luna_Meeko_BabyRuth_7weeks_2.png",
+        "type": "png",
+        "width": 300,
+        "height": 450
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/150/Luna_Meeko_BabyRuth_7weeks_2.png",
+        "type": "png",
+        "width": 100,
+        "height": 150
+      }
+    ]
+  },
+  {
+    "name": "Luna_Meeko_Twix_4weeks",
+    "alt": "Luna and Meeko puppy Twix at 4 weeks",
+    "detailId": "8b74c40c-396d-45cd-982a-e6ab18a0d1f4",
+    "classes": [
+      "dog",
+      "twix",
+      "puppy",
+      "luna puppy",
+      "meeko puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/luna_meeko/png/150/Luna_Meeko_Twix_4weeks.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/luna_meeko/webp/900/Luna_Meeko_Twix_4weeks.webp",
+        "type": "webp",
+        "width": 900,
+        "height": 599
+      },
+      {
+        "path": "/images/puppies/luna_meeko/webp/450/Luna_Meeko_Twix_4weeks.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 299
+      },
+      {
+        "path": "/images/puppies/luna_meeko/webp/150/Luna_Meeko_Twix_4weeks.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 99
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/900/Luna_Meeko_Twix_4weeks.png",
+        "type": "png",
+        "width": 900,
+        "height": 599
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/450/Luna_Meeko_Twix_4weeks.png",
+        "type": "png",
+        "width": 450,
+        "height": 299
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/150/Luna_Meeko_Twix_4weeks.png",
+        "type": "png",
+        "width": 150,
+        "height": 99
+      }
+    ]
+  },
+  {
+    "name": "Luna_Meeko_BabyRuth_7weeks",
+    "alt": "Luna and Meeko puppy Baby Ruth at 7 weeks",
+    "detailId": "23d430b8-8d20-4c05-aa9f-8438beb63f0b",
+    "classes": [
+      "dog",
+      "baby ruth",
+      "puppy",
+      "luna puppy",
+      "meeko puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/luna_meeko/png/150/Luna_Meeko_BabyRuth_7weeks.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/luna_meeko/webp/900/Luna_Meeko_BabyRuth_7weeks.webp",
+        "type": "webp",
+        "width": 600,
+        "height": 900
+      },
+      {
+        "path": "/images/puppies/luna_meeko/webp/450/Luna_Meeko_BabyRuth_7weeks.webp",
+        "type": "webp",
+        "width": 300,
+        "height": 450
+      },
+      {
+        "path": "/images/puppies/luna_meeko/webp/150/Luna_Meeko_BabyRuth_7weeks.webp",
+        "type": "webp",
+        "width": 100,
+        "height": 150
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/900/Luna_Meeko_BabyRuth_7weeks.png",
+        "type": "png",
+        "width": 600,
+        "height": 900
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/450/Luna_Meeko_BabyRuth_7weeks.png",
+        "type": "png",
+        "width": 300,
+        "height": 450
+      },
+      {
+        "path": "/images/puppies/luna_meeko/png/150/Luna_Meeko_BabyRuth_7weeks.png",
+        "type": "png",
+        "width": 100,
+        "height": 150
+      }
+    ]
+  },
+
+  {
+    "name": "Holly_Bullet_Sage",
+    "alt": "Holly and Bullet puppy Sage",
+    "detailId": "4fd758b7-ca99-434e-8c9b-514326decf5e",
+    "classes": [
+      "dog",
+      "sage",
+      "puppy",
+      "holly puppy",
+      "bullet puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/holly_bullet/png/150/Holly_Bullet_Sage.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/holly_bullet/webp/900/Holly_Bullet_Sage.webp",
+        "type": "webp",
+        "width": 900,
+        "height": 677
+      },
+      {
+        "path": "/images/puppies/holly_bullet/webp/450/Holly_Bullet_Sage.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 338
+      },
+      {
+        "path": "/images/puppies/holly_bullet/webp/150/Holly_Bullet_Sage.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 112
+      },
+      {
+        "path": "/images/puppies/holly_bullet/png/900/Holly_Bullet_Sage.png",
+        "type": "png",
+        "width": 900,
+        "height": 677
+      },
+      {
+        "path": "/images/puppies/holly_bullet/png/450/Holly_Bullet_Sage.png",
+        "type": "png",
+        "width": 450,
+        "height": 338
+      },
+      {
+        "path": "/images/puppies/holly_bullet/png/150/Holly_Bullet_Sage.png",
+        "type": "png",
+        "width": 150,
+        "height": 112
+      }
+    ]
+  },
+  {
+    "name": "Holly_Bullet_Suzie",
+    "alt": "Holly and Bullet puppy Suzie",
+    "detailId": "c19e4919-6e09-43c0-81f4-2f22ce94604c",
+    "classes": [
+      "dog",
+      "suzie",
+      "puppy",
+      "holly puppy",
+      "bullet puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/holly_bullet/png/150/Holly_Bullet_Suzie.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/holly_bullet/webp/900/Holly_Bullet_Suzie.webp",
+        "type": "webp",
+        "width": 900,
+        "height": 677
+      },
+      {
+        "path": "/images/puppies/holly_bullet/webp/450/Holly_Bullet_Suzie.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 338
+      },
+      {
+        "path": "/images/puppies/holly_bullet/webp/150/Holly_Bullet_Suzie.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 112
+      },
+      {
+        "path": "/images/puppies/holly_bullet/png/900/Holly_Bullet_Suzie.png",
+        "type": "png",
+        "width": 900,
+        "height": 677
+      },
+      {
+        "path": "/images/puppies/holly_bullet/png/450/Holly_Bullet_Suzie.png",
+        "type": "png",
+        "width": 450,
+        "height": 338
+      },
+      {
+        "path": "/images/puppies/holly_bullet/png/150/Holly_Bullet_Suzie.png",
+        "type": "png",
+        "width": 150,
+        "height": 112
+      }
+    ]
+  },
+  {
+    "name": "Holly_Bullet_Sunny",
+    "alt": "Holly and Bullet puppy Sunny",
+    "detailId": "858a30c0-e3b8-40d0-bd77-ab1f34725ee5",
+    "classes": [
+      "dog",
+      "sunny",
+      "puppy",
+      "holly puppy",
+      "bullet puppy"
+    ],
+    "centerOfFocus": {
+      "x": 25,
+      "y": 25
+    },
+    "defaultPath": "/images/puppies/holly_bullet/png/150/Holly_Bullet_Sunny.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/holly_bullet/webp/900/Holly_Bullet_Sunny.webp",
+        "type": "webp",
+        "width": 900,
+        "height": 677
+      },
+      {
+        "path": "/images/puppies/holly_bullet/webp/450/Holly_Bullet_Sunny.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 338
+      },
+      {
+        "path": "/images/puppies/holly_bullet/webp/150/Holly_Bullet_Sunny.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 112
+      },
+      {
+        "path": "/images/puppies/holly_bullet/png/900/Holly_Bullet_Sunny.png",
+        "type": "png",
+        "width": 900,
+        "height": 677
+      },
+      {
+        "path": "/images/puppies/holly_bullet/png/450/Holly_Bullet_Sunny.png",
+        "type": "png",
+        "width": 450,
+        "height": 338
+      },
+      {
+        "path": "/images/puppies/holly_bullet/png/150/Holly_Bullet_Sunny.png",
+        "type": "png",
+        "width": 150,
+        "height": 112
+      }
+    ]
+  },
+  {
+    "name": "Holly_Bullet_Iris",
+    "alt": "Holly and Bullet puppy Iris",
+    "detailId": "7dafb173-e789-4bcf-8305-0450c8cceb4c",
+    "classes": [
+      "dog",
+      "iris",
+      "puppy",
+      "holly puppy",
+      "bullet puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/holly_bullet/png/150/Holly_Bullet_Iris.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/holly_bullet/webp/900/Holly_Bullet_Iris.webp",
+        "type": "webp",
+        "width": 900,
+        "height": 677
+      },
+      {
+        "path": "/images/puppies/holly_bullet/webp/450/Holly_Bullet_Iris.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 338
+      },
+      {
+        "path": "/images/puppies/holly_bullet/webp/150/Holly_Bullet_Iris.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 112
+      },
+      {
+        "path": "/images/puppies/holly_bullet/png/900/Holly_Bullet_Iris.png",
+        "type": "png",
+        "width": 900,
+        "height": 677
+      },
+      {
+        "path": "/images/puppies/holly_bullet/png/450/Holly_Bullet_Iris.png",
+        "type": "png",
+        "width": 450,
+        "height": 338
+      },
+      {
+        "path": "/images/puppies/holly_bullet/png/150/Holly_Bullet_Iris.png",
+        "type": "png",
+        "width": 150,
+        "height": 112
+      }
+    ]
+  },
+  {
+    "name": "Holly_Bullet_Rose",
+    "alt": "Holly and Bullet puppy Rose",
+    "detailId": "ac5a8733-8d8f-4e89-a462-9aeea2a9f045",
+    "classes": [
+      "dog",
+      "rose",
+      "puppy",
+      "holly puppy",
+      "bullet puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/holly_bullet/png/150/Holly_Bullet_Rose.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/holly_bullet/webp/900/Holly_Bullet_Rose.webp",
+        "type": "webp",
+        "width": 677,
+        "height": 900
+      },
+      {
+        "path": "/images/puppies/holly_bullet/webp/450/Holly_Bullet_Rose.webp",
+        "type": "webp",
+        "width": 338,
+        "height": 450
+      },
+      {
+        "path": "/images/puppies/holly_bullet/webp/150/Holly_Bullet_Rose.webp",
+        "type": "webp",
+        "width": 112,
+        "height": 150
+      },
+      {
+        "path": "/images/puppies/holly_bullet/png/900/Holly_Bullet_Rose.png",
+        "type": "png",
+        "width": 677,
+        "height": 900
+      },
+      {
+        "path": "/images/puppies/holly_bullet/png/450/Holly_Bullet_Rose.png",
+        "type": "png",
+        "width": 338,
+        "height": 450
+      },
+      {
+        "path": "/images/puppies/holly_bullet/png/150/Holly_Bullet_Rose.png",
+        "type": "png",
+        "width": 112,
+        "height": 150
+      }
+    ]
+  },
+  {
+    "name": "Holly_Bullet_Poppy",
+    "alt": "Holly and Bullet puppy Poppy",
+    "detailId": "0b81380c-868f-4e9e-addc-011c3e92f350",
+    "classes": [
+      "dog",
+      "poppy",
+      "puppy",
+      "holly puppy",
+      "bullet puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/holly_bullet/png/150/Holly_Bullet_Poppy.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/holly_bullet/webp/900/Holly_Bullet_Poppy.webp",
+        "type": "webp",
+        "width": 900,
+        "height": 677
+      },
+      {
+        "path": "/images/puppies/holly_bullet/webp/450/Holly_Bullet_Poppy.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 338
+      },
+      {
+        "path": "/images/puppies/holly_bullet/webp/150/Holly_Bullet_Poppy.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 112
+      },
+      {
+        "path": "/images/puppies/holly_bullet/png/900/Holly_Bullet_Poppy.png",
+        "type": "png",
+        "width": 900,
+        "height": 677
+      },
+      {
+        "path": "/images/puppies/holly_bullet/png/450/Holly_Bullet_Poppy.png",
+        "type": "png",
+        "width": 450,
+        "height": 338
+      },
+      {
+        "path": "/images/puppies/holly_bullet/png/150/Holly_Bullet_Poppy.png",
+        "type": "png",
+        "width": 150,
+        "height": 112
+      }
+    ]
+  },
+  {
+    "name": "Holly_Bullet_Peony",
+    "alt": "Holly and Bullet puppy Peony",
+    "detailId": "bbd7f2cd-dde8-482b-bdd8-e26fe9f80aea",
+    "classes": [
+      "dog",
+      "peony",
+      "puppy",
+      "holly puppy",
+      "bullet puppy"
+    ],
+    "centerOfFocus": {
+      "x": 12,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/holly_bullet/png/150/Holly_Bullet_Peony.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/holly_bullet/webp/900/Holly_Bullet_Peony.webp",
+        "type": "webp",
+        "width": 900,
+        "height": 677
+      },
+      {
+        "path": "/images/puppies/holly_bullet/webp/450/Holly_Bullet_Peony.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 338
+      },
+      {
+        "path": "/images/puppies/holly_bullet/webp/150/Holly_Bullet_Peony.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 112
+      },
+      {
+        "path": "/images/puppies/holly_bullet/png/900/Holly_Bullet_Peony.png",
+        "type": "png",
+        "width": 900,
+        "height": 677
+      },
+      {
+        "path": "/images/puppies/holly_bullet/png/450/Holly_Bullet_Peony.png",
+        "type": "png",
+        "width": 450,
+        "height": 338
+      },
+      {
+        "path": "/images/puppies/holly_bullet/png/150/Holly_Bullet_Peony.png",
+        "type": "png",
+        "width": 150,
+        "height": 112
+      }
+    ]
+  },
+  {
+    "name": "Holly_Bullet_Cosmos",
+    "alt": "Holly and Bullet puppy Cosmos",
+    "detailId": "8ac3f9fa-ca05-487e-b728-e23c15a416c5",
+    "classes": [
+      "dog",
+      "cosmos",
+      "puppy",
+      "holly puppy",
+      "bullet puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/holly_bullet/png/150/Holly_Bullet_Cosmos.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/holly_bullet/webp/900/Holly_Bullet_Cosmos.webp",
+        "type": "webp",
+        "width": 900,
+        "height": 677
+      },
+      {
+        "path": "/images/puppies/holly_bullet/webp/450/Holly_Bullet_Cosmos.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 338
+      },
+      {
+        "path": "/images/puppies/holly_bullet/webp/150/Holly_Bullet_Cosmos.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 112
+      },
+      {
+        "path": "/images/puppies/holly_bullet/png/900/Holly_Bullet_Cosmos.png",
+        "type": "png",
+        "width": 900,
+        "height": 677
+      },
+      {
+        "path": "/images/puppies/holly_bullet/png/450/Holly_Bullet_Cosmos.png",
+        "type": "png",
+        "width": 450,
+        "height": 338
+      },
+      {
+        "path": "/images/puppies/holly_bullet/png/150/Holly_Bullet_Cosmos.png",
+        "type": "png",
+        "width": 150,
+        "height": 112
+      }
+    ]
+  },
+  {
+    "name": "Holly_Bullet_Lavender",
+    "alt": "Holly and Bullet puppy Lavender",
+    "detailId": "9bd37990-f82c-4226-a74f-f0b528a8ac47",
+    "classes": [
+      "dog",
+      "lavender",
+      "puppy",
+      "holly puppy",
+      "bullet puppy"
+    ],
+    "centerOfFocus": {
+      "x": 50,
+      "y": 50
+    },
+    "defaultPath": "/images/puppies/holly_bullet/png/150/Holly_Bullet_Lavender.png",
+    "imageSet": [
+      {
+        "path": "/images/puppies/holly_bullet/webp/900/Holly_Bullet_Lavender.webp",
+        "type": "webp",
+        "width": 900,
+        "height": 677
+      },
+      {
+        "path": "/images/puppies/holly_bullet/webp/450/Holly_Bullet_Lavender.webp",
+        "type": "webp",
+        "width": 450,
+        "height": 338
+      },
+      {
+        "path": "/images/puppies/holly_bullet/webp/150/Holly_Bullet_Lavender.webp",
+        "type": "webp",
+        "width": 150,
+        "height": 112
+      },
+      {
+        "path": "/images/puppies/holly_bullet/png/900/Holly_Bullet_Lavender.png",
+        "type": "png",
+        "width": 900,
+        "height": 677
+      },
+      {
+        "path": "/images/puppies/holly_bullet/png/450/Holly_Bullet_Lavender.png",
+        "type": "png",
+        "width": 450,
+        "height": 338
+      },
+      {
+        "path": "/images/puppies/holly_bullet/png/150/Holly_Bullet_Lavender.png",
+        "type": "png",
+        "width": 150,
+        "height": 112
       }
     ]
   }

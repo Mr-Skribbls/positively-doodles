@@ -151,7 +151,7 @@ export interface LitterInfo {
   puppyBreed: LitterBreed,
   expectedCoatTypes: CoatType[],
   expectedColors: CoatColorPatterns[],
-  startingPrice: number,
+  startingPrice: number | 'TBD',
   reservationFee: number,
   puppies?: Puppy[]
 }
@@ -593,7 +593,7 @@ export const puppies: Puppy[] = [
     description: '',
     imageName: 'Sweetmeat_02',
     priceAboveStarting: 0,
-  }, {    // Noelle
+  }, { // Noelle
     id: '901f2d9f-ea8d-412b-a0fd-265d41a98d6f',
     gender: 'F',
     description: 'Noelle is red.',
@@ -665,73 +665,145 @@ export const puppies: Puppy[] = [
     name: 'Frost',
     status: PuppyStatus.Sold,
     priceAboveStarting: 0,
-  },
-
-  {
+  }, { // Almond Joy
     id: 'ab83c495-5bc2-4d52-938f-f863baa2a5ab',
     gender: 'F',
     description: '',
     imageName: 'Luna_Meeko_AlmondJoy_2Days',
     name: 'Almond Joy',
-    status: PuppyStatus.Available,
+    status: PuppyStatus.Sold,
     priceAboveStarting: 0,
-  }, {
+  }, { // Baby Ruth
     id: '91cad84b-a3d8-4f2d-939d-8394c723d293',
     gender: 'F',
     description: '',
     imageName: 'Luna_Meeko_BabyRuth_2Days',
     name: ' Baby Ruth',
-    status: PuppyStatus.Available,
+    status: PuppyStatus.Sold,
     priceAboveStarting: 0,
-  }, {
+  }, { // Chocolate Chip
     id: 'ef2c0e5d-d484-4682-a433-55f229a3f709',
     gender: 'M',
     description: '',
     imageName: 'Luna_Meeko_ChocolateChip_2Days',
     name: 'Chocolate Chip',
-    status: PuppyStatus.Available,
+    status: PuppyStatus.Sold,
     priceAboveStarting: 0,
-  }, {
+  }, { // Heath
     id: '8e76c191-cbf6-4fab-865b-5d5604499959',
     gender: 'M',
     description: '',
     imageName: 'Luna_Meeko_Heath_2Days',
     name: 'Heath',
-    status: PuppyStatus.Available,
+    status: PuppyStatus.Sold,
     priceAboveStarting: 0,
-  }, {
+  }, { // Kit Kat
     id: '8eb3b009-8279-41d0-bdf4-138ec8dcd18c',
     gender: 'F',
     description: '',
     imageName: 'Luna_Meeko_KitKat_2Days',
     name: 'Kit Kat',
-    status: PuppyStatus.Available,
+    status: PuppyStatus.Sold,
     priceAboveStarting: 0,
-  }, {
+  }, { // Reese
     id: 'c6735091-d885-4ea5-8b03-3a5af1fdfd5c',
     gender: 'F',
     description: '',
     imageName: 'Luna_Meeko_Reese_2Days',
     name: 'Reese',
-    status: PuppyStatus.Available,
+    status: PuppyStatus.Sold,
     priceAboveStarting: 0,
-  }, {
+  }, { // Rolo
     id: 'c1e058c9-b3aa-46e3-8804-f3ec1b3b53ec',
     gender: 'M',
     description: '',
     imageName: 'Luna_Meeko_Rolo_2Days',
     name: 'Rolo',
-    status: PuppyStatus.Available,
+    status: PuppyStatus.Sold,
     priceAboveStarting: 0,
-  }, {
+  }, { // Twix
     id: '29a854e7-4a06-4d3c-843f-f40fb6231344',
     gender: 'F',
     description: '',
     imageName: 'Luna_Meeko_Twix_2Days',
     name: 'Twix',
-    status: PuppyStatus.Available,
+    status: PuppyStatus.Sold,
     priceAboveStarting: 0,
   },
+
+  {    // Sage
+    id: 'b4b480e8-8c49-4d35-a1df-997b2d639f4f',
+    gender: 'M',
+    description: '',
+    imageName: 'Holly_Bullet_Sage',
+    name: 'Sage',
+    status: PuppyStatus.Available,
+    priceAboveStarting: 0,
+  }, { // Suzie
+    id: '7dbaf20e-8e38-4bd3-b715-44a6af470b48',
+    gender: 'F',
+    description: '',
+    imageName: 'Holly_Bullet_Suzie',
+    name: 'Suzie',
+    status: PuppyStatus.Available,
+    priceAboveStarting: 0,
+  }, { // Sunny
+    id: '02e1e440-02a2-44db-9007-aa65824b5d3a',
+    gender: 'M',
+    description: '',
+    imageName: 'Holly_Bullet_Sunny',
+    name: 'Sunny',
+    status: PuppyStatus.Available,
+    priceAboveStarting: 0,
+  }, { // Iris
+    id: '840eee14-8c73-4e99-aa72-4b8699ac9598',
+    gender: 'F',
+    description: '',
+    imageName: 'Holly_Bullet_Iris',
+    name: 'Iris',
+    status: PuppyStatus.Available,
+    priceAboveStarting: 0,
+  }, { // Rose
+    id: 'fb4d017c-ef76-4082-9872-705d81b49e38',
+    gender: 'F',
+    description: '',
+    imageName: 'Holly_Bullet_Rose',
+    name: 'Rose',
+    status: PuppyStatus.Available,
+    priceAboveStarting: 0,
+  }, { // Poppy
+    id: '0dfa39e0-ee89-4832-801e-c5c22193ed45',
+    gender: 'F',
+    description: '',
+    imageName: 'Holly_Bullet_Poppy',
+    name: 'Poppy',
+    status: PuppyStatus.Available,
+    priceAboveStarting: 0,
+  }, { // Peony
+    id: 'c58e90aa-5c08-48ff-8471-6a6f4d4c47e7',
+    gender: 'F',
+    description: '',
+    imageName: 'Holly_Bullet_Peony',
+    name: 'Peony',
+    status: PuppyStatus.Available,
+    priceAboveStarting: 0,
+  }, { // Cosmos
+    id: '56fc8170-2b7b-47a8-a3c9-ba28904644e3',
+    gender: 'M',
+    description: '',
+    imageName: 'Holly_Bullet_Cosmos',
+    name: 'Cosmos',
+    status: PuppyStatus.Available,
+    priceAboveStarting: 0,
+  }, { // Lavender
+    id: '1cafe87c-4e78-4b94-a254-0d7d635f34f9',
+    gender: 'F',
+    description: '',
+    imageName: 'Holly_Bullet_Lavender',
+    name: 'Lavender',
+    status: PuppyStatus.Available,
+    priceAboveStarting: 0,
+  }
 ];
 
 export const litters:LitterInfo[] = [
@@ -893,7 +965,7 @@ export const litters:LitterInfo[] = [
     id: '',
     size: 8,
     expectedPuppySize: '55 lbs',
-    state: LitterState.Puppy,
+    state: LitterState.Complete,
     puppyBreed: {
       type: BreedType.Bernedoodle,
       expectedSizes: [
@@ -924,11 +996,11 @@ export const litters:LitterInfo[] = [
   }, { // Holly - Bullet
     dam: findDog('Holly', dogs),
     sire: findDog('Bullet', dogs),
-    dueDate: new Date(2026, 1, 28),
+    dueDate: new Date(2026, 4, 6),
     id: '',
-    size: 8,
+    size: 9,
     expectedPuppySize: '40 lbs',
-    state: LitterState.Expected,
+    state: LitterState.Puppy,
     puppyBreed: {
       type: BreedType.Cavapoo,
       expectedSizes: [
@@ -946,32 +1018,18 @@ export const litters:LitterInfo[] = [
       CoatColorPatterns.BlackTanPoints,
     ],
     reservationFee: 500,
-    startingPrice: 2700,
-  }, { // Liberty - Bogey
-    dam: findDog('Liberty', dogs),
-    sire: findDog('Bogey', dogs),
-    dueDate: new Date(2026, 1, 28),
-    id: '',
-    size: 8,
-    expectedPuppySize: '35 lbs',
-    state: LitterState.Expected,
-    puppyBreed: {
-      type: BreedType.Bernedoodle,
-      expectedSizes: [
-        BreedSize.Mini,
-      ],
-      class: BreedClass.Multigeneration,
-    },
-    expectedCoatTypes: [
-      CoatType.Wavy,
-    ],
-    expectedColors: [
-      CoatColorPatterns.TraditionalTriColor,
-      CoatColorPatterns.Red,
-      CoatColorPatterns.Phantom,
-      CoatColorPatterns.Sable,
-    ],
-    reservationFee: 500,
-    startingPrice: 2500,
+    startingPrice: 3000,
+    puppies: puppies.filter((puppy) => [
+      'b4b480e8-8c49-4d35-a1df-997b2d639f4f',
+      '7dbaf20e-8e38-4bd3-b715-44a6af470b48',
+      '02e1e440-02a2-44db-9007-aa65824b5d3a',
+      '840eee14-8c73-4e99-aa72-4b8699ac9598',
+      'fb4d017c-ef76-4082-9872-705d81b49e38',
+      '0dfa39e0-ee89-4832-801e-c5c22193ed45',
+      'c58e90aa-5c08-48ff-8471-6a6f4d4c47e7',
+      '56fc8170-2b7b-47a8-a3c9-ba28904644e3',
+      '1cafe87c-4e78-4b94-a254-0d7d635f34f9',
+    ].includes(puppy.id)),
+    goHomeDate: new Date(2026, 2, 24),
   }
 ];

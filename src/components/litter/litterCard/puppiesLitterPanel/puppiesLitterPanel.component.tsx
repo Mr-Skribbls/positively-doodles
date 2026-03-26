@@ -2,7 +2,7 @@ import { FC, useState } from 'react';
 
 import './puppiesLitterPanel.css';
 import { LitterInfo, Puppy, PuppyStatus } from '../../../../dogInfo';
-import { isEmpty, isNil } from 'lodash';
+import { isEmpty, isNil, isString } from 'lodash';
 import Modal from '../../../modal/modal.component';
 import ModalGallery from '../../../modal/templates/modalGallery/modalGallery.component';
 import useLitter from '../../../../hooks/useLitter';
@@ -17,7 +17,10 @@ const puppyStatus = (puppy: Puppy) => {
   return puppy.status === PuppyStatus.Reserved || puppy.status === PuppyStatus.Sold ? 'reserved' : 'available';
 }
 
-const puppyPrice = (puppy: Puppy, startingPrice: number) => {
+const puppyPrice = (puppy: Puppy, startingPrice: number | string) => {
+  if(isString(startingPrice)) {
+    return `Price: ${startingPrice}`;
+  }
   return puppy.status === PuppyStatus.Available ? `$${startingPrice + puppy.priceAboveStarting}` : puppy.status;
 }
 
