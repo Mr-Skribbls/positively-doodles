@@ -738,7 +738,7 @@ export const puppies: Puppy[] = [
     imageName: 'Holly_Bullet_Sage',
     name: 'Sage',
     status: PuppyStatus.Available,
-    priceAboveStarting: 0,
+    priceAboveStarting: 500,
   }, { // Suzie
     id: '7dbaf20e-8e38-4bd3-b715-44a6af470b48',
     gender: 'F',
@@ -746,7 +746,7 @@ export const puppies: Puppy[] = [
     imageName: 'Holly_Bullet_Suzie',
     name: 'Suzie',
     status: PuppyStatus.Available,
-    priceAboveStarting: 0,
+    priceAboveStarting: 500,
   }, { // Sunny
     id: '02e1e440-02a2-44db-9007-aa65824b5d3a',
     gender: 'M',
@@ -770,7 +770,7 @@ export const puppies: Puppy[] = [
     imageName: 'Holly_Bullet_Rose',
     name: 'Rose',
     status: PuppyStatus.Available,
-    priceAboveStarting: 0,
+    priceAboveStarting: 500,
   }, { // Poppy
     id: '0dfa39e0-ee89-4832-801e-c5c22193ed45',
     gender: 'F',
@@ -794,7 +794,7 @@ export const puppies: Puppy[] = [
     imageName: 'Holly_Bullet_Cosmos',
     name: 'Cosmos',
     status: PuppyStatus.Available,
-    priceAboveStarting: 0,
+    priceAboveStarting: 500,
   }, { // Lavender
     id: '1cafe87c-4e78-4b94-a254-0d7d635f34f9',
     gender: 'F',
@@ -1018,7 +1018,7 @@ export const litters:LitterInfo[] = [
       CoatColorPatterns.BlackTanPoints,
     ],
     reservationFee: 500,
-    startingPrice: 3000,
+    startingPrice: 2500,
     puppies: puppies.filter((puppy) => [
       'b4b480e8-8c49-4d35-a1df-997b2d639f4f',
       '7dbaf20e-8e38-4bd3-b715-44a6af470b48',
