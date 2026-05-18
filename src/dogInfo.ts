@@ -737,7 +737,7 @@ export const puppies: Puppy[] = [
     description: '',
     imageName: 'Holly_Bullet_Sage',
     name: 'Sage',
-    status: PuppyStatus.Available,
+    status: PuppyStatus.Sold,
     priceAboveStarting: 500,
   }, { // Suzie
     id: '7dbaf20e-8e38-4bd3-b715-44a6af470b48',
@@ -753,7 +753,7 @@ export const puppies: Puppy[] = [
     description: '',
     imageName: 'Holly_Bullet_Sunny',
     name: 'Sunny',
-    status: PuppyStatus.Available,
+    status: PuppyStatus.Sold,
     priceAboveStarting: 0,
   }, { // Iris
     id: '840eee14-8c73-4e99-aa72-4b8699ac9598',
@@ -761,7 +761,7 @@ export const puppies: Puppy[] = [
     description: '',
     imageName: 'Holly_Bullet_Iris',
     name: 'Iris',
-    status: PuppyStatus.Available,
+    status: PuppyStatus.Sold,
     priceAboveStarting: 0,
   }, { // Rose
     id: 'fb4d017c-ef76-4082-9872-705d81b49e38',
@@ -769,7 +769,7 @@ export const puppies: Puppy[] = [
     description: '',
     imageName: 'Holly_Bullet_Rose',
     name: 'Rose',
-    status: PuppyStatus.Available,
+    status: PuppyStatus.Sold,
     priceAboveStarting: 500,
   }, { // Poppy
     id: '0dfa39e0-ee89-4832-801e-c5c22193ed45',
@@ -777,7 +777,7 @@ export const puppies: Puppy[] = [
     description: '',
     imageName: 'Holly_Bullet_Poppy',
     name: 'Poppy',
-    status: PuppyStatus.Available,
+    status: PuppyStatus.Sold,
     priceAboveStarting: 0,
   }, { // Peony
     id: 'c58e90aa-5c08-48ff-8471-6a6f4d4c47e7',
@@ -785,7 +785,7 @@ export const puppies: Puppy[] = [
     description: '',
     imageName: 'Holly_Bullet_Peony',
     name: 'Peony',
-    status: PuppyStatus.Available,
+    status: PuppyStatus.Sold,
     priceAboveStarting: 0,
   }, { // Cosmos
     id: '56fc8170-2b7b-47a8-a3c9-ba28904644e3',
@@ -793,7 +793,7 @@ export const puppies: Puppy[] = [
     description: '',
     imageName: 'Holly_Bullet_Cosmos',
     name: 'Cosmos',
-    status: PuppyStatus.Available,
+    status: PuppyStatus.Sold,
     priceAboveStarting: 500,
   }, { // Lavender
     id: '1cafe87c-4e78-4b94-a254-0d7d635f34f9',
@@ -801,7 +801,7 @@ export const puppies: Puppy[] = [
     description: '',
     imageName: 'Holly_Bullet_Lavender',
     name: 'Lavender',
-    status: PuppyStatus.Available,
+    status: PuppyStatus.Sold,
     priceAboveStarting: 0,
   }
 ];
