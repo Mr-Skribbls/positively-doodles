@@ -745,7 +745,7 @@ export const puppies: Puppy[] = [
     description: '',
     imageName: 'Holly_Bullet_Suzie',
     name: 'Suzie',
-    status: PuppyStatus.Available,
+    status: PuppyStatus.Sold,
     priceAboveStarting: 500,
   }, { // Sunny
     id: '02e1e440-02a2-44db-9007-aa65824b5d3a',
@@ -1000,7 +1000,7 @@ export const litters:LitterInfo[] = [
     id: '',
     size: 9,
     expectedPuppySize: '40 lbs',
-    state: LitterState.Puppy,
+    state: LitterState.Complete,
     puppyBreed: {
       type: BreedType.Cavapoo,
       expectedSizes: [
