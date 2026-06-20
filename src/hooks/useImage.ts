@@ -59,6 +59,26 @@ const findImageDefinition = (imageDefinitions: ImageDefinition[]) => ({
   return imageDefinitions.find((imageDefinition) => {
     return filters.every((filter) => filter(imageDefinition));
   });
+};
+
+const requestSupabaseImage = async (fileId: string) => {
+  const url = `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/get-file?file_id=${fileId}`;
+  const response = await fetch(url, {
+    headers: { 'x-api-key': import.meta.env.VITE_SUPABASE_API_KEY },
+  });
+  const blob = await response.blob();
+  const objectUrl = URL.createObjectURL(blob);
+  return objectUrl;
+};
+
+const requestSupabaseAnimalData = async (animalId: number) => {
+  // https://sosuvxhcazxhojbnrrpu.supabase.co/functions/v1/cdn_get_animal
+  const url = `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/cdn_get_animal?animal_id=${animalId}`;
+  const response = await fetch(url, {
+    headers: { 'x-api-key': import.meta.env.VITE_SUPABASE_API_KEY },
+  });
+  const animal = await response.json();
+  return animal;
 }
 
 const useImage = () => {
@@ -67,6 +87,8 @@ const useImage = () => {
     getImageDataByClassName,
     getImageDataByDetailId,
     findImageDefinition,
+    requestSupabaseImage,
+    requestSupabaseAnimalData,
   }
 }
 
