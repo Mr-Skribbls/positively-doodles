@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export interface BreederCentralImage {
   animal_id: number;
@@ -70,27 +70,32 @@ const useBreederCentral = (apiUrl: string, apiKey: string) => {
   const [ animals, setAnimals ] = useState<BreederCentralAnimal[]>([]);
   const [ animalImages, setAnimalImages ] = useState<BreederCentralImage[]>([]);
 
-  const getAnimals = async () => {
-    const cached = readCachedAnimals();
-    const animals = cached ?? await requestAnimals(apiUrl, apiKey);
-    if (!cached) {
-      writeCachedAnimals(animals);
-    }
-    setAnimals(animals);
+  useEffect(() => {
+    let cancelled = false;
 
-    const animalImages = animals.reduce((animalImages, animal) => {
-      if (animal.images?.length) {
-        animalImages = [
-          ...animalImages,
-          ...animal.images,
-        ];
+    const load = async () => {
+      const cached = readCachedAnimals();
+      const fetchedAnimals = cached ?? await requestAnimals(apiUrl, apiKey);
+      if (!cached) {
+        writeCachedAnimals(fetchedAnimals);
       }
-      return animalImages;
-    }, [] as BreederCentralImage[]);
-    setAnimalImages(animalImages);
-  };
+      if (cancelled) return;
 
-  getAnimals();
+      setAnimals(fetchedAnimals);
+
+      const flattenedImages = fetchedAnimals.reduce((acc, animal) => {
+        if (animal.images?.length) {
+          acc = [...acc, ...animal.images];
+        }
+        return acc;
+      }, [] as BreederCentralImage[]);
+      setAnimalImages(flattenedImages);
+    };
+
+    load();
+
+    return () => { cancelled = true; };
+  }, [apiUrl, apiKey]);
 
   return {
     animals,
