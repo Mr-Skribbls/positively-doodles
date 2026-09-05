@@ -31,13 +31,51 @@ export const requestAnimals = async (apiUrl: string, apiKey: string): Promise<Br
   return animals;
 };
 
+const CACHE_KEY = 'breeder-central-animals';
+const CACHE_TTL_MS = 60 * 60 * 1000;
+
+interface AnimalCache {
+  data: BreederCentralAnimal[];
+  expiresAt: number;
+}
+
+const readCachedAnimals = (): BreederCentralAnimal[] | null => {
+  try {
+    const raw = localStorage.getItem(CACHE_KEY);
+    if (!raw) return null;
+    const cache: AnimalCache = JSON.parse(raw);
+    if (cache.expiresAt > Date.now()) {
+      return cache.data;
+    }
+    localStorage.removeItem(CACHE_KEY);
+  } catch {
+    // ignore storage read errors
+  }
+  return null;
+};
+
+const writeCachedAnimals = (animals: BreederCentralAnimal[]) => {
+  const cache: AnimalCache = {
+    data: animals,
+    expiresAt: Date.now() + CACHE_TTL_MS,
+  };
+  try {
+    localStorage.setItem(CACHE_KEY, JSON.stringify(cache));
+  } catch {
+    // ignore storage write errors
+  }
+};
+
 const useBreederCentral = (apiUrl: string, apiKey: string) => {
   const [ animals, setAnimals ] = useState<BreederCentralAnimal[]>([]);
   const [ animalImages, setAnimalImages ] = useState<BreederCentralImage[]>([]);
 
-
   const getAnimals = async () => {
-    const animals = await requestAnimals(apiUrl, apiKey);
+    const cached = readCachedAnimals();
+    const animals = cached ?? await requestAnimals(apiUrl, apiKey);
+    if (!cached) {
+      writeCachedAnimals(animals);
+    }
     setAnimals(animals);
 
     const animalImages = animals.reduce((animalImages, animal) => {
@@ -51,6 +89,8 @@ const useBreederCentral = (apiUrl: string, apiKey: string) => {
     }, [] as BreederCentralImage[]);
     setAnimalImages(animalImages);
   };
+
+  getAnimals();
 
   return {
     animals,
