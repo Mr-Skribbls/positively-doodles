@@ -1,52 +1,51 @@
-import { FC, useEffect, useState } from 'react';
-import { LitterImageDetail } from '../../../../hooks/useImageDetail';
-import useLitter from '../../../../hooks/useLitter';
-import { compact, isEmpty } from 'lodash';
+import { FC, useMemo } from 'react';
 import ProgramDescription from '../../../contentComponents/static/programDescription';
 import { Link } from 'react-router-dom';
 import SimpleCarousel from '../../../carousels/simpleCarousel/simpleCarousel';
+import { BreederCentralOffspringGroup } from '@breeder-central/ui';
+import useAnimalDetails from '../../../../hooks/useAnimalDetails';
+import useLitter from '../../../../hooks/useLitter';
 
 
 interface ModalLitterImageDetailProps {
-  litterImageDetail: LitterImageDetail,
+  litter: BreederCentralOffspringGroup;
 }
 
 const ModalLitterImageDetail:FC<ModalLitterImageDetailProps> = ({
-  litterImageDetail,
+  litter,
 }) => {
-  const [ title, setTitle ] = useState<string>('');
-  const [ puppyImageNames, setPuppyImageNames ] = useState<string[]>([]);
-  const { litterDescription } = useLitter();
+  const { animalImages } = useAnimalDetails();
+  const {
+    litterDescription2: litterDescription,
+    litterPuppies,
+    litterParentText: litterParents,
+  } = useLitter(litter);
 
-  useEffect(() => {
-    const dam = litterImageDetail.record?.dam.name;
-    const sire = litterImageDetail.record?.sire.name;
-    const title = compact([dam, sire]).join(' and ') + ' Litter';
-    setTitle(title);
-
-    const puppyImageNames = (litterImageDetail.record?.puppies || []).map((puppy) => puppy.imageName);
-    setPuppyImageNames(puppyImageNames);
-  }, [litterImageDetail]);
+  const litterPuppyImages = useMemo(() => {
+    const litterPuppyIds = litterPuppies.map((puppy) => puppy.id);
+    return animalImages.filter((image) => litterPuppyIds.includes(image.animalId));
+  }, [animalImages, litterPuppies]);
 
   return (
     <article className='info'>
-      <h1>{title}</h1>
-      {litterImageDetail.record && <p>{
-        litterDescription(litterImageDetail.record)  
-      }</p>}
-      <section>
+      <h1>{(litterParents + ' Litter').trim()}</h1>
+
+      { litterDescription }
+
+      { litter && <section>
         <h3>About our program</h3>
         <ProgramDescription />
         <Link to='../available-puppies'>See available puppies</Link>
-      </section>
-      {!isEmpty(puppyImageNames) && <section>
+      </section> }
+
+      { litterPuppyImages.length > 0 && <section>
         <h3>Puppies in this litter</h3>
-        <div className="carousel-container">
-          <SimpleCarousel imageNames={puppyImageNames}></SimpleCarousel>
+        <div className='carousel-container'>
+          <SimpleCarousel images={litterPuppyImages} />
         </div>
-      </section>}
+      </section> }
     </article>
-  )
+  );
 };
 
 export default ModalLitterImageDetail;

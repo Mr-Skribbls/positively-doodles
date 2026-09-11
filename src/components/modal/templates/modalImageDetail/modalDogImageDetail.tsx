@@ -1,81 +1,86 @@
-import { FC, useEffect, useState } from 'react';
-import { DogImageDetail } from '../../../../hooks/useImageDetail';
-import useImage from '../../../../hooks/useImage';
-import { isEmpty, isNil } from 'lodash';
+import { useMemo } from 'react';
+import { BreederCentralAnimal } from '@breeder-central/ui';
 import SimpleCarousel from '../../../carousels/simpleCarousel/simpleCarousel';
-import { Puppy } from '../../../../dogInfo';
+import useAnimalDetails from '../../../../hooks/useAnimalDetails';
+import useLitter from '../../../../hooks/useLitter';
+import ProgramDescription from '../../../contentComponents/static/programDescription';
+import { Link } from 'react-router-dom';
 
 interface ModalDogImageDetailProps {
-  dogImageDetail: DogImageDetail,
+  dog: BreederCentralAnimal;
 }
 
-const ModalDogImageDetail:FC<ModalDogImageDetailProps> = ({
-  dogImageDetail,
-}) => {
-  const [ puppyImageNames, setPuppyImageNames ] = useState<string[]>([]);
-  const { getImageDataByDetailId, getImageDataByName } = useImage();
-
-  useEffect(() => {
-    let puppies: Puppy[] = [];
-    puppies = dogImageDetail.litters.reduce((puppies, litter) => {
-      if(isNil(litter.puppies)) return puppies
-      puppies = [...puppies, ...litter.puppies];
-      return puppies;
-    }, puppies);
-
-    const puppyImageNames = puppies.map((puppy) => puppy.imageName);
-    setPuppyImageNames(puppyImageNames)
-  }, [ dogImageDetail, getImageDataByDetailId, getImageDataByName ]);
+const ModalDogImageDetail = ({
+  dog,
+}: ModalDogImageDetailProps) => {
+  const { animalImages, offspringGroups } = useAnimalDetails();
   
-  const getOFALink = (ofaId: number): string => `https://ofa.org/advanced-search/?appnum=${ofaId}`
+  // The litter the dog is in (dog is child).
+  const dogLitter = useMemo(() => {
+    return offspringGroups.find((group) => group.animals.filter((animal) => animal.role === 'Child').map((animal) => animal.animalId).includes(dog.id)) ?? null;
+  }, [dog, offspringGroups]);
+  const { litterDescription2: litterDescription } = useLitter(dogLitter);
 
-  const getGeneticTestingMessage = (dogImageDetail: DogImageDetail | undefined): JSX.Element | undefined => {
-    const results = dogImageDetail?.record?.testing?.genetics?.results;
-    if(!isNil(results)) {
-      return (
-        <p>
-          {results} If you would like to see her results please contact me.
-        </p>
-      )
-    }
-  }
+  const dogLitterImages = useMemo(() => {
+    const litterMateIds = dogLitter?.animals
+      .filter((animal) => 
+           animal.role === 'Child' 
+        && animal.animalId !== dog.id)
+      .map((animal) => animal.animalId)
+      ?? [];
+    return animalImages.filter((image) => litterMateIds.includes(image.animalId));
+  }, [animalImages, dog.id, dogLitter?.animals]);
 
-  const getOFATestingMessage = (dogImageDetail: DogImageDetail | undefined): JSX.Element | undefined => {
-    const ofaId = dogImageDetail?.record?.testing?.OFA?.ofaId;
-    const prelimId = dogImageDetail?.record?.testing?.OFA?.ofaPreliminaryId;
+  // The litters the dog has had. (dog is parent)
+  const litters = useMemo(() => {
+    return offspringGroups.filter((group) => group.animals.filter((animal) => ['Mother', 'Father'].includes(animal.role)).map((animal) => animal.animalId).includes(dog.id)) ?? null;
+  }, [dog, offspringGroups]);
 
-    const getLink = (ofaId: number | undefined) => !isNil(ofaId) ? <a target='_blank' href={getOFALink(ofaId)}>here</a> : undefined;
+  const puppyImages = useMemo(() => {
+    const puppyIds = litters.reduce((puppyIds, litter) => {
+      const puppies = litter.animals.filter((animal) => animal.role === 'Child');
+      puppyIds = [
+        ...puppyIds,
+        ...puppies.map((puppy) => puppy.animalId),
+      ];
+      return puppyIds;
+    }, [] as number[]);
 
-    if (!isNil(ofaId) || !isNil(prelimId)) {
-      const ofaLink = getLink(ofaId);
-      const prelimLink = getLink(prelimId);
-      
-      const ofaMessage = !isNil(ofaLink) ? <span>If you would like to see OFA testing results click {ofaLink}. </span> : undefined;
-      const prelimMessage = !isNil(prelimLink) ? <span>Click {prelimLink} to see preliminaries. </span> : undefined;
-
-      return (
-        <p>
-          {ofaMessage}
-          {prelimMessage}
-        </p>
-      )
-    }
-  }
+    return animalImages.filter((image) => puppyIds.includes(image.animalId));
+  }, [animalImages, litters]);
 
   return (
-    <div className='info'>
-      <h1>{dogImageDetail?.record?.name}</h1>
-      <p>{dogImageDetail?.record?.description}</p>
-      { getGeneticTestingMessage(dogImageDetail) }
-      { getOFATestingMessage(dogImageDetail) }
-      {!isEmpty(puppyImageNames) && <>
-        <h3>Past Puppies</h3>
-        <div className='carousel-container'>
-          <SimpleCarousel imageNames={puppyImageNames}></SimpleCarousel>
+    <article className='info'>
+      <h1>{ dog.name }</h1>
+      <p>{ dog.description }</p>
+
+      { dog.state === 'Puppy' && <section>
+        <h3>About the litter</h3>
+        { litterDescription }
+      </section> }
+
+      { dogLitterImages.length > 0 && <>
+        <h3>Litter Mates</h3>
+        <div className="carousel-container">
+          <SimpleCarousel images={dogLitterImages} />
         </div>
-      </>}
-    </div>
-  )
+      </> }
+
+      { puppyImages.length > 0 && <>
+        <h3>Puppies</h3>
+        <div className="carousel-container">
+          <SimpleCarousel images={puppyImages} />
+        </div>
+      </> }
+
+      <section>
+        <h3>About our program</h3>
+        <ProgramDescription />
+        <Link to='../available-puppies'>See available puppies</Link>
+      </section>
+
+    </article>
+  );
 }
 
 export default ModalDogImageDetail;
