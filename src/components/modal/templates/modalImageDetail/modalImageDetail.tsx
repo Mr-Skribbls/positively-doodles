@@ -4,7 +4,7 @@ import { orderBy } from 'lodash';
 import ShowcaseCarousel from '../../../carousels/showcaseCarousel/showcaseCarousel';
 import ContentBlock from '../../../contentBlock/contentBlock';
 import { AnimalImage, OffspringImage } from '@breeder-central/ui';
-import useAnimalDetails from '../../../../hooks/useAnimalDetails';
+import useAnimalDetails from '../../../../contexts/animalDetails/animalDetails.context';
 import ModalLitterImageDetail from './modalLitterImageDetail';
 import ModalDogImageDetail from './modalDogImageDetail';
 

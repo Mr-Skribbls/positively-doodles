@@ -3,7 +3,7 @@ import ProgramDescription from '../../../contentComponents/static/programDescrip
 import { Link } from 'react-router-dom';
 import SimpleCarousel from '../../../carousels/simpleCarousel/simpleCarousel';
 import { BreederCentralOffspringGroup } from '@breeder-central/ui';
-import useAnimalDetails from '../../../../hooks/useAnimalDetails';
+import useAnimalDetails from '../../../../contexts/animalDetails/animalDetails.context';
 import useLitter from '../../../../hooks/useLitter';
 
 

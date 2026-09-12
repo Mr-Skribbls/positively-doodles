@@ -2,7 +2,7 @@ import { compact } from 'lodash';
 import { litters, LitterInfo, LitterState } from "../dogInfo";
 import useDateHelper from "./useDateHelper/useDateHelper";
 import { BreederCentralOffspringGroup } from '@breeder-central/ui';
-import useAnimalDetails from './useAnimalDetails';
+import useAnimalDetails from '../contexts/animalDetails/animalDetails.context';
 import { useMemo } from 'react';
 
 const DELIMITER = '_';

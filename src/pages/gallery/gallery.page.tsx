@@ -8,7 +8,7 @@ import ContentBlock from '../../components/contentBlock/contentBlock';
 import { Helmet } from 'react-helmet';
 import constants from '../../constants';
 import { AnimalImage, BreederCentralImage, ImageCenter, OffspringImage } from '@breeder-central/ui';
-import useAnimalDetails from '../../hooks/useAnimalDetails';
+import useAnimalDetails from '../../contexts/animalDetails/animalDetails.context';
 import { random, shuffle } from 'lodash';
 
 interface GalleryProps {

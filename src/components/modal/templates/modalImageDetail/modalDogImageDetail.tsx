@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 import { BreederCentralAnimal } from '@breeder-central/ui';
 import SimpleCarousel from '../../../carousels/simpleCarousel/simpleCarousel';
-import useAnimalDetails from '../../../../hooks/useAnimalDetails';
+import useAnimalDetails from '../../../../contexts/animalDetails/animalDetails.context';
 import useLitter from '../../../../hooks/useLitter';
 import ProgramDescription from '../../../contentComponents/static/programDescription';
 import { Link } from 'react-router-dom';
