@@ -7,24 +7,19 @@ import ModalGallery from '../../../modal/templates/modalGallery/modalGallery.com
 import useLitter from '../../../../hooks/useLitter';
 import DogShowcaseCard from '../../../dogShowcaseCard/dogShowcaseCard';
 import ContentBlock from '../../../contentBlock/contentBlock';
-import { BreederCentralOffspringGroup } from '@breeder-central/ui';
+import { BreederCentralAnimal, BreederCentralOffspringGroup } from '@breeder-central/ui';
 
 interface PuppiesLitterPanelProps {
   litter: BreederCentralOffspringGroup;
 }
 
-// const puppyStatus = (puppy: BreederCentralAnimal) => {
-//   return puppy.state === 'Pet' ? 'reserved' : 'available';
-// };
+const puppyStatus = (puppy: BreederCentralAnimal) => {
+  return puppy.state === 'Pet' ? 'reserved' : 'available';
+};
 
-// const puppyPrice = (puppy: BreederCentralAnimal) => {
-  // todo: configure price in supabase and breeder central.
-
-  // if(isString(startingPrice)) {
-  //   return `Price: ${startingPrice}`;
-  // }
-  // return puppy.status === PuppyStatus.Available ? `$${startingPrice + puppy.priceAboveStarting}` : puppy.status;
-// };
+const puppyPrice = (puppy: BreederCentralAnimal) => {
+  return puppy.state === 'Puppy' ? `$${puppy.price}` : 'Found forever home';
+};
 
 const PuppiesLitterPanel:FC<PuppiesLitterPanelProps> = ({litter}) => {
   const [ modalImageNames, setModalImageNames ] = useState<string[] | null>();
@@ -52,7 +47,7 @@ const PuppiesLitterPanel:FC<PuppiesLitterPanelProps> = ({litter}) => {
             (puppy, key) => (
               <DogShowcaseCard key={key} dog={puppy}>
                 <h4>{puppy.name}</h4>
-                {/* <p className={puppyStatus(puppy)}>{puppyPrice(puppy, litter.startingPrice)}</p> */}
+                { puppy.price && <p className={puppyStatus(puppy)}>{puppyPrice(puppy)}</p> }
                 <p>{puppy.gender === "M" ? "Boy" : "Girl"}</p>
                 <p>{puppy.description}</p>
               </DogShowcaseCard>

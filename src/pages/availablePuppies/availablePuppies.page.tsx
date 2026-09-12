@@ -54,16 +54,16 @@ const AvailablePuppies:FC<AvailablePuppiesProps> = () => {
         <div className='section-header'>
           <h2>Available Puppies</h2>
         </div>
-        {availableLitters.map((litter, key) => <LitterCard key={key} litter={litter} />)}
+        { availableLitters.map((litter, key) => <LitterCard key={key} litter={litter} />) }
       </section>}
-      {upcomingLitters.length > 0 && <section className='expected-litters'>
+      { upcomingLitters.length > 0 && <section className='expected-litters'>
         <div className='section-header'>
           <h2>Expected Litters</h2>
         </div>
         <div className='expected-list'>
-          {upcomingLitters.map((litter, key) => <LitterCard key={key} litter={litter} />)}
+          { upcomingLitters.map((litter, key) => <LitterCard key={key} litter={litter} />) }
         </div>
-      </section>}
+      </section> }
       <ContentBlock as='section' className='contact-details'>
         <ContentBlock className='litter-details' borderSize={1}>
           <ProgramDescription />
