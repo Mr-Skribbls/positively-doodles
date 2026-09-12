@@ -131,6 +131,7 @@ const useLitter = (litter: BreederCentralOffspringGroup | null) => {
     litterDescription2,
     litterPuppies,
     litterParentText,
+    litterParents,
   };
 };
 

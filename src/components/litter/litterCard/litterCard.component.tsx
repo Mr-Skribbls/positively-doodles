@@ -1,19 +1,26 @@
-import { FC } from 'react';
-import { LitterInfo, LitterState } from '../../../dogInfo';
+import { FC, useMemo } from 'react';
 import ExpectedLitterPanel from './expectedLitterPanel/expectedLitterPanel.component';
 import PuppiesLitterPanel from './puppiesLitterPanel/puppiesLitterPanel.component';
+import { BreederCentralOffspringGroup } from '@breeder-central/ui';
 
 interface LitterCardProps {
-  litter: LitterInfo,
+  litter: BreederCentralOffspringGroup,
 }
 
 const LitterCard:FC<LitterCardProps> = ({
   litter,
 }) => {
+  const litterState = useMemo(() => {
+    const birthEvent = litter.events.find((event) => event.name === 'birth');
+    if(!birthEvent) return 'Expected';
+    const birthDate = new Date(birthEvent.date);
+    return birthDate > new Date() ? 'Expected' : 'Puppy';
+  }, [litter.events]);
+
   return (
     <div className='litter-card'>
-      {litter.state === LitterState.Expected && <ExpectedLitterPanel litter={litter} />}
-      {(litter.state === LitterState.Puppy || litter.state === LitterState.HomeBound) && <PuppiesLitterPanel litter={litter} />}
+      { litterState === 'Expected' && <ExpectedLitterPanel litter={litter} />}
+      { litterState === 'Puppy' && <PuppiesLitterPanel litter={litter} />}
     </div>
   );
 };

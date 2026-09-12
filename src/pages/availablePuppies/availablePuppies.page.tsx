@@ -1,5 +1,4 @@
-import { FC, useEffect, useState } from 'react';
-import { LitterInfo, LitterState, litters } from '../../dogInfo';
+import { FC, useCallback, useEffect, useMemo } from 'react';
 import constants from '../../constants';
 import LitterCard from '../../components/litter/litterCard/litterCard.component';
 import PageTitle from '../../components/pageTitle/pageTitle.component';
@@ -8,26 +7,37 @@ import ContentBlock from '../../components/contentBlock/contentBlock';
 import ProgramDescription from '../../components/contentComponents/static/programDescription';
 import ContactForm from '../../components/contactForm/contactForm';
 import { Helmet } from 'react-helmet';
+import useAnimalDetails from '../../contexts/animalDetails/animalDetails.context';
+import { BreederCentralOffspringEvent, BreederCentralOffspringGroup } from '@breeder-central/ui';
 
 interface AvailablePuppiesProps {
 
 }
 
 const AvailablePuppies:FC<AvailablePuppiesProps> = () => {
-  const [availableLitters, setAvailableLitters] = useState<LitterInfo[]>([]);
-  const [upcomingLitters, setUpcomingLitters] = useState<LitterInfo[]>([]);
+  // const [availableLitters, setAvailableLitters] = useState<LitterInfo[]>([]);
+  // const [upcomingLitters, setUpcomingLitters] = useState<LitterInfo[]>([]);
+  const { offspringGroups } = useAnimalDetails();
+
+  const passedGoHome = (event: BreederCentralOffspringEvent) => event.name === 'go home' && new Date(event.date) <= new Date();
+
+  const futureGoHome = (event: BreederCentralOffspringEvent) => event.name === 'go home' && new Date(event.date) > new Date();
+
+  const getGroupByEvent = useCallback((eventCondition: (event: BreederCentralOffspringEvent) => boolean) => (group: BreederCentralOffspringGroup) => {
+    return group.events.some(eventCondition);
+  }, []);
+
+  const availableLitters = useMemo(() => {
+    return offspringGroups.filter(getGroupByEvent(passedGoHome));
+  }, [getGroupByEvent, offspringGroups]);
+
+  const upcomingLitters = useMemo(() => {
+    return offspringGroups.filter(getGroupByEvent(futureGoHome));
+  }, [getGroupByEvent, offspringGroups]);
 
   useEffect(() => {
     window.scrollTo(0,0);
-    setAvailableLitters(litters.filter(isLitterAvailable));
-    setUpcomingLitters(litters.filter(isLitterExpected));
   }, []);
-
-  const isLitterAvailable = (litter:LitterInfo) =>
-    litter.state === LitterState.Puppy ||
-    litter.state === LitterState.HomeBound;
-
-  const isLitterExpected = (litter:LitterInfo) => litter.state === LitterState.Expected;
 
   return (
     <div className='available-puppies site-container'>
