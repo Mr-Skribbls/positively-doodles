@@ -10,6 +10,7 @@ import constants from '../../constants';
 import { AnimalImage, BreederCentralImage, ImageCenter, OffspringImage } from '@breeder-central/ui';
 import useAnimalDetails from '../../contexts/animalDetails/animalDetails.context';
 import { random, shuffle } from 'lodash';
+import { useParams } from 'react-router-dom';
 
 interface GalleryProps {
 
@@ -56,21 +57,20 @@ const GalleryGrid: FC<GalleryGridProps> = memo(({ images, onImageClick }) => {
 
 const Gallery:FC<GalleryProps> = () => {
   const [ selectedImage, setSelectedImage ] = useState<AnimalImage | OffspringImage | null>(null);
-  // const { imageFilters } = useParams<string>();
+  const { imageFilters } = useParams<string>();
   const { animalImages, offspringImages } = useAnimalDetails();
 
   useEffect(() => {
     window.scrollTo(0,0);
   }, []);
 
-  // todo: add: filter images by imageFilters.
-
   const images = useMemo(() => {
+    const filters = (imageFilters || '').split('|');
     return shuffle([
       ...animalImages,
       ...offspringImages,
-    ]);
-  }, [animalImages, offspringImages]);
+    ]).filter((image) => (image.tags || []).some((tag) => filters.includes(tag)));
+  }, [animalImages, imageFilters, offspringImages]);
 
   const closeModal = () => {
     setSelectedImage(null);

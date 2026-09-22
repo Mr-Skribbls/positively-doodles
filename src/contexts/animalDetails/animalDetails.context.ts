@@ -1,5 +1,5 @@
 import { createContext, useContext } from 'react';
-import { AnimalImage, BreederCentralAnimal, BreederCentralOffspringGroup, OffspringImage } from '@breeder-central/ui';
+import type { AnimalImage, BreederCentralAnimal, BreederCentralOffspringGroup, OffspringImage } from '@breeder-central/ui';
 
 export interface AnimalDetailsContextValue {
   animals: BreederCentralAnimal[];
