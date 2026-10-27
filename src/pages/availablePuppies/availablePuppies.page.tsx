@@ -23,17 +23,25 @@ const AvailablePuppies:FC<AvailablePuppiesProps> = () => {
 
   const futureGoHome = (event: BreederCentralOffspringEvent) => event.name === 'go home' && new Date(event.date) > new Date();
 
+  const isCompleteLitter = (group: BreederCentralOffspringGroup) => {
+    return group.events.some((event) => event.name?.toLowerCase() === 'complete');
+  };
+
   const getGroupByEvent = useCallback((eventCondition: (event: BreederCentralOffspringEvent) => boolean) => (group: BreederCentralOffspringGroup) => {
     return group.events.some(eventCondition);
   }, []);
 
+  const activeLitters = useMemo(() => {
+    return offspringGroups.filter((group) => !isCompleteLitter(group));
+  }, [offspringGroups]);
+
   const availableLitters = useMemo(() => {
-    return offspringGroups.filter(getGroupByEvent(passedGoHome));
-  }, [getGroupByEvent, offspringGroups]);
+    return activeLitters.filter(getGroupByEvent(passedGoHome));
+  }, [getGroupByEvent, activeLitters]);
 
   const upcomingLitters = useMemo(() => {
-    return offspringGroups.filter(getGroupByEvent(futureGoHome));
-  }, [getGroupByEvent, offspringGroups]);
+    return activeLitters.filter(getGroupByEvent(futureGoHome));
+  }, [getGroupByEvent, activeLitters]);
 
   useEffect(() => {
     window.scrollTo(0,0);
