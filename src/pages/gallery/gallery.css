@@ -1,13 +1,18 @@
 .gallery-instructions {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 10px;
+  max-width: 80vw;
   padding: 5px;
   text-align: center;
 }
 
 .gallery-wrapper {
-  margin: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80vw;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   grid-template-rows: repeat(6, minmax(60px, 0.45fr));
@@ -40,4 +45,13 @@
   gap: 10px;
   grid-template-areas: "image def";
   
+}
+
+@media (max-width: 768px) {
+  .gallery-instructions,
+  .gallery-wrapper {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

@@ -77,7 +77,7 @@ const Gallery:FC<GalleryProps> = () => {
   }
 
   return (
-    <div className='site-container'>
+    <div className='gallery-page site-container'>
       <Helmet>
         <title>{constants.companyName} Gallery</title>
         <meta name='keywords' content='doodle puppy gallery, doodle dog pictures, doodle puppy photos, doodle puppies gallery, doodle puppy pictures, bernedoodle puppy photos, adorable doodle puppy pictures, cute doodle puppy gallery, fluffy doodle dog photos, playful doodle puppies, doodle puppy cuteness overload' />
