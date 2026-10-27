@@ -1,20 +1,20 @@
 import { FC } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import './simpleCarousel.css';
-import SourceSetImage from '../../sourceSetImage/sourceSetImage.component';
 import PrevButton from '../prevButton';
 import NextButton from '../nextButton';
 import { usePrevNextButtons } from '../../../hooks/usePrevNextButtons';
 import { SelectedSnapDisplay } from '../emblaCarouselSelectedSnapDisplay';
 import { useSelectedSnapDisplay } from '../../../hooks/useSelectedSnapDisplay';
 import ContentBlock from '../../contentBlock/contentBlock';
+import { AnimalImage, BreederCentralImage, ImageCenter, OffspringImage } from '@breeder-central/ui';
 
 interface SimpleCarouselProps {
-  imageNames: string[],
+  images: (AnimalImage | OffspringImage)[],
 }
 
 const SimpleCarousel:FC<SimpleCarouselProps> = ({
-  imageNames,
+  images,
 }) => {
   const [ emblaRef, emblaApi ] = useEmblaCarousel({ 
     loop: false,
@@ -34,9 +34,13 @@ const SimpleCarousel:FC<SimpleCarouselProps> = ({
     <div className='simple-carousel'>
       <section className='embla' ref={emblaRef}>
         <div className='embla__container'>
-          {imageNames.map((imageName, key) => (
+          {images.map((image, key) => (
             <ContentBlock key={key} className="embla__slide" borderSize={1}>
-              <SourceSetImage imageName={imageName}></SourceSetImage>
+              <BreederCentralImage
+                imageUrl={image.signedUrl}
+                alt={image.alt}
+                center={[image.centerX, image.centerY] as ImageCenter}
+              />
             </ContentBlock>
           ))}
         </div>

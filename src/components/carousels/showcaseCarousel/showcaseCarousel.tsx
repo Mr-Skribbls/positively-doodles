@@ -1,19 +1,19 @@
 import './showcaseCarousel.css';
 import { FC } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
-import SourceSetImage from '../../sourceSetImage/sourceSetImage.component';
 import PrevButton from '../prevButton';
 import NextButton from '../nextButton';
 import { usePrevNextButtons } from '../../../hooks/usePrevNextButtons';
 import { SelectedSnapDisplay } from '../emblaCarouselSelectedSnapDisplay';
 import { useSelectedSnapDisplay } from '../../../hooks/useSelectedSnapDisplay';
+import { AnimalImage, BreederCentralImage, ImageCenter, OffspringImage } from '@breeder-central/ui';
 
 interface ShowcaseCarouselProps {
-  imageNames: string[],
+  images: (AnimalImage | OffspringImage)[],
 }
 
 const ShowcaseCarousel:FC<ShowcaseCarouselProps> = ({
-  imageNames,
+  images,
 }) => {
   const [ emblaRef, emblaApi ] = useEmblaCarousel({ 
     loop: false,
@@ -33,9 +33,13 @@ const ShowcaseCarousel:FC<ShowcaseCarouselProps> = ({
     <div className='showcase-carousel'>
       <section className='embla' ref={emblaRef}>
         <div className='embla__container'>
-          {imageNames.map((imageName, key) => (
+          {images.map((image, key) => (
             <div key={key} className="embla__slide">
-              <SourceSetImage imageName={imageName}></SourceSetImage>
+              <BreederCentralImage
+                imageUrl={image.signedUrl}
+                alt={image.alt}
+                center={[image.centerX, image.centerY] as ImageCenter}
+              />
             </div>
           ))}
         </div>

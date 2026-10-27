@@ -1,17 +1,14 @@
-import { FC, useEffect, useState } from 'react';
-import { Puppy, Dog } from '../../dogInfo';
-import SourceSetImage from '../sourceSetImage/sourceSetImage.component';
-import useImageDetail, { ImageDetail } from '../../hooks/useImageDetail';
-import { isEmpty, isNil } from 'lodash';
-import useImage, {ImageData} from '../../hooks/useImage';
+import { FC, useState } from 'react';
+import { isNil } from 'lodash';
 import './dogShowcaseCard.css';
 import Modal from '../modal/modal.component';
 import ModalImageDetail from '../modal/templates/modalImageDetail/modalImageDetail';
 import ContentBlock from '../contentBlock/contentBlock';
+import { BreederCentralAnimal, BreederCentralImage, ImageCenter } from '@breeder-central/ui';
 
 
 interface DogShowcaseCardProps {
-  dog: Puppy | Dog;
+  dog: BreederCentralAnimal;
   children: React.ReactNode;
   [key: string]: unknown;
 }
@@ -21,39 +18,12 @@ const DogShowcaseCard:FC<DogShowcaseCardProps> = ({
   children,
   ...rest
 }) => {
-  const [ image, setImage ] = useState<ImageData>();
-  const [ imageDetail, setImageDetail ] = useState<ImageDetail>();
   const [ isModalOpen, setIsModalOpen ] = useState<boolean>(false);
-  const { getImageDataByName } = useImage();
-  const { getImageDetail } = useImageDetail();
 
-  useEffect(() => {
-    // Image Name
-    let imageName = '';
-    if((dog as Puppy).imageName) {
-      imageName = (dog as Puppy).imageName
-    } else if ((dog as Dog).images?.main) {
-      imageName = (dog as Dog).images.main
-    }
-
-    // Image Data
-    let imageData;
-    if(!isEmpty(imageName)) {
-      const imageDataset = getImageDataByName([imageName]);
-      imageData = !isEmpty(imageDataset) ? imageDataset[0] : undefined;
-      setImage(imageData);
-    }
-
-    // Image Detail
-    let imageDetail;
-    if(!isNil(imageData?.detailId)) {
-      imageDetail = getImageDetail(imageData.detailId);
-      setImageDetail(imageDetail);
-    }
-  }, [dog, getImageDataByName, getImageDetail]);
+  const image = dog.images?.[0];
 
   const toggleModal = () => {
-    if(imageDetail) {
+    if(image) {
       setIsModalOpen(!isModalOpen);
     }
   };
@@ -61,13 +31,17 @@ const DogShowcaseCard:FC<DogShowcaseCardProps> = ({
   return (
     <ContentBlock as='figure' className='dog-showcase-card' borderSize={1} {...rest}>
       {!isNil(image) && <div className='image-wrapper' onClick={() => toggleModal()}>
-        <SourceSetImage imageName={image.name} />
+        <BreederCentralImage
+          imageUrl={image.signedUrl}
+          alt={image.alt}
+          center={[image.centerX, image.centerY] as ImageCenter}
+        />
       </div>}
       <figcaption>
         {children}
       </figcaption>
       {isModalOpen && <Modal isOpen={isModalOpen} close={toggleModal}>
-        {imageDetail && <ModalImageDetail imageDetail={imageDetail} imagePriority={[(image as ImageData).name]}></ModalImageDetail>}
+        {image && <ModalImageDetail image={image} />}
       </Modal>}
     </ContentBlock>
   )

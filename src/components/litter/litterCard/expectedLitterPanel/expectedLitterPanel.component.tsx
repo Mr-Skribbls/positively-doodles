@@ -1,18 +1,24 @@
 import { FC } from 'react';
-import { LitterInfo } from '../../../../dogInfo';
 import './expectedLitterPanel.css';
 import ContentBlock from '../../../contentBlock/contentBlock';
 import DogShowcaseCard from '../../../dogShowcaseCard/dogShowcaseCard';
 import useWindowDimensions from '../../../../hooks/useWindowDimensions';
+import { BreederCentralOffspringGroup } from '@breeder-central/ui';
+import useLitter from '../../../../hooks/useLitter';
 
 interface ExpectedLitterPanelProps {
-  litter: LitterInfo,
+  litter: BreederCentralOffspringGroup,
 }
 
 const ExpectedLitterPanel:FC<ExpectedLitterPanelProps> = ({
   litter,
 }) => {
   const windowDimensions = useWindowDimensions();
+  const {
+    litterParentText,
+    litterDescription2: litterDescription,
+    litterParents,
+  } = useLitter(litter);
 
   const maxWidth = () => windowDimensions.width > 1350 ? '50%' : '100%';
   const flexDirection = () => windowDimensions.width > 1350 ? 'row' : 'column';
@@ -24,41 +30,51 @@ const ExpectedLitterPanel:FC<ExpectedLitterPanelProps> = ({
         padding: '15px',
         gap: '15px',
       }}>
-        <h2>{litter.puppyBreed.class} {litter.puppyBreed.expectedSizes.join(' to ')} {litter.puppyBreed.type} Litter</h2>
+        <h2>{ litterParentText } Litter</h2>
 
-        <p>{litter.preBirthDescription}</p>
+        <p>{ litterDescription }</p>
 
         <div style={{
           display: 'flex',
           flexDirection: 'column',
           gap: '15px',
         }}>
-          <h4>Parents</h4>
-          <div style={{
-            display: 'flex',
-            flexDirection: flexDirection(),
-            gap: '15px',
-          }}>
-            <DogShowcaseCard dog={litter.dam} style={{
-              maxWidth: maxWidth(),
+          { (litterParents.dam || litterParents.sire) && <>
+            <h4>Parents</h4>
+            <div style={{
+              display: 'flex',
+              flexDirection: flexDirection(),
+              gap: '15px',
             }}>
-              <h4>{litter.dam.name}</h4>
-              <p>
-                {litter.dam.description}
-              </p>
-            </DogShowcaseCard>
+              { litterParents.dam && <DogShowcaseCard
+                  dog={litterParents.dam}
+                  style={{
+                    maxWidth: maxWidth(),
+                  }}
+                >
+                  <h4>{litterParents.dam.name}</h4>
+                  <p>
+                    {litterParents.dam.description}
+                  </p>
+                </DogShowcaseCard>
+              }
 
-            <DogShowcaseCard dog={litter.sire} style={{
-              maxWidth: maxWidth(),
-            }}>
-              <h4>{litter.sire.name}</h4>
-              <p style={{
-                maxWidth: maxParentDescriptionWidth,
-              }}>
-                {litter.sire.description}
-              </p>
-            </DogShowcaseCard>
-          </div>
+              { litterParents.sire && <DogShowcaseCard
+                  dog={litterParents.sire}
+                  style={{
+                    maxWidth: maxWidth(),
+                  }}
+                >
+                  <h4>{litterParents.sire.name}</h4>
+                  <p style={{
+                    maxWidth: maxParentDescriptionWidth,
+                  }}>
+                    {litterParents.sire.description}
+                  </p>
+                </DogShowcaseCard>
+              }
+            </div>
+          </> }
         </div>
 
 

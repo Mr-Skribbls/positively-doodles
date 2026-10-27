@@ -1,27 +1,19 @@
-import { FC, useEffect, useState } from 'react';
-import random from 'lodash/random';
+import { FC, memo, useEffect, useMemo, useState } from 'react';
 import isNil from 'lodash/isNil';
 
 import './gallery.css';
 import Modal from '../../components/modal/modal.component';
-import { useParams } from 'react-router-dom';
-import SourceSetImage from '../../components/sourceSetImage/sourceSetImage.component';
-import useImage, { ImageData } from '../../hooks/useImage';
-import { shuffle, some } from 'lodash';
-import useImageDetail, { ImageDetail } from '../../hooks/useImageDetail';
 import ModalImageDetail from '../../components/modal/templates/modalImageDetail/modalImageDetail';
 import ContentBlock from '../../components/contentBlock/contentBlock';
 import { Helmet } from 'react-helmet';
 import constants from '../../constants';
+import { AnimalImage, BreederCentralImage, ImageCenter, OffspringImage } from '@breeder-central/ui';
+import useAnimalDetails from '../../contexts/animalDetails/animalDetails.context';
+import { random, shuffle } from 'lodash';
+import { useParams } from 'react-router-dom';
 
 interface GalleryProps {
 
-}
-
-interface DisplayImage {
-  image: ImageData,
-  detailId?: string,
-  size: string,
 }
 
 const imageSizes = [
@@ -34,55 +26,58 @@ const imageSizes = [
   'medium',
 ];
 
+interface GalleryGridProps {
+  images: (AnimalImage | OffspringImage)[];
+  onImageClick: (image: AnimalImage | OffspringImage) => void;
+}
+
+const GalleryGrid: FC<GalleryGridProps> = memo(({ images, onImageClick }) => {
+  return (
+    <div className="gallery-wrapper">
+      {images.map((image, key) => (
+        <div
+          className={`${imageSizes[random(0, imageSizes.length-1)]} gallery-image`}
+          onClick={() => onImageClick(image)}
+          key={key}
+        >
+          <BreederCentralImage
+            imageUrl={image.signedUrl}
+            alt={image.alt}
+            center={[image.centerX, image.centerY] as ImageCenter}
+            style={{
+              width: '100%',
+              height: '100%',
+            }}
+          />
+        </div>
+      ))}
+    </div>
+  );
+});
+
 const Gallery:FC<GalleryProps> = () => {
-  const [ displayImages, setDisplayImages ] = useState<DisplayImage[]>([]);
-  const [ modalImageDetail, setModalImageDetail ] = useState<ImageDetail>();
-  const [ selectedImageName, setSelectedImageName ] = useState<string>('');
+  const [ selectedImage, setSelectedImage ] = useState<AnimalImage | OffspringImage | null>(null);
   const { imageFilters } = useParams<string>();
-  const { getImageDataByClassName } = useImage();
-  const { getImageDetail } = useImageDetail();
+  const { animalImages, offspringImages } = useAnimalDetails();
 
   useEffect(() => {
     window.scrollTo(0,0);
   }, []);
 
-  useEffect(() => {
+  const images = useMemo(() => {
     const filters = (imageFilters || '').split('|');
-    const imagesData = shuffle(getImageDataByClassName(filters, some));
-    const displayImages = imagesData.map((imageData) => {
-      return {
-        image: imageData,
-        detailId: imageData.detailId,
-        size: imageSizes[random(0, imageSizes.length-1)],
-      };
-    });
-    setDisplayImages(displayImages);
-  }, [imageFilters, getImageDataByClassName]);
-
-  const imageCard = (displayImage: DisplayImage, key: number) => {
-    return (
-      <div
-        className={`${displayImage.size} gallery-image`}
-        onClick={() => {
-          if(displayImage.detailId) {
-            const modalImageDetail = getImageDetail(displayImage.detailId) as ImageDetail;
-            setModalImageDetail(modalImageDetail);
-          }
-          setSelectedImageName(displayImage.image.name);
-        }}
-        key={key}>
-        <SourceSetImage imageName={displayImage.image.name} />
-      </div>
-    );
-  };
+    return shuffle([
+      ...animalImages,
+      ...offspringImages,
+    ]).filter((image) => (image.tags || []).some((tag) => filters.includes(tag)));
+  }, [animalImages, imageFilters, offspringImages]);
 
   const closeModal = () => {
-    setModalImageDetail(undefined);
-    setSelectedImageName('');
+    setSelectedImage(null);
   }
 
   return (
-    <div className='site-container'>
+    <div className='gallery-page site-container'>
       <Helmet>
         <title>{constants.companyName} Gallery</title>
         <meta name='keywords' content='doodle puppy gallery, doodle dog pictures, doodle puppy photos, doodle puppies gallery, doodle puppy pictures, bernedoodle puppy photos, adorable doodle puppy pictures, cute doodle puppy gallery, fluffy doodle dog photos, playful doodle puppies, doodle puppy cuteness overload' />
@@ -91,12 +86,10 @@ const Gallery:FC<GalleryProps> = () => {
       <ContentBlock as='p' className='gallery-instructions' borderSize={1} borderRadius={5}>
         Click or tap on an image for more details
       </ContentBlock>
-      <div className="gallery-wrapper">
-        {displayImages.map((displayImage, key) => imageCard(displayImage, key))}
-        <Modal isOpen={!isNil(modalImageDetail)} close={closeModal}>
-          {modalImageDetail && <ModalImageDetail imageDetail={modalImageDetail} imagePriority={[selectedImageName]}></ModalImageDetail>}
-        </Modal>
-      </div>
+      <GalleryGrid images={images} onImageClick={setSelectedImage} />
+      <Modal isOpen={!isNil(selectedImage)} close={closeModal}>
+        {selectedImage && <ModalImageDetail image={selectedImage}></ModalImageDetail>}
+      </Modal>
     </div>
   );
 };

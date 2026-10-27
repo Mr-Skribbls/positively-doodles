@@ -1,4 +1,5 @@
 import { render, screen } from '@testing-library/react';
+import { describe, expect, test } from 'vitest';
 import ContactForm from './contactForm';
 
 describe('ContactForm', () => {
@@ -12,7 +13,7 @@ describe('ContactForm', () => {
     render(<ContactForm />);
     const label = await screen.getByText('Name*');
     const input = label.parentElement?.getElementsByTagName('input')[0];
-    if(!input) fail();
+    if(!input) expect.fail();
     expect(label).not.toBeNull();
     expect(input.name).toBe('entry.2005620554');
     expect(input.type).toBe('text');
@@ -22,7 +23,7 @@ describe('ContactForm', () => {
     render(<ContactForm />);
     const label = await screen.getByText('Email*');
     const input = label.parentElement?.getElementsByTagName('input')[0];
-    if(!input) fail();
+    if(!input) expect.fail();
     expect(label).not.toBeNull();
     expect(input.name).toBe('entry.1045781291');
     expect(input.type).toBe('email');
@@ -32,7 +33,7 @@ describe('ContactForm', () => {
     render(<ContactForm />);
     const label = await screen.getByText('Phone*');
     const input = label.parentElement?.getElementsByTagName('input')[0];
-    if(!input) fail();
+    if(!input) expect.fail();
     expect(label).not.toBeNull();
     expect(input.name).toBe('entry.1166974658');
     expect(input.type).toBe('tel');
@@ -42,7 +43,7 @@ describe('ContactForm', () => {
     render(<ContactForm />);
     const label = await screen.getByText('Message*');
     const textarea = label.parentElement?.getElementsByTagName('textarea')[0];
-    if(!textarea) fail();
+    if(!textarea) expect.fail();
     expect(label).not.toBeNull();
     expect(textarea.name).toBe('entry.839337160');
   });
