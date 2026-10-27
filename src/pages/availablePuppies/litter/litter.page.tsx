@@ -11,7 +11,7 @@ interface LitterProps {
 }
 
 const Litter:FC<LitterProps> = () => {
-  const litterHelper = useLitter();
+  const litterHelper = useLitter(null);
   const [litter, setLitter] = useState<LitterInfo|null>();
   const { id } = useParams();
 
